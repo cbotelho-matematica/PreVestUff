@@ -5,6 +5,9 @@
 \usepackage[normalem]{ulem}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
+\graphicspath{{./src/img/}}
+\usepackage{float}
+
 \usepackage[alf]{abntex2cite}
 
 \usepackage{hyperref}
@@ -111,7 +114,17 @@
             \item $2 \times 10^{-7}$
         \end{enumerate}
 
+        \columnbreak
+
         \vest{ENEM-2016} A London Eye é uma enorme roda-gigante na capital inglesa. Por ser um dos monumentos construídos para celebrar a entrada do terceiro milênio, ela também é conhecida como Roda do Milênio. Um turista brasileiro, em visita à Inglaterra, perguntou a um londrino o diâmetro (destacado na imagem) da Roda do Milênio e ele respondeu que tem $443$ pés.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.4\textwidth]{london_eye.png}
+                \caption{A Roda do Milênio}
+                \label{fig:imagem01}
+            \end{figure}
+        
 
         Não habituado com a unidade pé, e querendo satisfazer sua curiosidade, esse turista consultou um manual de unidades de medidas e constatou que $1$ pé equivale a $12$ polegadas, e que $1$ polegada equivale a $2,54$ cm. Após alguns cálculos de conversão, o turista ficou surpreendido com o resultado obtido em metros.
 
@@ -125,6 +138,7 @@
             \item $145$
         \end{enumerate}
 
+        \newpage
         \vest{ENEM-2015} Um bairro residencial tem cinco mil moradores, dos quais mil são classificados como vegetarianos. Entre os vegetarianos, $40\%$ são esportistas, enquanto que, entre os não vegetarianos, essa porcentagem cai para $20\%$. Uma pessoa desse bairro, escolhida ao acaso, é esportista.
         A probabilidade de ela ser vegetariana é:
 

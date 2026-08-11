@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  10 AUG 2026 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  11 AUG 2026 09:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,13 +600,20 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen260
 \Gin@req@width=\dimen261
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count345
+\float@exts=\toks30
+\float@box=\box61
+\@float@everytoks=\toks31
+\@floatcapt=\box62
 ) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
  (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip258
 \ABCIauxlen=\skip259
-\c@ABCIaux=\count345
-\c@ABCImax=\count346
+\c@ABCIaux=\count346
+\c@ABCImax=\count347
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -617,37 +624,35 @@ Package: relsize 2013/03/29 ver 4.1
 \biblabelsep=\skip260
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks30
+\ABCItoken=\toks32
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count347
-\mult@box=\box61
+\c@tracingmulticols=\count348
+\mult@box=\box63
 \multicol@leftmargin=\dimen262
-\c@unbalance=\count348
-\c@collectmore=\count349
-\doublecol@number=\count350
-\multicoltolerance=\count351
-\multicolpretolerance=\count352
+\c@unbalance=\count349
+\c@collectmore=\count350
+\doublecol@number=\count351
+\multicoltolerance=\count352
+\multicolpretolerance=\count353
 \full@width=\dimen263
 \page@free=\dimen264
 \premulticols=\dimen265
 \postmulticols=\dimen266
 \multicolsep=\skip261
 \multicolbaselineskip=\skip262
-\partial@page=\box62
-\last@line=\box63
-\mc@boxedresult=\box64
+\partial@page=\box64
+\last@line=\box65
+\mc@boxedresult=\box66
 \maxbalancingoverflow=\dimen267
-\mult@rightbox=\box65
-\mult@grightbox=\box66
-\mult@firstbox=\box67
-\mult@gfirstbox=\box68
-\@tempa=\box69
-\@tempa=\box70
+\mult@rightbox=\box67
+\mult@grightbox=\box68
+\mult@firstbox=\box69
+\mult@gfirstbox=\box70
 \@tempa=\box71
 \@tempa=\box72
 \@tempa=\box73
@@ -682,15 +687,17 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box102
 \@tempa=\box103
 \@tempa=\box104
-\c@minrows=\count353
-\c@columnbadness=\count354
-\c@finalcolumnbadness=\count355
+\@tempa=\box105
+\@tempa=\box106
+\c@minrows=\count354
+\c@columnbadness=\count355
+\c@finalcolumnbadness=\count356
 \last@try=\dimen268
 \multicolovershoot=\dimen269
 \multicolundershoot=\dimen270
-\mult@nat@firstbox=\box105
-\colbreak@box=\box106
-\mc@col@check@num=\count356
+\mult@nat@firstbox=\box107
+\colbreak@box=\box108
+\mc@col@check@num=\count357
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip263
@@ -700,7 +707,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks31
+\@emptytoks=\toks33
 \ex@=\dimen271
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -708,19 +715,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count357
+\inf@bad=\count358
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count358
-\leftroot@=\count359
+\uproot@=\count359
+\leftroot@=\count360
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count360
-\DOTSCASE@=\count361
+\classnum@=\count361
+\DOTSCASE@=\count362
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box107
-\strutbox@=\box108
+\Mathstrutbox@=\box109
+\strutbox@=\box110
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
@@ -728,44 +735,44 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen273
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count362
+\macc@depth=\count363
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count363
+\c@MaxMatrixCols=\count364
 \dotsspace@=\muskip17
-\c@parentequation=\count364
-\dspbrk@lvl=\count365
-\tag@help=\toks32
-\row@=\count366
-\column@=\count367
-\maxfields@=\count368
-\andhelp@=\toks33
+\c@parentequation=\count365
+\dspbrk@lvl=\count366
+\tag@help=\toks34
+\row@=\count367
+\column@=\count368
+\maxfields@=\count369
+\andhelp@=\toks35
 \eqnshift@=\dimen274
 \alignsep@=\dimen275
 \tagshift@=\dimen276
 \tagwidth@=\dimen277
 \totwidth@=\dimen278
 \lineht@=\dimen279
-\@envbody=\toks34
+\@envbody=\toks36
 \multlinegap=\skip264
 \multlinetaggap=\skip265
-\mathdisplay@stack=\toks35
+\mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks36
-\thm@bodyfont=\toks37
-\thm@headfont=\toks38
-\thm@notefont=\toks39
-\thm@headpunct=\toks40
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
 \thm@preskip=\skip266
 \thm@postskip=\skip267
 \thm@headsep=\skip268
-\dth@everypar=\toks41
+\dth@everypar=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -782,13 +789,13 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen280
-\l__xtemplate_tmp_int=\count369
+\l__xtemplate_tmp_int=\count370
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip269
 )
 Package: xfrac 2023-10-10 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box109
-\l__xfrac_tmp_box=\box110
+\l__xfrac_slash_box=\box111
+\l__xfrac_tmp_box=\box112
 \l__xfrac_denominator_bot_sep_dim=\dimen281
 \l__xfrac_numerator_bot_sep_dim=\dimen282
 \l__xfrac_numerator_top_sep_dim=\dimen283
@@ -801,30 +808,30 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
 )
-\c@questaovest=\count370
+\c@questaovest=\count371
  (./questoes.aux)
 \openout1 = `questoes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-Package hyperref Info: Link coloring ON on input line 71.
-\myptabbox=\box111
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+Package hyperref Info: Link coloring ON on input line 74.
+\myptabbox=\box113
 \myptabboxwidth=\skip270
 
 *geometry* driver: auto-detecting
@@ -863,48 +870,54 @@ Package hyperref Info: Link coloring ON on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
+\scratchcounter=\count372
 \scratchdimen=\dimen286
-\scratchbox=\box112
-\nofMPsegments=\count372
-\nofMParguments=\count373
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count374
+\scratchbox=\box114
+\nofMPsegments=\count373
+\nofMParguments=\count374
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count375
 \MPscratchDim=\dimen287
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
-\everyMPtoPDFconversion=\toks43
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 132.
+<./src/img/london_eye.png, id=4, 115.1502pt x 102.3825pt>
+File: ./src/img/london_eye.png Graphic file (type png)
+<use ./src/img/london_eye.png>
+Package pdftex.def Info: ./src/img/london_eye.png  used on input line 123.
+(pdftex.def)             Requested size: 193.47578pt x 172.03578pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./src/img/london_eye.png>]
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 146.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 132.
+(Font)              size <5> substituted on input line 146.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 132.
+(Font)              size <5> substituted on input line 146.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 132.
+(Font)              size <5> substituted on input line 146.
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./questoes.aux)
+[2] (./questoes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -916,18 +929,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 17840 strings out of 474222
- 281303 string characters out of 5748734
- 1951975 words of memory out of 5000000
- 39826 multiletter control sequences out of 15000+600000
+ 17929 strings out of 474222
+ 282711 string characters out of 5748734
+ 1943975 words of memory out of 5000000
+ 39908 multiletter control sequences out of 15000+600000
  573431 words of font info for 89 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 99i,12n,107p,620b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,620b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on questoes.pdf (1 page, 107993 bytes).
+Output written on questoes.pdf (2 pages, 556483 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

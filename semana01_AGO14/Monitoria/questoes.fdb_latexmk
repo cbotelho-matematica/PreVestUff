@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1786417031.28883 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex" "questoes.pdf" "questoes" 1786417034.07452 0
+["pdflatex"] 1786449686.66931 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex" "questoes.pdf" "questoes" 1786449691.92787 0
   "/etc/texmf/web2c/texmf.cnf" 1754220970.30918 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex" 1786417030.64341 4569 38ae01f6d3c3eaf7ca310551d23093fa ""
+  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex" 1786449682.50926 4900 d92e80d28b809cdcb082e3ba3315e7de ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm" 1136768653 3584 178baad7ffca7f5d3428a83bd7cc64c3 ""
@@ -82,6 +82,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -135,8 +136,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754773594.48138 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754773821 8213464 6eb19c020e47edd56ed6211aeae19031 ""
-  "questoes.aux" 1786417033.26348 481 959e80bbad4a6adad264576c5ffdc98e "pdflatex"
-  "questoes.tex" 1786417030.64341 4569 38ae01f6d3c3eaf7ca310551d23093fa ""
+  "questoes.aux" 1786449691.47319 678 a1a547859fa650bb23c3cbda3c40665f "pdflatex"
+  "questoes.tex" 1786449682.50926 4900 d92e80d28b809cdcb082e3ba3315e7de ""
+  "src/img/london_eye.png" 1786447730.48437 370154 6541ffd7a974552997ebbc595616f3c7 ""
   (generated)
   "questoes.aux"
   "questoes.log"
