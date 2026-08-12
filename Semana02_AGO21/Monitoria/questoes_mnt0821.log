@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  11 AUG 2026 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  11 AUG 2026 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex
-(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/semana01_AGO14/Monitoria/questoes.tex
+**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Monitoria/questoes_mnt0821.tex
+(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Monitoria/questoes_mnt0821.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -809,8 +809,8 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 
 )
 \c@questaovest=\count371
- (./questoes.aux)
-\openout1 = `questoes.aux'.
+ (./questoes_mnt0821.aux)
+\openout1 = `questoes_mnt0821.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
@@ -895,38 +895,48 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./src/img/london_eye.png, id=4, 115.1502pt x 102.3825pt>
-File: ./src/img/london_eye.png Graphic file (type png)
-<use ./src/img/london_eye.png>
-Package pdftex.def Info: ./src/img/london_eye.png  used on input line 123.
-(pdftex.def)             Requested size: 193.47578pt x 172.03578pt.
+<./src/img/q01fig01.png, id=4, 446.66875pt x 418.56375pt>
+File: ./src/img/q01fig01.png Graphic file (type png)
+<use ./src/img/q01fig01.png>
+Package pdftex.def Info: ./src/img/q01fig01.png  used on input line 81.
+(pdftex.def)             Requested size: 193.47578pt x 181.30095pt.
+<./src/img/q01fig02.png, id=6, 353.32pt x 327.2225pt>
+File: ./src/img/q01fig02.png Graphic file (type png)
+<use ./src/img/q01fig02.png>
+Package pdftex.def Info: ./src/img/q01fig02.png  used on input line 86.
+(pdftex.def)             Requested size: 193.47578pt x 179.18402pt.
+<./src/img/q02fig1.png, id=7, 448.67625pt x 258.9675pt>
+File: ./src/img/q02fig1.png Graphic file (type png)
+<use ./src/img/q02fig1.png>
+Package pdftex.def Info: ./src/img/q02fig1.png  used on input line 102.
+(pdftex.def)             Requested size: 193.47578pt x 111.66995pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./src/img/london_eye.png>]
-<./src/img/triangulo.png, id=39, 448.67625pt x 189.70876pt>
-File: ./src/img/triangulo.png Graphic file (type png)
-<use ./src/img/triangulo.png>
-Package pdftex.def Info: ./src/img/triangulo.png  used on input line 170.
-(pdftex.def)             Requested size: 193.47578pt x 81.80475pt.
- [2 <./src/img/triangulo.png>] (./questoes.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./src/img/q01fig01.png> <./src/img/q01fig02.png> <./src/img/q02fig1.png>]
+<./src/img/q06fig.png, id=34, 441.65pt x 317.185pt>
+File: ./src/img/q06fig.png Graphic file (type png)
+<use ./src/img/q06fig.png>
+Package pdftex.def Info: ./src/img/q06fig.png  used on input line 152.
+(pdftex.def)             Requested size: 193.47578pt x 138.952pt.
+ [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./src/img/q06fig.png>] (./questoes_mnt0821.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17887 strings out of 474222
- 282097 string characters out of 5748734
- 1944975 words of memory out of 5000000
- 39859 multiletter control sequences out of 15000+600000
- 566874 words of font info for 61 fonts, out of 8000000 for 9000
- 1142 hyphenation exceptions out of 8191
- 99i,10n,107p,651b,699s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on questoes.pdf (2 pages, 566163 bytes).
+ 17882 strings out of 474222
+ 282325 string characters out of 5748734
+ 1938975 words of memory out of 5000000
+ 39863 multiletter control sequences out of 15000+600000
+ 564997 words of font info for 59 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,10n,107p,628b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on questoes_mnt0821.pdf (2 pages, 112256 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 39 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 32 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
