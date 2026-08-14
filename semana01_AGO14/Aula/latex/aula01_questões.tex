@@ -244,10 +244,9 @@
                 \[
                     V_f = 165 \left(1 + \frac{40}{100}\right)\\
                     = 165 \left(\frac{10}{10} + \frac{4}{10}\right) = \left(\frac{1650 + 660}{10}\right) = \frac{2310}{10} = 231
-                \]\\   
-                \newline
+                \]   
         \end{exemplo}
-
+        \vspace{18pt}
         O raciocínio empregado para calcularmos decréscimos ou descontos é semelhante. Considerando $B$ como nosso valor referência, $p$ como a porcentagem de desconto ou decréscimo e $V_f$ o valor procurado:
 
         \begin{equation}
@@ -285,12 +284,60 @@
         Para aumentarmos nosso valor de referência $B$ em $p_1\%, p_2\%, ..., p_n\%$ percentuais, imagine que estamos aplicando $n$ vezes o fator $\left(1+p_i\%\right)$ à fórmula $(2)$. Teríamos, então, algo do tipo:
         
         \begin{equation*}
-            \displaystyle V_f = B\cdot\left(1+\frac{p_1}{100}\right)\cdot\left(1+\frac{p_2}{100}\right)\cdot ... \cdot \left(1+\frac{p_n}{100}\right)
+            \displaystyle V_f = B\cdot\left(1+\frac{p_1}{100}\right)\cdot\left(1+\frac{p_2}{100}\right)\cdot \ldots \cdot \left(1+\frac{p_n}{100}\right)
         \end{equation*}
+        \bigskip
+        \begin{exemplo}
+            Um restaurante decidiu reajustar os valores dos itens de seus cardápios em 10\%. Considerando que é de praxe o pagamento dos 10\%, qual foi o reajuste em relação aos valores do menu anterior?
+
+            \vspace{1em}
+            \textit{Este problema não informa o valor de referência, então vamos chamá-lo de $B$. O reajuste informado é de 10\%. Além disso, sobre o valor reajustado incide um novo acréscimo de 10\%. Sendo assim há dois acréscimos $p_1=10\%$ e $p_2=10\%$. Nosso problema, portanto se resume a:}
+            
+            \begin{equation*}
+                V_f = B\left(1+\frac{10}{100}\right)\left(1+\frac{10}{100}\right)=B\left(\frac{10}{10} + \frac{1}{10}\right)\left(\frac{10}{10} + \frac{1}{10}\right)=B\left(\frac{11}{10}\right)^{2}=B\left(\frac{121}{100}\right)
+            \end{equation*}
+            
+            \vspace{18pt}
+            \textit{Perceba que neste caso, o problema não nos pede o valor final, mas o reajuste total, após os acréscimos sucessivos. Neste caso, temos $\frac{121}{100}$, que indica um aumento de $21\%$.}
+        \end{exemplo}
+
+    \subsubsection*{Decréscimos Sucessivos}
+
+    O raciocínio para aplicação de descontos sucessivos a um determinado valor de referência é análogo ao raciocínio empregado para aumentos sucessivos. Faremos o produto de nosso valor de referência $B$ aos fatores $\left(1-\frac{p_i}{100}\right)$, de acordo com os percentuais de desconto.
+    
+        \begin{equation}
+            V_f=B\cdot\left(1-\frac{p_1}{100}\right)\cdot\left(1-\frac{p_2}{100}\right)\cdot \ldots \cdot \left(1-\frac{p_n}{100}\right)
+        \end{equation}
+
+    \vspace{1.2em}A equação $(5)$ representa a aplicação de $n$ descontos sucessivos a um valor $B$. Vejamos um exemploda aplicação do raciocínio:
 
         \begin{exemplo}
-            Um restaurante decidiu reajustar os valores dos itens de seus cardápios em 10\%. Considerando que é de praxe o pagamento dos 10
+            Uma cidade registrava um total de 10.000 casos ativos de infecção por um vírus. Após a primeira fase de uma campanha de vacinação, o número de infectados caiu 30\%. Com a conclusão da segunda fase da campanha, observou-se uma nova queda de 20\% sobre o número de casos restantes.
+            Após as duas fases da campanha de vacinação, qual foi o número final de pessoas infectadas na cidade?
+            
+            \vspace{1em}
+            \textit{Nosso valor de referência é $B = 10.000$, com dois decréscimos sucessivos: $P_1=30\%, p_2=20\%$. De acordo com o raciocínio da equação $(5)$, nosso problema se reduz a:}
+
+            \begin{equation*}
+                \begin{aligned}
+                V_f&=10.000 \cdot\left(1-\frac{30}{100}\right)\cdot \left(1 - \frac{20}{100}\right)=10.000\left(\frac{10}{10}-\frac{3}{10}\right)\left(\frac{10}{10}-\frac{2}{10}\right)\\
+                V_f&=10.000\left(\frac{7}{10}\right)\left(\frac{8}{10}\right)=10.000\left(\frac{56}{100}\right)=100*56\\
+                V_f&=5.600
+                \end{aligned}
+            \end{equation*}
         \end{exemplo}
+
+    \hrulefill\bigskip
+
+        \textit{Realizar os cálculos utilizando frações facilita o processo. Pratique bastante, para evitar confusões com os cancelamentos de fatores.}
+        
+        \textit{Sempre que possível faça uso das propriedades das operações fundamentais, para facilitar os cálculos, em especial a propriedade distributiva.}
+
+        \textit{Faça sempre as contas com muita atenção e evite a pressa. Por vezes é melhor demorar mais etapas para chegar a um resultado do que tentar resumir e tropeçar nos cálculos.}
+
+        \textit{Nas próximas páginas temos alguns exercícios de vestibulares, para que voê pratique o que viu.}
+    
+        \textit{Abraços!}
 
     \newpage
     \section*{Exercícios}
