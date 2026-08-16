@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio dos Triângulos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #fdfbf7; /* Tom pastel muito claro */
+            color: #4a4a4a;
+            margin: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .pastel-bg-1 { background-color: #fce4ec; } /* Rosa pastel */
+        .pastel-bg-2 { background-color: #e3f2fd; } /* Azul pastel */
+        .pastel-bg-3 { background-color: #e8f5e9; } /* Verde pastel */
+        .pastel-bg-4 { background-color: #fff3e0; } /* Laranja pastel */
+        .pastel-bg-5 { background-color: #f3e5f5; } /* Roxo pastel */
+
+        /* Estilos do Drag and Drop */
+        .draggable {
+            cursor: grab;
+            user-select: none;
+            touch-action: none;
+            transition: transform 0.2s;
+        }
+        .draggable:active {
+            cursor: grabbing;
+            transform: scale(1.05);
+        }
+        .dropzone {
+            border: 3px dashed #b0bec5;
+            transition: all 0.3s ease;
+        }
+        .dropzone.dragover {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-color: #78909c;
+            transform: scale(1.02);
+        }
+        .dropzone.correct-drop {
+            border-color: #81c784;
+            background-color: #e8f5e9;
+        }
+
+        /* Classes para desenhar triângulos com CSS */
+        .triangle-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .highlight-stroke {
+            stroke: #ff7043; /* Cor de destaque para linhas importantes */
+            stroke-width: 3;
+        }
+
+        .angle-arc {
+            fill: rgba(66, 165, 245, 0.3);
+            stroke: #42a5f5;
+            stroke-width: 1.5;
+        }
+
+        /* Animações e Feedback */
+        .feedback-message {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feedback-message.show {
+            opacity: 1;
+            transform: translate(-50%, 20px);
+        }
+        .feedback-success { background-color: #a5d6a7; color: #1b5e20; }
+        .feedback-error { background-color: #ef9a9a; color: #b71c1c; }
+        .feedback-info { background-color: #90caf9; color: #0d47a1; }
+
+        /* Esconder seções inativas */
+        .phase-section { display: none; }
+        .phase-section.active { display: flex; flex-direction: column; }
+
+        .explanation-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+        }
+        .explanation-modal.active { display: flex; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Cabeçalho / Placar -->
+    <header class="bg-white shadow-sm p-4 flex justify-between items-center z-10 sticky top-0">
+        <h1 class="text-2xl font-bold text-indigo-600">Geometria Divertida: Triângulos</h1>
+        <div class="flex items-center space-x-4">
+            <div class="text-lg font-semibold bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full">
+                Fase: <span id="current-phase-display">1/5</span>
+            </div>
+            <div class="text-lg font-semibold bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full">
+                Pontos: <span id="score-display">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="feedback-toast" class="feedback-message">Feedback</div>
+
+    <main class="flex-grow flex flex-col p-6 max-w-6xl mx-auto w-full relative">
+        
+        <!-- Tela Inicial -->
+        <section id="phase-0" class="phase-section active items-center justify-center h-[70vh] text-center">
+            <h2 class="text-5xl font-bold mb-6 text-gray-700">Desafio dos Triângulos</h2>
+            <p class="text-xl mb-8 max-w-2xl text-gray-600">Embarque nesta jornada para dominar a geometria! Classifique, calcule e descubra os segredos dos triângulos através de 5 desafios interativos.</p>
+            <button onclick="startGame()" class="bg-indigo-500 hover:bg-indigo-600 text-white text-2xl font-bold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                Começar Aventura
+            </button>
+        </section>
+
+        <!-- FASE 1: Classificação quanto aos Lados -->
+        <section id="phase-1" class="phase-section pastel-bg-1 p-8 rounded-3xl shadow-inner min-h-[70vh]">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fase 1: Classificação por Lados</h2>
+                <p class="text-lg text-gray-600">Arraste os triângulos para as caixas corretas com base na congruência (igualdade) de seus lados. Observe as marcações de 'risquinhos' nos lados.</p>
+            </div>
+
+            <!-- Área de itens para arrastar -->
+            <div class="flex justify-center gap-8 mb-12 flex-wrap" id="p1-items">
+                <!-- Triângulos gerados via JS -->
+            </div>
+
+            <!-- Caixas de destino -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="equilatero" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Equilátero</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">3 lados iguais</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-equilatero"></div>
+                </div>
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="isosceles" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Isósceles</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">Pelo menos 2 lados iguais</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-isosceles"></div>
+                </div>
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="escaleno" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Escaleno</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">3 lados diferentes</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-escaleno"></div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center hidden" id="p1-next-btn-container">
+                <button onclick="showExplanation(1)" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Ver Resumo e Avançar</button>
+            </div>
+        </section>
+
+        <!-- FASE 2: Classificação quanto aos Ângulos -->
+        <section id="phase-2" class="phase-section pastel-bg-2 p-8 rounded-3xl shadow-inner min-h-[70vh]">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fase 2: Classificação por Ângulos</h2>
+                <p class="text-lg text-gray-600">Arraste os triângulos para as caixas corretas observando seus ângulos internos. Atente-se ao símbolo de ângulo reto (90°).</p>
+            </div>
+
+            <!-- Área de itens para arrastar -->
+            <div class="flex justify-center gap-8 mb-12 flex-wrap" id="p2-items">
+                <!-- Triângulos gerados via JS -->
+            </div>
+
+            <!-- Caixas de destino -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="acutangulo" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Acutângulo</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">3 ângulos agudos (< 90°)</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-acutangulo"></div>
+                </div>
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="retangulo" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Retângulo</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">1 ângulo reto (= 90°)</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-retangulo"></div>
+                </div>
+                <div class="dropzone p-6 rounded-2xl flex flex-col items-center bg-white/50" data-type="obtusangulo" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)">
+                    <h3 class="text-xl font-bold mb-4">Obtusângulo</h3>
+                    <p class="text-sm text-center text-gray-500 mb-2">1 ângulo obtuso (> 90°)</p>
+                    <div class="flex-grow w-full flex flex-wrap gap-2 justify-center content-start min-h-[120px]" id="zone-obtusangulo"></div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center hidden" id="p2-next-btn-container">
+                <button onclick="showExplanation(2)" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Ver Resumo e Avançar</button>
+            </div>
+        </section>
+
+        <!-- FASE 3: Desafio dos Ângulos (Teorema Angular) -->
+        <section id="phase-3" class="phase-section pastel-bg-4 p-8 rounded-3xl shadow-inner min-h-[70vh]">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fase 3: O Enigma dos Ângulos</h2>
+                <p class="text-lg text-gray-600">Descubra o valor do ângulo 'x' misterioso. Lembre-se: a soma dos ângulos internos é sempre 180°. Desafio <span id="p3-progress">1</span>/5.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 mt-8">
+                <!-- Área de desenho do triângulo -->
+                <div class="bg-white p-6 rounded-xl shadow-md flex justify-center items-center w-full md:w-1/2 min-h-[300px]">
+                    <div id="p3-canvas-container" class="w-[250px] h-[250px] relative">
+                        <!-- SVG gerado dinamicamente -->
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <div class="bg-white p-8 rounded-xl shadow-md w-full md:w-1/3 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-700">Qual o valor de <span class="text-indigo-500">x</span>?</h3>
+                    <div class="flex items-center gap-4 mb-6">
+                        <input type="number" id="p3-input" class="w-32 text-center text-3xl font-bold border-b-4 border-indigo-300 focus:border-indigo-600 outline-none p-2 bg-gray-50" placeholder="?">
+                        <span class="text-3xl font-bold text-gray-600">°</span>
+                    </div>
+                    <button onclick="checkP3Answer()" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg w-full transition-transform active:scale-95">Verificar</button>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center hidden" id="p3-next-btn-container">
+                <button onclick="showExplanation(3)" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Aprender os Teoremas</button>
+            </div>
+        </section>
+
+        <!-- FASE 4: Classificação por Semelhança -->
+        <section id="phase-4" class="phase-section pastel-bg-3 p-8 rounded-3xl shadow-inner min-h-[70vh]">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fase 4: Semelhança de Triângulos</h2>
+                <p class="text-lg text-gray-600">Analise os pares de triângulos e classifique-os segundo o caso de semelhança: AA (Ângulo-Ângulo), LLL (Lado-Lado-Lado) ou LAL (Lado-Ângulo-Lado).</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-8">
+                <!-- Par de triângulos atual -->
+                <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-2xl flex flex-col items-center">
+                    <div class="text-lg font-semibold text-gray-500 mb-4 uppercase tracking-wider">Par <span id="p4-progress">1</span>/3</div>
+                    <div id="p4-pair-container" class="flex justify-around items-end w-full h-[200px] mb-6">
+                        <!-- SVGs gerados via JS -->
+                    </div>
+                </div>
+
+                <!-- Botões de escolha -->
+                <div class="flex flex-wrap justify-center gap-4 w-full max-w-2xl" id="p4-choices">
+                    <button onclick="checkP4Answer('AA')" class="flex-1 bg-blue-100 hover:bg-blue-200 border-2 border-blue-400 text-blue-800 font-bold py-4 px-6 rounded-xl shadow-sm text-xl transition-all">
+                        AA<br><span class="text-sm font-normal">Ângulo-Ângulo</span>
+                    </button>
+                    <button onclick="checkP4Answer('LLL')" class="flex-1 bg-green-100 hover:bg-green-200 border-2 border-green-400 text-green-800 font-bold py-4 px-6 rounded-xl shadow-sm text-xl transition-all">
+                        LLL<br><span class="text-sm font-normal">Lado-Lado-Lado</span>
+                    </button>
+                    <button onclick="checkP4Answer('LAL')" class="flex-1 bg-purple-100 hover:bg-purple-200 border-2 border-purple-400 text-purple-800 font-bold py-4 px-6 rounded-xl shadow-sm text-xl transition-all">
+                        LAL<br><span class="text-sm font-normal">Lado-Ângulo-Lado</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center hidden" id="p4-next-btn-container">
+                <button onclick="showExplanation(4)" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Resumo sobre Semelhança</button>
+            </div>
+        </section>
+
+        <!-- FASE 5: Identificando a Altura -->
+        <section id="phase-5" class="phase-section pastel-bg-5 p-8 rounded-3xl shadow-inner min-h-[70vh]">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Fase 5: A Caça pela Altura</h2>
+                <p class="text-lg text-gray-600">A altura é uma linha que sai de um vértice e faz 90° (perpendicular) com a base oposta (ou seu prolongamento). Clique no segmento laranja que representa CORRETAMENTE a altura relativa à base destacada em azul.</p>
+            </div>
+
+            <div class="text-center font-semibold text-gray-500 mb-4 text-xl">Desafio <span id="p5-progress">1</span>/4</div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full" id="p5-options-container">
+                <!-- Opções geradas via JS -->
+            </div>
+
+            <div class="mt-12 text-center hidden" id="p5-next-btn-container">
+                <button onclick="showExplanation(5)" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Finalizar e ver Resumo</button>
+            </div>
+        </section>
+
+        <!-- Tela Final -->
+        <section id="phase-6" class="phase-section items-center justify-center h-[70vh] text-center bg-white rounded-3xl shadow-lg p-8 border-4 border-yellow-400">
+            <h2 class="text-5xl font-bold mb-6 text-yellow-600">Parabéns! Mestre da Geometria!</h2>
+            <p class="text-2xl mb-4 text-gray-700">Você completou todos os desafios sobre triângulos.</p>
+            <p class="text-3xl font-bold text-indigo-600 mb-8">Sua Pontuação Final: <span id="final-score">0</span></p>
+            
+            <div class="text-left bg-gray-50 p-6 rounded-xl border border-gray-200 inline-block mb-8">
+                <h3 class="font-bold text-xl mb-4 text-gray-800">O que você aprendeu:</h3>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 text-lg">
+                    <li>Classificar por lados (Equilátero, Isósceles, Escaleno).</li>
+                    <li>Classificar por ângulos (Acutângulo, Retângulo, Obtusângulo).</li>
+                    <li>O Teorema da soma dos ângulos internos (180°) e o ângulo externo.</li>
+                    <li>Os casos de semelhança (AA, LLL, LAL).</li>
+                    <li>Identificar a altura de diferentes tipos de triângulos.</li>
+                </ul>
+            </div>
+            
+            <button onclick="location.reload()" class="block mx-auto bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-md text-lg">Jogar Novamente</button>
+        </section>
+    </main>
+
+    <!-- Modais de Explicação -->
+    <div id="modal-1" class="explanation-modal">
+        <div class="bg-white p-8 rounded-2xl max-w-2xl w-full mx-4 shadow-2xl relative">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Semelhanças quanto aos Lados</h3>
+            <p class="text-lg text-gray-700 mb-4">Muito bem! Você classificou corretamente.</p>
+            <ul class="list-none space-y-4 text-gray-700">
+                <li class="flex items-start"><span class="font-bold text-blue-600 mr-2 w-24">Equilátero:</span> Tem 3 lados de mesma medida. Curiosidade: por consequência, seus 3 ângulos internos também são iguais (60° cada).</li>
+                <li class="flex items-start"><span class="font-bold text-green-600 mr-2 w-24">Isósceles:</span> Tem pelo menos 2 lados de mesma medida. Todo triângulo equilátero é isósceles, mas nem todo isósceles é equilátero. Os ângulos opostos aos lados iguais também são iguais.</li>
+                <li class="flex items-start"><span class="font-bold text-orange-600 mr-2 w-24">Escaleno:</span> Todos os 3 lados têm medidas diferentes. Logo, seus três ângulos internos também são diferentes.</li>
+            </ul>
+            <button onclick="nextPhase(2)" class="mt-8 bg-indigo-500 text-white px-6 py-2 rounded-full font-bold float-right">Próxima Fase</button>
+        </div>
+    </div>
+
+    <div id="modal-2" class="explanation-modal">
+        <div class="bg-white p-8 rounded-2xl max-w-2xl w-full mx-4 shadow-2xl relative">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Classificação quanto aos Ângulos</h3>
+            <p class="text-lg text-gray-700 mb-4">Ótimo trabalho! Entender os ângulos é fundamental.</p>
+            <ul class="list-none space-y-4 text-gray-700">
+                <li class="flex items-start"><span class="font-bold text-blue-600 mr-2 w-28">Acutângulo:</span> Possui os três ângulos internos menores que 90° (agudos).</li>
+                <li class="flex items-start"><span class="font-bold text-green-600 mr-2 w-28">Retângulo:</span> Possui exatamente um ângulo de 90° (ângulo reto). O lado oposto ao ângulo reto chama-se Hipotenusa.</li>
+                <li class="flex items-start"><span class="font-bold text-orange-600 mr-2 w-28">Obtusângulo:</span> Possui um ângulo maior que 90° e menor que 180° (obtuso). Os outros dois serão obrigatoriamente agudos.</li>
+            </ul>
+            <button onclick="nextPhase(3)" class="mt-8 bg-indigo-500 text-white px-6 py-2 rounded-full font-bold float-right">Próxima Fase</button>
+        </div>
+    </div>
+
+    <div id="modal-3" class="explanation-modal">
+        <div class="bg-white p-8 rounded-2xl max-w-2xl w-full mx-4 shadow-2xl relative">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Teoremas dos Ângulos</h3>
+            <p class="text-lg text-gray-700 mb-4">Você calculou como um verdadeiro matemático!</p>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <h4 class="font-bold text-xl text-blue-600 mb-2">Teorema da Soma dos Ângulos Internos</h4>
+                    <p>A soma das medidas dos três ângulos internos de <b>qualquer</b> triângulo no plano é <b>sempre 180°</b>.</p>
+                    <p class="text-sm bg-gray-100 p-2 rounded mt-1">A + B + C = 180°</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xl text-green-600 mb-2">Teorema do Ângulo Externo</h4>
+                    <p>A medida de um ângulo externo de um triângulo é igual à soma das medidas dos dois ângulos internos não adjacentes (não vizinhos) a ele.</p>
+                    <p class="text-sm bg-gray-100 p-2 rounded mt-1">Ext = Int1 + Int2</p>
+                </div>
+            </div>
+            <button onclick="nextPhase(4)" class="mt-8 bg-indigo-500 text-white px-6 py-2 rounded-full font-bold float-right">Próxima Fase</button>
+        </div>
+    </div>
+
+    <div id="modal-4" class="explanation-modal">
+        <div class="bg-white p-8 rounded-2xl max-w-2xl w-full mx-4 shadow-2xl relative">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Semelhança de Triângulos</h3>
+            <p class="text-lg text-gray-700 mb-4">Perfeito! Identificar semelhanças permite resolver problemas complexos com proporções.</p>
+            <p class="text-md text-gray-600 mb-4">Dois triângulos são semelhantes se possuem a mesma forma, mas não necessariamente o mesmo tamanho. Seus ângulos correspondentes são iguais e seus lados correspondentes são proporcionais.</p>
+            <ul class="list-none space-y-4 text-gray-700">
+                <li class="flex items-start"><span class="font-bold text-blue-600 mr-2 w-16">AA:</span> <b>Ângulo-Ângulo</b>. Se dois triângulos têm dois ângulos internos correspondentes iguais, eles já são semelhantes (o terceiro ângulo também será igual).</li>
+                <li class="flex items-start"><span class="font-bold text-green-600 mr-2 w-16">LLL:</span> <b>Lado-Lado-Lado</b>. Se as medidas dos três lados de um triângulo são proporcionais às dos três lados de outro.</li>
+                <li class="flex items-start"><span class="font-bold text-purple-600 mr-2 w-16">LAL:</span> <b>Lado-Ângulo-Lado</b>. Se dois lados de um são proporcionais a dois lados do outro e o ângulo formado por esses lados for igual nos dois.</li>
+            </ul>
+            <button onclick="nextPhase(5)" class="mt-8 bg-indigo-500 text-white px-6 py-2 rounded-full font-bold float-right">Última Fase</button>
+        </div>
+    </div>
+
+    <div id="modal-5" class="explanation-modal">
+        <div class="bg-white p-8 rounded-2xl max-w-2xl w-full mx-4 shadow-2xl relative">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">Entendendo a Altura</h3>
+            <p class="text-lg text-gray-700 mb-4">Excelente! Encontrar a altura nem sempre é intuitivo.</p>
+            <div class="text-gray-700 space-y-4">
+                <p>A <b>altura</b> de um triângulo é um segmento de reta que:</p>
+                <ul class="list-disc pl-8">
+                    <li>Começa em um vértice.</li>
+                    <li>Termina na reta que contém o lado oposto (a base).</li>
+                    <li>Forma um ângulo reto (90°, perpendicular) com essa reta.</li>
+                </ul>
+                <div class="bg-yellow-50 p-4 border-l-4 border-yellow-400 mt-4 rounded">
+                    <strong>Ponto Importante:</strong> Como você viu nos triângulos obtusângulos, a altura pode cair <b>fora</b> do triângulo! Nesse caso, precisamos "prolongar" a linha da base para que a altura possa fazer os 90°.
+                </div>
+            </div>
+            <button onclick="finishGame()" class="mt-8 bg-indigo-500 text-white px-6 py-2 rounded-full font-bold float-right">Ver Pontuação Final</button>
+        </div>
+    </div>
+
+    <script>
+        let currentPhase = 0;
+        let score = 0;
+
+        const messages = {
+            success: ["Genial!", "Muito bem!", "Isso aí!", "Correto!", "Você é bom nisso!", "Perfeito!", "Na mosca!"],
+            error: ["Ops, tente novamente.", "Quase lá, pense um pouco mais.", "Ainda não, observe melhor.", "Não desista, tente de novo!"]
+        };
+
+        function showToast(type) {
+            const toast = document.getElementById('feedback-toast');
+            const msgs = messages[type];
+            const randomMsg = msgs[Math.floor(Math.random() * msgs.length)];
+            
+            toast.textContent = randomMsg;
+            toast.className = `feedback-message show feedback-${type}`;
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        function updateScore(points) {
+            score += points;
+            document.getElementById('score-display').textContent = score;
+            
+            // Efeito visual no placar
+            const scoreDisplay = document.getElementById('score-display');
+            scoreDisplay.style.transform = 'scale(1.5)';
+            scoreDisplay.style.color = '#4ade80';
+            setTimeout(() => {
+                scoreDisplay.style.transform = 'scale(1)';
+                scoreDisplay.style.color = 'inherit';
+            }, 300);
+        }
+
+        function startGame() {
+            document.getElementById('phase-0').classList.remove('active');
+            nextPhase(1);
+            //voltar fase para 1
+        }
+
+        function showExplanation(phaseNum) {
+            document.getElementById(`modal-${phaseNum}`).classList.add('active');
+        }
+
+        function nextPhase(phaseNum) {
+            // Fechar modal se aberto
+            const modais = document.querySelectorAll('.explanation-modal');
+            modais.forEach(m => m.classList.remove('active'));
+
+            // Esconder fases
+            const phases = document.querySelectorAll('.phase-section');
+            phases.forEach(p => p.classList.remove('active'));
+
+            // Mostrar nova fase
+            const nextP = document.getElementById(`phase-${phaseNum}`);
+            if(nextP) {
+                nextP.classList.add('active');
+                currentPhase = phaseNum;
+                document.getElementById('current-phase-display').textContent = `${phaseNum}/5`;
+                
+                // Inicializar a fase específica
+                if(phaseNum === 1) initPhase1();
+                if(phaseNum === 2) initPhase2();
+                if(phaseNum === 3) initPhase3();
+                if(phaseNum === 4) initPhase4();
+                if(phaseNum === 5) initPhase5();
+            }
+        }
+
+        function finishGame() {
+            const modais = document.querySelectorAll('.explanation-modal');
+            modais.forEach(m => m.classList.remove('active'));
+            
+            const phases = document.querySelectorAll('.phase-section');
+            phases.forEach(p => p.classList.remove('active'));
+            
+            document.getElementById('phase-6').classList.add('active');
+            document.getElementById('final-score').textContent = score;
+            document.getElementById('current-phase-display').parentElement.style.display = 'none';
+        }
+
+        // --- Funções de Drag and Drop ---
+        let draggedElement = null;
+        let sourceContainer = null;
+
+        function dragStart(event) {
+            draggedElement = event.target.closest('.draggable');
+            sourceContainer = draggedElement.parentElement;
+            event.dataTransfer.setData('text/plain', draggedElement.dataset.correctType);
+            event.dataTransfer.effectAllowed = 'move';
+            // Pequeno delay para a classe não sumir o elemento na hora
+            setTimeout(() => draggedElement.style.opacity = '0.5', 0);
+        }
+
+        function dragEnd(event) {
+            if(draggedElement) draggedElement.style.opacity = '1';
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+            const dropzone = event.target.closest('.dropzone');
+            if (dropzone) dropzone.classList.add('dragover');
+        }
+
+        function dragLeave(event) {
+            const dropzone = event.target.closest('.dropzone');
+            if (dropzone) dropzone.classList.remove('dragover');
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const dropzone = event.target.closest('.dropzone');
+            if (!dropzone || !draggedElement) return;
+            
+            dropzone.classList.remove('dragover');
+            
+            const expectedType = dropzone.dataset.type;
+            const actualType = draggedElement.dataset.correctType;
+
+            if (expectedType === actualType) {
+                // Acertou
+                dropzone.querySelector('div').appendChild(draggedElement);
+                draggedElement.setAttribute('draggable', 'false');
+                draggedElement.style.cursor = 'default';
+                
+                // Efeito visual na caixa
+                dropzone.classList.add('correct-drop');
+                setTimeout(() => dropzone.classList.remove('correct-drop'), 500);
+
+                showToast('success');
+                updateScore(10);
+                
+                checkPhaseCompletion(draggedElement.dataset.phase);
+            } else {
+                // Errou
+                showToast('error');
+                updateScore(-2); // Penalidade leve
+            }
+            draggedElement.style.opacity = '1';
+            draggedElement = null;
+        }
+
+        /* --- FASE 1: Lados --- */
+        let p1TotalItems = 6;
+        let p1Completed = 0;
+
+        function initPhase1() {
+            p1Completed = 0;
+            const container = document.getElementById('p1-items');
+            container.innerHTML = '';
+            
+            // Dados para gerar os triângulos. path, viewBox, tipo e marcas de congruência
+            const p1Data = [
+                { type: 'equilatero', vb: "0 0 100 86.6", p: "M 50,0 L 100,86.6 L 0,86.6 Z", 
+                  marks: [{cx:25, cy:43.3, a:30}, {cx:75, cy:43.3, a:150}, {cx:50, cy:86.6, a:90}], n:1 }, //1 marca em cada
+                { type: 'equilatero', vb: "0 0 100 86.6", p: "M 50,0 L 100,86.6 L 0,86.6 Z", 
+                  marks: [{cx:25, cy:55, a:-30}, {cx:75, cy:55, a:30}, {cx:50, cy:13.6, a:90}], n:1, rot: 180 }, 
+                { type: 'isosceles', vb: "0 0 80 100", p: "M 40,0 L 80,100 L 0,100 Z", 
+                  marks: [{cx:20, cy:50, a:20}, {cx:60, cy:50, a:-20}], n:2, baseMark: {cx:40, cy:100, a:0, n:1} }, //2 marcas nos lados iguais, 1 na base
+                { type: 'isosceles', vb: "0 0 100 60", p: "M 50,0 L 100,60 L 0,60 Z", 
+                  marks: [{cx:25, cy:30, a:45}, {cx:75, cy:30, a:-45}], n:1, baseMark: {cx:50, cy:60, a:90, n:2} },
+                { type: 'escaleno', vb: "0 0 120 80", p: "M 20,0 L 120,80 L 0,80 Z", 
+                  marks: [{cx:10, cy:40, a:90-75, n:1}, {cx:70, cy:40, a:-65, n:2}, {cx:60, cy:80, a:90, n:3}] }, // 1, 2 e 3 marcas
+                { type: 'escaleno', vb: "0 0 100 90", p: "M 0,0 L 100,50 L 30,90 Z", 
+                  marks: [{cx:50, cy:25, a:126, n:1}, {cx:65, cy:70, a:55, n:2}, {cx:15, cy:45, a:150, n:3}] }
+            ];
+
+            // Embaralhar
+            p1Data.sort(() => Math.random() - 0.5);
+
+            p1Data.forEach((data, index) => {
+                const el = document.createElement('div');
+                el.className = 'draggable triangle-container bg-white p-2 rounded shadow-sm border border-gray-200';
+                el.draggable = true;
+                el.dataset.correctType = data.type;
+                el.dataset.phase = '1';
+                el.id = `p1-item-${index}`;
+                
+                // Eventos touch para mobile drag and drop (Polyfill simplificado)
+                el.addEventListener('dragstart', dragStart);
+                el.addEventListener('dragend', dragEnd);
+                
+                // Construindo o SVG com marcas de congruência
+                let svgContent = `<path d="${data.p}" fill="${getColor(index)}" stroke="#555" stroke-width="2" transform="rotate(${data.rot || 0} 50 50)"/>`;
+                
+                // Função para desenhar 'risquinhos'
+                const drawMarks = (mark, num) => {
+                    let marksStr = '';
+                    const spacing = 4;
+                    const len = 12;
+                    const offset = (num - 1) * spacing / 2;
+                    for(let i=0; i<num; i++) {
+                        let xOff = (i * spacing) - offset;
+                        marksStr += `<line x1="${-len/2}" y1="${xOff}" x2="${len/2}" y2="${xOff}" stroke="#333" stroke-width="2" transform="translate(${mark.cx} ${mark.cy}) rotate(${mark.a})" />`;
+                    }
+                    return marksStr;
+                };
+
+                if(data.marks) {
+                    data.marks.forEach(m => {
+                        svgContent += drawMarks(m, m.n || data.n);
+                    });
+                }
+                if(data.baseMark) {
+                    svgContent += drawMarks(data.baseMark, data.baseMark.n);
+                }
+
+                el.innerHTML = `<svg viewBox="${data.vb}">${svgContent}</svg>`;
+                container.appendChild(el);
+            });
+        }
+
+        function getColor(i) {
+            const colors = ['#f8bbd0', '#bbdefb', '#c8e6c9', '#ffe0b2', '#e1bee7', '#b2dfdb'];
+            return colors[i % colors.length];
+        }
+
+        function checkPhaseCompletion(phaseStr) {
+            if (phaseStr === '1') {
+                p1Completed++;
+                if (p1Completed >= p1TotalItems) {
+                    document.getElementById('p1-next-btn-container').classList.remove('hidden');
+                    updateScore(50); // Bonus conclusão
+                }
+            } else if (phaseStr === '2') {
+                p2Completed++;
+                if (p2Completed >= p2TotalItems) {
+                    document.getElementById('p2-next-btn-container').classList.remove('hidden');
+                    updateScore(50);
+                }
+            }
+        }
+
+        /* --- FASE 2: Ângulos --- */
+        let p2TotalItems = 6;
+        let p2Completed = 0;
+
+        function initPhase2() {
+            p2Completed = 0;
+            const container = document.getElementById('p2-items');
+            container.innerHTML = '';
+            
+            const p2Data = [
+                // Retângulo: Um dos ângulos marcados com quadrado e ponto
+                { type: 'retangulo', vb: "0 0 100 100", p: "M 10,90 L 90,90 L 10,10 Z", 
+                  angles: [{type:'right', x:10, y:90, rx:1, ry:-1}] },
+                { type: 'retangulo', vb: "0 0 100 100", p: "M 50,20 L 90,80 L 10,80 Z", 
+                  rot: -33.69, transformOrigin: '50 50', // Triângulo pitagórico 3-4-5 rotacionado p/ não ficar na base
+                  overridePath: "M 20,80 L 80,40 L 53.3,0 Z", // ângulo reto em 80,40
+                  angles: [{type:'right', x:80, y:40, rx:-1, ry:-1, rot: -32.7}] // rx,ry direção do quadrado
+                },
+                // Acutângulo: Todos agudos (sem marca de reto, talvez arcos)
+                { type: 'acutangulo', vb: "0 0 100 100", p: "M 50,10 L 90,90 L 10,90 Z" }, // Equilátero é acutângulo
+                { type: 'acutangulo', vb: "0 0 100 100", p: "M 30,20 L 80,90 L 10,80 Z" },
+                // Obtusângulo: Um visivelmente aberto
+                { type: 'obtusangulo', vb: "0 0 120 80", p: "M 20,70 L 110,70 L 80,10 Z",
+                  angles: [{type:'arc', d:"M 30,70 A 10,10 0 0,0 27,62", text: "120°"}] // Ângulo em 20,70 aprox
+                },
+                { type: 'obtusangulo', vb: "0 0 100 100", p: "M 50,10 L 90,40 L 10,30 Z" }
+            ];
+
+            p2Data.sort(() => Math.random() - 0.5);
+
+            p2Data.forEach((data, index) => {
+                const el = document.createElement('div');
+                el.className = 'draggable triangle-container bg-white p-2 rounded shadow-sm border border-gray-200';
+                el.draggable = true;
+                el.dataset.correctType = data.type;
+                el.dataset.phase = '2';
+                el.id = `p2-item-${index}`;
+                
+                el.addEventListener('dragstart', dragStart);
+                el.addEventListener('dragend', dragEnd);
+                
+                let pathStr = data.overridePath || data.p;
+                let svgContent = `<path d="${pathStr}" fill="${getColor(index+2)}" stroke="#555" stroke-width="2"/>`;
+                
+                if(data.angles) {
+                    data.angles.forEach(a => {
+                        if(a.type === 'right') {
+                            const size = 8;
+                            const sx = a.rx > 0 ? 1 : -1;
+                            const sy = a.ry > 0 ? 1 : -1;
+                            let gRot = a.rot ? `rotate(${a.rot} ${a.x} ${a.y})` : '';
+                            svgContent += `
+                                <g transform="${gRot}">
+                                    <polyline points="${a.x},${a.y + sy*size} ${a.x + sx*size},${a.y + sy*size} ${a.x + sx*size},${a.y}" fill="none" stroke="#d32f2f" stroke-width="1.5"/>
+                                    <circle cx="${a.x + sx*size/2}" cy="${a.y + sy*size/2}" r="1.5" fill="#d32f2f"/>
+                                </g>
+                            `;
+                        } else if (a.type === 'arc') {
+                            svgContent += `<path d="${a.d}" fill="none" stroke="#555" stroke-width="1.5"/><text x="40" y="65" font-size="10" fill="#333">${a.text}</text>`;
+                        }
+                    });
+                }
+
+                el.innerHTML = `<svg viewBox="${data.vb || '0 0 100 100'}">${svgContent}</svg>`;
+                container.appendChild(el);
+            });
+        }
+
+        /* --- FASE 3: Desafio de Ângulos --- */
+        let p3CurrentRound = 0;
+        const p3TotalRounds = 5;
+        let p3CorrectAnswer = 0;
+
+        function initPhase3() {
+            p3CurrentRound = 0;
+            document.getElementById('p3-next-btn-container').classList.add('hidden');
+            document.getElementById('p3-input').disabled = false;
+            document.querySelector('#phase-3 button').disabled = false;
+            generateP3Challenge();
+        }
+
+        function generateP3Challenge() {
+            p3CurrentRound++;
+            document.getElementById('p3-progress').textContent = p3CurrentRound;
+            document.getElementById('p3-input').value = '';
+            document.getElementById('p3-input').focus();
+            
+            const container = document.getElementById('p3-canvas-container');
+            
+            // Decidir tipo de problema: 0 = dois internos (achar 3º), 1 = interno + interno (achar externo), 2 = externo + interno (achar interno)
+            let type = Math.floor(Math.random() * 3);
+            
+            let a1, a2, a3, ext;
+            do {
+                a1 = Math.floor(Math.random() * 60) + 30; // 30 a 89
+                a2 = Math.floor(Math.random() * 60) + 30;
+                a3 = 180 - a1 - a2;
+            } while (a3 <= 15 || a3 >= 150); // Garantir triângulo com visual razoável
+
+            let svgHTML = `<svg viewBox="0 0 200 200" width="100%" height="100%">`;
+            // Desenho base: triângulo apoiado embaixo
+            // Vértices A(esq), B(dir), C(topo)
+            const Ax = 30, Ay = 160;
+            const Bx = 170, By = 160;
+            const baseLen = Bx - Ax;
+            
+            // Usar lei dos senos para posicionar C razoavelmente
+            // A = a1 (esq), B = a2 (dir), C = a3 (topo)
+            const rad = Math.PI / 180;
+            const sideA = (baseLen * Math.sin(a1 * rad)) / Math.sin(a3 * rad);
+            const Cx = Bx - sideA * Math.cos(a2 * rad);
+            const Cy = By - sideA * Math.sin(a2 * rad);
+
+            svgHTML += `<path d="M ${Ax},${Ay} L ${Bx},${By} L ${Cx},${Cy} Z" fill="#fff3e0" stroke="#ffb74d" stroke-width="3"/>`;
+
+            let qText = [];
+
+            if (type === 0) {
+                // Achar interno
+                p3CorrectAnswer = a3;
+                svgHTML += drawAngleText(Ax+15, Ay-5, a1+"°");
+                svgHTML += drawAngleText(Bx-25, By-5, a2+"°");
+                svgHTML += drawAngleText(Cx-5, Cy+25, "x", true);
+            } else if (type === 1) {
+                // Achar externo no vértice B
+                p3CorrectAnswer = a1 + a3;
+                // Prolongar linha AB
+                svgHTML += `<line x1="${Bx}" y1="${By}" x2="${Bx+30}" y2="${By}" stroke="#ffb74d" stroke-width="3" stroke-dasharray="4"/>`;
+                svgHTML += drawAngleText(Ax+15, Ay-5, a1+"°");
+                svgHTML += drawAngleText(Cx, Cy+25, a3+"°");
+                // Arco externo
+                svgHTML += `<path d="M ${Bx+15},${By} A 15,15 0 0,0 ${Bx+15*Math.cos(-a2*rad)},${By+15*Math.sin(-a2*rad)}" fill="none" stroke="#e53935" stroke-width="2"/>`;
+                svgHTML += drawAngleText(Bx+15, By-15, "x", true);
+            } else {
+                // Dar externo e um interno, achar o outro interno
+                ext = a1 + a3;
+                p3CorrectAnswer = a1; // Vamos pedir o a1
+                svgHTML += `<line x1="${Bx}" y1="${By}" x2="${Bx+30}" y2="${By}" stroke="#ffb74d" stroke-width="3" stroke-dasharray="4"/>`;
+                svgHTML += drawAngleText(Cx, Cy+25, a3+"°");
+                // Arco externo
+                svgHTML += `<path d="M ${Bx+15},${By} A 15,15 0 0,0 ${Bx+15*Math.cos(-a2*rad)},${By+15*Math.sin(-a2*rad)}" fill="none" stroke="#555" stroke-width="1.5"/>`;
+                svgHTML += drawAngleText(Bx+15, By-15, ext+"°");
+                svgHTML += drawAngleText(Ax+20, Ay-5, "x", true);
+            }
+
+            svgHTML += `</svg>`;
+            container.innerHTML = svgHTML;
+        }
+
+        function drawAngleText(x, y, text, isX = false) {
+            const color = isX ? "#ef4444" : "#374151";
+            const font = isX ? "bold 20px" : "16px";
+            return `<text x="${x}" y="${y}" font-family="sans-serif" font="${font}" font-weight="bold" fill="${color}" text-anchor="middle">${text}</text>`;
+        }
+
+        function checkP3Answer() {
+            const input = document.getElementById('p3-input');
+            const val = parseInt(input.value);
+            
+            if(isNaN(val)) return;
+
+            if (val === p3CorrectAnswer) {
+                showToast('success');
+                updateScore(20);
+                if (p3CurrentRound < p3TotalRounds) {
+                    setTimeout(generateP3Challenge, 1000);
+                } else {
+                    document.getElementById('p3-next-btn-container').classList.remove('hidden');
+                    input.disabled = true;
+                    document.querySelector('#phase-3 button').disabled = true;
+                    updateScore(100); // Bonus fase
+                }
+            } else {
+                showToast('error');
+                updateScore(-5);
+                input.value = '';
+                input.focus();
+            }
+        }
+
+        /* --- FASE 4: Semelhança --- */
+        let p4CurrentRound = 0;
+        const p4TotalRounds = 3;
+        let p4CorrectType = '';
+
+        function initPhase4() {
+            p4CurrentRound = 0;
+            document.getElementById('p4-next-btn-container').classList.add('hidden');
+            document.getElementById('p4-choices').style.pointerEvents = 'auto';
+            document.getElementById('p4-choices').style.opacity = '1';
+            generateP4Challenge();
+        }
+
+        function generateP4Challenge() {
+            p4CurrentRound++;
+            document.getElementById('p4-progress').textContent = p4CurrentRound;
+            const container = document.getElementById('p4-pair-container');
+            
+            // Ciclar entre AA, LLL, LAL para garantir que todos apareçam
+            const types = ['AA', 'LLL', 'LAL'];
+            p4CorrectType = types[p4CurrentRound - 1];
+
+            let svg1, svg2;
+            const scale = 0.6; // Triângulo 2 será menor
+
+            if (p4CorrectType === 'AA') {
+                // Mostra dois ângulos iguais
+                const a1=40, a2=70;
+                svg1 = createTriangleSVG_P4(150, a1, a2, {showA1:true, showA2:true});
+                svg2 = createTriangleSVG_P4(150*scale, a1, a2, {showA1:true, showA2:true});
+            } else if (p4CorrectType === 'LLL') {
+                // Mostra três lados proporcionais (textos)
+                svg1 = createTriangleSVG_P4(120, 50, 60, {l1:10, l2:12, l3:14});
+                svg2 = createTriangleSVG_P4(120*scale, 50, 60, {l1:5, l2:6, l3:7});
+            } else {
+                // LAL: Dois lados e ângulo no meio
+                svg1 = createTriangleSVG_P4(130, 45, 80, {l1:12, l2:8, showA1:true}); // A1 é o ângulo entre a base e lado esq
+                svg2 = createTriangleSVG_P4(130*scale, 45, 80, {l1:6, l2:4, showA1:true});
+            }
+
+            container.innerHTML = `
+                <div class="w-1/2 flex justify-center items-end h-full relative">${svg1}</div>
+                <div class="w-1/2 flex justify-center items-end h-full relative">${svg2}</div>
+            `;
+        }
+
+        function createTriangleSVG_P4(base, ang1, ang2, opts={}) {
+            const rad = Math.PI/180;
+            const ang3 = 180 - ang1 - ang2;
+            const sideA = (base * Math.sin(ang1*rad)) / Math.sin(ang3*rad);
+            
+            const p1 = {x: 10, y: 150};
+            const p2 = {x: 10 + base, y: 150};
+            const p3 = {x: 10 + base - sideA*Math.cos(ang2*rad), y: 150 - sideA*Math.sin(ang2*rad)};
+
+            let svg = `<svg width="100%" height="100%" viewBox="0 0 200 160" preserveAspectRatio="xMidYMax meet">`;
+            svg += `<path d="M ${p1.x},${p1.y} L ${p2.x},${p2.y} L ${p3.x},${p3.y} Z" fill="#e8eaf6" stroke="#3f51b5" stroke-width="3"/>`;
+
+            // Adicionar marcadores baseados em opts
+            if(opts.showA1) svg += `<path d="M ${p1.x+20},${p1.y} A 20,20 0 0,0 ${p1.x+20*Math.cos(-ang1*rad)},${p1.y+20*Math.sin(-ang1*rad)}" fill="none" stroke="#f44336" stroke-width="2"/>`;
+            if(opts.showA2) svg += `<path d="M ${p2.x-20},${p2.y} A 20,20 0 0,1 ${p2.x-20*Math.cos(ang2*rad)},${p2.y-20*Math.sin(ang2*rad)}" fill="none" stroke="#4caf50" stroke-width="2"/>`;
+            
+            // Lados
+            if(opts.l1) svg += `<text x="${(p1.x+p2.x)/2}" y="${p1.y+15}" text-anchor="middle" font-weight="bold" fill="#333">${opts.l1}</text>`; // base
+            if(opts.l2) {
+                const mx = (p1.x+p3.x)/2; const my = (p1.y+p3.y)/2;
+                svg += `<text x="${mx-15}" y="${my-5}" text-anchor="middle" font-weight="bold" fill="#333">${opts.l2}</text>`; // esq
+            }
+            if(opts.l3) {
+                const mx = (p2.x+p3.x)/2; const my = (p2.y+p3.y)/2;
+                svg += `<text x="${mx+15}" y="${my-5}" text-anchor="middle" font-weight="bold" fill="#333">${opts.l3}</text>`; // dir
+            }
+
+            svg += `</svg>`;
+            return svg;
+        }
+
+        function checkP4Answer(ans) {
+            if (ans === p4CorrectType) {
+                showToast('success');
+                updateScore(30);
+                if (p4CurrentRound < p4TotalRounds) {
+                    setTimeout(generateP4Challenge, 1000);
+                } else {
+                    document.getElementById('p4-next-btn-container').classList.remove('hidden');
+                    const choices = document.getElementById('p4-choices');
+                    choices.style.pointerEvents = 'none';
+                    choices.style.opacity = '0.5';
+                    updateScore(100);
+                }
+            } else {
+                showToast('error');
+                updateScore(-10);
+            }
+        }
+
+        /* --- FASE 5: Alturas --- */
+        let p5CurrentRound = 0;
+        const p5TotalRounds = 4;
+        
+        function initPhase5() {
+            p5CurrentRound = 0;
+            document.getElementById('p5-next-btn-container').classList.add('hidden');
+            generateP5Challenge();
+        }
+
+        function generateP5Challenge() {
+            p5CurrentRound++;
+            document.getElementById('p5-progress').textContent = p5CurrentRound;
+            const container = document.getElementById('p5-options-container');
+            container.innerHTML = '';
+
+            // 4 tipos de triângulos em cada rodada (1 certo, 3 errados de distração)
+            // Tipos de cenário: 1. Acutângulo normal, 2. Retângulo (altura no lado), 3. Obtusângulo (altura fora), 4. Base no topo/inclinada
+            
+            let scenarios = [
+                // Acutângulo base reta
+                { basePath: "M 20,130 L 140,130 L 70,30 Z", baseLine: "20,130 140,130", 
+                  options: [
+                      { p: "M 70,30 L 70,130", correct: true }, // Altura real
+                      { p: "M 70,30 L 80,130", correct: false }, // Inclinada
+                      { p: "M 20,130 L 105,80", correct: false }  // Altura de outra base
+                  ]
+                },
+                // Retângulo, base horizontal
+                { basePath: "M 30,130 L 130,130 L 30,40 Z", baseLine: "30,130 130,130",
+                  options: [
+                      { p: "M 30,40 L 30,130", correct: true }, // Cai no lado
+                      { p: "M 30,40 L 80,130", correct: false },
+                      { p: "M 130,130 L 30,85", correct: false }
+                  ]
+                },
+                // Obtusângulo, base curta, altura cai fora
+                { basePath: "M 80,130 L 140,130 L 20,40 Z", baseLine: "80,130 140,130", extendLine: "20,130 80,130",
+                  options: [
+                      { p: "M 20,40 L 20,130", correct: true }, // Altura externa
+                      { p: "M 20,40 L 110,130", correct: false }, // Segmento interno
+                      { p: "M 140,130 L 50,85", correct: false }
+                  ]
+                },
+                // Acutângulo invertido
+                { basePath: "M 40,40 L 160,50 L 100,140 Z", baseLine: "40,40 160,50", 
+                  options: [
+                      // Reta perp a base (y=ax+b). Base angulo = atan(10/120) = ~4.7 graus.
+                      // Altura sai de 100,140 e vai pro topo. Simplificado visualmente.
+                      { p: "M 100,140 L 92,44", correct: true },
+                      { p: "M 100,140 L 100,45", correct: false }, // Reta vertical (não perp a base inclinada)
+                      { p: "M 40,60 L 160,105", correct: false }
+                      //AQUI
+                  ]
+                }
+            ];
+
+            let scenario = scenarios[p5CurrentRound - 1];
+            
+            // Gerar 3 opções visuais (1 certa, 2 erradas misturadas)
+            let currentOptions = [...scenario.options].sort(() => Math.random() - 0.5);
+
+            currentOptions.forEach((opt, idx) => {
+                const div = document.createElement('div');
+                div.className = 'bg-white rounded-xl shadow-md p-4 cursor-pointer hover:bg-gray-50 transition-colors border-2 border-transparent';
+                
+                let svg = `<svg viewBox="0 0 180 160" width="100%" height="200px">`;
+                
+                // Triângulo
+                svg += `<path d="${scenario.basePath}" fill="#f3e5f5" stroke="#8e24aa" stroke-width="2"/>`;
+                
+                // Base destacada (azul)
+                svg += `<polyline points="${scenario.baseLine}" stroke="#2196f3" stroke-width="5" stroke-linecap="round"/>`;
+                
+                // Linha de extensão (se houver, pontilhada)
+                if(scenario.extendLine) {
+                    svg += `<polyline points="${scenario.extendLine}" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="4"/>`;
+                }
+
+                // Opção de altura (laranja pontilhado largo para convidar o clique, vira solida no hover/acerto)
+                svg += `<path class="opt-line" d="${opt.p}" stroke="#ff9800" stroke-width="4" stroke-dasharray="6,4" stroke-linecap="round" style="pointer-events: none;"/>`;
+                
+                svg += `</svg>`;
+                div.innerHTML = svg;
+
+                div.onclick = () => checkP5Answer(div, opt.correct);
+
+                container.appendChild(div);
+            });
+        }
+
+        function checkP5Answer(element, isCorrect) {
+            // Prevenir duplo clique
+            if(document.getElementById('p5-options-container').classList.contains('locked')) return;
+
+            if (isCorrect) {
+                element.classList.add('border-green-500', 'bg-green-50');
+                const line = element.querySelector('.opt-line');
+                line.setAttribute('stroke-dasharray', 'none'); // Fica sólida
+                line.setAttribute('stroke', '#4caf50'); // Fica verde
+                
+                // Desenhar quadradinho de 90 graus na base da linha correta (simplificado)
+                // Isso poderia ser mais preciso calculando a interseção, mas é um extra visual
+                
+                showToast('success');
+                updateScore(30);
+                document.getElementById('p5-options-container').classList.add('locked');
+
+                setTimeout(() => {
+                    document.getElementById('p5-options-container').classList.remove('locked');
+                    if (p5CurrentRound < p5TotalRounds) {
+                        generateP5Challenge();
+                    } else {
+                        document.getElementById('p5-next-btn-container').classList.remove('hidden');
+                        document.getElementById('p5-options-container').style.opacity = '0.7';
+                        updateScore(100); // Bonus final
+                    }
+                }, 1500);
+
+            } else {
+                element.classList.add('border-red-500', 'animate-pulse');
+                showToast('error');
+                updateScore(-10);
+                setTimeout(() => {
+                    element.classList.remove('border-red-500', 'animate-pulse');
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>
