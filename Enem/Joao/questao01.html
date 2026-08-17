@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões de Geometria: Comprimento de Circunferência</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- KaTeX CSS e JS para renderização de fórmulas matemáticas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+
+    <!-- Header / Navbar -->
+    <header class="bg-indigo-700 text-white shadow-lg py-6 px-4 mb-8">
+        <div class="max-w-5xl mx-mx-auto flex flex-col md:flex-row justify-between items-center gap-4 max-w-5xl mx-auto">
+            <div>
+                <div class="flex items-center gap-2 text-indigo-200 text-sm font-semibold uppercase tracking-wider mb-1">
+                    <i class="fa-solid fa-graduation-cap"></i> Matemática • Ensino Médio
+                </div>
+                <h1 class="text-2xl md:text-3xl font-bold">Comprimento da Circunferência & Aplicações</h1>
+            </div>
+            <div class="flex gap-2">
+                <span class="bg-indigo-800 text-indigo-100 text-xs px-3 py-1.5 rounded-full border border-indigo-500/30 flex items-center gap-1">
+                    <i class="fa-solid fa-shapes"></i> Ilustrações Geométricas
+                </span>
+                <span class="bg-indigo-800 text-indigo-100 text-xs px-3 py-1.5 rounded-full border border-indigo-500/30 flex items-center gap-1">
+                    <i class="fa-solid fa-check-double"></i> Gabarito Detalhado
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 space-y-10">
+
+        <!-- Banner Introdutório do Professor -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex items-start gap-4">
+            <div class="bg-indigo-100 text-indigo-700 p-3 rounded-lg text-2xl hidden sm:block">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-slate-900 mb-1">Material Didático para o Professor</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Estas questões abordam o conceito de <strong>comprimento de circunferência ($C = 2\pi r$)</strong> em contextos práticos e interdisciplinares (engenharia mecânica e atletismo). Cada exercício desenvolve competências da BNCC relativas à modelagem geométrica, tangência, arcos e conversão de unidades.
+                </p>
+            </div>
+        </div>
+
+        <!-- ================= QUESTÃO 1 ================= -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+            <div class="bg-slate-800 text-white p-5 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <span class="bg-indigo-500 text-white font-bold text-sm px-3 py-1 rounded-md">Questão 01</span>
+                    <h2 class="text-lg font-semibold">Sistema de Transmissão por Correia (Polias)</h2>
+                </div>
+                <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full font-medium">Engenharia / Mecânica</span>
+            </div>
+
+            <div class="p-6 md:p-8 space-y-6">
+                <!-- Enunciado -->
+                <div class="text-slate-700 leading-relaxed space-y-3">
+                    <p class="font-medium text-slate-900 text-base">
+                        Em uma linha de montagem industrial, um motor transmite movimento circular entre duas polias por meio de uma correia de borracha esticada e sem folga. As polias têm a forma de círculos de raios $R = 15\text{ cm}$ (polia maior) e $r = 5\text{ cm}$ (polia menor). A distância entre os centros $O_1$ e $O_2$ das duas polias é igual a $20\text{ cm}$.
+                    </p>
+                    <p>
+                        A correia envolve externamente e tangencia ambas as polias, sendo composta por dois trechos retilíneos de transmissão e dois arcos de contato em torno de cada uma das polias.
+                    </p>
+                    <p class="font-semibold text-indigo-900 bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-600">
+                        Calcule o comprimento total $L$ dessa correia de transmissão. <br>
+                        <span class="text-xs text-indigo-700 font-normal">* Dica: Apresente o valor exato em função de $\pi$ e $\sqrt{3}$, e em seguida calcule a aproximação decimal considerando $\pi \approx 3{,}14$ e $\sqrt{3} \approx 1{,}73$.</span>
+                    </p>
+                </div>
+
+                <!-- Figura Geométrica SVG -->
+                <div class="bg-slate-900 rounded-xl p-6 flex flex-col items-center justify-center border border-slate-800 shadow-inner">
+                    <div class="text-slate-400 text-xs font-mono mb-2 uppercase tracking-widest flex items-center gap-2">
+                        <i class="fa-solid fa-compass-drafting"></i> Representação Esquemática das Polias e Correia
+                    </div>
+                    
+                    <svg viewBox="0 0 600 280" class="w-full max-w-2xl h-auto">
+                        <defs>
+                            <!-- Padrão para áreas -->
+                            <linearGradient id="beltGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#818cf8" />
+                                <stop offset="100%" stop-color="#c084fc" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Linha de centros -->
+                        <line x1="180" y1="140" x2="420" y2="140" stroke="#64748b" stroke-dasharray="4,4" stroke-width="1.5" />
+                        <text x="300" y="155" fill="#94a3b8" font-size="12" text-anchor="middle">d = 20 cm</text>
+
+                        <!-- Polia Maior (O1, R=15cm -> r_svg = 75) -->
+                        <circle cx="180" cy="140" r="75" fill="#1e293b" stroke="#475569" stroke-width="2" />
+                        <circle cx="180" cy="140" r="4" fill="#f8fafc" />
+                        <text x="170" y="130" fill="#f8fafc" font-size="12" font-weight="bold">O₁</text>
+
+                        <!-- Polia Menor (O2, r=5cm -> r_svg = 25) -->
+                        <circle cx="420" cy="140" r="25" fill="#1e293b" stroke="#475569" stroke-width="2" />
+                        <circle cx="420" cy="140" r="4" fill="#f8fafc" />
+                        <text x="430" y="130" fill="#f8fafc" font-size="12" font-weight="bold">O₂</text>
+
+                        <!-- Raios destacados até os pontos de tangência superior -->
+                        <!-- Tangência superior: O1 para T1 (180 + 75*cos(120°), 140 - 75*sin(120°)) = (180 - 37.5, 140 - 64.95) = (142.5, 75.05) -->
+                        <line x1="180" y1="140" x2="142.5" y2="75.05" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" />
+                        <text x="172" y="100" fill="#f59e0b" font-size="11">R = 15 cm</text>
+                        <circle cx="142.5" cy="75.05" r="3" fill="#f59e0b" />
+                        <text x="135" y="65" fill="#f59e0b" font-size="11" font-weight="bold">T₁</text>
+
+                        <!-- O2 para T2 (420 - 12.5, 140 - 21.65) = (407.5, 118.35) -->
+                        <line x1="420" y1="140" x2="407.5" y2="118.35" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" />
+                        <text x="428" y="125" fill="#f59e0b" font-size="11">r = 5 cm</text>
+                        <circle cx="407.5" cy="118.35" r="3" fill="#f59e0b" />
+                        <text x="415" y="112" fill="#f59e0b" font-size="11" font-weight="bold">T₂</text>
+
+                        <!-- Trecho Retilíneo Superior da Correia (T1 -> T2) -->
+                        <line x1="142.5" y1="75.05" x2="407.5" y2="118.35" stroke="#38bdf8" stroke-width="3.5" />
+                        <text x="275" y="85" fill="#38bdf8" font-size="12" font-weight="bold" text-anchor="middle">Trecho Reto (t)</text>
+
+                        <!-- Trecho Retilíneo Inferior da Correia -->
+                        <line x1="142.5" y1="204.95" x2="407.5" y2="161.65" stroke="#38bdf8" stroke-width="3.5" />
+
+                        <!-- Arco em contato na Polia Maior (240°) -->
+                        <path d="M 142.5 75.05 A 75 75 0 1 0 142.5 204.95" fill="none" stroke="#ec4899" stroke-width="3.5" />
+                        <text x="90" y="145" fill="#ec4899" font-size="12" font-weight="bold">Arco Maior (S₁)</text>
+
+                        <!-- Arco em contato na Polia Menor (120°) -->
+                        <path d="M 407.5 118.35 A 25 25 0 0 1 407.5 161.65" fill="none" stroke="#a855f7" stroke-width="3.5" />
+                        <text x="460" y="145" fill="#a855f7" font-size="12" font-weight="bold">Arco Menor (S₂)</text>
+
+                        <!-- Triângulo Auxiliar de Resolução (Projeção) -->
+                        <!-- Ponto P em O1 T1 a uma distância r do centro O1: P = O1 - (R-r) direçao = (180 - 25, 140 - 43.3) = (155, 96.7) -->
+                        <line x1="420" y1="140" x2="155" y2="96.7" stroke="#10b981" stroke-width="1.5" stroke-dasharray="2,2" />
+                        <circle cx="155" cy="96.7" r="3" fill="#10b981" />
+                        <text x="162" y="95" fill="#10b981" font-size="11" font-weight="bold">P</text>
+                    </svg>
+
+                    <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-300 mt-2">
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-sky-400 inline-block rounded"></span> Trechos Retos ($t$)</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-pink-500 inline-block rounded"></span> Arco Maior ($S_1$)</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-purple-500 inline-block rounded"></span> Arco Menor ($S_2$)</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-emerald-500 inline-block rounded"></span> Triângulo Retângulo Auxiliar</span>
+                    </div>
+                </div>
+
+                <!-- Botão Ver Gabarito -->
+                <div>
+                    <button onclick="toggleGabarito('q1')" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye" id="icon-q1"></i>
+                        <span id="btn-text-q1">Mostrar Gabarito & Resolução Passo a Passo</span>
+                    </button>
+                </div>
+
+                <!-- Resolução Expandível -->
+                <div id="q1-gabarito" class="hidden bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-6">
+                    <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+                        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-indigo-600"></i> Resolução Detalhada - Questão 01
+                        </h3>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-semibold">Gabarito Oficial</span>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                        <!-- Passo 1 -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-indigo-900 text-sm mb-2">Passo 1: Decomposição do comprimento total da correia</h4>
+                            <p>
+                                O comprimento total $L$ da correia é formado por $2$ trechos retilíneos de comprimento $t$ mais os dois arcos de contato $S_1$ (na polia maior) e $S_2$ (na polia menor):
+                            </p>
+                            <div class="my-2 p-2 bg-slate-100 rounded text-center font-mono">
+                                $L = 2 \cdot t + S_1 + S_2$
+                            </div>
+                        </div>
+
+                        <!-- Passo 2 -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-indigo-900 text-sm mb-2">Passo 2: Cálculo do segmento retilíneo ($t$)</h4>
+                            <p>
+                                Traçando um segmento paralelo ao trecho reto $T_1 T_2$ partindo do centro $O_2$ da polia menor até o raio $O_1 T_1$ da polia maior, obtemos um ponto $P$ sobre $O_1 T_1$. 
+                                Forma-se o triângulo retângulo $\Delta O_1 P O_2$, onde:
+                            </p>
+                            <ul class="list-disc list-inside ml-2 my-2 space-y-1">
+                                <li>Hipotenusa: $O_1 O_2 = d = 20\text{ cm}$</li>
+                                <li>Cateto 1: $O_1 P = R - r = 15 - 5 = 10\text{ cm}$</li>
+                                <li>Cateto 2: $P O_2 = t$ (comprimento do trecho retilíneo)</li>
+                            </ul>
+                            <p>Aplicando o Teorema de Pitágoras no triângulo $\Delta O_1 P O_2$:</p>
+                            <p class="my-2 text-center font-mono">
+                                $(O_1 O_2)^2 = (O_1 P)^2 + t^2 \implies 20^2 = 10^2 + t^2$
+                            </p>
+                            <p class="my-2 text-center font-mono">
+                                $400 = 100 + t^2 \implies t^2 = 300 \implies t = \sqrt{300} = 10\sqrt{3}\text{ cm}$
+                            </p>
+                        </div>
+
+                        <!-- Passo 3 -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-indigo-900 text-sm mb-2">Passo 3: Determinação dos ângulos centrais de contato</h4>
+                            <p>
+                                No triângulo retângulo $\Delta O_1 P O_2$, o cosseno do ângulo $\theta = \angle P O_1 O_2$ é dado por:
+                            </p>
+                            <p class="my-2 text-center font-mono">
+                                $\cos(\theta) = \frac{O_1 P}{O_1 O_2} = \frac{10}{20} = \frac{1}{2} \implies \theta = 60^\circ$
+                            </p>
+                            <p>
+                                Por simetria (considerando as partes superior e inferior):
+                            </p>
+                            <ul class="list-disc list-inside ml-2 my-2 space-y-1">
+                                <li><strong>Polia Maior:</strong> O ângulo de contato é $\alpha_1 = 360^\circ - 2(60^\circ) = 240^\circ$ (ou $\frac{4\pi}{3}\text{ rad}$).</li>
+                                <li><strong>Polia Menor:</strong> O ângulo de contato é $\alpha_2 = 2(60^\circ) = 120^\circ$ (ou $\frac{2\pi}{3}\text{ rad}$).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Passo 4 -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-bold text-indigo-900 text-sm mb-2">Passo 4: Cálculo dos arcos de circunferência ($S_1$ e $S_2$)</h4>
+                            <p>Utilizando a fórmula do comprimento do arco $S = \frac{\alpha}{360^\circ} \cdot 2\pi r$ ou $S = r \cdot \theta_{\text{rad}}$:</p>
+                            <ul class="list-disc list-inside ml-2 my-2 space-y-2">
+                                <li>
+                                    <strong>Arco da polia maior ($S_1$):</strong><br>
+                                    $S_1 = \frac{240^\circ}{360^\circ} \cdot 2\pi (15) = \frac{2}{3} \cdot 30\pi = 20\pi\text{ cm}$
+                                </li>
+                                <li>
+                                    <strong>Arco da polia menor ($S_2$):</strong><br>
+                                    $S_2 = \frac{120^\circ}{360^\circ} \cdot 2\pi (5) = \frac{1}{3} \cdot 10\pi = \frac{10\pi}{3}\text{ cm}$
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Passo 5 -->
+                        <div class="bg-indigo-50 border border-indigo-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-indigo-900 text-sm mb-2">Conclusão e Valor Numérico Aproximado</h4>
+                            <p class="mb-2">Somando todas as partes:</p>
+                            <p class="text-center font-mono font-bold text-base my-2">
+                                $L = 2(10\sqrt{3}) + 20\pi + \frac{10\pi}{3} = 20\sqrt{3} + \frac{70\pi}{3}\text{ cm}$
+                            </p>
+                            <p class="mt-3">Substituindo as aproximações $\pi \approx 3{,}14$ e $\sqrt{3} \approx 1{,}73$:</p>
+                            <p class="text-center font-mono my-2">
+                                $20 \cdot 1{,}73 + \frac{70 \cdot 3{,}14}{3} = 34{,}6 + \frac{219{,}8}{3} = 34{,}6 + 73{,}27 = \mathbf{107{,}87\text{ cm}}$
+                            </p>
+                            <p class="text-emerald-700 font-bold mt-2">
+                                Resposta Final: O comprimento exato é $\left(20\sqrt{3} + \frac{70\pi}{3}\right)\text{ cm} \approx \mathbf{107{,}87\text{ cm}}$ (ou aproximadamente $1{,}08\text{ metros}$).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= QUESTÃO 2 ================= -->
+        <section class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+            <div class="bg-slate-800 text-white p-5 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <span class="bg-indigo-500 text-white font-bold text-sm px-3 py-1 rounded-md">Questão 02</span>
+                    <h2 class="text-lg font-semibold">Geometria das Pistas de Atletismo & Escalonamento de Largada</h2>
+                </div>
+                <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full font-medium">Esportes / Arquitetura</span>
+            </div>
+
+            <div class="p-6 md:p-8 space-y-6">
+                <!-- Enunciado -->
+                <div class="text-slate-700 leading-relaxed space-y-3">
+                    <p class="font-medium text-slate-900 text-base">
+                        Uma pista oficial de atletismo é projetada no formato padrão de "estádio", sendo composta por dois trechos retos e paralelos de comprimento $L = 100\text{ m}$ cada, conectados por duas curvas semicirculares idênticas de raio interno $R_1 = 36{,}5\text{ m}$.
+                    </p>
+                    <p>
+                        A pista possui 4 raias (faixas de corrida) numeradas de 1 a 4 do interior para o exterior. Cada raia possui uma largura constante $w = 1{,}22\text{ m}$.
+                    </p>
+                    <div class="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-600 space-y-3 text-indigo-950 font-medium">
+                        <p>
+                            <strong>a)</strong> Calcule o comprimento total da linha limite interna (Borda da Raia 1) dessa pista de atletismo.
+                        </p>
+                        <p>
+                            <strong>b)</strong> Em uma prova de $400\text{ m}$ rasos, em que os atletas dão uma volta completa na pista e finalizam na mesma linha reta de chegada, explique geometricamente por que os atletas não podem largar alinhados lado a lado. Calcule a distância exata de compensação (avanço na linha de largada) que o atleta da <strong>Raia 4</strong> deve ter em relação ao da <strong>Raia 1</strong> para que ambos percorram rigorosamente a mesma distância total.
+                        </p>
+                    </div>
+                    <p class="text-xs text-slate-500 italic">* Considere $\pi \approx 3{,}14$. Suponha que o atleta da Raia $n$ corre sobre a linha média de sua raia (a uma distância de $0{,}61\text{ m}$ da borda interna da sua respectiva raia).</p>
+                </div>
+
+                <!-- Figura Geométrica SVG -->
+                <div class="bg-slate-900 rounded-xl p-6 flex flex-col items-center justify-center border border-slate-800 shadow-inner">
+                    <div class="text-slate-400 text-xs font-mono mb-2 uppercase tracking-widest flex items-center gap-2">
+                        <i class="fa-solid fa-compass-drafting"></i> Esquema Geométrico da Pista de Atletismo (4 Raias)
+                    </div>
+
+                    <svg viewBox="0 0 650 300" class="w-full max-w-2xl h-auto">
+                        <!-- Pista Externa Base -->
+                        <!-- Retângulos + Curvas Semicirculares -->
+                        
+                        <!-- Pista Geral / Raias -->
+                        <!-- Raia 4 (Externa) -->
+                        <path d="M 220 30 L 430 30 A 120 120 0 0 1 430 270 L 220 270 A 120 120 0 0 1 220 30 Z" fill="#991b1b" stroke="#dc2626" stroke-width="2" />
+                        
+                        <!-- Raia 3 -->
+                        <path d="M 220 42 L 430 42 A 108 108 0 0 1 430 258 L 220 258 A 108 108 0 0 1 220 42 Z" fill="#b91c1c" stroke="#f87171" stroke-width="1" stroke-dasharray="2,2"/>
+                        
+                        <!-- Raia 2 -->
+                        <path d="M 220 54 L 430 54 A 96 96 0 0 1 430 246 L 220 246 A 96 96 0 0 1 220 54 Z" fill="#dc2626" stroke="#f87171" stroke-width="1" stroke-dasharray="2,2"/>
+
+                        <!-- Raia 1 (Interna) -->
+                        <path d="M 220 66 L 430 66 A 84 84 0 0 1 430 234 L 220 234 A 84 84 0 0 1 220 66 Z" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+
+                        <!-- Campo Interno (Grama) -->
+                        <path d="M 220 78 L 430 78 A 72 72 0 0 1 430 222 L 220 222 A 72 72 0 0 1 220 78 Z" fill="#15803d" stroke="#22c55e" stroke-width="2"/>
+
+                        <!-- Cotas e Medidas -->
+                        <!-- Trecho Reto (100m) -->
+                        <line x1="220" y1="150" x2="430" y2="150" stroke="#fef08a" stroke-dasharray="4,4" stroke-width="1.5" />
+                        <line x1="220" y1="145" x2="220" y2="155" stroke="#fef08a" stroke-width="1.5" />
+                        <line x1="430" y1="145" x2="430" y2="155" stroke="#fef08a" stroke-width="1.5" />
+                        <text x="325" y="142" fill="#fef08a" font-size="12" text-anchor="middle" font-weight="bold">Trecho Reto = 100 m</text>
+
+                        <!-- Raio Interno R1 -->
+                        <line x1="220" y1="150" x2="220" y2="78" stroke="#ffffff" stroke-width="1.5" />
+                        <circle cx="220" cy="150" r="3" fill="#ffffff" />
+                        <text x="210" y="115" fill="#ffffff" font-size="11" text-anchor="end" font-weight="bold">R₁ = 36,5 m</text>
+
+                        <!-- Linha de Chegada Comum -->
+                        <line x1="220" y1="30" x2="220" y2="78" stroke="#ffffff" stroke-width="3" />
+                        <text x="215" y="20" fill="#ffffff" font-size="10" text-anchor="end" font-weight="bold">LINHA DE CHEGADA</text>
+
+                        <!-- Marcas de Largada Escalonada na Curva -->
+                        <!-- Raia 1 (Largada na linha de chegada) -->
+                        <circle cx="220" cy="72" r="3" fill="#38bdf8" />
+                        <text x="228" y="75" fill="#38bdf8" font-size="9" font-weight="bold">L1</text>
+
+                        <!-- Raia 4 (Largada Avançada na Curva) -->
+                        <circle cx="255" cy="36" r="3" fill="#f59e0b" />
+                        <text x="260" y="28" fill="#f59e0b" font-size="10" font-weight="bold">L4 (Avanço d)</text>
+
+                        <!-- Indicador de Largada Escalonada -->
+                        <path d="M 220 30 A 114 114 0 0 1 255 36" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="2,2"/>
+                    </svg>
+
+                    <div class="flex flex-wrap justify-center gap-4 text-xs text-slate-300 mt-2">
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-red-500 inline-block rounded"></span> Raias de Corrida (4 raias de $1{,}22\text{ m}$)</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-amber-500 inline-block rounded"></span> Ponto de Largada Escalonada (Raia 4)</span>
+                        <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-sky-400 inline-block rounded"></span> Ponto de Largada (Raia 1)</span>
+                    </div>
+                </div>
+
+                <!-- Botão Ver Gabarito -->
+                <div>
+                    <button onclick="toggleGabarito('q2')" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye" id="icon-q2"></i>
+                        <span id="btn-text-q2">Mostrar Gabarito & Resolução Passo a Passo</span>
+                    </button>
+                </div>
+
+                <!-- Resolução Expandível -->
+                <div id="q2-gabarito" class="hidden bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-6">
+                    <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+                        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-indigo-600"></i> Resolução Detalhada - Questão 02
+                        </h3>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-semibold">Gabarito Oficial</span>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                        
+                        <!-- ITEM A -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm space-y-2">
+                            <h4 class="font-bold text-indigo-900 text-sm">Resolução do Item (a): Comprimento da Borda Interna</h4>
+                            <p>
+                                A borda interna da pista é composta por:
+                            </p>
+                            <ul class="list-disc list-inside ml-2 space-y-1">
+                                <li>$2$ trechos retilíneos de $100\text{ m}$ cada: $2 \cdot 100 = 200\text{ m}$.</li>
+                                <li>$2$ curvas semicirculares de raio $R_1 = 36{,}5\text{ m}$, que juntas formam $1$ circunferência completa de raio $R_1$.</li>
+                            </ul>
+                            <p>Cálculo do comprimento da parte circular ($C_{\text{curvas}}$):</p>
+                            <p class="text-center font-mono my-2">
+                                $C_{\text{curvas}} = 2 \cdot \pi \cdot R_1 = 2 \cdot 3{,}14 \cdot 36{,}5 = 229{,}22\text{ m}$
+                            </p>
+                            <p>Somando com os trechos retos:</p>
+                            <p class="text-center font-mono my-2 font-bold text-indigo-900">
+                                $C_{\text{total}} = 200 + 229{,}22 = \mathbf{429{,}22\text{ m}}$
+                            </p>
+                            <p class="text-emerald-700 font-semibold text-xs">
+                                * Nota: Na prática esportiva, os $400\text{ m}$ são medidos ligeiramente afastados da borda interna.
+                            </p>
+                        </div>
+
+                        <!-- ITEM B -->
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm space-y-3">
+                            <h4 class="font-bold text-indigo-900 text-sm">Resolução do Item (b): Explicação Geométrica & Cálculo do Escalonamento</h4>
+                            
+                            <p><strong>1. Explicação Geométrica:</strong></p>
+                            <p>
+                                Como os trechos retilíneos são idênticos ($100\text{ m}$) para todas as raias, a diferença no perímetro de cada raia decorre exclusivamente das curvas semicirculares. Como a Raia 4 possui um raio maior ($R_4 > R_1$), a circunferência descrita por ela é maior. Se todos largassem da mesma linha reta, o corredor da Raia 4 correria uma distância total significativamente maior do que o da Raia 1.
+                            </p>
+
+                            <p><strong>2. Determinação dos Raios de Corrida da Raia 1 e Raia 4:</strong></p>
+                            <p>
+                                Supondo que os corredores corram pelo centro de suas respectivas raias (ou a uma mesma distância padrão da borda interna da raia):
+                            </p>
+                            <ul class="list-disc list-inside ml-2 space-y-1">
+                                <li>Raio de trajetória na Raia 1: $r_1 = R_1 + 0{,}61\text{ m}$</li>
+                                <li>
+                                    Raio de trajetória na Raia 4: Como há $3$ raias de distância ($1{,}22\text{ m}$ cada) entre a Raia 1 e a Raia 4:
+                                    <br>
+                                    $r_4 = r_1 + 3 \cdot w = r_1 + 3 \cdot 1{,}22 = r_1 + 3{,}66\text{ m}$
+                                </li>
+                            </ul>
+
+                            <p><strong>3. Cálculo da Diferença de Comprimento em Uma Volta Completa ($\Delta C$):</strong></p>
+                            <p>
+                                A diferença de distância percorrida entre as trajetórias da Raia 4 e da Raia 1 em uma volta completa é dada pela diferença entre os comprimentos das duas circunferências:
+                            </p>
+                            <p class="text-center font-mono my-2">
+                                $\Delta C = 2\pi r_4 - 2\pi r_1 = 2\pi (r_4 - r_1)$
+                            </p>
+                            <p>Substituindo $(r_4 - r_1) = 3{,}66\text{ m}$ e $\pi \approx 3{,}14$:</p>
+                            <p class="text-center font-mono my-2 font-bold">
+                                $\Delta C = 2 \cdot 3{,}14 \cdot 3{,}66 = 6{,}28 \cdot 3{,}66 = \mathbf{22{,}98\text{ m}}$
+                            </p>
+
+                            <div class="bg-indigo-50 border border-indigo-200 p-3 rounded-md text-emerald-800 font-bold mt-2">
+                                Resposta Final (b): O atleta da Raia 4 deve largar exatamente $22{,}98\text{ m}$ (aproximadamente $23\text{ metros}$) à frente do atleta da Raia 1 para compensar a curva mais longa e percorrer exatamente $400\text{ m}$.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SIMULADOR INTERATIVO ================= -->
+        <section class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-2xl p-6 md:p-8 shadow-xl">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="p-2.5 bg-indigo-500/20 border border-indigo-400/30 rounded-lg text-indigo-300">
+                    <i class="fa-solid fa-sliders text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold">Simulador Interativo de Circunferência</h2>
+                    <p class="text-indigo-200 text-xs">Ajuste os parâmetros geométricos para calcular em tempo real</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-6">
+                <!-- Controles -->
+                <div class="space-y-5 bg-white/5 backdrop-blur-md p-6 rounded-xl border border-white/10">
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-1">
+                            <label for="input-raio" class="text-indigo-200">Raio da Circunferência ($r$):</label>
+                            <span id="val-raio" class="text-amber-400 font-mono">10 cm</span>
+                        </div>
+                        <input type="range" id="input-raio" min="1" max="50" value="10" class="w-full accent-indigo-500 cursor-pointer" oninput="atualizarSimulador()">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-semibold mb-1">
+                            <label for="input-angulo" class="text-indigo-200">Ângulo Central ($\alpha$):</label>
+                            <span id="val-angulo" class="text-amber-400 font-mono">180°</span>
+                        </div>
+                        <input type="range" id="input-angulo" min="10" max="360" value="180" step="5" class="w-full accent-indigo-500 cursor-pointer" oninput="atualizarSimulador()">
+                    </div>
+
+                    <div class="pt-2 border-t border-white/10 text-xs text-indigo-300">
+                        <i class="fa-solid fa-calculator text-amber-400 mr-1"></i> Fórmulas Aplicadas:
+                        <ul class="list-disc list-inside mt-1 space-y-1 font-mono">
+                            <li>$C = 2 \cdot \pi \cdot r$</li>
+                            <li>$S_{\text{arco}} = \frac{\alpha}{360^\circ} \cdot 2\pi r$</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Painel de Resultados -->
+                <div class="bg-slate-950 p-6 rounded-xl border border-indigo-500/30 flex flex-col justify-center space-y-4 shadow-inner">
+                    <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                        <span class="text-slate-400 text-xs uppercase font-semibold">Comprimento Total ($C$):</span>
+                        <span id="res-comprimento" class="text-2xl font-bold font-mono text-emerald-400">62.83 cm</span>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                        <span class="text-slate-400 text-xs uppercase font-semibold">Comprimento do Arco ($S$):</span>
+                        <span id="res-arco" class="text-2xl font-bold font-mono text-sky-400">31.42 cm</span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400 text-xs uppercase font-semibold">Fração da Volta ($\alpha / 360^\circ$):</span>
+                        <span id="res-fracao" class="text-lg font-bold font-mono text-purple-400">50.0%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-slate-500 text-xs border-t border-slate-200 pt-6">
+        <p>Desenvolvido para apoio pedagógico de Matemática no Ensino Médio.</p>
+    </footer>
+
+    <!-- JavaScript para Interatividade -->
+    <script>
+        // Inicializar KaTeX para renderizar fórmulas ao carregar
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+            atualizarSimulador();
+        });
+
+        // Alternar Visibilidade do Gabarito
+        function toggleGabarito(id) {
+            const el = document.getElementById(id + '-gabarito');
+            const icon = document.getElementById('icon-' + id);
+            const text = document.getElementById('btn-text-' + id);
+
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.className = "fa-solid fa-eye-slash";
+                text.innerText = "Ocultar Gabarito & Resolução";
+            } else {
+                el.classList.add('hidden');
+                icon.className = "fa-solid fa-eye";
+                text.innerText = "Mostrar Gabarito & Resolução Passo a Passo";
+            }
+        }
+
+        // Atualizar Simulador em Tempo Real
+        function atualizarSimulador() {
+            const r = parseFloat(document.getElementById('input-raio').value);
+            const ang = parseFloat(document.getElementById('input-angulo').value);
+
+            document.getElementById('val-raio').innerText = r + " cm";
+            document.getElementById('val-angulo').innerText = ang + "°";
+
+            const C = 2 * Math.PI * r;
+            const S = (ang / 360) * C;
+            const fracao = (ang / 360) * 100;
+
+            document.getElementById('res-comprimento').innerText = C.toFixed(2) + " cm";
+            document.getElementById('res-arco').innerText = S.toFixed(2) + " cm";
+            document.getElementById('res-fracao').innerText = fracao.toFixed(1) + "%";
+        }
+    </script>
+</body>
+</html>
+```eof
+
+### O que você encontrará neste arquivo:
+
+1. **Questão 01 (Sistema de Transmissão por Polias e Correia):**
+   - Contextualização real de engenharia mecânica.
+   - Diagrama geométrico em **vetores SVG** detalhando os centros, raios, tangente externa, arcos de contato e o triângulo retângulo auxiliar.
+   - Resolução passo a passo utilizando o Teorema de Pitágoras no triângulo de projeção, trigonometria para encontrar o ângulo central de contato e cálculo dos arcos e segmentos retilíneos.
+
+2. **Questão 02 (Pista de Atletismo e Escalonamento das Largadas):**
+   - Contextualização esportiva realista para corridas de $400\text{ m}$.
+   - Esquema visual colorido em SVG mostrando a geometria da pista (retas e curvas semicirculares) e as marcas de largada escalonada.
+   - Resolução em dois itens: cálculo da borda interna e justificativa geométrica da compensação no raio externo, demonstrando por que a Raia 4 deve largar $22{,}98\text{ m}$ à frente.
+
+3. **Recursos Extras:**
+   - **Formatação Matemática em KaTeX:** Todas as equações estão tipografadas.
+   - **Simulador Interativo em Tempo Real:** Permite alterar o raio e o ângulo central para ver a variação instantânea do comprimento e do arco.
+   - **Gabaritos Ocultáveis:** Botões interativos para mostrar ou esconder as soluções durante a aula.
