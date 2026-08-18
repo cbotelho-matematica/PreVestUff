@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  17 AUG 2026 08:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  17 AUG 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Enem/Joao/questoes_joao.tex
-(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Enem/Joao/questoes_joao.tex
+**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex
+(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -1117,8 +1117,8 @@ Package: thm-amsthm 2023/05/04 v0.76
 ))
 \c@questaovest=\count410
 \c@exemplo=\count411
- (./questoes_joao.aux)
-\openout1 = `questoes_joao.aux'.
+ (./aula02_funcaoAfim.aux)
+\openout1 = `aula02_funcaoAfim.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
 LaTeX Font Info:    ... okay on input line 115.
@@ -1196,50 +1196,35 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count418
-LaTeX Font Info:    Trying to load font information for U+msa on input line 125.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 125.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./src/img/q05.png, id=59, 474.77374pt x 217.81375pt>
-File: ./src/img/q05.png Graphic file (type png)
-<use ./src/img/q05.png>
-Package pdftex.def Info: ./src/img/q05.png  used on input line 141.
-(pdftex.def)             Requested size: 193.47578pt x 88.76247pt.
-<./src/img/q06.png, id=61, 711.65875pt x 396.48125pt>
-File: ./src/img/q06.png Graphic file (type png)
-<use ./src/img/q06.png>
-Package pdftex.def Info: ./src/img/q06.png  used on input line 148.
-(pdftex.def)             Requested size: 193.47578pt x 107.78943pt.
-<./src/img/q07.png, id=62, 634.37pt x 317.185pt>
-File: ./src/img/q07.png Graphic file (type png)
-<use ./src/img/q07.png>
-Package pdftex.def Info: ./src/img/q07.png  used on input line 156.
-(pdftex.def)             Requested size: 193.47578pt x 96.73885pt.
- [2 <./src/img/q05.png> <./src/img/q06.png> <./src/img/q07.png>] (./questoes_joao.aux)
+) [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] (./aula02_funcaoAfim.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34881 strings out of 474222
- 678239 string characters out of 5748734
- 1933975 words of memory out of 5000000
- 56560 multiletter control sequences out of 15000+600000
- 564997 words of font info for 59 fonts, out of 8000000 for 9000
+ 34886 strings out of 474222
+ 678116 string characters out of 5748734
+ 1937975 words of memory out of 5000000
+ 56543 multiletter control sequences out of 15000+600000
+ 565775 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,107p,610b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on questoes_joao.pdf (2 pages, 199691 bytes).
+ 99i,11n,107p,624b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on aula02_funcaoAfim.pdf (3 pages, 72848 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

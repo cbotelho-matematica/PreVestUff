@@ -1,0 +1,209 @@
+\documentclass[12pt, a4paper, brazil]{abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\graphicspath{{./src/img/}}
+\usepackage{float}
+
+\usepackage[alf]{abntex2cite}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+  }
+
+\usepackage[most]{tcolorbox}
+
+\usepackage{indentfirst}
+\usepackage{multicol}
+
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{25pt}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{thmtools}
+
+\usepackage{enumitem}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+
+\renewenvironment{proof}{\vspace{\onelineskip} \noindent{\bfseries Demonstração:}}{\qed}
+
+\setcounter{tocdepth}{2}
+
+\newcounter{questaovest}
+
+\newcommand{\vest}[1]{\stepcounter{questaovest}\item[\textbf{Questão \arabic{questaovest}} (#1):]}
+\setlist[enumerate]{
+    align=left,
+    leftmargin=*,
+    }
+    
+\setlist[enumerate,2]{
+    label=\alph*.,
+    font=\bfseries,
+    itemsep=0.1pt,
+    labelsep=0em,
+    parsep=0pt,
+    leftmargin=1.2em
+    }
+    
+    
+    \renewcommand{\bibsection}{%
+  \chapter*[Referências]{Referências} % Na página e no cabeçalho
+  \addcontentsline{toc}{chapter}{Referências} % No Sumário
+  }
+
+  \chapterstyle{companion}
+  \renewcommand{\printchaptertitle}[1]{
+  \begin{adjustwidth}{}{0pt}
+    \raggedleft\chaptitlefont#1\par\nobreak,
+  \end{adjustwidth}
+}
+
+%Configuração de Cabeçalho e rodapé
+\makepagestyle{myHeader}
+\makeoddhead{myHeader}{Pré-Univesitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
+\makeevenhead{myHeader}{Pré-Univesitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
+\makeoddfoot{myHeader}{}{-\thepage-}{}
+\makeevenfoot{myHeader}{}{-\thepage-}{}
+\makeheadrule{myHeader}{\textwidth}{\normalrulethickness}
+
+% --- Customização de Títulos ---
+\definecolor{AzulElegante}{RGB}{25, 50, 110}
+
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries\color{AzulElegante}}
+\renewcommand{\ABNTEXsectionfont}{\rmfamily\bfseries\color{AzulElegante}\LARGE\bigskip}
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily\bfseries\color{AzulElegante}}
+\renewcommand{\ABNTEXsubsubsectionfont}{\rmfamily\bfseries\color{AzulElegante}}
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\rmfamily\bfseries\color{AzulElegante}}
+% -------------------------------
+
+\setsecheadstyle{\centering\ABNTEXsectionfont}
+
+%-------- Ambiente de Definição
+\newtcolorbox{definicao}[1]{
+    colback=gray!25!white,
+    colframe=gray!75!black,
+    fonttitle=\bfseries,
+    title=Definição: #1,
+    }
+    
+    \declaretheoremstyle[
+        spaceabove=\topsep,
+        spacebelow=\topsep,
+        headfont=\bfseries,
+        %postheadspace=\newline,
+        ]{compactbreak}
+    
+        \declaretheorem[
+            style=compactbreak,
+            name=Exemplo
+            ]{exemplo}
+        
+\begin{document}
+    \textual\pagestyle{myHeader}
+    \section*{Função Afim}
+
+    
+
+
+    \newpage
+    \section*{Exercícios}
+
+    \begin{multicols*}{2}
+        \raggedcolumns
+        \begin{enumerate}
+            \vest{ENEM} O controle de temperatura em sistemas mecânicos é fundamental para prevenir acidentes e manter o bom funcionamento das máquinas. Carros, aviões e computadores são exemplos de máquinas que têm sistemas de controle de temperatura.
+
+            O gerente de uma fábrica orientou seus funcionários a manterem a temperatura de uma máquina abaixo do limite de segurança, definido como 80\% da temperatura de referência, que é de 50 °C. Para isso, o monitoramento dessa máquina é feito diariamente em dez instantes e, sempre que sua temperatura atingir ou ultrapassar o limite de segurança, o funcionário deverá acionar o sistema de resfriamento.
+            
+            O gráfico apresenta as temperaturas registradas nos dez instantes de monitoramento.
+
+                %\begin{figure}[H]
+                    %\centering
+                    %\includegraphics[width=0.4\textwidth]{q01img01.png}
+                %\end{figure}
+            
+            Quantas vezes, ao longo desse dia, o sistema de resfriamento foi acionado?
+
+                \begin{enumerate}
+                    \item 0
+                    \item 1
+                    \item 3
+                    \item 4
+                    \item 5
+                    % gabarito: d
+                \end{enumerate}
+
+            \vest{ENEM} Uma fábrica de refrigerantes criou um novo tipo de bebida ao adicionar uma quantidade de um tipo de xarope a 10 litros de um refrigerante que já tem em sua fórmula 15\% desse xarope em sua composição. Com isso, 25\% da composição desse novo tipo de bebida é formada por esse xarope.
+            
+            Qual quantidade desse xarope, em litro, foi adicionada aos 10 litros de refrigerante para se criar esse novo tipo de bebida?
+
+                \begin{enumerate}
+                    \item $1$\vspace{8pt}
+                    \item $\displaystyle\frac{4}{3}$\vspace{8pt}
+                    \item $2$\vspace{8pt}
+                    \item $\displaystyle\frac{5}{2}$\vspace{8pt}
+                    \item $4$
+                    % gabarito: b
+                \end{enumerate}
+
+            \columnbreak\vest{ENEM} Uma vacina foi testada em um grupo formado por 15 mulheres e 15 homens. Em testes clínicos realizados ao longo de vários anos, a vacina mostrou-se capaz de imunizar 80\% das mulheres e 60\% dos homens contra uma doença.  
+
+            Um repórter, pretendendo fazer uma entrevista com uma das pessoas desse grupo, obteve uma listagem com os 30 números de telefone dessas pessoas, porém sem os respectivos nomes. Ele escolheu aleatoriamente um desses números e ligou para agendar a entrevista.  
+
+            A probabilidade de que a pessoa para a qual o repórter telefonou seja um homem ou uma pessoa que tenha adquirido imunidade a essa doença com o uso da vacina é
+                \begin{enumerate}
+                    \item $\displaystyle\frac{1}{20}$\vspace{8pt}
+                    \item $\displaystyle\frac{3}{10}$\vspace{8pt}
+                    \item $\displaystyle\frac{7}{20}$\vspace{8pt}
+                    \item $\displaystyle\frac{8}{10}$\vspace{8pt}
+                    \item $\displaystyle\frac{9}{10}$\vspace{8pt}
+                    % gabarito: e
+                \end{enumerate}
+            
+            \columnbreak\vest{ENEM}Na produção de uma unidade de um produto, uma empresa gastava R\$ 40,00 na compra de matéria-prima e mais R\$ 40,00 em custos diversos. Essa empresa vendia esse produto por R\$ 120,00 a unidade.
+
+            Em decorrência de mudanças no mercado consumidor, os custos diversos aumentaram em 50\%, embora o custo com matéria-prima tenha permanecido o mesmo. Assim, a empresa reajustará o preço de venda desse produto de forma que, ao conceder um desconto de 20\%, o lucro, em real, por unidade vendida permaneça o mesmo.
+
+            De quanto será o reajuste, em real, no preço de venda desse produto?
+
+                \begin{enumerate}
+                    \item 16,00
+                    \item 20,00
+                    \item 25,00
+                    \item 50,00
+                    \item 55,00
+                    % gabarito: e
+                \end{enumerate}
+
+            \vest{UERJ-2019} A partir do gráfico abaixo, o aumento da média anual de desempregados de 2014 para 2016 está mais próximo do seguinte percentual:
+
+                %\begin{figure}[H]
+                 %   \centering
+                  %  \includegraphics[width=0.4\textwidth]{q05im01.png}
+                %\end{figure}
+
+                \begin{enumerate}
+                    \item 68\%
+                    \item 76\%
+                    \item 80\%
+                    \item 84\%
+                    % gabarito: b
+                \end{enumerate}
+
+        \end{enumerate}
+    \end{multicols*}
+\end{document}
