@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  17 AUG 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  18 AUG 2026 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,32 +1199,62 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] (./aula02_funcaoAfim.aux)
+<./src/img/grafico_questao_Cell.png, id=51, 676.5275pt x 356.33125pt>
+File: ./src/img/grafico_questao_Cell.png Graphic file (type png)
+<use ./src/img/grafico_questao_Cell.png>
+Package pdftex.def Info: ./src/img/grafico_questao_Cell.png  used on input line 131.
+(pdftex.def)             Requested size: 193.47578pt x 101.90343pt.
+<./src/img/grafico_questaovacina.png, id=53, 758.835pt x 349.305pt>
+File: ./src/img/grafico_questaovacina.png Graphic file (type png)
+<use ./src/img/grafico_questaovacina.png>
+Package pdftex.def Info: ./src/img/grafico_questaovacina.png  used on input line 149.
+(pdftex.def)             Requested size: 193.47578pt x 89.05826pt.
+ [2 <./src/img/grafico_questao_Cell.png> <./src/img/grafico_questaovacina.png>]
+<./src/img/figura_uerj_2018.png, id=72, 639.38875pt x 500.87125pt>
+File: ./src/img/figura_uerj_2018.png Graphic file (type png)
+<use ./src/img/figura_uerj_2018.png>
+Package pdftex.def Info: ./src/img/figura_uerj_2018.png  used on input line 169.
+(pdftex.def)             Requested size: 193.47578pt x 151.56178pt.
+<./src/img/figura_enem2018_01.png, id=73, 474.77374pt x 446.66875pt>
+File: ./src/img/figura_enem2018_01.png Graphic file (type png)
+<use ./src/img/figura_enem2018_01.png>
+Package pdftex.def Info: ./src/img/figura_enem2018_01.png  used on input line 194.
+(pdftex.def)             Requested size: 193.47578pt x 182.02441pt.
+<./src/img/figura_enem2018_02.png, id=74, 327.2225pt x 400.49625pt>
+File: ./src/img/figura_enem2018_02.png Graphic file (type png)
+<use ./src/img/figura_enem2018_02.png>
+Package pdftex.def Info: ./src/img/figura_enem2018_02.png  used on input line 195.
+(pdftex.def)             Requested size: 169.29684pt x 207.20815pt.
+ [3 <./src/img/figura_uerj_2018.png> <./src/img/figura_enem2018_01.png> <./src/img/figura_enem2018_02.png>]
+<./src/img/figura_enem2017.png, id=95, 408.52625pt x 251.94125pt>
+File: ./src/img/figura_enem2017.png Graphic file (type png)
+<use ./src/img/figura_enem2017.png>
+Package pdftex.def Info: ./src/img/figura_enem2017.png  used on input line 214.
+(pdftex.def)             Requested size: 193.47578pt x 119.31966pt.
+<./src/img/figura_espm2017.png, id=96, 483.8075pt x 372.39125pt>
+File: ./src/img/figura_espm2017.png Graphic file (type png)
+<use ./src/img/figura_espm2017.png>
+Package pdftex.def Info: ./src/img/figura_espm2017.png  used on input line 233.
+(pdftex.def)             Requested size: 193.47578pt x 148.91975pt.
+ [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./src/img/figura_enem2017.png> <./src/img/figura_espm2017.png>] (./aula02_funcaoAfim.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34886 strings out of 474222
- 678116 string characters out of 5748734
- 1937975 words of memory out of 5000000
- 56543 multiletter control sequences out of 15000+600000
- 565775 words of font info for 60 fonts, out of 8000000 for 9000
+ 34915 strings out of 474222
+ 679833 string characters out of 5748734
+ 1935975 words of memory out of 5000000
+ 56581 multiletter control sequences out of 15000+600000
+ 561428 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,624b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on aula02_funcaoAfim.pdf (3 pages, 72848 bytes).
+ 99i,11n,107p,836b,705s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on aula02_funcaoAfim.pdf (4 pages, 206535 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 40 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 
