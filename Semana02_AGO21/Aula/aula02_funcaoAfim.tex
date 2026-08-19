@@ -74,8 +74,8 @@
 
 %Configuração de Cabeçalho e rodapé
 \makepagestyle{myHeader}
-\makeoddhead{myHeader}{Pré-Univesitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
-\makeevenhead{myHeader}{Pré-Univesitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
+\makeoddhead{myHeader}{Pré-Universitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
+\makeevenhead{myHeader}{Pré-Universitário Social Oficina do Saber / UFF}{}{Matemática: Eduardo}
 \makeoddfoot{myHeader}{}{-\thepage-}{}
 \makeevenfoot{myHeader}{}{-\thepage-}{}
 \makeheadrule{myHeader}{\textwidth}{\normalrulethickness}
@@ -116,7 +116,60 @@
     \textual\pagestyle{myHeader}
     \section*{Função Afim}
 
-    Funções são objetos de extrema importância para a Matemática e Ciências exatas. Esses conceitos i
+    Funções são objetos de extrema importância para a Matemática e Ciências exatas. A maioria dos problemas podem ser modelados com esse objeto matemático. Isso normalmente envolve associar um padrão de comportamento a uma propriedade. Por exemplo, objetos ao serem aquecidos ou resfriados tem suas dimensões alteradas. Portanto, podemos escrever esse comportamento associado a expanão ou contração à temperatura.
+
+    Um tipo especial de função é a chamada função afim, ou função de primeiro grau. Ela se apresenta sob a forma padrão:
+
+    \begin{equation}
+        f(x) = ax + b
+    \end{equation}
+
+    A letra $f$ determina o nome da função. Entre parênteses, temos a letra $x$ que é a chamada variável independente. Do outro lado da igualdade, temos os termos $a$, o chamado coeficiente angular (taxa de variação), $x$, que como vimos é a variável independente, e o último termo, $b$, que é o chamado coeficiente linear ou termo independente.
+    
+    Vejamos um exemplo de uma situação que pode ser modulada por uma função afim. Imagine uma corrida de taxi: ao entrarmos no carro, pagamos um valor fixo, chamado bandeirada. Esse valor é pago independente do trajeto percorrido. Em Niterói, atualmente, o custo é de R\$ 5,95.
+
+    A partir daí a viagem é cobrada de acordo com o deslocamento. Em dias normais, temos o que se chama bandeirada 1. O custo atual dessa bandeirada é de R\$ 4,50, por quilômetro rodado.
+
+    Perceba que podemos definir o valor de uma corrida de taxi a partir de uma função afim: $f(x)$ representaria o valor, que varia de acordo com a quilometragem percorrida, $x$ seria o deslocamento total, com $a$ sendo o valor da bandeirada. O termo independente, $b$, é o valor fixo da bandeirada. Sendo assim nossa ``função viagem de taxi'' teria a forma:
+    
+        \begin{equation}
+            f(x) = (4,50)x + 5,95
+        \end{equation}
+
+    Deste modo, para calcularmos o valor de uma corrida é só substituirmos $x$ pelo total de quilômetros percorridos. Então, por exemplo, uma viagem de 3 quilômetros teria o total:
+
+        \begin{equation*}
+            \begin{aligned}
+                f(3) &= (4,50)(3) + 5,95\\
+                &= 13,50 + 5,95\\
+                &= 19,45
+            \end{aligned}
+        \end{equation*}
+
+    Além da representação na forma de uma equação, podemos representar uma relação de função por uma tabela. Desta forma, podemos visualizar em uma coluna o valor de $x$ e, em outra coluna, o valor de $f(x)$.
+
+    \begin{table}[htbp]
+        \centering
+        \caption{Função corrida de taxi}
+        {\renewcommand{\arraystretch}{1.3}
+        \begin{tabular}{|c|c|}
+            \hline
+            Km ($x$) & Valor$(f(x))$\\
+            \hline
+            0 & R\$ 5,95\\
+            1 & R\$ 10,45\\
+            2 & R\$ 14,95\\
+            3 & R\$ 19,45\\
+            4 & R\$ 23,95\\
+            \vdots & \vdots\\
+            \hline
+        \end{tabular}}
+    \end{table}
+
+    Outra forma, muito comum, de se representar uma função é como um gráfico no plano cartesiano. Sabemos que o plano cartesiano possui dois eixos: o das abscissas ($x$, horizontal) e o das ordenadas ($y$, vertical). O gráfico de uma função é descrito pela linha que une os diversos pares ordenados de uma função, dados por $(x, f(x))$.
+    
+    Vamos utilizar os dados representados na tabela do exemplo anterior. Na imagem abaixo, podemos ver a representação dos eixos coordenados e dos pares de valores $(x, f(x))$:
+
 
 
     \newpage
@@ -186,7 +239,7 @@
                     \item R\$ 70,00
                     \item R\$ 80,00
                 \end{enumerate}
-                
+
         \columnbreak\vest{ENEM-2018}A quantidade x de peças, em milhar, produzidas e o faturamento y, em milhar de real, de uma empresa estão representados nos gráficos, ambos em função do número t de horas trabalhadas por seus funcionários.
 
             \begin{figure}[H]
