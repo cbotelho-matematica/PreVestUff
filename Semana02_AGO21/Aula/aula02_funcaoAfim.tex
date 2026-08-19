@@ -115,6 +115,7 @@
 \begin{document}
     \textual\pagestyle{myHeader}
     \section*{Função Afim}
+    \vspace{8pt}
 
     Funções são objetos de extrema importância para a Matemática e Ciências exatas. A maioria dos problemas podem ser modelados com esse objeto matemático. Isso normalmente envolve associar um padrão de comportamento a uma propriedade. Por exemplo, objetos ao serem aquecidos ou resfriados tem suas dimensões alteradas. Portanto, podemos escrever esse comportamento associado a expanão ou contração à temperatura.
 
@@ -122,18 +123,20 @@
 
     \begin{equation}
         f(x) = ax + b
+        \vspace{6pt}
     \end{equation}
 
     A letra $f$ determina o nome da função. Entre parênteses, temos a letra $x$ que é a chamada variável independente. Do outro lado da igualdade, temos os termos $a$, o chamado coeficiente angular (taxa de variação), $x$, que como vimos é a variável independente, e o último termo, $b$, que é o chamado coeficiente linear ou termo independente.
     
     Vejamos um exemplo de uma situação que pode ser modulada por uma função afim. Imagine uma corrida de taxi: ao entrarmos no carro, pagamos um valor fixo, chamado bandeirada. Esse valor é pago independente do trajeto percorrido. Em Niterói, atualmente, o custo é de R\$ 5,95.
 
-    A partir daí a viagem é cobrada de acordo com o deslocamento. Em dias normais, temos o que se chama bandeirada 1. O custo atual dessa bandeirada é de R\$ 4,50, por quilômetro rodado.
+    A partir daí a viagem é cobrada de acordo com o deslocamento. Em dias normais, temos o que se chama bandeira 1. O custo atual dessa bandeira é de R\$ 4,50, por quilômetro rodado.
 
     Perceba que podemos definir o valor de uma corrida de taxi a partir de uma função afim: $f(x)$ representaria o valor, que varia de acordo com a quilometragem percorrida, $x$ seria o deslocamento total, com $a$ sendo o valor da bandeirada. O termo independente, $b$, é o valor fixo da bandeirada. Sendo assim nossa ``função viagem de taxi'' teria a forma:
     
         \begin{equation}
             f(x) = (4,50)x + 5,95
+            \vspace{6pt}
         \end{equation}
 
     Deste modo, para calcularmos o valor de uma corrida é só substituirmos $x$ pelo total de quilômetros percorridos. Então, por exemplo, uma viagem de 3 quilômetros teria o total:
@@ -143,6 +146,7 @@
                 f(3) &= (4,50)(3) + 5,95\\
                 &= 13,50 + 5,95\\
                 &= 19,45
+                \vspace{6pt}
             \end{aligned}
         \end{equation*}
 
@@ -156,11 +160,11 @@
             \hline
             Km ($x$) & Valor$(f(x))$\\
             \hline
-            0 & R\$ 5,95\\
-            1 & R\$ 10,45\\
-            2 & R\$ 14,95\\
-            3 & R\$ 19,45\\
-            4 & R\$ 23,95\\
+            0 & $f(0) = \text{R\$ 5,95}$\\
+            1 & $f(1) = \text{R\$ 10,45}$\\
+            2 & $f(2) = \text{R\$ 14,95}$\\
+            3 & $f(3) = \text{R\$ 19,45}$\\
+            4 & $f(4) = \text{R\$ 23,95}$\\
             \vdots & \vdots\\
             \hline
         \end{tabular}}
@@ -170,6 +174,93 @@
     
     Vamos utilizar os dados representados na tabela do exemplo anterior. Na imagem abaixo, podemos ver a representação dos eixos coordenados e dos pares de valores $(x, f(x))$:
 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=.7\textwidth]{figura_texto_plano01.png}
+        \end{figure}
+    
+    Se unirmos os pontos com uma linha, teremos o gráfico da função representado. Para toda função de primeiro grau, o gráfico será representado por uma reta. Chamamos esse tipo de função, por função de primeiro grau, devido ao índice da potência de sua variável ($x$) ser igual a 1. A figura abaixo traz o gráfico de nosso exemplo:
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=.7\textwidth]{figura_texto_plano02.png}
+        \end{figure}
+    
+
+    Proponho agora, que façamos um exercício de observação e análise do gráfico. Em primeiro lugar, destaco que representar $f(x)$ no eixo $y$ não é um fato desprezível. Podemos assumir que $f(x)=y$ e muitas vezes nas questões que encontraremos a função pode estar descrita como $f(x)=ax+b$ ou $y=ax+b$. São representações equivalentes.
+    
+    Observando, agora, em específico o gráfico do nosso exemplo. Especificamente, observe o ponto $(0, 5.95)$. Como ele se localiza sobre $x=0$, esse ponto está sobre a reta $y$. Além disso, como o valor de sua coordenada $x$ é zero, então ele equivale à $f(0)$. Assim, se substituirmos $x$ por zero na equação da função afim, teremos:
+
+        \begin{equation}
+            \begin{aligned}
+                f(0)&=a\cdot(0)+b
+                f(0)&=b
+            \end{aligned}
+        \end{equation}
+
+    Ou seja, para determinarmo o coeficiente linear de qualquer função afim, basta calcularmos o valor da função quando $x=0$. Isso representa um passo importante para determinarmos sua equação, a partir de seu gráfico.
+
+    Mas, se precisarmos representar sua equação, teremos que descobrir sua constante $a$, o coeficiente angular. Vamos, primeiro, compreender o que ele significa.
+
+    Graficamente, o coeficiente angular representa a inclinação da reta em relação ao eixo $x$. Se o valor de $a$ é positivo, dizemos que a função é crescente --- se $x_1 < x_2$, então $f(x_1) < f(x_2)$, e a reta estará inclinada ascendendo para a direita. Do contrário, quando $a$ for negativo, a reta será descendente para a direita.
+
+    Ok, mas como calcular esse coeficiente? Vamos separar dois pontos de nossa função-exemplo e representá-los no plano cartesiano. Veja o resultado abaixo:
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{figura_texto_coefangular.png}
+        \end{figure}
+
+    Prolongando os pontos com segmentos paralelos aos eixos, formaremos um triângulo retângulo, visto que o eixos são perpendiculares. Então, para medirmos a inclinação desta reta, utilizamos a noção de tangente. Para isso, basta calcular a razão entre a diferença das coordenadas $y$ e a diferença das coordenadas $x$ dos pontos 1 e 2:
+
+        \begin{equation}
+            a = \frac{P_{2y} - P_{1y}}{P_{2x} - P_{1x}} = \frac{(y_2 - y_1)}{(x_2 - x_1)} = \frac{19,45-10,45}{3-1}=\frac{9}{2}=4,5
+            \label{eq:coef}
+            \vspace{6pt}
+        \end{equation}
+        
+    O valor encontrado corresponde exatamente ao que esperávamos, que é 4,50, o valor do coeficiente angular da nossa equação. Perceba que o produto deste coeficiente $a$ com o valor de nossa variável $x$ é que vai determinar a variação do valor de $f(x)$. Por isso ele é chamado, também de taxa de variação e indica se a função é crescente ou decrescente.
+
+    Como vimos anteriormente, o valor de $b$, o coeficiente linear, é 5,95 --- o ponto em que a reta cruza com o eixo $y$. Calculamos agora o valor de $a$ e, então isso basta para escrevemos, a partir do gráfico, a equação de uma reta ou função afim:
+
+        \begin{equation*}
+            f(x) = 4,5 x + 5,95
+            \vspace{6pt}
+        \end{equation*}
+
+    Um outro modo de se chegar à forma da função afim (sua equação) se baseia no seguinte: em muitos livros o coeficiente angular é representado pela letra $m$ e calculado à maneira do que fizemos, pela diferença das coordenadas de dois pontos do gráfico:
+
+        \begin{equation}
+            m = \frac{(y-y_0)}{(x-x_0)}
+            \vspace{6pt}
+        \end{equation}
+
+    Até aí, pouca diferença em relação ao que foi visto. Agora, considere a manipulação algébrica e, dessa forma, multiplicaremos a equação por $(x - x_0)$ e obtemos:
+
+        \begin{equation}
+            y - y_0 = m (x - x_0)
+        \end{equation}
+
+    Agora precisaremos substituir os valores de $m$, já calculado e de um ponto $(x_0,y_0)$ da reta. Tomemos, neste exemplo, o ponto $(3, 19.45)$. Calculando:
+
+        \begin{equation*}
+            \begin{aligned}
+                y-y_0 &= m (x - x_0)\\
+                y - 19,45 &= 4,5(x - 3)\\
+                y - 19,45 &= 4,5x - 13,5\\
+                y &= 4,5x -13,5 + 19,45\\
+                y &= 4,5x + 5,95\\
+                \vspace{6pt}
+            \end{aligned}
+        \end{equation*}
+
+    Observe que chegamos à mesma forma inicial da equação --- levando em conta que $y=f(x)$. Por vezes este último modo pode ser mais útil que o anterior, outras vezes, não. Pratique as duas formas e utilize sempre a forma que lhe for mais confortável. Mas é interessante que conheça e pratique ambas.
+
+    A respeito da forma que as questões envolvendo as funções afim são cobradas no ENEM, o que podemos dizer é que envole análise de gráficos, modelagem de alguma situação em uma função afim, definição de uma função afim a partir de seu gráfico ou definição da taxa de variação (coeficiente angular).
+
+    Portanto, estude com atenção este material. Procure refazer os exemplos: ajuda a compreender e fixar! E, muito importante, pratique muito! Abaixo seguem alguns exercícios de edições anteriores do Enem e de outros vestibulares. Não acumule dúvidas, consulte colegas e me procure.
+
+    Abraços!
 
 
     \newpage
