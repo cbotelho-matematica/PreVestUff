@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1787112026.57393 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex" "aula02_funcaoAfim.pdf" "aula02_funcaoAfim" 1787112041.5311 0
+["pdflatex"] 1787144751.04997 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex" "aula02_funcaoAfim.pdf" "aula02_funcaoAfim" 1787144758.91344 0
   "/etc/texmf/web2c/texmf.cnf" 1754220970.30918 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex" 1787112020.80236 18893 190c3dd87e082d90a1a1d7b4a1f3003e ""
+  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana02_AGO21/Aula/aula02_funcaoAfim.tex" 1787144748.32589 18921 5f4751ad2fa9465016635ce6b2512285 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx2074.tfm" 1136768653 3584 7666d038713b9e38abb5c2e0f6972188 ""
@@ -235,8 +235,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754773594.48138 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754773821 8213464 6eb19c020e47edd56ed6211aeae19031 ""
-  "aula02_funcaoAfim.aux" 1787112041.07374 676 cd9ea60dde838fd6df50ef94e19eae79 "pdflatex"
-  "aula02_funcaoAfim.tex" 1787112020.80236 18893 190c3dd87e082d90a1a1d7b4a1f3003e ""
+  "aula02_funcaoAfim.aux" 1787144758.38966 676 cd9ea60dde838fd6df50ef94e19eae79 "pdflatex"
+  "aula02_funcaoAfim.tex" 1787144748.32589 18921 5f4751ad2fa9465016635ce6b2512285 ""
   "src/img/figura_enem2017.png" 1787072210.2744 14482 68364ca9559c7e2eb91262896450aee6 ""
   "src/img/figura_enem2018_01.png" 1787071250.3099 13288 23cde374da144d4abce486d4a68fa636 ""
   "src/img/figura_enem2018_02.png" 1787071937.61859 12201 ef1be75326f5fa71bfc67c3acdbee0bd ""
