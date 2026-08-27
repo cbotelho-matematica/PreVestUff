@@ -8,6 +8,7 @@
 \usefonttheme[onlymath]{serif}
 \usepackage{booktabs} % Tabelas elegantes sem linhas verticais
 \usepackage[most]{tcolorbox}
+\usepackage{graphicx}
 
 %-------Estilos Beamer---------------
 \usetheme{metropolis}
@@ -97,12 +98,14 @@
   #1
 }
 
+\graphicspath{{./src/img/}}
 
 %--------Dados do Documento
 \title{Matemática: Funções do 2º Grau}
 \subtitle{Além da Fórmula de Bhaskara}
 \author{prof. Eduardo}
 \institute{Pré-Universitário Oficina do Saber / UFF}
+
 \date{\today}
 
 
@@ -118,22 +121,57 @@
 
 
 %------------- Atalho para imagens ------------
-\graphicspath{{./src/img/}}
 
 
 \begin{document}
 
-    \begin{frame}[plain]
-        \titlepage
-    \end{frame}
+    % \begin{frame}[plain]
+    %     \titlepage
+    % \end{frame}
 
+    \begin{frame}
+        \vspace*{\fill}
+            
+            \begin{columns}[c]
+                \begin{column}{0.5\textwidth}
+                    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\vspace{0.2cm}
+                    
+                    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\vspace{0.5cm}
+
+                {\usebeamerfont{author}\insertauthor}\vspace{0.3cm}
+
+                {\usebeamerfont{institute}\insertinstitute}\vspace{0.3cm}
+
+                {\usebeamerfont{date}\insertdate}
+            \end{column}
+            
+            
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.4\textwidth]{logo_ofSaber.png}
+            \end{column}
+        \end{columns}
+    \vspace*{\fill}
+    \end{frame}
+    
     \begin{frame}[plain]
         \vspace*{\fill}
-        \Huge{
-            \[
-                x = \frac{-b \pm \sqrt{b² - 4 \cdot a \cdot c}}{2 \cdot a}
+        \begin{columns}
+            \begin{column}{0.4\textwidth}
+                \Huge{
+                    \[
+                x = \frac{-b \pm \sqrt{\Delta}}{2 \cdot a}
             \]
         }
+            \end{column}
+            \begin{column}{0.4\textwidth}
+                \Huge{
+            \[
+                \Delta = b^2 - 4 \cdot a \cdot c
+            \]
+        }
+            \end{column}
+        \end{columns}
         \vspace*{\fill}
     \end{frame}
 
@@ -223,9 +261,18 @@
                 \vfil
                 As coordenadas das raízes da função são, portanto, $(x_1,0)$ e $(x_2, 0)$. Para encontrarmos os valores de $x_1$ e $x_2$, utilizamos a famosa fórmula da Bhaskara:
 
-                \[
-                x = \frac{-b \pm \sqrt{b^2 - 4 \cdot a \cdot c}}{2 \cdot a}
-                \]
+                \begin{columns}
+                    \begin{column}[t]{0.4\textwidth}
+                        \[
+                            x = \frac{-b \pm \sqrt{\Delta}}{2 \cdot a}
+                        \]
+                    \end{column}
+                    \begin{column}[c]{0.4\textwidth}
+                        \[
+                            \Delta = b^2 - 4 \cdot a \cdot c
+                        \]
+                    \end{column}
+                \end{columns}
 
                 \vspace{1em}
                 Também podemos calcular as raízes de uma função do segundo grau pelas fórmulas da soma e do produto:
@@ -246,7 +293,7 @@
                 \end{columns}
             
                 \vspace{1em}
-                Em uma situação problema do ENEM, as raízes podem ter a ver, por exemplo com o momento em que um projétil toca o chão.
+                Se $\Delta < 0$, a função \textbf{não terá raízes}, se $\Delta = 0$, a raiz da função coincidirá com o \textbf{vértice} e se $\Delta > 0$, a função possuirá \textbf{duas raízes}.
 
             \end{column}
             \begin{column}{0.4\textwidth}
@@ -320,7 +367,9 @@
             \setlength{\tabcolsep}{0.07\textwidth}
             \begin{tabular}{p{.25\textwidth} p{.2\textwidth} p{.15\textwidth}}
                 \textbf{Enunciado} & \textbf{O que se pede?} & \textbf{Que Fórmula?}\\
+                
                 \hline\\
+                
                 \textit{Qual a \textbf{quantidade} de peças para maximizar o lucro?} & A coordenada $x$ do vértice & $x_v = \frac{-b}{2a}$
                 \vspace{0.8cm}\\
                 
@@ -342,5 +391,186 @@
                 \hline\\
             \end{tabular}
         \end{table}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                1. \textbf{(UERJ-2017): }No plano cartesiano a seguir, estão representados o gráfico da função definida por $f(x) = x^2 + 2$, com $x \in \mathbb{R}$, e os vértices dos quadrados adjacentes $ABCD$ e $DMNP$.
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                        \begin{figure}
+                            \centering
+                            \includegraphics[width=1\textwidth]{exercicio_uerj17.png}
+                        \end{figure}
+                    \end{column}
+                    \begin{column}{0.7\textwidth}
+                        Observe que B e P são pontos do gráfico da função f e que A, B, D e M são pontos dos eixos coordenados.
+                        
+                        Desse modo, a área do polígono ABCPNM, formado pela união dos dois quadrados, é:
+                        \vspace{0.2cm}
+                        \begin{enumerate}[a.]
+                            \item 20
+                            \item 28
+                            \item 36
+                            \item 40
+                            % letra d
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                2. \textbf{(PUCRS-2017): }NO morro onde estão situadas as emissoras de TV em Porto Alegre pode ser representado graficamente, com algum prejuízo, em um sistema cartesiano, através de uma função polinomial de grau 2 da forma $y = ax^2 + bx + c$, com a base da montanha no eixo das abscissas.
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                        \begin{figure}
+                            \centering
+                            \includegraphics[width=1\textwidth]{exercicio_pucrs.png}
+                        \end{figure}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        Para que fique mais adequada essa representação, devemos ter:
+                        \vspace{0.2cm}
+                        \begin{enumerate}[a.]
+                            \item $a > 0$ e $b^2 - 4ac > 0$
+                            \item $a > 0$ e $b^2 - 4ac < 0$
+                            \item $a < 0$ e $b^2 - 4ac < 0$
+                            \item $a < 0$ e $b^2 - 4ac > 0$
+                            \item $a < 0$ e $b^2 - 4ac = 0$
+                            % letra d
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                3. \textbf{(ENEM-2015): }Um estudante está pesquisando o desenvolvimento de certo tipo de bactéria. Para essa pesquisa, ele utiliza uma estufa para armazenar as bactérias. A temperatura no interior dessa estufa, em graus Celsius, é dada pela expressão $T(h)=-h^2+22h-85$, em que h representa as horas do dia. Sabe-se que o número de bactérias é o maior possível quando a estufa atinge sua temperatura máxima e, nesse momento, ele deve retirá-las da estufa. A tabela associa intervalos de temperatura, em graus Celsius, com as classificações: muito baixa, baixa, média, alta e muito alta.
+                \begin{columns}
+                    \begin{column}{0.35\textwidth}
+                        \begin{table}
+                            \begin{figure}
+                                %\centering
+                                \includegraphics[width=1\textwidth]{exercicio_enem15.png}
+                            \end{figure}
+                        \end{table}
+                    \end{column}
+                    \begin{column}{0.6\textwidth}
+                        \vfil
+                        Quando o estudante obtém o maior número possível de bactérias, a temperatura no interior da estufa está classificada como
+
+                        \vspace{0.2cm}
+                        \begin{enumerate}[a.]
+                            \item muito baixa.
+                            \item baixa.
+                            \item média.
+                            \item alta.
+                            \item muito alta.
+                            % letra d
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                4. \textbf{(IFSC-2017): }Pedro é pecuarista e, com o aumento da criação, ele terá que fazer um novo cercado para acomodar seus animais. Sabendo-se que ele terá que utilizar 5 voltas de arame farpado e que o cercado tem forma retangular cujas dimensões são as raízes da equação $x^2 - 45x + 500 = 0$, qual a quantidade mínima de arame que Pedro terá que comprar para fazer esse cercado?
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         
+                        \begin{enumerate}[a.]
+                            \item 545 m
+                            \item 225 m
+                            \item 200 m
+                            \item 500 m
+                            \item 450 m
+                            % letra e
+                        \end{enumerate}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                5. \textbf{(ENEM-2024): }Um fazendeiro pretende construir um galinheiro ocupando uma região plana de formato retangular, com lados de comprimento $L$ metro e $C$ metro. Os lados serão cercados por telas de tipos diferentes. Nos lados de comprimento $L$ metro, será utilizada uma tela cujo metro linear custa R\$ $20,00$, enquanto, nos outros dois lados, uma que custa R\$ $15,00$. O fazendeiro quer gastar, no máximo, R\$ $6.000,00$ na compra de toda a tela necessária para o galinheiro, e deseja que o galinheiro tenha a maior área possível.
+
+                Qual será a medida, em metro, do maior lado do galinheiro?
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         
+                        \begin{enumerate}[a.]
+                            \item 85
+                            \item 100
+                            \item 175
+                            \item 200
+                            \item 350
+                            % letra B
+                        \end{enumerate}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    %fim
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                6.~\textbf{(ENEM-2023): }Analisando as vendas de uma empresa, o gerente concluiu que o montante diário arrecadado, em milhar de real, poderia ser calculado pela expressão $V(x) = \frac{x^2}{4} - 10x + 105$, em que os valores de $x$ representam os dias do mês, variando de 1 a 30.Um dos fatores para avaliar o desempenho mensal da empresa é verificar qual é o menor montante diário $V_0$ arrecadado ao longo do mês e classificar o desempenho conforme as categorias apresentadas a seguir, em que as quantidades estão expressas em milhar de real.
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         \begin{itemize}
+                        \item Ótimo: $V_0 \ge 24$
+                        \item Bom: $20 \le V_0 < 24$
+                        \item Normal: $10 \le V_0 < 20$
+                        \item Ruim: $4 \le V_0 < 10$
+                        \item Péssimo: $V_0 < 4$
+                    \end{itemize}    
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        No caso analisado, qual seria a classificação do desempenho da empresa?  
+                        \begin{enumerate}[a.]
+                            \item Ótimo.
+                            \item Bom.
+                            \item Normal.
+                            \item Ruim.
+                            \item Péssimo.
+                            % letra D
+                        \end{enumerate}
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
     \end{frame}
 \end{document}
