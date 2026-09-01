@@ -1,0 +1,446 @@
+\documentclass[aspectratio=169, t, 8pt]{beamer}
+
+%------configurando acentos-----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{montserrat}
+\usefonttheme[onlymath]{serif}
+\usepackage{booktabs} % Tabelas elegantes sem linhas verticais
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+
+%-------Estilos Beamer---------------
+\usetheme{metropolis}
+%\usecolortheme{crane}
+%\usefonttheme{serif}
+\linespread{1.2}
+
+% Personalização de Cores (Exemplo: Minimal Teal)
+% Cores Base
+\definecolor{BgCanvas}{HTML}{F9F9FB}      % Off-white muito suave
+\definecolor{MainText}{HTML}{2B2D42}      % Grafite escuro para alta legibilidade
+\definecolor{PrimaryAccent}{HTML}{4A6FA5} % Azul poeira (Dusty Blue)
+
+% Tons Pastéis para Destaques e Cards
+\definecolor{PastelGreenBg}{HTML}{E8F0EC}  % Sálvia Claro (Sucesso / Destaque Positivo)
+\definecolor{PastelGreenFg}{HTML}{2D5A44}
+
+\definecolor{PastelCoralBg}{HTML}{FDEAE6}  % Coral Soft (Atenção / Problema / Alerta)
+\definecolor{PastelCoralFg}{HTML}{7A3025}
+
+\definecolor{PastelPurpleBg}{HTML}{F0EBF4} % Lavanda (Conceitos / Citações)
+\definecolor{PastelPurpleFg}{HTML}{4A3E56}
+
+\definecolor{PastelYellowBg}{HTML}{FFF4E6} % Areia / Manteiga (Notas / Dados Secundários)
+\definecolor{PastelYellowFg}{HTML}{7A522A}
+
+% --- CONFIGURAÇÕES DE TEMA BEAMER ---
+%\usetheme{metropolis}
+
+\setbeamertemplate{itemize item}{\textcolor{MainText}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{MainText}{\scriptsize$\circ$}}
+\setbeamertemplate{itemize 3rditem}{\textcolor{MainText}{\tiny$\blacksquare$}}
+
+\setbeamercolor{background canvas}{bg=BgCanvas}
+\setbeamercolor{normal text}{fg=MainText}
+\setbeamercolor{frametitle}{bg=PastelGreenFg, fg=BgCanvas}
+\setbeamercolor{title}{fg=MainText}
+\setbeamercolor{subtitle}{fg=PrimaryAccent}
+\setbeamercolor{structure}{fg=PrimaryAccent}
+
+% Remove a linha amarela padrão do Metropolis sob o título
+\setbeamertemplate{title separator}{}
+\setbeamertemplate{progress bar in section page}{}
+
+% ==============================================================================
+% PALETA DE CORES "GEOMETRIA AQUECIDA" (Inspirada na imagem)
+% ==============================================================================
+\definecolor{BgCream}{HTML}{FFFDFB}       % Fundo creme suave
+\definecolor{TextDark}{HTML}{2C1A14}      % Texto em castanho escuro elegante
+\definecolor{PrimaryOrange}{HTML}{E0531C}  % Laranja vibrante (Títulos e destaques)
+\definecolor{Terracotta}{HTML}{B8380D}     % Terracota queimado (Alertas)
+\definecolor{SoftOrange}{HTML}{FFE6D5}     % Laranja bem suave (Fundo de blocos)
+
+% ==============================================================================
+% CONFIGURAÇÃO DO TEMA METROPOLIS
+% ==============================================================================
+% Cores do texto e fundo geral
+\setbeamercolor{normal text}{fg=TextDark, bg=BgCream}
+\setbeamercolor{alerted text}{fg=Terracotta}
+\setbeamercolor{example text}{fg=PrimaryOrange}
+
+% Barra de título dos slides (Frametitle)
+\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryOrange}
+
+% Título principal da apresentação (Slide de Capa)
+\setbeamercolor{titlelike}{fg=PrimaryOrange}
+\setbeamercolor{subtitle}{fg=Terracotta}
+
+% Barra de progresso (Linha do Metropolis)
+\setbeamercolor{progress bar}{fg=PrimaryOrange, bg=PrimaryOrange!20}
+
+% Customização de Blocos (block, alertblock, exampleblock)
+\setbeamercolor{block title}{fg=BgCream, bg=PrimaryOrange}
+\setbeamercolor{block body}{fg=TextDark, bg=SoftOrange}
+
+\setbeamercolor{block title alerted}{fg=BgCream, bg=Terracotta}
+\setbeamercolor{block body alerted}{fg=TextDark, bg=Terracotta!15}
+
+
+% --- ESTILOS DE CARDS PASTEL COM TCOLORBOX ---
+\newtcolorbox{cardPrincipal}[1][]{
+  colback=SoftOrange,
+  colframe=Terracotta,
+  coltext=TextDark,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardcoral}[1][]{
+  colback=PastelCoralBg,
+  colframe=PastelCoralFg,
+  coltext=PastelCoralFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardpurple}[1][]{
+  colback=PastelPurpleBg,
+  colframe=PastelPurpleFg,
+  coltext=PastelPurpleFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardyellow}[1][]{
+  colback=PastelYellowBg,
+  colframe=PastelYellowFg,
+  coltext=PastelYellowFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\graphicspath{{../../src/img/semana04/}}
+
+%--------Dados do Documento
+\title{Geometria: Perímetro e Área de Figuras Planas}
+\subtitle{}
+\author{prof. Eduardo}
+\institute{Pré-Universitário Oficina do Saber / UFF}
+
+\date{\today}
+
+
+%-------- Pacotes Matemática -------------
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{thmtools}
+
+\begin{document}
+
+    \begin{frame} %capa
+        \vspace*{\fill}
+            
+            \begin{columns}[c]
+                \begin{column}{0.5\textwidth}
+                    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\vspace{0.2cm}
+                    
+                    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\vspace{0.5cm}
+
+                {\usebeamerfont{author}\insertauthor}\vspace{0.3cm}
+
+                {\usebeamerfont{institute}\insertinstitute}\vspace{0.3cm}
+
+                {\usebeamerfont{date}\insertdate}
+            \end{column}
+            
+            
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.4\textwidth]{../logo_ofSaber.png}
+
+                \vspace{.4cm}
+                \vspace*{\fill}
+        \begin{columns}[c]
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=.5\textwidth]{../Proex02c.png}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=0.4\textwidth]{../Logo_UFF.png}
+            \end{column}
+        \end{columns}
+        \vspace*{\fill}
+            \end{column}
+        \end{columns}
+    \vspace*{\fill}
+    \end{frame}
+    
+        {
+            \usebackgroundtemplate{
+            \includegraphics[width=\paperwidth]{slide_02_contracapa.png}}
+            \begin{frame}[plain]                
+            \end{frame}
+        }
+
+    \begin{frame}{O que é Área? O que é Perímetro?} %frame01
+        \begin{columns}[T]
+            \begin{column}{0.3\textwidth}
+                \centering
+                \includegraphics[angle=90, width=.7\textwidth]{slide_campo_futebol.png}
+
+                \begin{cardPrincipal}[title=Unidades de Medida, width=\textwidth]
+                    \textbf{Perímetro: } m, km, cm, dm, etc;
+                    
+                    \textbf{Área: } m², km², cm², dm², etc.
+                \end{cardPrincipal}
+            \end{column}
+            \begin{column}{.65\textwidth}
+                \begin{column}{.4\textwidth}
+                    \centering
+                \includegraphics[width=\textwidth]{elon_lages_lima.png}
+                \end{column}
+                \begin{column}{.55\textwidth}
+                    \vspace{1em}
+                    O matemático alagoano \textbf{Elon Lages} Lima define muito bem os conceitos de Perímetro e Área.
+
+                    Em linhas gerais, ele relaciona \textbf{Perímetro} ao comprimento, a uma linha. No caso de \textit{polígonos} é a linha do contorno.
+
+                    A \textbf{Área}, por outro lado, é determinada por um número real \textit{não-negativo}, associado à superfície de uma figura. 
+                \end{column}
+                \vspace{1em}
+
+                Podemos considerar, então, que por merdir superfícies, a área opera com duas dimensões (comprimento e largura, largura e altura, etc).
+
+                Assim sendo, pense que a unidade da área pode ser considerada como um quadrado de lado 1.
+            \end{column}
+        \end{columns}    
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Propriedades Gerais da Área}
+        \vspace{2em}
+            \begin{columns}[T]
+                \begin{column}{.4\textwidth}
+                    \includegraphics[width=\textwidth]{slide_area_fundamental.png}
+                \end{column}
+                \begin{column}{0.6\textwidth}
+                    \begin{center}
+                        \begin{itemize}
+                            \item \textbf{Unidade de área:} Se $P$ é um quadrado de lado unitário, então $\text{área de }P = 1$;
+                            \item Polígonos \textbf{congruentes} possuem áreas iguais;
+                            \item Se um polígono $P$ pode ser dividido em duas ou mais regiões, a área de $P$ é a \textbf{soma das áreas} das regiões.
+                        \end{itemize}
+
+                        \vspace{1.2em}
+
+                        \includegraphics[width=.7\textwidth]{slide_retangulo_doisquadrados.png}
+                    \end{center}
+                \end{column}
+            \end{columns}
+    \end{frame}    
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                1.~\textbf{(ENEM-2018): }Um brinquedo chamado pula-pula, quando visto de cima, consiste de uma cama elástica com contorno em formato de um hexágono regular.
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                        \begin{figure}
+                            \centering
+                            \includegraphics[width=1\textwidth]{figura_exe01.png}
+                        \end{figure}
+                    \end{column}
+
+                    \begin{column}{0.7\textwidth}
+                        
+                        Se a área do círculo inscrito no hexágono é $3\pi$ metros quadrados, então a área do hexágono, em metro quadrado, é
+                        \vspace{0.2cm}
+                        \begin{enumerate}[a.]
+                            \item $9$
+                            \item $6\sqrt{3}$
+                            \item $9\sqrt{2}$
+                            \item $12$
+                            \item $12\sqrt{3}$
+                            % letra d
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                2.~\textbf{(ENEM-2017): }A figura traz o esboço da planta baixa de uma residência. Algumas medidas internas dos cômodos estão indicadas. A espessura de cada parede externa da casa é 0,20 m e das paredes internas, 0,10 m.
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                        \begin{figure}
+                            \centering
+                            \includegraphics[width=0.8\textwidth]{figura_plantabaixa.png}
+                        \end{figure}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        \vspace{0.2cm}
+
+                        Sabe-se que, na localidade onde se encontra esse imóvel, o Imposto Predial Territorial Urbano (IPTU) é calculado conforme a área construída da residência. Nesse cálculo, são cobrados R\$ 4,00 por cada metro quadrado de área construída.
+
+                        O valor do IPTU desse imóvel, em real, é
+                        \begin{enumerate}[a.]
+                            \item 250,00
+                            \item 250,80
+                            \item 258,64
+                            \item 276,48
+                            \item 286,00
+                            % letra e
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                3.~\textbf{(ENEM-2024): }Um sistema de polias circulares e correias é um dos mecanismos responsáveis pela transmissão de movimento em máquinas rotativas. O manual de um motor traz uma figura representando um sistema composto por duas polias e uma correia de transmissão, tensionada e perfeitamente ajustada sobre as polias, de modo a não apresentar folgas nos contatos com as polias. Considere que as partes dessa correia que não ficam em contato com as polias são representadas por segmentos de reta tangentes às polias.
+
+                Para substituição dessa correia, é necessária a especificação de seu comprimento.
+
+                Considere 3 como valor aproximado para $\pi$.
+
+                A medida do comprimento dessa correia, em centímetro, é
+              
+                \begin{columns}
+                    \begin{column}{0.6\textwidth}
+                        \begin{table}
+                            \begin{figure}
+                                \centering
+                                \includegraphics[width=.75\textwidth]{figura_polia.png}
+                            \end{figure}
+                        \end{table}
+                    \end{column}
+                    \begin{column}{0.35\textwidth}
+                        \begin{enumerate}[a.]
+                            \item 50
+                            \item 60
+                            \item 66
+                            \item 68
+                            \item 72
+                            % letra d
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                4.~\textbf{(IFSC-2017): }Pedro é pecuarista e, com o aumento da criação, ele terá que fazer um novo cercado para acomodar seus animais. Sabendo-se que ele terá que utilizar 5 voltas de arame farpado e que o cercado tem forma retangular cujas dimensões são as raízes da equação $x^2 - 45x + 500 = 0$, qual a quantidade mínima de arame que Pedro terá que comprar para fazer esse cercado?
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         
+                        \begin{enumerate}[a.]
+                            \item 545 m
+                            \item 225 m
+                            \item 200 m
+                            \item 500 m
+                            \item 450 m
+                            % letra e
+                        \end{enumerate}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                5.~\textbf{(ENEM-2024): }Um fazendeiro pretende construir um galinheiro ocupando uma região plana de formato retangular, com lados de comprimento $L$ metro e $C$ metro. Os lados serão cercados por telas de tipos diferentes. Nos lados de comprimento $L$ metro, será utilizada uma tela cujo metro linear custa R\$ $20,00$, enquanto, nos outros dois lados, uma que custa R\$ $15,00$. O fazendeiro quer gastar, no máximo, R\$ $6.000,00$ na compra de toda a tela necessária para o galinheiro, e deseja que o galinheiro tenha a maior área possível.
+
+                Qual será a medida, em metro, do maior lado do galinheiro?
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         
+                        \begin{enumerate}[a.]
+                            \item 85
+                            \item 100
+                            \item 175
+                            \item 200
+                            \item 350
+                            % letra B
+                        \end{enumerate}
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    %fim
+    \begin{frame}
+        \frametitle{Exercícios}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                6.~\textbf{(ENEM-2023): }Analisando as vendas de uma empresa, o gerente concluiu que o montante diário arrecadado, em milhar de real, poderia ser calculado pela expressão $V(x) = \frac{x^2}{4} - 10x + 105$, em que os valores de $x$ representam os dias do mês, variando de 1 a 30.Um dos fatores para avaliar o desempenho mensal da empresa é verificar qual é o menor montante diário $V_0$ arrecadado ao longo do mês e classificar o desempenho conforme as categorias apresentadas a seguir, em que as quantidades estão expressas em milhar de real.
+
+                \begin{columns}
+                    \begin{column}{0.4\textwidth}
+                         \begin{itemize}
+                        \item Ótimo: $V_0 \ge 24$
+                        \item Bom: $20 \le V_0 < 24$
+                        \item Normal: $10 \le V_0 < 20$
+                        \item Ruim: $4 \le V_0 < 10$
+                        \item Péssimo: $V_0 < 4$
+                    \end{itemize}    
+                    \end{column}
+                    \begin{column}{0.5\textwidth}
+                        No caso analisado, qual seria a classificação do desempenho da empresa?  
+                        \begin{enumerate}[a.]
+                            \item Ótimo.
+                            \item Bom.
+                            \item Normal.
+                            \item Ruim.
+                            \item Péssimo.
+                            % letra D
+                        \end{enumerate}
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+\end{document}

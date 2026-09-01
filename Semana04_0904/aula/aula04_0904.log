@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  28 AUG 2026 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  1 SEP 2026 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana03_AGO28/aula/apresentacao.tex
-(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana03_AGO28/aula/apresentacao.tex
+**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex
+(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -994,41 +994,41 @@ Package: thm-amsthm 2023/05/04 v0.76
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-beamer.sty
 Package: thm-beamer 2023/05/04 v0.76
 ))
-LaTeX Font Info:    Trying to load font information for T1+Montserrat-LF on input line 126.
+LaTeX Font Info:    Trying to load font information for T1+Montserrat-LF on input line 155.
  (/usr/share/texlive/texmf-dist/tex/latex/montserrat/T1Montserrat-LF.fd
 File: T1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for T1/Montserrat-LF.
 )
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/m/n' aliased to
-(Font)              `T1/Montserrat-LF/regular/n' on input line 126.
+(Font)              `T1/Montserrat-LF/regular/n' on input line 155.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 126.
- (./apresentacao.aux)
-\openout1 = `apresentacao.aux'.
+(Font)              scaled to size 8.0pt on input line 155.
+ (./aula04_0904.aux)
+\openout1 = `aula04_0904.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 126.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 126.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 155.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 155.
  (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    ... okay on input line 155.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1083,10 +1083,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 126.
- (./apresentacao.out) (./apresentacao.out)
+Package hyperref Info: Link coloring OFF on input line 155.
+ (./aula04_0904.out) (./aula04_0904.out)
 \@outlinefile=\write5
-\openout5 = `apresentacao.out'.
+\openout5 = `aula04_0904.out'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1104,235 +1104,176 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@mv@tabular=\count381
 \c@mv@boldtabular=\count382
 \c@lstlisting=\count383
- (./apresentacao.nav)
+ (./aula04_0904.nav)
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 126.
+(Font)              scaled to size 5.0pt on input line 155.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 167.
+(Font)              scaled to size 10.95pt on input line 192.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 167.
-LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 167.
- (/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
-File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
-)
-LaTeX Font Info:    Font shape `TS1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 167.
+(Font)              scaled to size 10.95pt on input line 192.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 167.
+(Font)              scaled to size 10.0pt on input line 192.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 167.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 167.
+(Font)              scaled to size 7.0pt on input line 192.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 192.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 167.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 192.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../../src/img/semana03/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
-File: ../../src/img/semana03/../logo_ofSaber.png Graphic file (type png)
-<use ../../src/img/semana03/../logo_ofSaber.png>
-Package pdftex.def Info: ../../src/img/semana03/../logo_ofSaber.png  used on input line 167.
+<../../src/img/semana04/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
+File: ../../src/img/semana04/../logo_ofSaber.png Graphic file (type png)
+<use ../../src/img/semana04/../logo_ofSaber.png>
+Package pdftex.def Info: ../../src/img/semana04/../logo_ofSaber.png  used on input line 192.
 (pdftex.def)             Requested size: 63.73222pt x 97.15811pt.
-<../../src/img/semana03/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
-File: ../../src/img/semana03/../Proex02c.png Graphic file (type png)
-<use ../../src/img/semana03/../Proex02c.png>
-Package pdftex.def Info: ../../src/img/semana03/../Proex02c.png  used on input line 167.
+<../../src/img/semana04/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
+File: ../../src/img/semana04/../Proex02c.png Graphic file (type png)
+<use ../../src/img/semana04/../Proex02c.png>
+Package pdftex.def Info: ../../src/img/semana04/../Proex02c.png  used on input line 192.
 (pdftex.def)             Requested size: 39.83324pt x 11.86923pt.
-<../../src/img/semana03/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
-File: ../../src/img/semana03/../Logo_UFF.png Graphic file (type png)
-<use ../../src/img/semana03/../Logo_UFF.png>
-Package pdftex.def Info: ../../src/img/semana03/../Logo_UFF.png  used on input line 167.
+<../../src/img/semana04/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
+File: ../../src/img/semana04/../Logo_UFF.png Graphic file (type png)
+<use ../../src/img/semana04/../Logo_UFF.png>
+Package pdftex.def Info: ../../src/img/semana04/../Logo_UFF.png  used on input line 192.
 (pdftex.def)             Requested size: 31.8661pt x 16.29843pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 4.0pt on input line 167.
+(Font)              scaled to size 4.0pt on input line 192.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc} <../../src/img/semana03/../logo_ofSaber.png> <../../src/img/semana03/../Proex02c.png> <../../src/img/semana03/../Logo_UFF.png>]
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 188.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana04/../logo_ofSaber.png> <../../src/img/semana04/../Proex02c.png> <../../src/img/semana04/../Logo_UFF.png>]
+<../../src/img/semana04/slide_02_contracapa.png, id=64, 1381.16pt x 770.88pt>
+File: ../../src/img/semana04/slide_02_contracapa.png Graphic file (type png)
+<use ../../src/img/semana04/slide_02_contracapa.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_02_contracapa.png  used on input line 198.
+(pdftex.def)             Requested size: 455.24408pt x 254.08536pt.
  [2
 
-]
+ <../../src/img/semana04/slide_02_contracapa.png>]
+<../../src/img/semana04/slide_campo_futebol.png, id=71, 1284.8pt x 835.12pt>
+File: ../../src/img/semana04/slide_campo_futebol.png Graphic file (type png)
+<use ../../src/img/semana04/slide_campo_futebol.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_campo_futebol.png  used on input line 233.
+(pdftex.def)             Requested size: 1284.79688pt x 835.11795pt.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 233.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 7.0pt on input line 233.
+
+Underfull \hbox (badness 1264) in paragraph at lines 233--233
+[]\T1/Montserrat-LF/bold/n/8 Perímetro:  \T1/Montserrat-LF/regular/n/8 m, km,
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 233.
+(/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
+File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
+)
 LaTeX Font Info:    Font shape `TS1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 211.
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 211.
+(Font)              scaled to size 8.0pt on input line 233.
+<../../src/img/semana04/elon_lages_lima.png, id=72, 829.0975pt x 1027.84pt>
+File: ../../src/img/semana04/elon_lages_lima.png Graphic file (type png)
+<use ../../src/img/semana04/elon_lages_lima.png>
+Package pdftex.def Info: ../../src/img/semana04/elon_lages_lima.png  used on input line 233.
+(pdftex.def)             Requested size: 103.56548pt x 128.38557pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 211.
+(Font)              scaled to size 8.0pt on input line 233.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 7.0pt on input line 211.
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 211.
-LaTeX Font Info:    Font shape `TS1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 211.
- [3
+(Font)              scaled to size 10.0pt on input line 233.
 
-]
-<../../src/img/semana03/slide03_parabola_mundo_real.jpg, id=81, 1027.84pt x 223.83624pt>
-File: ../../src/img/semana03/slide03_parabola_mundo_real.jpg Graphic file (type jpg)
-<use ../../src/img/semana03/slide03_parabola_mundo_real.jpg>
-Package pdftex.def Info: ../../src/img/semana03/slide03_parabola_mundo_real.jpg  used on input line 228.
-(pdftex.def)             Requested size: 398.3386pt x 86.7493pt.
- [4
-
- <../../src/img/semana03/slide03_parabola_mundo_real.jpg>]
-<../../src/img/semana03/slide04_parabola_plano_cartesiano.jpg, id=87, 639.38875pt x 1027.84pt>
-File: ../../src/img/semana03/slide04_parabola_plano_cartesiano.jpg Graphic file (type jpg)
-<use ../../src/img/semana03/slide04_parabola_plano_cartesiano.jpg>
-Package pdftex.def Info: ../../src/img/semana03/slide04_parabola_plano_cartesiano.jpg  used on input line 262.
-(pdftex.def)             Requested size: 139.42093pt x 224.118pt.
-
-Overfull \vbox (30.76468pt too high) detected at line 262
+Overfull \vbox (16.71765pt too high) detected at line 233
  []
 
-[5
+[3
 
- <../../src/img/semana03/slide04_parabola_plano_cartesiano.jpg>]
-<../../src/img/semana03/slide06_raizes.png, id=98, 1027.84pt x 1035.87pt>
-File: ../../src/img/semana03/slide06_raizes.png Graphic file (type png)
-<use ../../src/img/semana03/slide06_raizes.png>
-Package pdftex.def Info: ../../src/img/semana03/slide06_raizes.png  used on input line 316.
-(pdftex.def)             Requested size: 159.333pt x 160.57399pt.
- [6
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc} <../../src/img/semana04/slide_campo_futebol.png> <../../src/img/semana04/elon_lages_lima.png>]
+<../../src/img/semana04/slide_area_fundamental.png, id=81, 1027.84pt x 1027.84pt>
+File: ../../src/img/semana04/slide_area_fundamental.png Graphic file (type png)
+<use ../../src/img/semana04/slide_area_fundamental.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_area_fundamental.png  used on input line 256.
+(pdftex.def)             Requested size: 159.333pt x 159.32924pt.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 256.
+<../../src/img/semana04/slide_retangulo_doisquadrados.png, id=82, 1027.84pt x 660.4675pt>
+File: ../../src/img/semana04/slide_retangulo_doisquadrados.png Graphic file (type png)
+<use ../../src/img/semana04/slide_retangulo_doisquadrados.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_retangulo_doisquadrados.png  used on input line 256.
+(pdftex.def)             Requested size: 167.30318pt x 107.50105pt.
 
- <../../src/img/semana03/slide06_raizes.png>]
-<../../src/img/semana03/slide05_vertices.png, id=106, 819.06pt x 825.0825pt>
-File: ../../src/img/semana03/slide05_vertices.png Graphic file (type png)
-<use ../../src/img/semana03/slide05_vertices.png>
-Package pdftex.def Info: ../../src/img/semana03/slide05_vertices.png  used on input line 340.
-(pdftex.def)             Requested size: 153.36386pt x 154.48856pt.
-
-Overfull \hbox (13.94293pt too wide) in paragraph at lines 340--340
- [] 
+Overfull \vbox (4.34404pt too high) detected at line 256
  []
 
+[4
 
-Overfull \vbox (4.76459pt too high) detected at line 340
+ <../../src/img/semana04/slide_area_fundamental.png> <../../src/img/semana04/slide_retangulo_doisquadrados.png>]
+<../../src/img/semana04/figura_exe01.png, id=93, 224.84pt x 213.79875pt>
+File: ../../src/img/semana04/figura_exe01.png Graphic file (type png)
+<use ../../src/img/semana04/figura_exe01.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_exe01.png  used on input line 288.
+(pdftex.def)             Requested size: 143.39871pt x 136.36095pt.
+ [5
+
+ <../../src/img/semana04/figura_exe01.png>]
+<../../src/img/semana04/figura_plantabaixa.png, id=100, 336.25626pt x 503.8825pt>
+File: ../../src/img/semana04/figura_plantabaixa.png Graphic file (type png)
+<use ../../src/img/semana04/figura_plantabaixa.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_plantabaixa.png  used on input line 322.
+(pdftex.def)             Requested size: 114.7194pt x 171.9098pt.
+
+Overfull \vbox (17.96437pt too high) detected at line 322
+ []
+
+[6
+
+ <../../src/img/semana04/figura_plantabaixa.png>]
+<../../src/img/semana04/figura_polia.png, id=107, 677.53125pt x 346.29375pt>
+File: ../../src/img/semana04/figura_polia.png Graphic file (type png)
+<use ../../src/img/semana04/figura_polia.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_polia.png  used on input line 359.
+(pdftex.def)             Requested size: 161.32767pt x 82.45697pt.
+
+Overfull \vbox (14.28378pt too high) detected at line 359
  []
 
 [7
 
- <../../src/img/semana03/slide05_vertices.png>]
-File: ../../src/img/semana03/slide05_vertices.png Graphic file (type png)
-<use ../../src/img/semana03/slide05_vertices.png>
-Package pdftex.def Info: ../../src/img/semana03/slide05_vertices.png  used on input line 372.
-(pdftex.def)             Requested size: 153.36386pt x 154.48856pt.
+ <../../src/img/semana04/figura_polia.png>] [8
 
-Overfull \hbox (13.94293pt too wide) in paragraph at lines 372--372
- [] 
- []
+] [9
 
-
-Overfull \vbox (10.76666pt too high) detected at line 372
- []
-
-[8
-
-]
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/it' will be
-(Font)              scaled to size 8.0pt on input line 405.
-
-Underfull \hbox (badness 1895) in paragraph at lines 405--405
-[]\T1/Montserrat-LF/regular/it/8 Qual a \T1/Montserrat-LF/bold/it/8 quan-ti-dade \T1/Montserrat-LF/regular/it/8 de
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 405--405
-[]\T1/Montserrat-LF/regular/it/8 Qual o \T1/Montserrat-LF/bold/it/8 va-lor \T1/Montserrat-LF/regular/it/8 do lu-cro
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-[]\T1/Montserrat-LF/regular/it/8 Em quanto \T1/Montserrat-LF/bold/it/8 tempo \T1/Montserrat-LF/regular/it/8 o
- []
-
-
-Underfull \hbox (badness 1755) in paragraph at lines 405--405
-[]\T1/Montserrat-LF/regular/n/8 A va-riá-vel in-te-pen-
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 405--405
-[]\T1/Montserrat-LF/regular/it/8 Qual foi a \T1/Montserrat-LF/bold/it/8 al-tura má-
- []
-
-
-Overfull \hbox (7.98056pt too wide) in paragraph at lines 405--405
- [] 
- []
-
-
-Overfull \vbox (28.85774pt too high) detected at line 405
- []
-
-[9
-
-]
-<../../src/img/semana03/exercicio_uerj17.png, id=131, 590.205pt x 421.575pt>
-File: ../../src/img/semana03/exercicio_uerj17.png Graphic file (type png)
-<use ../../src/img/semana03/exercicio_uerj17.png>
-Package pdftex.def Info: ../../src/img/semana03/exercicio_uerj17.png  used on input line 436.
-(pdftex.def)             Requested size: 143.39871pt x 102.42157pt.
- [10
-
- <../../src/img/semana03/exercicio_uerj17.png>]
-<../../src/img/semana03/exercicio_pucrs.png, id=139, 408.52625pt x 232.87pt>
-File: ../../src/img/semana03/exercicio_pucrs.png Graphic file (type png)
-<use ../../src/img/semana03/exercicio_pucrs.png>
-Package pdftex.def Info: ../../src/img/semana03/exercicio_pucrs.png  used on input line 466.
-(pdftex.def)             Requested size: 143.39871pt x 81.74023pt.
- [11
-
- <../../src/img/semana03/exercicio_pucrs.png>]
-<../../src/img/semana03/exercicio_enem15.png, id=146, 390.45876pt x 350.30875pt>
-File: ../../src/img/semana03/exercicio_enem15.png Graphic file (type png)
-<use ../../src/img/semana03/exercicio_enem15.png>
-Package pdftex.def Info: ../../src/img/semana03/exercicio_enem15.png  used on input line 500.
-(pdftex.def)             Requested size: 125.47798pt x 112.57147pt.
-
-Overfull \vbox (10.1984pt too high) detected at line 500
- []
-
-[12
-
- <../../src/img/semana03/exercicio_enem15.png>] [13
-
-] [14
-
-] [15
+] [10
 
 ]
 \tf@nav=\write6
-\openout6 = `apresentacao.nav'.
+\openout6 = `aula04_0904.nav'.
 
 \tf@toc=\write7
-\openout7 = `apresentacao.toc'.
+\openout7 = `aula04_0904.toc'.
 
 \tf@snm=\write8
-\openout8 = `apresentacao.snm'.
+\openout8 = `aula04_0904.snm'.
 
- (./apresentacao.aux)
+ (./aula04_0904.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `apresentacao.out' has not changed.
+Package rerunfilecheck Info: File `aula04_0904.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35090 strings out of 474222
- 745890 string characters out of 5748734
- 1937975 words of memory out of 5000000
- 56583 multiletter control sequences out of 15000+600000
- 786900 words of font info for 105 fonts, out of 8000000 for 9000
+ 35034 strings out of 474222
+ 745191 string characters out of 5748734
+ 1936975 words of memory out of 5000000
+ 56546 multiletter control sequences out of 15000+600000
+ 762000 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,123p,1949b,1081s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-BoldItalic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on apresentacao.pdf (15 pages, 3135730 bytes).
+ 128i,13n,123p,1947b,1079s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on aula04_0904.pdf (10 pages, 5856798 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
