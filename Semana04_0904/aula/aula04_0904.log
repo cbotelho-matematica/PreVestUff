@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  1 SEP 2026 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  1 SEP 2026 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1206,42 +1206,71 @@ Overfull \vbox (4.34404pt too high) detected at line 256
 [4
 
  <../../src/img/semana04/slide_area_fundamental.png> <../../src/img/semana04/slide_retangulo_doisquadrados.png>]
-<../../src/img/semana04/figura_exe01.png, id=93, 224.84pt x 213.79875pt>
-File: ../../src/img/semana04/figura_exe01.png Graphic file (type png)
-<use ../../src/img/semana04/figura_exe01.png>
-Package pdftex.def Info: ../../src/img/semana04/figura_exe01.png  used on input line 288.
-(pdftex.def)             Requested size: 143.39871pt x 136.36095pt.
- [5
+<../../src/img/semana04/slide_area_retangulo.png, id=93, 1027.84pt x 664.4825pt>
+File: ../../src/img/semana04/slide_area_retangulo.png Graphic file (type png)
+<use ../../src/img/semana04/slide_area_retangulo.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_area_retangulo.png  used on input line 281.
+(pdftex.def)             Requested size: 148.18228pt x 95.7949pt.
 
- <../../src/img/semana04/figura_exe01.png>]
-<../../src/img/semana04/figura_plantabaixa.png, id=100, 336.25626pt x 503.8825pt>
-File: ../../src/img/semana04/figura_plantabaixa.png Graphic file (type png)
-<use ../../src/img/semana04/figura_plantabaixa.png>
-Package pdftex.def Info: ../../src/img/semana04/figura_plantabaixa.png  used on input line 322.
-(pdftex.def)             Requested size: 114.7194pt x 171.9098pt.
+Overfull \vbox (15.16692pt too high) detected at line 281
+ []
 
-Overfull \vbox (17.96437pt too high) detected at line 322
+[5
+
+ <../../src/img/semana04/slide_area_retangulo.png>]
+<../../src/img/semana04/slide_area_paralelogramo.png, id=100, 1023.825pt x 642.4pt>
+File: ../../src/img/semana04/slide_area_paralelogramo.png Graphic file (type png)
+<use ../../src/img/semana04/slide_area_paralelogramo.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_area_paralelogramo.png  used on input line 316.
+(pdftex.def)             Requested size: 159.33604pt x 99.97285pt.
+<../../src/img/semana04/slide_area_trapezio.png, id=101, 1027.84pt x 642.4pt>
+File: ../../src/img/semana04/slide_area_trapezio.png Graphic file (type png)
+<use ../../src/img/semana04/slide_area_trapezio.png>
+Package pdftex.def Info: ../../src/img/semana04/slide_area_trapezio.png  used on input line 316.
+(pdftex.def)             Requested size: 159.33604pt x 99.58076pt.
+
+Overfull \vbox (18.7148pt too high) detected at line 316
  []
 
 [6
 
- <../../src/img/semana04/figura_plantabaixa.png>]
-<../../src/img/semana04/figura_polia.png, id=107, 677.53125pt x 346.29375pt>
-File: ../../src/img/semana04/figura_polia.png Graphic file (type png)
-<use ../../src/img/semana04/figura_polia.png>
-Package pdftex.def Info: ../../src/img/semana04/figura_polia.png  used on input line 359.
-(pdftex.def)             Requested size: 161.32767pt x 82.45697pt.
+ <../../src/img/semana04/slide_area_paralelogramo.png> <../../src/img/semana04/slide_area_trapezio.png>]
+<../../src/img/semana04/figura_exe01.png, id=114, 224.84pt x 213.79875pt>
+File: ../../src/img/semana04/figura_exe01.png Graphic file (type png)
+<use ../../src/img/semana04/figura_exe01.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_exe01.png  used on input line 352.
+(pdftex.def)             Requested size: 143.39871pt x 136.36095pt.
+ [7
 
-Overfull \vbox (14.28378pt too high) detected at line 359
+ <../../src/img/semana04/figura_exe01.png>]
+<../../src/img/semana04/figura_plantabaixa.png, id=122, 336.25626pt x 503.8825pt>
+File: ../../src/img/semana04/figura_plantabaixa.png Graphic file (type png)
+<use ../../src/img/semana04/figura_plantabaixa.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_plantabaixa.png  used on input line 386.
+(pdftex.def)             Requested size: 114.7194pt x 171.9098pt.
+
+Overfull \vbox (17.96437pt too high) detected at line 386
  []
 
-[7
+[8
 
- <../../src/img/semana04/figura_polia.png>] [8
+ <../../src/img/semana04/figura_plantabaixa.png>]
+<../../src/img/semana04/figura_polia.png, id=129, 677.53125pt x 346.29375pt>
+File: ../../src/img/semana04/figura_polia.png Graphic file (type png)
+<use ../../src/img/semana04/figura_polia.png>
+Package pdftex.def Info: ../../src/img/semana04/figura_polia.png  used on input line 423.
+(pdftex.def)             Requested size: 161.32767pt x 82.45697pt.
 
-] [9
+Overfull \vbox (14.31128pt too high) detected at line 423
+ []
 
-] [10
+[9
+
+ <../../src/img/semana04/figura_polia.png>] [10
+
+] [11
+
+] [12
 
 ]
 \tf@nav=\write6
@@ -1262,18 +1291,18 @@ Package rerunfilecheck Info: File `aula04_0904.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35034 strings out of 474222
- 745191 string characters out of 5748734
- 1936975 words of memory out of 5000000
- 56546 multiletter control sequences out of 15000+600000
- 762000 words of font info for 75 fonts, out of 8000000 for 9000
+ 35086 strings out of 474222
+ 746959 string characters out of 5748734
+ 1935975 words of memory out of 5000000
+ 56594 multiletter control sequences out of 15000+600000
+ 763054 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,123p,1947b,1079s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on aula04_0904.pdf (10 pages, 5856798 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on aula04_0904.pdf (12 pages, 8628062 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
