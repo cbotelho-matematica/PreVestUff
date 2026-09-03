@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788461890.88257 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex" "aula04_0904.pdf" "aula04_0904" 1788461900.70255 0
+["pdflatex"] 1788469156.41266 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex" "aula04_0904.pdf" "aula04_0904" 1788469166.53375 0
   "../../src/img/semana04/../Logo_UFF.png" 1787913256.34874 77046 2c70ba0c7ea5870b115705a2ba65ce07 ""
   "../../src/img/semana04/../Proex02c.png" 1787921183.72677 157934 21c7efceba742c146a920d496cf507d1 ""
   "../../src/img/semana04/../logo_ofSaber.png" 1787846899.17712 36267 2c182e7421b70866ccf4c49a32e234ba ""
@@ -21,7 +21,7 @@
   "../../src/img/semana04/slide_permitroxarea.png" 1788458693.3736 848892 53b5a53c6135afe54446b3b752aefdab ""
   "../../src/img/semana04/slide_retangulo_doisquadrados.png" 1788213857.51098 561554 c0bd4e219465e673705c53fcccf3bf0f ""
   "/etc/texmf/web2c/texmf.cnf" 1754220970.30918 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex" 1788461890.17595 26454 ab898e63c30fcb86eb770213e9138484 ""
+  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/aula/aula04_0904.tex" 1788469154.73724 26493 ebc8a868ff4bf578cdface444f657a79 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc" 1573249213 3298 897117ae1be0571b7658619cec0c0722 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc" 1573249213 3078 57cf00a973d6059b76d540bd27630c2e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -314,10 +314,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754773594.48138 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754773821 8213464 6eb19c020e47edd56ed6211aeae19031 ""
-  "aula04_0904.aux" 1788461900.12797 2595 992f0cefbb4a456c25c495774ceefe55 "pdflatex"
-  "aula04_0904.nav" 1788461900.13597 1667 223530e0d280496bcaab89de82b2e7ab "pdflatex"
-  "aula04_0904.out" 1788461894.09195 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "aula04_0904.tex" 1788461890.17595 26454 ab898e63c30fcb86eb770213e9138484 ""
+  "aula04_0904.aux" 1788469165.85358 2595 992f0cefbb4a456c25c495774ceefe55 "pdflatex"
+  "aula04_0904.nav" 1788469165.85758 1667 223530e0d280496bcaab89de82b2e7ab "pdflatex"
+  "aula04_0904.out" 1788469159.9134 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "aula04_0904.tex" 1788469154.73724 26493 ebc8a868ff4bf578cdface444f657a79 ""
   (generated)
   "aula04_0904.aux"
   "aula04_0904.log"
