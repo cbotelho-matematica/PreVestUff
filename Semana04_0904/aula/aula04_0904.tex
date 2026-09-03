@@ -232,9 +232,8 @@
         \end{columns}    
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Propriedades Gerais da Área}
-        \vspace{2em}
+    \begin{frame}{Propriedades Gerais da Área}
+        \vspace{1.2em}
             \begin{columns}[T]
                 \begin{column}{.4\textwidth}
                     \includegraphics[width=\textwidth]{slide_area_fundamental.png}
@@ -247,17 +246,15 @@
                             \item Se um polígono $P$ pode ser dividido em duas ou mais regiões, a área de $P$ é a \textbf{soma das áreas} das regiões.
                         \end{itemize}
 
-                        \vspace{1.2em}
-
+                        \vspace{1em}
+                        \large{\textbf{Área do Retângulo}}
                         \includegraphics[width=.7\textwidth]{slide_retangulo_doisquadrados.png}
                     \end{center}
                 \end{column}
             \end{columns}
     \end{frame}    
 
-
-
-    \begin{frame}
+    \begin{frame}%Área do Triângulo
         \frametitle{Áreas de Figuras Mais Comuns --- Triângulo}
         Podemos não apenas usar a soma de áreas, para encontrarmos a área de outras figuras, como também podemos \textbf{decompor} um área em figuras menores. Como no caso da área do triângulo.
         \vspace{1em}
@@ -280,8 +277,7 @@
         \end{cardPrincipal}
     \end{frame}
 
-
-    \begin{frame}
+    \begin{frame}%Área de Paralelogramos
         \frametitle{Áreas de Figuras Mais Comuns --- Paralelogramos \& Trapézios}
         Prosseguindo com a estratégia de \textbf{decompor} figuras para deduzirmos suas áreas, ganhamos agora um grande aliado: calcular a área de polígonos convexos é \textit{dividí-los} em triângulos.
 
@@ -309,17 +305,120 @@
                 \end{figure}
                 \begin{cardPrincipal}[width=.8\textwidth]
                     \centering
-                    $A = \frac{B+b}{2}$
+                    $A = \frac{(B+b)\cdot h}{2}$
                 \end{cardPrincipal}
             \end{column}
         \end{columns}
     \end{frame}
 
+    \begin{frame}%Área de Polígonos Regulares
+        \frametitle{Área de Polígonos Regulares}
+        \vspace{1.2em}
+        \begin{columns}[T]
+            \begin{column}{.5\textwidth}
+                \includegraphics[width=.9\textwidth]{slide_pentagono.png}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                A mesma estratégia de decomposição de áreas pode ser aplicada a qualquer \textbf{polígono convexo}. No caso de polígonos \textbf{regulares}, 
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} %Perímetros de Polígonos
+        \frametitle{Perímetro de Polígonos}
+        O cálculo do perímetro de uma figura é relativamente simples: no caso de polígonos, basta somar os valores dos lados da figura.
+        Esse vamos representa o comprimento dos lados da figura, caso fossem colocados em linha, um após o outro, formando um segmento de reta.
+        \vspace{.3em}
+        \begin{columns}[T]
+            \begin{column}{.35\textwidth}
+                \includegraphics[width=\textwidth]{slide_permitroxarea.png}
+            \end{column}
+            \begin{column}{.6\textwidth}
+                Podemos estabelecer uma \textbf{relação entre o perímetro de polígonos regulares e sua área}. No exemplo ao lado, temos um hexágono com lado de medida \textbf{L}. Seu perímetro é \textbf{6L}. Se dividirmos em seis triângulos tomando \textbf{L} como base, a altura de cada um será o segmento \textbf{h}. E a área da figura será:
+
+                $$
+                    \text{Área}_{\text{hexágono}} = \frac{6L \cdot h}{2}
+                $$
+
+                \begin{cardPrincipal}[width=\textwidth]
+                \begin{columns}[c]
+                    \begin{column}{.5\textwidth}
+                            \[
+                            \text{Área} = \frac{p}{2} \cdot h
+                            \]
+                    \end{column}
+                    \begin{column}{.5\textwidth}
+                        \textbf{metade do perímetro }$\left( \frac{p}{2} \right)$ \textbf{vezes a o segmento que vai do centro da figura ao ponto médio de um de seus lados}$\left( h \right)$.
+                    \end{column}
+                \end{columns}
+            \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} % Perímetro de Círculos
+        \frametitle{Perímetro de Círculos}
+        A idéia do perímetro de um círculo é a seguinte: imagine um círculo formado por um fio. Imagine que posamos cortar esse fio e esticá-lo em linha reta, sem que ele se deforme, para medirmos o comprimento da circunferência.
+        Esse comprimento sempre será \textbf{o produto do diâmetro por um valor constante chamado pi}.
+        \vspace{1em}
+        \begin{columns}[T]
+            \begin{column}{.4\textwidth}
+                \includegraphics[width=\textwidth]{slide_circulo_raio_diametro.png}
+            \end{column}
+            \begin{column}{.5\textwidth}
+ 
+                \begin{cardPrincipal}[title=Relação Raio x Diâmetro]
+                    O \textbf{raio$(r)$} é a medida que vai do centro a um ponto da circunferência. O \textbf{diâmetro$(d)$} corresponde a \textbf{duas vezes o raio}. $d = 2 \cdot r$
+                \end{cardPrincipal}
+                \vspace{0.6em}
+                \begin{cardPrincipal}[title=Comprimento(C) da Circunferência]
+                    \[
+                        C = 2 \cdot \pi r
+                    \]
+                \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} % Área de Círculos
+        \frametitle{Área de Círculos}
+        Embora não possamos dividir a área do círculo em triângulos perfeitos, podemos utilizar essa ideia em combinação com a idéia da área relacionada à metade do perímetro.
+        \vspace{.6em}
+        \begin{columns}[T]
+            \begin{column}{.35\textwidth}
+                \includegraphics[width=\textwidth]{slide_area_circulo.png}
+            \end{column}
+            \begin{column}{.65\textwidth}
+                Perceba na imagem ao lado que podemos dividir um círculo em fatias. Cada uma delas se aproxima de um triângulo, com a altura definida por um raio.
+
+                A cada vez que aumentamos o número de fatias, elas se aproximarão de triâgulos tendo o raio como altura.
+
+                Então, se pudéssemos dividir em infinitos triângulos: a altura seria igual ao raio do círculo.
+
+                Por outro lado, o semiperímetro do círculo é:
+                
+                    \[
+                        \frac{p}{2} = \frac{2\cdot \pi \cdot r}{2} = \pi\cdot r
+                    \]
+                
+                Fazendo o produto do semiperímetro do círculo pelo raio:
+
+                \centering
+                \begin{cardPrincipal}[title=Área do Círculo, width=.8\textwidth]
+                    \[
+                        \text{Área}_\text{círculo} = \pi \cdot r \cdot r = \pi \cdot r^{2}
+                    \]
+                \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
+    
+
 %----------------------------------------------
 %              EXERCICIOS
 %----------------------------------------------
 
-    \begin{frame}
+    \begin{frame} %Exercício01
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
@@ -351,7 +450,7 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}
+    \begin{frame} %Exercício 02
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
@@ -385,7 +484,7 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}
+    \begin{frame} %Exercício 03
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
@@ -422,21 +521,30 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}
+    \begin{frame} %Exercicio 04
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
-                4.~\textbf{(IFSC-2017): }Pedro é pecuarista e, com o aumento da criação, ele terá que fazer um novo cercado para acomodar seus animais. Sabendo-se que ele terá que utilizar 5 voltas de arame farpado e que o cercado tem forma retangular cujas dimensões são as raízes da equação $x^2 - 45x + 500 = 0$, qual a quantidade mínima de arame que Pedro terá que comprar para fazer esse cercado?
+                4.~\textbf{(ENEM-2024): }Uma microempresa pretende fabricar pipas para vender no próximo verão. Um modelo de pipa está representado pelo quadrilátero ABCD.
+                
+                Nessa representação, os segmentos AB, BC e CE medem, respectivamente, 20 cm, 34 cm e 30 cm. Além disso, E pertence ao segmento AC e é ponto médio do segmento BD.
 
-                \begin{columns}
-                    \begin{column}{0.4\textwidth}
-                         
+                A medida da área, em centímetro quadrado, desse modelo de pipa é 
+                \vspace{1em}
+                
+                \begin{columns}[T]
+                    \centering
+                    \begin{column}{0.55\textwidth}
+                        \centering
+                        \includegraphics[width=.8\textwidth]{figura_pipa.png}
+                    \end{column}
+                    \begin{column}{0.3\textwidth}
                         \begin{enumerate}[a.]
-                            \item 545 m
-                            \item 225 m
-                            \item 200 m
-                            \item 500 m
-                            \item 450 m
+                            \item 58
+                            \item 96
+                            \item 108
+                            \item 184
+                            \item 672
                             % letra e
                         \end{enumerate}
                     \end{column}
@@ -448,23 +556,26 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame}
+    \begin{frame} %Exercicio 05
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
-                5.~\textbf{(ENEM-2024): }Um fazendeiro pretende construir um galinheiro ocupando uma região plana de formato retangular, com lados de comprimento $L$ metro e $C$ metro. Os lados serão cercados por telas de tipos diferentes. Nos lados de comprimento $L$ metro, será utilizada uma tela cujo metro linear custa R\$ $20,00$, enquanto, nos outros dois lados, uma que custa R\$ $15,00$. O fazendeiro quer gastar, no máximo, R\$ $6.000,00$ na compra de toda a tela necessária para o galinheiro, e deseja que o galinheiro tenha a maior área possível.
-
-                Qual será a medida, em metro, do maior lado do galinheiro?
+                5.~\textbf{(ENEM-2024): }Um jardineiro dispõe de k metros lineares de cerca baixa para fazer um jardim ornamental. O jardim, delimitado por essa cerca, deve ter a forma de um triângulo equilátero, um quadrado ou um hexágono regular.
+                
+                A escolha será pela forma que resulte na maior área. O jardineiro escolherá a forma de um 
 
                 \begin{columns}
-                    \begin{column}{0.4\textwidth}
+                    \begin{column}{.1\textwidth}
+                        
+                    \end{column}
+                    \begin{column}{.9\textwidth}
                          
                         \begin{enumerate}[a.]
-                            \item 85
-                            \item 100
-                            \item 175
-                            \item 200
-                            \item 350
+                            \item hexágono regular, pois a área do jardim, em metro quadrado, será $\displaystyle \frac{k^2 \sqrt{3}}{2} $
+                            \item hexágono regular, pois a área do jardim, em metro quadrado, será $\displaystyle \frac{3k^2\sqrt{3}}{2}$
+                            \item quadrado, pois a área do jardim, em metro quadrado, será $\displaystyle \frac{k^2}{16}$
+                            \item triângulo equilátero, pois a área do jardim, em metro quadrado, será $\displaystyle \frac{k^2 \sqrt{3}}{36}$
+                            \item triângulo equilátero, pois a área do jardim, em metro quadrado, será $\displaystyle \frac{k^2 \sqrt{3}}{4}$
                             % letra B
                         \end{enumerate}
                     \end{column}
@@ -475,32 +586,25 @@
             \end{column}
         \end{columns}
     \end{frame}
-    %fim
-    \begin{frame}
+    
+    \begin{frame} %Exercicio 06
         \frametitle{Exercícios}
         \begin{columns}
             \begin{column}{.9\textwidth}
-                6.~\textbf{(ENEM-2023): }Analisando as vendas de uma empresa, o gerente concluiu que o montante diário arrecadado, em milhar de real, poderia ser calculado pela expressão $V(x) = \frac{x^2}{4} - 10x + 105$, em que os valores de $x$ representam os dias do mês, variando de 1 a 30.Um dos fatores para avaliar o desempenho mensal da empresa é verificar qual é o menor montante diário $V_0$ arrecadado ao longo do mês e classificar o desempenho conforme as categorias apresentadas a seguir, em que as quantidades estão expressas em milhar de real.
-
-                \begin{columns}
+                6.~\textbf{(ENEM-2023): }Uma empresa de publicidade está criando um logotipo que tem o formato indicado na figura. O círculo menor está inscrito no quadrado ABCD, e o círculo maior circunscreve o mesmo quadrado. Considere S1 a área do círculo menor e S2 a área do círculo maior. 
+                \vspace{1.2em}
+                \begin{columns}[T]
                     \begin{column}{0.4\textwidth}
-                         \begin{itemize}
-                        \item Ótimo: $V_0 \ge 24$
-                        \item Bom: $20 \le V_0 < 24$
-                        \item Normal: $10 \le V_0 < 20$
-                        \item Ruim: $4 \le V_0 < 10$
-                        \item Péssimo: $V_0 < 4$
-                    \end{itemize}    
+                        \includegraphics[width=\textwidth]{figura_questao6.png}
                     \end{column}
                     \begin{column}{0.5\textwidth}
-                        No caso analisado, qual seria a classificação do desempenho da empresa?  
+                        A razão da área do círculo maior para o círculo menor é igual a 
                         \begin{enumerate}[a.]
-                            \item Ótimo.
-                            \item Bom.
-                            \item Normal.
-                            \item Ruim.
-                            \item Péssimo.
-                            % letra D
+                            \item $\sqrt{2}$
+                            \item $\frac{1}{2}$
+                            \item 2
+                            \item 8
+                            \item 16
                         \end{enumerate}
                     \end{column}
                 \end{columns}
