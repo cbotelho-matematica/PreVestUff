@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788521620.32203 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex" "monitoria0904.pdf" "monitoria0904" 1788521624.9345 0
+["pdflatex"] 1788534181.36553 "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex" "monitoria0904.pdf" "monitoria0904" 1788534188.67209 0
   "../../src/img/semana04/../Logo_UFF.png" 1787913256.34874 77046 2c70ba0c7ea5870b115705a2ba65ce07 ""
   "../../src/img/semana04/../Proex02c.png" 1787921183.72677 157934 21c7efceba742c146a920d496cf507d1 ""
   "../../src/img/semana04/../logo_ofSaber.png" 1787846899.17712 36267 2c182e7421b70866ccf4c49a32e234ba ""
@@ -10,7 +10,7 @@
   "../../src/img/semana04/lista_q05.png" 1788520311.49261 16687 5d4edb2bba3373aa57e4284483c64afe ""
   "../../src/img/semana04/lista_q06.png" 1788521404.82509 13219 f14b851a09e794e31cd9254f8a0f2ca4 ""
   "/etc/texmf/web2c/texmf.cnf" 1754220970.30918 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex" 1788521619.85312 13292 874a0e9740fa15b1f7ac30ec353fcbea ""
+  "/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex" 1788534176.94574 13347 860dfa734e99b7075b596ae42ef0e8c7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -238,10 +238,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754773594.48138 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754773821 8213464 6eb19c020e47edd56ed6211aeae19031 ""
-  "monitoria0904.aux" 1788521624.60898 1438 e7d6e9177a59682ad76207b49a7ac5ea "pdflatex"
-  "monitoria0904.nav" 1788521624.61698 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
-  "monitoria0904.out" 1788521622.54904 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "monitoria0904.tex" 1788521619.85312 13292 874a0e9740fa15b1f7ac30ec353fcbea ""
+  "monitoria0904.aux" 1788534188.06935 1438 e7d6e9177a59682ad76207b49a7ac5ea "pdflatex"
+  "monitoria0904.nav" 1788534188.07335 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
+  "monitoria0904.out" 1788534185.77745 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "monitoria0904.tex" 1788534176.94574 13347 860dfa734e99b7075b596ae42ef0e8c7 ""
   (generated)
   "monitoria0904.aux"
   "monitoria0904.log"
