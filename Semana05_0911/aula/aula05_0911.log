@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  10 SEP 2026 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  10 SEP 2026 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex
-(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana04_0904/monitoria/monitoria0904.tex
+**/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana05_0911/aula/aula05_0911.tex
+(/home/eduardo-santos/Documentos/CEDERJ/PreVestUff/Semana05_0911/aula/aula05_0911.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -538,6 +538,8 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks46
 \inpenc@posthook=\toks47
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count336
@@ -552,89 +554,391 @@ Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 (babel)             (\language52). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
-)) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
-Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
- (/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks48
-\pgfopts@list@add@b@toks=\toks49
-) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerinnerthememetropolis.sty
-Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count338
-\calc@Bcount=\count339
-\calc@Adimen=\dimen295
-\calc@Bdimen=\dimen296
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count340
-\calc@Cskip=\skip67
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/montserrat/montserrat.sty
+Package: montserrat 2019/11/07 v1.03
+ `montserrat' v1.03, 2019/11/07 Style file for Montserrat and Alternates (msharpe) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
+Now handling font encoding LY1 ...
+... processing UTF-8 mapping file for font encoding LY1
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ly1enc.dfu
+File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Info: Redefining \textin on input line 42.
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
+)
+\XKV@depth=\count338
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen295
+\lightrulewidth=\dimen296
+\cmidrulewidth=\dimen297
+\belowrulesep=\dimen298
+\belowbottomsep=\dimen299
+\aboverulesep=\dimen300
+\abovetopsep=\dimen301
+\cmidrulesep=\dimen302
+\cmidrulekern=\dimen303
+\defaultaddspace=\dimen304
+\@cmidla=\count339
+\@cmidlb=\count340
+\@aboverulesep=\dimen305
+\@belowrulesep=\dimen306
+\@thisruleclass=\count341
+\@lastruleclass=\count342
+\@thisrulewidth=\dimen307
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count343
+\multirow@dima=\skip66
+\bigstrutjot=\dimen308
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen309
+\ar@mcellbox=\box76
+\extrarowheight=\dimen310
+\NC@list=\toks50
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box77
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box76
+\pgfnodeparttextbox=\box78
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen297
-\pgf@nodesepend=\dimen298
+\pgf@nodesepstart=\dimen311
+\pgf@nodesepend=\dimen312
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box79
+\tcb@upperbox=\box80
+\tcb@lowerbox=\box81
+\tcb@phantombox=\box82
+\c@tcbbreakpart=\count344
+\c@tcblayer=\count345
+\c@tcolorbox@number=\count346
+\l__tcobox_tmpa_box=\box83
+\l__tcobox_tmpa_dim=\dimen313
+\tcb@temp=\box84
+\tcb@temp=\box85
+\tcb@temp=\box86
+\tcb@temp=\box87
+ (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count347
+\c@tcbrasterrow=\count348
+\c@tcbrasternum=\count349
+\c@tcbraster=\count350
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen299
-\pgffor@skip=\dimen300
-\pgffor@stack=\toks50
-\pgffor@toks=\toks51
+\pgffor@iter=\dimen314
+\pgffor@skip=\dimen315
+\pgffor@stack=\toks53
+\pgffor@toks=\toks54
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count341
-\pgfplotmarksize=\dimen301
+\pgf@plot@mark@count=\count351
+\pgfplotmarksize=\dimen316
 )
-\tikz@lastx=\dimen302
-\tikz@lasty=\dimen303
-\tikz@lastxsaved=\dimen304
-\tikz@lastysaved=\dimen305
-\tikz@lastmovetox=\dimen306
-\tikz@lastmovetoy=\dimen307
-\tikzleveldistance=\dimen308
-\tikzsiblingdistance=\dimen309
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count342
-\tikznumberofchildren=\count343
-\tikznumberofcurrentchild=\count344
-\tikz@fig@count=\count345
+\tikz@lastx=\dimen317
+\tikz@lasty=\dimen318
+\tikz@lastxsaved=\dimen319
+\tikz@lastysaved=\dimen320
+\tikz@lastmovetox=\dimen321
+\tikz@lastmovetoy=\dimen322
+\tikzleveldistance=\dimen323
+\tikzsiblingdistance=\dimen324
+\tikz@figbox=\box88
+\tikz@figbox@bg=\box89
+\tikz@tempbox=\box90
+\tikz@tempbox@bg=\box91
+\tikztreelevel=\count352
+\tikznumberofchildren=\count353
+\tikznumberofcurrentchild=\count354
+\tikz@fig@count=\count355
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count346
-\pgfmatrixcurrentcolumn=\count347
-\pgf@matrix@numberofcolumns=\count348
+\pgfmatrixcurrentrow=\count356
+\pgfmatrixcurrentcolumn=\count357
+\pgf@matrix@numberofcolumns=\count358
 )
-\tikz@expandcount=\count349
+\tikz@expandcount=\count359
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-\metropolis@titleseparator@linewidth=\skip68
-\metropolis@progressonsectionpage=\skip69
-\metropolis@progressonsectionpage@linewidth=\skip70
-\metropolis@blocksep=\skip71
-\metropolis@blockadjust=\skip72
-\metropolis@parskip=\skip73
+))) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+ (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+) (/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box92
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box93
+\tcb@totalupperbox=\box94
+\tcb@totallowerbox=\box95
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+\tcbfitdim=\dimen325
+\tcb@lowerfitdim=\dimen326
+\tcb@upperfitdim=\dimen327
+\tcb@cur@hbadness=\count360
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count361
+\lst@gtempboxa=\box96
+\lst@token=\toks55
+\lst@length=\count362
+\lst@currlwidth=\dimen328
+\lst@column=\count363
+\lst@pos=\count364
+\lst@lostspace=\dimen329
+\lst@width=\dimen330
+\lst@newlines=\count365
+\lst@lineno=\count366
+\lst@maxwidth=\dimen331
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count367
+\lst@skipnumbers=\count368
+\lst@framebox=\box97
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+)
+\c@tcblisting=\count369
+)) (/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
+)) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
+Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
+ (/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks56
+\pgfopts@list@add@b@toks=\toks57
+) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerinnerthememetropolis.sty
+Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count370
+\calc@Bcount=\count371
+\calc@Adimen=\dimen332
+\calc@Bdimen=\dimen333
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count372
+\calc@Cskip=\skip71
+)
+\metropolis@titleseparator@linewidth=\skip72
+\metropolis@progressonsectionpage=\skip73
+\metropolis@progressonsectionpage@linewidth=\skip74
+\metropolis@blocksep=\skip75
+\metropolis@blockadjust=\skip76
+\metropolis@parskip=\skip77
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerouterthememetropolis.sty
 Package: beamerouterthememetropolis 2017/01/23 Metropolis outer theme
-\metropolis@frametitle@padding=\skip74
-\metropolis@progressinheadfoot=\skip75
-\metropolis@progressinheadfoot@linewidth=\skip76
+\metropolis@frametitle@padding=\skip78
+\metropolis@progressinheadfoot=\skip79
+\metropolis@progressinheadfoot@linewidth=\skip80
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamercolorthememetropolis.sty
 Package: beamercolorthememetropolis 2017/01/23 Metropolis color theme
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerfontthememetropolis.sty
@@ -651,29 +955,27 @@ Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLa
 Package: expl3 2024-01-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count350
-\l__pdf_internal_box=\box81
+\l__color_backend_stack_int=\count373
+\l__pdf_internal_box=\box98
 )) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
-) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2023-10-10 L3 Experimental document command parser
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen310
-\l__xtemplate_tmp_int=\count351
+\l__xtemplate_tmp_dim=\dimen334
+\l__xtemplate_tmp_int=\count374
 \l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip77
+\l__xtemplate_tmp_skip=\skip81
 )
 Package: xfrac 2023-10-10 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box82
-\l__xfrac_tmp_box=\box83
-\l__xfrac_denominator_bot_sep_dim=\dimen311
-\l__xfrac_numerator_bot_sep_dim=\dimen312
-\l__xfrac_numerator_top_sep_dim=\dimen313
-\l__xfrac_slash_left_sep_dim=\dimen314
-\l__xfrac_slash_right_sep_dim=\dimen315
+\l__xfrac_slash_box=\box99
+\l__xfrac_tmp_box=\box100
+\l__xfrac_denominator_bot_sep_dim=\dimen335
+\l__xfrac_numerator_bot_sep_dim=\dimen336
+\l__xfrac_numerator_top_sep_dim=\dimen337
+\l__xfrac_slash_left_sep_dim=\dimen338
+\l__xfrac_slash_right_sep_dim=\dimen339
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 
@@ -682,13 +984,13 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
-\thmt@toks=\toks52
-\c@thmt@dummyctr=\count352
+\thmt@toks=\toks58
+\c@thmt@dummyctr=\count375
  (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
  (/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2023/05/04 v0.76
-\@parsespec=\toks53
+\@parsespec=\toks59
 )) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2023/05/04 v0.76
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
@@ -703,40 +1005,45 @@ Package: thm-listof 2023/05/04 v0.76
 Package: thm-restate 2023/05/04 v0.76
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
-\thmt@style@headstyle=\toks54
+\thmt@style@headstyle=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-beamer.sty
 Package: thm-beamer 2023/05/04 v0.76
-)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip78
-\enit@outerparindent=\dimen316
-\enit@toks=\toks55
-\enit@inbox=\box84
-\enit@count@id=\count353
-\enitdp@description=\count354
+))
+LaTeX Font Info:    Trying to load font information for T1+Montserrat-LF on input line 157.
+ (/usr/share/texlive/texmf-dist/tex/latex/montserrat/T1Montserrat-LF.fd
+File: T1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for T1/Montserrat-LF.
 )
-\c@questaovest=\count355
- (./monitoria0904.aux)
-\openout1 = `monitoria0904.aux'.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/m/n' aliased to
+(Font)              `T1/Montserrat-LF/regular/n' on input line 157.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 157.
+ (./aula05_0911.aux)
+\openout1 = `aula05_0911.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 157.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 157.
+ (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 157.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -774,83 +1081,28 @@ LaTeX Font Info:    ... okay on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count356
-\scratchdimen=\dimen317
-\scratchbox=\box85
-\nofMPsegments=\count357
-\nofMParguments=\count358
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count359
-\MPscratchDim=\dimen318
-\MPnumerator=\count360
-\makeMPintoPDFobject=\count361
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count376
+\scratchdimen=\dimen340
+\scratchbox=\box101
+\nofMPsegments=\count377
+\nofMParguments=\count378
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count379
+\MPscratchDim=\dimen341
+\MPnumerator=\count380
+\makeMPintoPDFobject=\count381
+\everyMPtoPDFconversion=\toks62
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 83.
- (./monitoria0904.out) (./monitoria0904.out)
+Package hyperref Info: Link coloring OFF on input line 157.
+ (./aula05_0911.out) (./aula05_0911.out)
 \@outlinefile=\write5
-\openout5 = `monitoria0904.out'.
+\openout5 = `aula05_0911.out'.
 
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 83.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 83.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 83.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 83.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 83.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 83.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 83.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 83.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 83.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 83.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -863,155 +1115,282 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./monitoria0904.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 120.
+)
+\c@mv@tabular=\count382
+\c@mv@boldtabular=\count383
+\c@lstlisting=\count384
+ (./aula05_0911.nav)
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 5.0pt on input line 157.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 194.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 194.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 194.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 194.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 194.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 120.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 194.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 120.
- (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-<../../src/img/semana04/../logo_ofSaber.png, id=13, 143.53625pt x 218.8175pt>
-File: ../../src/img/semana04/../logo_ofSaber.png Graphic file (type png)
-<use ../../src/img/semana04/../logo_ofSaber.png>
-Package pdftex.def Info: ../../src/img/semana04/../logo_ofSaber.png  used on input line 120.
+<../../src/img/semana05/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
+File: ../../src/img/semana05/../logo_ofSaber.png Graphic file (type png)
+<use ../../src/img/semana05/../logo_ofSaber.png>
+Package pdftex.def Info: ../../src/img/semana05/../logo_ofSaber.png  used on input line 194.
 (pdftex.def)             Requested size: 63.73222pt x 97.15811pt.
-<../../src/img/semana04/../Proex02c.png, id=15, 336.2964pt x 100.2144pt>
-File: ../../src/img/semana04/../Proex02c.png Graphic file (type png)
-<use ../../src/img/semana04/../Proex02c.png>
-Package pdftex.def Info: ../../src/img/semana04/../Proex02c.png  used on input line 120.
+<../../src/img/semana05/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
+File: ../../src/img/semana05/../Proex02c.png Graphic file (type png)
+<use ../../src/img/semana05/../Proex02c.png>
+Package pdftex.def Info: ../../src/img/semana05/../Proex02c.png  used on input line 194.
 (pdftex.def)             Requested size: 39.83324pt x 11.86923pt.
-<../../src/img/semana04/../Logo_UFF.png, id=16, 3854.4pt x 1974.37625pt>
-File: ../../src/img/semana04/../Logo_UFF.png Graphic file (type png)
-<use ../../src/img/semana04/../Logo_UFF.png>
-Package pdftex.def Info: ../../src/img/semana04/../Logo_UFF.png  used on input line 120.
+<../../src/img/semana05/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
+File: ../../src/img/semana05/../Logo_UFF.png Graphic file (type png)
+<use ../../src/img/semana05/../Logo_UFF.png>
+Package pdftex.def Info: ../../src/img/semana05/../Logo_UFF.png  used on input line 194.
 (pdftex.def)             Requested size: 31.8661pt x 16.29843pt.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 4.0pt on input line 194.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../src/img/semana04/../logo_ofSaber.png> <../../src/img/semana04/../Proex02c.png> <../../src/img/semana04/../Logo_UFF.png>]
-<../../src/img/semana04/lista_q01.png, id=28, 353.32pt x 381.425pt>
-File: ../../src/img/semana04/lista_q01.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q01.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q01.png  used on input line 171.
-(pdftex.def)             Requested size: 107.54903pt x 116.10455pt.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana05/../logo_ofSaber.png> <../../src/img/semana05/../Proex02c.png> <../../src/img/semana05/../Logo_UFF.png>]
+<../../src/img/semana05/segunda_capa_pitagoras.png, id=64, 316.0608pt x 196.5744pt>
+File: ../../src/img/semana05/segunda_capa_pitagoras.png Graphic file (type png)
+<use ../../src/img/semana05/segunda_capa_pitagoras.png>
+Package pdftex.def Info: ../../src/img/semana05/segunda_capa_pitagoras.png  used on input line 200.
+(pdftex.def)             Requested size: 455.24408pt x 283.16289pt.
+ [2
 
-Overfull \hbox (35.85242pt too wide) detected at line 171
-[][][][][][][][][][][] [][][][][][][]
+ <../../src/img/semana05/segunda_capa_pitagoras.png>]
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 236.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 7.0pt on input line 236.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+[]\T1/Montserrat-LF/regular/n/8 Definimos �n-gulo ge-o-m�-trico
  []
 
-[2
+<../../src/img/semana05/angulos_interno_externo.jpeg, id=71, 227.4096pt x 188.3838pt>
+File: ../../src/img/semana05/angulos_interno_externo.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/angulos_interno_externo.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/angulos_interno_externo.jpeg  used on input line 236.
+(pdftex.def)             Requested size: 143.39871pt x 118.78877pt.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 236.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 236.
 
- <../../src/img/semana04/lista_q01.png>]
-<../../src/img/semana04/lista_q02.png, id=36, 255.95625pt x 125.46875pt>
-File: ../../src/img/semana04/lista_q02.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q02.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q02.png  used on input line 203.
-(pdftex.def)             Requested size: 129.05795pt x 63.2626pt.
-
-Overfull \hbox (53.77315pt too wide) detected at line 203
-[][][][][][][][][][][] [][][][][][][]
+Overfull \vbox (21.29881pt too high) detected at line 236
  []
 
 [3
 
- <../../src/img/semana04/lista_q02.png>]
-<../../src/img/semana04/lista_q03.png, id=44, 377.41pt x 245.91875pt>
-File: ../../src/img/semana04/lista_q03.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q03.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q03.png  used on input line 230.
-(pdftex.def)             Requested size: 215.10356pt x 140.16013pt.
+ <../../src/img/semana05/angulos_interno_externo.jpeg>]
+<../../src/img/semana05/angulo_agudo.jpeg, id=81, 246.6816pt x 246.6816pt>
+File: ../../src/img/semana05/angulo_agudo.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/angulo_agudo.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/angulo_agudo.jpeg  used on input line 267.
+(pdftex.def)             Requested size: 79.66649pt x 79.66618pt.
+<../../src/img/semana05/angulo_reto.jpeg, id=82, 246.6816pt x 246.6816pt>
+File: ../../src/img/semana05/angulo_reto.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/angulo_reto.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/angulo_reto.jpeg  used on input line 267.
+(pdftex.def)             Requested size: 79.66649pt x 79.66618pt.
+<../../src/img/semana05/angulo_obtuso.jpeg, id=83, 246.6816pt x 246.6816pt>
+File: ../../src/img/semana05/angulo_obtuso.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/angulo_obtuso.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/angulo_obtuso.jpeg  used on input line 267.
+(pdftex.def)             Requested size: 79.66649pt x 79.66618pt.
+<../../src/img/semana05/angulo_raso.jpeg, id=84, 246.6816pt x 246.6816pt>
+File: ../../src/img/semana05/angulo_raso.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/angulo_raso.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/angulo_raso.jpeg  used on input line 267.
+(pdftex.def)             Requested size: 79.66649pt x 79.66618pt.
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 267.
+ (/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
+File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
+)
+LaTeX Font Info:    Font shape `TS1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 267.
 
-Overfull \hbox (19.92422pt too wide) detected at line 230
-[][][][][][][][][][][] [][][][][][][]
- []
-
-
-Overfull \hbox (39.8363pt too wide) detected at line 230
-[][][][][][][][][]
+Overfull \vbox (3.76205pt too high) detected at line 267
  []
 
 [4
 
- <../../src/img/semana04/lista_q03.png>]
-<../../src/img/semana04/lista_q04.png, id=51, 247.92625pt x 157.58875pt>
-File: ../../src/img/semana04/lista_q04.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q04.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q04.png  used on input line 257.
-(pdftex.def)             Requested size: 143.39871pt x 91.14903pt.
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc} <../../src/img/semana05/angulo_agudo.jpeg> <../../src/img/semana05/angulo_reto.jpeg> <../../src/img/semana05/angulo_obtuso.jpeg> <../../src/img/semana05/angulo_raso.jpeg>]
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 302.
 
-Overfull \hbox (19.91814pt too wide) detected at line 257
-[][][][][][][][][][][] [][][][][][][]
+Overfull \vbox (3.90013pt too high) detected at line 302
  []
 
 
-Overfull \hbox (39.8363pt too wide) detected at line 257
-[][][][][][][][][]
+Overfull \hbox (0.87553pt too wide) in paragraph at lines 302--302
+[]|[]| 
+ []
+
+
+Overfull \vbox (2.14793pt too high) detected at line 302
  []
 
 [5
 
- <../../src/img/semana04/lista_q04.png>]
-<../../src/img/semana04/lista_q05.png, id=59, 279.0425pt x 233.87375pt>
-File: ../../src/img/semana04/lista_q05.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q05.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q05.png  used on input line 284.
-(pdftex.def)             Requested size: 159.333pt x 133.54494pt.
+]
+<../../src/img/semana05/semelhanca_de_triangulos.jpeg, id=97, 81.1833pt x 173.9298pt>
+File: ../../src/img/semana05/semelhanca_de_triangulos.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/semelhanca_de_triangulos.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/semelhanca_de_triangulos.jpeg  used on input line 326.
+(pdftex.def)             Requested size: 101.5781pt x 217.63197pt.
 
-Overfull \hbox (39.8363pt too wide) detected at line 284
-[][][][][][][][][]
+Overfull \hbox (19.91815pt too wide) detected at line 326
+[][][][][][][][][][][] [][][][][][][]
+ []
+
+
+Overfull \vbox (18.27866pt too high) detected at line 326
  []
 
 [6
 
- <../../src/img/semana04/lista_q05.png>]
-<../../src/img/semana04/lista_q06.png, id=66, 265.99374pt x 250.9375pt>
-File: ../../src/img/semana04/lista_q06.png Graphic file (type png)
-<use ../../src/img/semana04/lista_q06.png>
-Package pdftex.def Info: ../../src/img/semana04/lista_q06.png  used on input line 316.
-(pdftex.def)             Requested size: 143.39871pt x 135.28596pt.
+ <../../src/img/semana05/semelhanca_de_triangulos.jpeg>]
+Underfull \hbox (badness 2635) in paragraph at lines 340--340
+[]|\T1/Montserrat-LF/regular/n/8 Se dois tri-�n-gu-los pos-suem
+ []
 
-Overfull \hbox (39.8363pt too wide) detected at line 316
-[][][][][][][][][]
+
+Underfull \hbox (badness 2635) in paragraph at lines 340--340
+[]|\T1/Montserrat-LF/regular/n/8 Se dois tri-�n-gu-los pos-suem
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 340--340
+[]|\T1/Montserrat-LF/regular/n/8 Se dois tri-�n-gu-los pos-suem
  []
 
 [7
 
- <../../src/img/semana04/lista_q06.png>]
+]
+<../../src/img/semana05/teorema_de_pitágoras.jpeg, id=111, 182.8431pt x 283.0575pt>
+File: ../../src/img/semana05/teorema_de_pitágoras.jpeg Graphic file (type jpg)
+<use ../../src/img/semana05/teorema_de_pitágoras.jpeg>
+Package pdftex.def Info: ../../src/img/semana05/teorema_de_pitágoras.jpeg  used on input line 358.
+(pdftex.def)             Requested size: 143.39871pt x 222.01057pt.
+
+Overfull \hbox (19.91814pt too wide) detected at line 358
+[][][][][][][][][][][] [][][][][][][]
+ []
+
+
+Overfull \vbox (22.65726pt too high) detected at line 358
+ []
+
+[8
+
+ <../../src/img/semana05/teorema_de_pitágoras.jpeg>]
+<../../src/img/semana05/trigonometria.png, id=117, 1027.84pt x 319.1925pt>
+File: ../../src/img/semana05/trigonometria.png Graphic file (type png)
+<use ../../src/img/semana05/trigonometria.png>
+Package pdftex.def Info: ../../src/img/semana05/trigonometria.png  used on input line 370.
+(pdftex.def)             Requested size: 318.67209pt x 98.96326pt.
+
+Overfull \vbox (9.20952pt too high) detected at line 370
+ []
+
+[9
+
+ <../../src/img/semana05/trigonometria.png>] [10
+
+]
+<../../src/img/semana05/questao02.png, id=129, 349.305pt x 231.86626pt>
+File: ../../src/img/semana05/questao02.png Graphic file (type png)
+<use ../../src/img/semana05/questao02.png>
+Package pdftex.def Info: ../../src/img/semana05/questao02.png  used on input line 433.
+(pdftex.def)             Requested size: 107.55177pt x 71.39308pt.
+ [11
+
+ <../../src/img/semana05/questao02.png>]
+<../../src/img/semana05/questao03.png, id=136, 2782.395pt x 1686.3pt>
+File: ../../src/img/semana05/questao03.png Graphic file (type png)
+<use ../../src/img/semana05/questao03.png>
+Package pdftex.def Info: ../../src/img/semana05/questao03.png  used on input line 467.
+(pdftex.def)             Requested size: 215.10356pt x 130.3524pt.
+ [12
+
+ <../../src/img/semana05/questao03.png>]
+<../../src/img/semana05/questao04.png, id=144, 326.21875pt x 345.29pt>
+File: ../../src/img/semana05/questao04.png Graphic file (type png)
+<use ../../src/img/semana05/questao04.png>
+Package pdftex.def Info: ../../src/img/semana05/questao04.png  used on input line 498.
+(pdftex.def)             Requested size: 138.02354pt x 146.09561pt.
+
+Overfull \hbox (68.5725pt too wide) detected at line 498
+[][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (11.74211pt too high) detected at line 498
+ []
+
+[13
+
+ <../../src/img/semana05/questao04.png>]
+<../../src/img/semana05/questão05.png, id=152, 264.99pt x 255.95625pt>
+File: ../../src/img/semana05/questão05.png Graphic file (type png)
+<use ../../src/img/semana05/questão05.png>
+Package pdftex.def Info: ../../src/img/semana05/questão05.png  used on input line 529.
+(pdftex.def)             Requested size: 107.55177pt x 103.88432pt.
+
+Overfull \hbox (179.25662pt too wide) detected at line 529
+[][][][][][][][][][][] [][][][][][][][][] [][][][][][][]
+ []
+
+[14
+
+ <../../src/img/semana05/questão05.png>]
+<../../src/img/semana05/questao06.png, id=159, 499.8675pt x 231.86626pt>
+File: ../../src/img/semana05/questao06.png Graphic file (type png)
+<use ../../src/img/semana05/questao06.png>
+Package pdftex.def Info: ../../src/img/semana05/questao06.png  used on input line 555.
+(pdftex.def)             Requested size: 197.17735pt x 91.46056pt.
+ [15
+
+ <../../src/img/semana05/questao06.png>]
 \tf@nav=\write6
-\openout6 = `monitoria0904.nav'.
+\openout6 = `aula05_0911.nav'.
 
 \tf@toc=\write7
-\openout7 = `monitoria0904.toc'.
+\openout7 = `aula05_0911.toc'.
 
 \tf@snm=\write8
-\openout8 = `monitoria0904.snm'.
+\openout8 = `aula05_0911.snm'.
 
- (./monitoria0904.aux)
+ (./aula05_0911.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `monitoria0904.out' has not changed.
+Package rerunfilecheck Info: File `aula05_0911.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27396 strings out of 474222
- 554998 string characters out of 5748734
- 1932975 words of memory out of 5000000
- 49058 multiletter control sequences out of 15000+600000
- 565690 words of font info for 63 fonts, out of 8000000 for 9000
+ 35246 strings out of 474222
+ 749651 string characters out of 5748734
+ 1940975 words of memory out of 5000000
+ 56742 multiletter control sequences out of 15000+600000
+ 795638 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,123p,1954b,1034s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on monitoria0904.pdf (7 pages, 375203 bytes).
+ 128i,13n,123p,1947b,1080s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on aula05_0911.pdf (15 pages, 5471127 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
