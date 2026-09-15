@@ -1,0 +1,197 @@
+\documentclass[aspectratio=169, t, 8pt]{beamer}
+
+%------configurando acentos-----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{montserrat}
+\usefonttheme[onlymath]{serif}
+\usepackage{booktabs} % Tabelas elegantes sem linhas verticais
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+% \usepackage[inline]{enumitem}
+%-------Estilos Beamer---------------
+\usetheme{metropolis}
+%\usecolortheme{crane}
+%\usefonttheme{serif}
+\linespread{1.2}
+
+% Personalização de Cores (Exemplo: Minimal Teal)
+% Cores Base
+\definecolor{BgCanvas}{HTML}{F9F9FB}      % Off-white muito suave
+\definecolor{MainText}{HTML}{2B2D42}      % Grafite escuro para alta legibilidade
+\definecolor{PrimaryAccent}{HTML}{4A6FA5} % Azul poeira (Dusty Blue)
+
+% Tons Pastéis para Destaques e Cards
+\definecolor{PastelGreenBg}{HTML}{E8F0EC}  % Sálvia Claro (Sucesso / Destaque Positivo)
+\definecolor{PastelGreenFg}{HTML}{2D5A44}
+
+\definecolor{PastelCoralBg}{HTML}{FDEAE6}  % Coral Soft (Atenção / Problema / Alerta)
+\definecolor{PastelCoralFg}{HTML}{7A3025}
+
+\definecolor{PastelPurpleBg}{HTML}{F0EBF4} % Lavanda (Conceitos / Citações)
+\definecolor{PastelPurpleFg}{HTML}{4A3E56}
+
+\definecolor{PastelYellowBg}{HTML}{FFF4E6} % Areia / Manteiga (Notas / Dados Secundários)
+\definecolor{PastelYellowFg}{HTML}{7A522A}
+
+% --- CONFIGURAÇÕES DE TEMA BEAMER ---
+%\usetheme{metropolis}
+
+\setbeamertemplate{itemize item}{\textcolor{MainText}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{MainText}{\scriptsize$\circ$}}
+\setbeamertemplate{itemize 3rditem}{\textcolor{MainText}{\tiny$\blacksquare$}}
+
+\setbeamercolor{background canvas}{bg=BgCanvas}
+\setbeamercolor{normal text}{fg=MainText}
+\setbeamercolor{frametitle}{bg=PastelGreenFg, fg=BgCanvas}
+\setbeamercolor{title}{fg=MainText}
+\setbeamercolor{subtitle}{fg=PrimaryAccent}
+\setbeamercolor{structure}{fg=PrimaryAccent}
+
+% Remove a linha amarela padrão do Metropolis sob o título
+\setbeamertemplate{title separator}{}
+\setbeamertemplate{progress bar in section page}{}
+
+% ==============================================================================
+% PALETA DE CORES "GEOMETRIA AQUECIDA" (Inspirada na imagem)
+% ==============================================================================
+\definecolor{BgCream}{HTML}{FFFDFB}       % Fundo creme suave
+\definecolor{TextDark}{HTML}{2C1A14}      % Texto em castanho escuro elegante
+\definecolor{PrimaryOrange}{HTML}{E0531C}  % Laranja vibrante (Títulos e destaques)
+\definecolor{Terracotta}{HTML}{B8380D}     % Terracota queimado (Alertas)
+\definecolor{SoftOrange}{HTML}{FFE6D5}     % Laranja bem suave (Fundo de blocos)
+
+% =================================================
+% CONFIGURAÇÃO DO TEMA METROPOLIS
+% =================================================
+% Cores do texto e fundo geral
+\setbeamercolor{normal text}{fg=TextDark, bg=BgCream}
+\setbeamercolor{alerted text}{fg=Terracotta}
+\setbeamercolor{example text}{fg=PrimaryOrange}
+
+% Barra de título dos slides (Frametitle)
+\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryOrange}
+
+% Título principal da apresentação (Slide de Capa)
+\setbeamercolor{titlelike}{fg=PrimaryOrange}
+\setbeamercolor{subtitle}{fg=Terracotta}
+
+% Barra de progresso (Linha do Metropolis)
+\setbeamercolor{progress bar}{fg=PrimaryOrange, bg=PrimaryOrange!20}
+
+% Customização de Blocos (block, alertblock, exampleblock)
+\setbeamercolor{block title}{fg=BgCream, bg=PrimaryOrange}
+\setbeamercolor{block body}{fg=TextDark, bg=SoftOrange}
+
+\setbeamercolor{block title alerted}{fg=BgCream, bg=Terracotta}
+\setbeamercolor{block body alerted}{fg=TextDark, bg=Terracotta!15}
+
+
+% --- ESTILOS DE CARDS PASTEL COM TCOLORBOX ---
+\newtcolorbox{cardPrincipal}[1][]{
+  colback=SoftOrange,
+  colframe=Terracotta,
+  coltext=TextDark,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardcoral}[1][]{
+  colback=PastelCoralBg,
+  colframe=PastelCoralFg,
+  coltext=PastelCoralFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardpurple}[1][]{
+  colback=PastelPurpleBg,
+  colframe=PastelPurpleFg,
+  coltext=PastelPurpleFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardyellow}[1][]{
+  colback=PastelYellowBg,
+  colframe=PastelYellowFg,
+  coltext=PastelYellowFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\graphicspath{{../../src/img/semana05/}}
+
+%--------Dados do Documento
+\title{Geometria: Semelhanças de Triângulos e Teorema de Pitágoras}
+\subtitle{}
+\author{prof. Eduardo}
+\institute{Pré-Universitário Oficina do Saber / UFF}
+
+\date{\today}
+
+
+%-------- Pacotes Matemática -------------
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{thmtools}
+
+\begin{document}
+
+%----------------------------------------------
+%              EXERCICIOS
+%----------------------------------------------
+
+    \begin{frame} %Exercício 03
+        \frametitle{Desafio: Semelhança de Triângulos}
+        \begin{columns}
+            \begin{column}{.9\textwidth}
+                3.~\textbf{(UNESP-1997): }Na figura, $B$ é um ponto do segmento de reta $\overline{AC}$ e os ângulos $\widehat{DAB}$, $\widehat{DBE}$ e $\widehat{BCE}$ são retos.
+              
+                \begin{columns}
+                    \begin{column}{0.6\textwidth}
+                        \begin{table}
+                            \begin{figure}
+                                \centering
+                                \includegraphics[width=\textwidth]{questao03.png}
+                            \end{figure}
+                        \end{table}
+                    \end{column}
+                    \vspace{1em}
+                    \begin{column}{0.35\textwidth}
+                        Se o segmento $\overline{AD} = 6\text{ dm}$, o segmento $\overline{AC}=11\text{ dm}$ e o segmento $\overline{EC}=3\text{ dm}$, as medidas possíveis de $\overline{AB}$, em dm, são:
+                        \vspace{1.2em}
+                        \begin{enumerate}[a.]
+                            \item 4,5 e 6,5
+                            \item 7,5 e 3,5
+                            \item 8 e 3
+                            \item 7 e 4
+                            \item 9 e 2
+                            % letra E
+                        \end{enumerate}
+
+                    \end{column}
+                \end{columns}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+\end{document}
