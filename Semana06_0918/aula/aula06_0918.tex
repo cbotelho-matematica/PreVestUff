@@ -14,7 +14,8 @@
 % \usepackage[inline]{enumitem}
 
 \DeclareMathOperator{\sen}{sen}
-
+\DeclareMathOperator{\coss}{cos}
+\DeclareMathOperator{\tg}{tg}
 %-------Estilos Beamer---------------
 \usetheme{metropolis}
 %\usecolortheme{crane}
@@ -203,174 +204,240 @@
         %     \end{frame}
         % }
 
-    % \begin{frame}{Ângulos}
-    %     \begin{columns}[T]
-    %         \begin{column}{0.4\textwidth}
-    %             \begin{cardPrincipal}[title=Ângulo]
-    %                 Definimos ângulo geométrico como a reunião de duas semi-retas com um ponto de origem em comum.
-    %             \end{cardPrincipal}
-    %             \begin{figure}
-    %                 \centering
-    %                 \includegraphics[width=.9\textwidth]{angulos_interno_externo.jpeg}
-    %             \end{figure}
-    %         \end{column}
-    %         \begin{column}{.55\textwidth}
-    %             \vspace{1em}
-    %             A região interna de um ângulo é chamada \textbf{ângulo interno}, enquanto a região externa é denominada ângulo externo.
+    \begin{frame}{Triângulo Retângulo: Quem é quem?}
+        \vspace{1.3em}
+        \begin{columns}[T, totalwidth=.9\textwidth]
+            \begin{column}{.35\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.92\textwidth]{slide_catetos_hipotenusa.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                Na aula anterior, vimos que as relações de semelhança entre triângulos permitem definir razões entre os lados de um triângulo retângulo, que só dependem dos seus ângulos agudos.
 
-    %             Normalmente, ao nos referirmos a um ângulo, estamos tratando de dua região interna.
+                \vspace{0.7em}
 
-    %             Para referenciarmos o ângulo ao lado, utilizamos as seguintes notações:
+                Essas relações fundamentam a Trigonometria: uma ferramente muito útil para determinamos distâncias, inclinações, alturas, etc. Além disso, ela ainda nos permitirá estudar alguns fenômenos da natureza.
 
-    %             {
-    %                 \centering
-    %                 \[
-    %                     \widehat{AOB} \quad \text{\textbf{ou}} \quad A\hat{O}B
-    %                 \]
-    %             }
+                \vspace{0.7em}
 
-    %             O ponto $O$ é chamado \textbf{vértice} do ângulo.
+                O primeiro passo para compreendermos a trigonometria como uma importante ferramente de \textit{medida} é identificarmos com segurança cada elemento do triângulo retângulo.
 
-    %             As unidades de medida mais comuns são o \textbf{grau}($^\circ$) ou o \textbf{radiano}($rad$).
+                \vspace{0.7em}
 
-    %             Um grau é a divisão de uma circunferência em 360 partes. Enquanto o radiano se relaciona ao raio da circunferência. Nesta aula, utilizaremos somente o grau.
-    %         \end{column}
-    %     \end{columns}    
-    % \end{frame}
+                Em qualquer triângulo retângulo chamamos de \textbf{hipotenusa} ao lado oposto ao ângulo reto e aos outros dois lados, chamamos \textbf{catetos}.
+            \end{column}
+        \end{columns}    
+    \end{frame}
 
-    % \begin{frame}{Classificação de Ângulos}
-    %     \centering
-    %     \begin{tabular}{p{.2\linewidth} p{.2\linewidth} p{.2\linewidth} p{.2\linewidth}}
-    %         \toprule
-    %         \textbf{Agudo} & \textbf{Reto} & \textbf{Obtuso} & \textbf{Raso}\\
-            
-    %         \midrule
-            
-    %         \includegraphics[width=.2\columnwidth]{angulo_agudo.jpeg} & \includegraphics[width=.2\columnwidth]{angulo_reto.jpeg} & \includegraphics[width=.2\columnwidth]{angulo_obtuso.jpeg} & \includegraphics[width=.2\columnwidth]{angulo_raso.jpeg}\\
+    \begin{frame} {Posição dos Catetos}
+        \vspace{1em}
+        \begin{columns}
+            \begin{column}{.35\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=\textwidth]{slide_catetos_opostosxadjacentes.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                Outra questão importante é a posição dos catetos, em relação ao ângulo que tomarmos como referência.
 
-    %         \midrule
+                \vspace{1em}
 
-    %         é o angulo de medida \textbf{menor} que 90° & é o angulo de medida \textbf{igual} a 90° & é o angulo de medida \textbf{maior} que 90° & é o angulo de medida \textbf{igual} a 180°\\
-            
-    %         \bottomrule
-    %     \end{tabular}
-    %     \vspace{1em}
-    %         \begin{columns}[T]
-    %             \begin{column}{0.4\textwidth}
-    %                \begin{cardPrincipal}[title=Ângulos Complementares]
-    %                     Um ângulo $\hat{B}$ é complementar a um ângulo $\hat{A}$, se: $\hat{A} + \hat{B} = 90^\circ$
-    %                \end{cardPrincipal}
-    %             \end{column}
-    %             \begin{column}{0.4\textwidth}
-    %                 \begin{cardPrincipal}[title=Ângulos Suplementares]
-    %                     Um ângulo $\hat{B}$ é complementar a um ângulo $\hat{A}$, se: $\hat{A} + \hat{B} = 180^\circ$
-    %                \end{cardPrincipal}
-    %             \end{column}
-    %         \end{columns}
-    % \end{frame}    
+                Sabemos que o lado oposto ao um ângulo é o lado que o "encara". Os lados que formam o ângulo são chamados \textbf{adjacentes} a ele.
 
-    % \begin{frame}{Triângulos: Definição e Classificação}
-    %     Triângulos são polígonos que possuem três vértices, três lados e três ângulos. A \textbf{soma das medidas dos ângulos internos} de qualquer triângulo é $180^\circ$. Eles podem ser classificados quanto a seus ângulos ou quanto a seus lados.
-
-    %     \vspace{1em}
-
-    %     \centering
-    %     \begin{table}[h]
-    %     \begin{tabular}{|m{0.02\linewidth} | p{0.2\linewidth} | p{0.3\linewidth} | p{0.3\linewidth}|}
-    %         \hline
+                \vspace{1em}
         
-    %         \multirow{3}{*}{\rotatebox{90}{\textbf{Lados}}}   & \textbf{Equilátero}  & Seus lados possuem a mesma medida & Seu ângulos medem $60^\circ$. É um \textit{caso especial} do triângulo isósceles\\ 
-            
-    %         \cline{2-4} 
-            
-    %         & \textbf{Isósceles}   & Possui ao menos dois lados de mesma medida & Os ângulos de sua base são congruentes \\
-            
-    %         \cline{2-4} 
-            
-    %         & \textbf{Escaleno}    & Possui três lados diferentes      & Possui também três ângulos diferentes \\
-            
-    %         \hline
-                    
-    %         \multirow{3}{*}{\rotatebox{90}{\textbf{Ângulos}}} & \textbf{Acutângulo}  & Possui três ângulos agudos        & Será \textbf{Equiângulo} se seus ângulos medem ($60^\circ$) \\
-            
-    %         \cline{2-4} 
-    %         & \textbf{Retângulo}   & Possui um ângulo reto & Seus outros ângulos são agudos \\
-            
-    %         \cline{2-4} 
-    %         & \textbf{Obtusângulo} & Possui um ângulo obtuso & Seus outros ângulos são agudos \\
-            
-    %         \hline
-    %     \end{tabular}
-    % \end{table}
-    % \end{frame}
+                A figura ao lado representa o cateto adjacente a cada ângulo agudo do triângulo retângulo, com uma cor semelhante. As relações de razão entre esses lados definirão as relações de seno, cosseno, tangente e suas inversas.
 
-    % \begin{frame}{Semelhança entre Triângulos}
-    %     \centering
-    %     \begin{columns}[T, totalwidth=.9\textwidth]
-    %         \begin{column}{.3\textwidth}
-    %             \includegraphics[width=.85\textwidth]{semelhanca_de_triangulos.jpeg}
-    %         \end{column}
-    %         \begin{column}{.65\textwidth}
-    %             Quando tratamos de semelhança entre triângulos, estamos falando de formato e não de tamanho. Portanto, a \textbf{igualdade entre os ângulos} de dois triângulos garante a semelhança.
+                \vspace{1em}
+
+                Obviamente cada cateto possui um cateto oposto a si. Esse \textit{cateto oposto} será representado por uma cor diferente da cor do ângulo de referência.
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} {Razões Trigonométricas Fundamentais}
+        \vspace{1em}
+        \begin{columns}[totalwidth=.6\textwidth]
+            \begin{tabular}{m{.3\textwidth} | m{.3\textwidth} | m{.3\textwidth}}
                 
-    %             A igualdade entre os ângulos garante, portanto, que haja uma razão de semelhança entre os lados \textbf{homólogos}.
+                \textbf{Razão Trigonométrica} & \textbf{Fórmula} & \textbf{\textit{Quando usar?}}\\[1.2em]
+                \hline
+                \textbf{Seno} & $\sen{\left( \theta \right)} = \frac{CO}{H}$ & Relaciona o cateto adjacente de um ângulo com a hipotenusa\\[1.4em]
+                \hline
+                \textbf{Cosseno} & $cos{\left( \theta \right)} = \frac{CA}{H}$ & Relaciona o cateto adjacente de um ângulo com a hipotenusa\\[1.4em]
+                \hline
+                \textbf{Tangente} & $ \tg{\left( \theta \right)} = \frac{O}{A} $ & Relaciona o cateto oposto ao cateto adjacente de um ângulo\\[1.4em]
+                \hline
+            \end{tabular}
+        \end{columns}
 
-    %             Lados homólogos são os lados dois triângulos semelhantes que se opõem aos ângulos de mesmo valor. Se o triângulo é semelhante, os lados guardarão uma mesma \textbf{razão de semelhança}$\left( k \right)$.
-    %             No caso ao lado:
+        \begin{columns}[c]
+            \begin{column}{.6\textwidth}
+                \begin{cardPrincipal}[title=Dica para Memorizar]
+                \centering
+                \textbf{\large{SOH-CAH-TOA}}
 
-    %             \[
-    %                 \triangle ABC = \frac{1}{2} \triangle PQR \quad \therefore \quad k=\frac{1}{2} 
-    %             \]
+                \vspace{1em}
+                
+                \large{\textit{S} = $\displaystyle \frac {\text{O}} {\text{H}}$, \textit{C} = $\displaystyle \frac {\text{A}} {\text{H}}$, \textit{T} = $\displaystyle \frac {\text{O}} {\text{A}}$}
+            \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
-    %             Esses conceitos nos permitem estabelecer alguns procedimentos para analisarmos a semelhança entre triângulos.
+    \begin{frame} {Ângulos Notáveis}
+        \vspace{1em}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                \begin{tabular}{m{.25\textwidth} | m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth}}
 
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+                    \hline
+                    \begin{center}
+                        \textbf{Razão Trigonométrica}
+                    \end{center}    
+                    
+                     & 
+                     \begin{center}
+                        \textbf{$30^\circ$}
+                     \end{center}
+                     
+                     &
+                     \begin{center}
+                        \textbf{$45^\circ$}
+                     \end{center}
+                     
+                     &
+                     
+                     {
+                        \begin{center}
+                            \textbf{$60^\circ$}
+                        \end{center}
+                     }
+                     
+                     \\[1em]
+                    
+                    \hline
 
-    % \begin{frame}{Casos de Semelhança entre Triângulos}
-    %     Temos, basicamente três casos de análise para determinarmos se dois triângulos são semelhantes ou não.
+                    \centering\textbf{Seno} &
+                    \begin{center}
+                        $\displaystyle\frac{1}{2}$    
+                    \end{center}
+                    &
+                    \begin{center}
+                        
+                        $\displaystyle\frac{\sqrt{2}}{2}$
+                    \end{center}
+                    
+                    & {
+                        \begin{center}
+                            $\displaystyle\frac{\sqrt{3}}{2}$
+                        \end{center}
+                        
+                        }\\[1.8em]
+                    
+                    \hline
 
-    %     \begin{tabular}{|p{.3\linewidth}|p{.3\linewidth}|p{.3\linewidth}|}
-    %         \hline
-    %         \textbf{Caso AA} & \textbf{Caso LLL} & \textbf{Caso LAL}\\
-    %         \hline
-    %         \textit{ângulo-ângulo} & \textit{lado-lado-lado} & \textit{lado-ângulo-lado}\\
-    %         \hline
-    %         Se dois triângulos possuem dois de seus ângulos congruentes, eles são semelhantes & Se dois triângulos possuem lados homólogos igualmente proporcionais, eles são semelhantes & Se dois triângulos possuem dois lados com medidas proporcionais e o ângulo formado por esses lados é congruente, então a semelhança entre os triângulos é garantida\\
-    %         \hline 
-    %     \end{tabular}
-    % \end{frame}
+                    \begin{center}
+                        \textbf{Cosseno}    
+                    \end{center}
+                    &
+                    \begin{center}
+                        $\displaystyle \frac{\sqrt{3}}{2}$     
+                    \end{center}
+                    &
+                    \begin{center}
+                        $\displaystyle\frac{\sqrt{2}}{2}$
+                    \end{center} 
+                    & {
+                        \begin{center}
+                            $\displaystyle \frac{1}{2}$
+                        \end{center}
+                    }\\[1.8em]
 
-    % \begin{frame}{Teorema de Pitágoras}
-    %     \begin{columns}[T, totalwidth=.9\textwidth]
-    %         \begin{column}{.4\textwidth}
-    %             \centering
-    %             \includegraphics[width=.9\textwidth]{teorema_de_pitágoras.jpeg}
-    %         \end{column}
-    %         \begin{column}{.55\textwidth}
-    %             A relação de igualdade entre a soma dos quadrados dos catetos e o quadrado da hipotenusa se observa para todos os triângulos retângulos.
+                    \hline
 
-    %             Esse teorema, um dos mais lindos e significativos da Matemática é herdeiro do conhecimento da semelhança entre triângulos.
+                    \begin{center}
+                        \textbf{Tangente}
+                    \end{center}
+                    &
+                    \begin{center}
+                        $\displaystyle \frac{\sqrt{3}}{3}$
+                    \end{center}
+                    &
+                    \begin{center}
+                        $1$
+                    \end{center}
+                    &
+                    {
+                        \begin{center}
+                            $\displaystyle {\sqrt{3}}$
+                        \end{center}
+                    }\\[1.8em]
 
-    %             É atribuído a Pitágoras a demonstração e generalização do teorema. A relação entre determinados triângulos retângulos já eram conhecidos muito antes de Pitágoras na Babilônia e no Egito.
+                    \hline
+                \end{tabular}
+            \end{column}
+        \end{columns}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                % \vspace{1em}
+                \begin{cardPrincipal}
+                    [title=Observação]
+                    As bancas de concurso consideram que os valores dos ângulos notáveis devem ser conhecidos pelos candidatos. Para outros ângulos, elas oferecerão valores aproximados.
+                \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
-    %             Um dos principais usos se relaciona ao cálculo de distâncias. Por exemplo, para calcularmos altura de triângulos isósceles, distância entre dois pontos, etc.
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+    \begin{frame} {Calculando Ângulos Notáveis}
+        \begin{columns}[T,totalwidth=.9\textwidth]
+            \begin{column}{.45\textwidth}
+                \centering
+                \includegraphics[width=.9\textwidth]{slide_triangulo_equilatero.png}
+            \end{column}
+            
+            \begin{column}{.45\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.8\textwidth]{slide_triangulo_isosceles.png}
+                \end{figure}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
-    % \begin{frame}{Trigonometria}
-    %     Um outro avanço foi proporcionado pela relação pitagórica e pela semelhança de triângulos: as funções seno, cosseno, tangente e suas variações.
+    \begin{frame} {A Identidade Trigonométrica Fundamental}
+        \vspace{1.2em}
 
-    %     O que garante que elas "funcionam" é justamente a razão de semelhanças entre os lados dos triângulos retângulos. Se tomamos um ângulo como referência, a razão entre dois de seus lados será a mesma para qualquer triângulo semelhante.
+        A identidade trigonométrica fundamental se relaciona com a base da trigonometria, que é o Teorema de Pitágoras.
 
-    %     Sendo assim, o valor decimal que obtemos da divisão entre as medidas irá ser constante para o ângulo. É isso que nos possibilita escrever as funções tringonométricas em função dos valores dos ângulos.
-    %     \begin{figure}
-    %         \centering
-    %         \includegraphics[width=.8\textwidth]{trigonometria.png}
-    %     \end{figure}
-    % \end{frame}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                {\Huge
+                    \[
+                        \left( \sen{\theta} \right)^2 + \left(\cos{\theta} \right)^2 = 1
+                    \]
+                }
+            \end{column}
+        \end{columns}
+        \vspace{2em}
+                Esta identidade surge naturalmente a partir da famosa relação:
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                {\Huge
+                    \[
+                        \left( \text{CO} \right)^2 + \left( \text{CA} \right)^2 = \text{H}^2
+                    \]
+                }
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} {Problemas Clássicos do ENEM}
+        
+    \end{frame}
 
 %----------------------------------------------
 %              EXERCICIOS
@@ -407,158 +474,99 @@
         \end{columns}
     \end{frame}
 
-    % \begin{frame} %Gabarito D
-    %     \frametitle{Exercícios}
-    %     \begin{columns}
-    %         \begin{column}{.9\textwidth}
-    %             2.~\textbf{(UFRGS-1996): }APara estimar a profundidade de um poço com 1,10 m de largura, uma pessoa cujos olhos estão a 1,60 m do chão posiciona-se a 0,50 m de sua borda. Desta forma, a borda do poço esconde exatamente seu fundo, como mostra a figura.
+    \begin{frame} {Exercícios} %Gabarito
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                2.\textbf{(ENEM-2023) }Na modelagem e no estudo de fenômenos periódicos, em geral, os modelos associados fazem uso de funções trigonométricas. Nesse sentido, considere um experimento, realizado em laboratório, em que uma planta foi colocada em uma estufa, onde a temperatura é controlável.
 
-    %             \begin{columns}
-    %                 \begin{column}{0.3\textwidth}
-    %                     \begin{figure}
-    %                         \centering
-    %                         \includegraphics[width=\textwidth]{questao02.png}
-    %                     \end{figure}
-    %                 \end{column}
-    %                 \begin{column}{0.65\textwidth}
-    %                     \vspace{0.2cm}
+                O experimento consiste em observar alterações nas características dessa planta ao ser submetida a variações de temperatura. Durante 24 horas, a temperatura $T(x)$ da estufa variou de acordo com a função $\displaystyle T(x)= 20 - 10 \sen{\left( \pi \cdot \frac{x}{4} \right)}$, em que $x$ é medido em hora, no intervalo $0 \leq x \leq 24$.
 
-    %                     A partir dos dados acima, podemos concluir que a profundidade do poço é:
+                Durante esse experimento, quantas vezes a temperaturana estufa atingiu o seu valor mínimo?
 
-    %                     \begin{enumerate}[a.]
-    %                         \item 2,82 m
-    %                         \item 3,00 m
-    %                         \item 3,30 m
-    %                         \item 3,52 m
-    %                         \item 3,85 m
-    %                         % letra e
-    %                     \end{enumerate}
+                \begin{enumerate}[a. ]
+                    \item 1
+                    \item 3
+                    \item 4
+                    \item 5
+                    \item 7
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
-    %                 \end{column}
-    %             \end{columns}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+    \begin{frame} {Exercícios} %Gabarito B
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                3 \textbf{(ENEM-2018) }Para decorar um cilindro circular reto será usada uma faixa retangular de papel transparente, na qual está desenhada em negrito uma diagonal que forma $30^\circ$ com a borda inferior. O raio da base do cilindro mede $\frac{6}{\pi}\text{ cm}$, e ao enrolar a faixa obtém-se uma linha em formato de hélice, como na figura.
+            \end{column}   
+        \end{columns}
+        \begin{columns}
+                \begin{column}{.5\textwidth}
+                    \begin{figure}
+                        \centering\includegraphics[width=\textwidth]{questao03.png}
+                    \end{figure}
+                \end{column}
+                \begin{column}{.45\textwidth}
+                    O valor da medida da altura do cilindro, em centímetros, é:
 
-    % \begin{frame} %Exercício 03
-    %     \frametitle{Exercícios}
-    %     \begin{columns}
-    %         \begin{column}{.9\textwidth}
-    %             3.~\textbf{(UNESP-1997): }Na figura, $B$ é um ponto do segmento de reta $\overline{AC}$ e os ângulos $\widehat{DAB}$, $\widehat{DBE}$ e $\widehat{}{BCE}$ são retos.
-              
-    %             \begin{columns}
-    %                 \begin{column}{0.6\textwidth}
-    %                     \begin{table}
-    %                         \begin{figure}
-    %                             \centering
-    %                             \includegraphics[width=\textwidth]{questao03.png}
-    %                         \end{figure}
-    %                     \end{table}
-    %                 \end{column}
-    %                 \vspace{1em}
-    %                 \begin{column}{0.35\textwidth}
-    %                     Se o segmento $\overline{AD} = 6\text{ dm}$, o segmento $\overline{AC}=11\text{ dm}$ e o segmento $\overline{EC}=3\text{ dm}$, as medidas possíveis de $\overline{AB}$, em dm, são:
-    %                     \vspace{1.2em}
-    %                     \begin{enumerate}[a.]
-    %                         \item 4,5 e 6,5
-    %                         \item 7,5 e 3,5
-    %                         \item 8 e 3
-    %                         \item 7 e 4
-    %                         \item 9 e 2
-    %                         % letra E
-    %                     \end{enumerate}
+                    \begin{enumerate}[a. ]
+                        \item $36\sqrt{3}$
+                        \item $24\sqrt{3}$
+                        \item $4\sqrt{3}$
+                        \item $36$
+                        \item $72$
+                    \end{enumerate}
+                \end{column}    
+            \end{columns}
+    \end{frame}
 
-    %                 \end{column}
-    %             \end{columns}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+    \begin{frame} {Exercícios} %Gabarito A
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                4 \textbf{(ENEM-2018) }Um quebra-cabeça consiste em recobrir um quadrado com triângulos retângulos isósceles, como ilustra a figura.
 
-    % \begin{frame} %Exercicio 04
-    %     \frametitle{Exercícios}
-    %     \begin{columns}
-    %         \begin{column}{.9\textwidth}
-    %             4.~\textbf{(UNIRIO-1998): }Numa cidade do interior, à noite, surgiu um objeto voador não identificado, em forma de disco, que estacionou a 50 m do solo, aproximadamente. Um helicóptero do exército, situado a aproximadamente 30 m acima do objeto, iluminou-o com um holofote, conforme mostra a figura abaixo. Sendo assim, pode-se afirmar que o raio do disco-voador mede, em m, aproximadamente:
-    %             \vspace{1em}
-                
-    %             \begin{columns}[T]
-    %                 \centering
-    %                 \begin{column}{0.55\textwidth}
-    %                     \centering
-    %                     \includegraphics[width=.7\textwidth]{questao04.png}
-    %                 \end{column}
-    %                 \begin{column}{0.3\textwidth}
-    %                     \begin{enumerate}[a.]
-    %                         \item 3,0
-    %                         \item 3,5
-    %                         \item 4,0
-    %                         \item 4,5
-    %                         \item 5,0
-    %                         % letra A
-    %                     \end{enumerate}
-    %                 \end{column}
-    %                 \begin{column}{0.5\textwidth}
-                        
-    %                 \end{column}
-    %             \end{columns}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+                Uma artesã confecciona um quebra-cabeça como o descrito, de tal modo que a menor das peças é um triângulo retângulo isósceles cujos catetos medem 2 cm.
+               
+            \end{column}
+        \end{columns}
+            \vspace{1em}
+            \begin{columns}
+                \begin{column}{.3\textwidth}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.8\textwidth]{questao04.png}
+                    \end{figure}
+                \end{column}
+                \begin{column}{.65\textwidth}
+                    O quebra-cabeça, quando montado, resultará em um quadrado cuja medida do lado, em centímetro, é
 
-    % \begin{frame} %Exercício 05: Gabarito E
-    %     \frametitle{Exercícios}
-    %     \begin{columns}
-    %         \begin{column}{.9\textwidth}
-    %             5.~\textbf{(FATEC-1999): }Na figura a seguir, o triângulo $ABC$ é retângulo e isósceles e o retângulo nele inscrito tem lados que medem 4 cm e 2 cm.
+                    \begin{enumerate}[a. ]
+                        \item $14$
+                        \item $12$
+                        \item $7\sqrt{2}$
+                        \item $6 + 4\sqrt{2}$
+                        \item $6 + 2\sqrt{2}$
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+    \end{frame}
 
-    %             \vspace{1.1em}
+    \begin{frame} {Exercícios} %Gabarito: 25
+        5 \textbf{(IEZZI, FME3) } Calcule a hipotenusa de um triângulo retângulo de perímetro $56 \text{ cm}$ e altura $\frac{168}{25} \text{ cm}$.
+    \end{frame}
 
-    %             \begin{columns}[T, totalwidth=.9\textwidth]
-    %                 \begin{column}{.3\textwidth}
-    %                     \centering
-    %                     \includegraphics[width=\textwidth]{questão05.png}
-    %                 \end{column}
-    %                 \begin{column}{.6\textwidth}
-                         
-    %                     \begin{enumerate}[a.]
-    %                         \item $8$ cm
-    %                         \item $12$ cm
-    %                         \item $\left( 8 + \sqrt{2} \right)$
-    %                         \item $\left( 8 + 2\sqrt{2} \right)$
-    %                         \item $4 \left( 2 + \sqrt{2} \right)$
-    %                     \end{enumerate}
-    %                 \end{column}
-    %                 \begin{column}{0.5\textwidth}
-                        
-    %                 \end{column}
-    %             \end{columns}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-    
-    % \begin{frame} %Exercicio 06
-    %     \frametitle{Exercícios}
-    %     \begin{columns}
-    %         \begin{column}{.9\textwidth}
-    %             6.~\textbf{(UTFPR-2014): }Qual é a medida de $y$ na figura, em graus, é:
-                
-    %             \vspace{1.2em}
-    %             \begin{columns}[T]
-    %                 \begin{column}{0.55\textwidth}
-    %                     \includegraphics[width=\textwidth]{questao06.png}
-    %                 \end{column}
-    %                 \begin{column}{0.3\textwidth}
-    %                     \begin{enumerate}[a.]
-    %                         \item $42^\circ$
-    %                         \item $32^\circ$
-    %                         \item $142^\circ$
-    %                         \item $148^\circ$
-    %                         \item $24^\circ$
-    %                         % letra E
-    %                     \end{enumerate}
-    %                 \end{column}
-    %             \end{columns}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+    \begin{frame} {Exercícios} %Gabarito p=60/13, k=25/13, s=144/13, t=13
+        6 \textbf{(IEZZI, FM3) }Calcule os elemento $k, p, s, t$, na figura abaixo:
+        \begin{columns}[totalwidth=\textwidth]
+            \begin{column}{.65\textwidth}
+                \begin{figure}
+                    \raggedleft
+                    \includegraphics[width=\textwidth]{questao05.png}
+                \end{figure}
+            \end{column}
+            \begin{column}{.15\textwidth}
+                ~
+            \end{column}
+        \end{columns}
+    \end{frame}
 \end{document}
