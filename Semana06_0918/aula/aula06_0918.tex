@@ -317,7 +317,7 @@
                         \end{center}
                      }
                      
-                     \\[1em]
+                     \\
                     
                     \hline
 
@@ -435,8 +435,171 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame} {Problemas Clássicos do ENEM}
-        
+    \begin{frame} {Problemas Clássicos}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                O clichê em problemas envolvendo razões trigonométricas é a análise de situações-problemas que envolvam a medida de distâncias ou inclinações.
+                \vspace{1em}
+                A idéia é semapre a mesma: reduzir a situação a um trigulo retângulo, identificar os ângulos, os catetos e a hipotenusa deste triângulo e aplicar a razão trigonomêtrica mais conveniente. Vejamos um exemplo:
+            \end{column}
+        \end{columns}
+        \vspace{1.2em}
+        \begin{columns}[T, totalwidth=.9\textwidth]
+                \begin{column}{.5\textwidth}
+                    % \raggedleft
+                    \includegraphics[width=.9 \textwidth]{slide_exemplo_calculoDistancia.jpeg}
+                \end{column}
+                \begin{column}{.45\textwidth}
+                    Imagine que na situação representada ao lado, tenhamos que calcular a medida de um cabo que se estende, perfeitamente tensionado, de um prédio a outro.
+                    \vspace{1em}
+                    Que estratégia você poderia utilizar para calcular a medida deste cabo?
+                \end{column}
+            \end{columns}
+    \end{frame}
+
+    \begin{frame}{Razões Trigonométricas Recíprocas}
+        \begin{columns}[totalwidth=.9\textwidth]   
+            \begin{column}{\textwidth}
+                Para finalizarmos, considero importante mencionar a existência de outras razões trigonométricas, as chamadas \textbf{razões recíprocas}. Essas são as razões que invertem a ordem fracionária: isto é, o denominador vai ao numerador e vice versa.
+            \end{column}
+        \end{columns}
+
+        \vspace{1.4em}
+
+        \centering
+        \begin{columns}[c, totalwidth=.8\textwidth]
+            \begin{column}{\textwidth}
+                \begin{tabular}{m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth}}
+                    \hline
+                    {
+                        \begin{center}
+                            \textbf{Razão Trigonométrica}
+                        \end{center}
+                    } & {
+                        \begin{center}
+                            \textbf{Definição}
+                        \end{center}
+                    } & {
+                        \begin{center}
+                            \textbf{Recíproca}
+                        \end{center}
+                    } & {
+                        \begin{center}
+                            \textbf{Definição}
+                        \end{center}
+                    }\\
+
+                    \hline
+
+                    {
+                        \begin{center}
+                            \textbf{Seno}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Cateto Oposto}
+                            }{
+                                \text{Hipotenusa}
+                            }
+                            $$
+                        \end{center}
+                    } &
+
+                    {
+                        \begin{center}
+                            \textbf{Cossecante}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Hipotenusa}
+                            }{
+                                \text{Cateto Oposto}
+                            }
+                            $$
+                        \end{center}
+                    }\\
+
+                    \hline
+
+                    {
+                        \begin{center}
+                            \textbf{Cosseno}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Cateto Adjacente}
+                            }{
+                                \text{Hipotenusa}
+                            }
+                            $$
+                        \end{center}
+                    } &
+
+                    {
+                        \begin{center}
+                            \textbf{Secante}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Hipotenusa}
+                            }{
+                                \text{Cateto Adjacente}
+                            }
+                            $$
+                        \end{center}
+                    }\\
+
+                    \hline
+
+                    {
+                        \begin{center}
+                            \textbf{Tangente}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Cateto Oposto}
+                            }{
+                                \text{Cateto Adjacente}
+                            }
+                            $$
+                        \end{center}
+                    } &
+
+                    {
+                        \begin{center}
+                            \textbf{Cotangente}
+                        \end{center}
+                    } &
+                    {
+                        \begin{center}
+                            $$
+                            \frac{
+                                \text{Cateto Adjacente}
+                            }{
+                                \text{Cateto Oposto}
+                            }
+                            $$
+                        \end{center}
+                    }\\
+                    \hline
+                    \end{tabular}    
+            \end{column}
+        \end{columns}
     \end{frame}
 
 %----------------------------------------------
@@ -474,21 +637,42 @@
         \end{columns}
     \end{frame}
 
-    \begin{frame} {Exercícios} %Gabarito
+    \begin{frame} {Exercícios} %Gabarito C
         \begin{columns}[totalwidth=.9\textwidth]
             \begin{column}{\textwidth}
-                2.\textbf{(ENEM-2023) }Na modelagem e no estudo de fenômenos periódicos, em geral, os modelos associados fazem uso de funções trigonométricas. Nesse sentido, considere um experimento, realizado em laboratório, em que uma planta foi colocada em uma estufa, onde a temperatura é controlável.
+                2.\textbf{(ENEM-2023) }O mastro de uma bandeira foi instalado perpendicularmente ao solo em uma região plana. Devido aos fortes ventos, três cabos de aço, de mesmo comprimento, serão instalados para dar sustentação ao mastro. Cada cabo de aço ficará perfeitamente esticado, com uma extremidade num ponto $P$ do mastro, a uma altura $h$ do solo, e a outra extremidade, num ponto no chão, como mostra a figura.
+            \end{column}
+        \end{columns}
+        \vspace{1.6em}
+        \begin{columns}[T]
+            \begin{column}{.65\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.5\textwidth]{questao02.png}                    
+                \end{figure}
 
-                O experimento consiste em observar alterações nas características dessa planta ao ser submetida a variações de temperatura. Durante 24 horas, a temperatura $T(x)$ da estufa variou de acordo com a função $\displaystyle T(x)= 20 - 10 \sen{\left( \pi \cdot \frac{x}{4} \right)}$, em que $x$ é medido em hora, no intervalo $0 \leq x \leq 24$.
+                Os cabos de aço formam um ângulo $\alpha$ com o plano do chão.
+                
+                Por medida de segurança, há apenas três opções de instalação:
 
-                Durante esse experimento, quantas vezes a temperaturana estufa atingiu o seu valor mínimo?
+                \begin{itemize}
+                    \item opção I: $h=11$ e $\alpha = 30^\circ$
+                    \item opção I: $h=12$ e $\alpha = 45^\circ$
+                    \item opção I: $h=18$ e $\alpha = 60^\circ$
+                \end{itemize}
+            \end{column}
+
+            \begin{column}{.28\textwidth}
+                A opção a ser escolhida é aquela em que a medida dos cabos seja a menor possível.
+
+                Qual será a medida, em metro, de cada um dos cabos a serem instalados?
 
                 \begin{enumerate}[a. ]
-                    \item 1
-                    \item 3
-                    \item 4
-                    \item 5
-                    \item 7
+                    \item $\frac{22\sqrt{3}}{3}$
+                    \item $11\sqrt{2}$
+                    \item $12\sqrt{2}$
+                    \item $12\sqrt{3}$
+                    \item 22
                 \end{enumerate}
             \end{column}
         \end{columns}
