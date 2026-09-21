@@ -1,0 +1,755 @@
+\documentclass[aspectratio=169, t, 8pt]{beamer}
+
+%------configurando acentos-----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{montserrat}
+\usefonttheme[onlymath]{serif}
+\usepackage{booktabs} % Tabelas elegantes sem linhas verticais
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+% \usepackage[inline]{enumitem}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\coss}{cos}
+\DeclareMathOperator{\tg}{tg}
+%-------Estilos Beamer---------------
+\usetheme{metropolis}
+%\usecolortheme{crane}
+%\usefonttheme{serif}
+\linespread{1.2}
+
+% Personalização de Cores (Exemplo: Minimal Teal)
+% Cores Base
+\definecolor{BgCanvas}{HTML}{F9F9FB}      % Off-white muito suave
+\definecolor{MainText}{HTML}{2B2D42}      % Grafite escuro para alta legibilidade
+\definecolor{PrimaryAccent}{HTML}{4A6FA5} % Azul poeira (Dusty Blue)
+
+% Tons Pastéis para Destaques e Cards
+\definecolor{PastelGreenBg}{HTML}{E8F0EC}  % Sálvia Claro (Sucesso / Destaque Positivo)
+\definecolor{PastelGreenFg}{HTML}{2D5A44}
+
+\definecolor{PastelCoralBg}{HTML}{FDEAE6}  % Coral Soft (Atenção / Problema / Alerta)
+\definecolor{PastelCoralFg}{HTML}{7A3025}
+
+\definecolor{PastelPurpleBg}{HTML}{F0EBF4} % Lavanda (Conceitos / Citações)
+\definecolor{PastelPurpleFg}{HTML}{4A3E56}
+
+\definecolor{PastelYellowBg}{HTML}{FFF4E6} % Areia / Manteiga (Notas / Dados Secundários)
+\definecolor{PastelYellowFg}{HTML}{7A522A}
+
+% --- CONFIGURAÇÕES DE TEMA BEAMER ---
+%\usetheme{metropolis}
+
+\setbeamertemplate{itemize item}{\textcolor{MainText}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{MainText}{\scriptsize$\circ$}}
+\setbeamertemplate{itemize 3rditem}{\textcolor{MainText}{\tiny$\blacksquare$}}
+
+\setbeamercolor{background canvas}{bg=BgCanvas}
+\setbeamercolor{normal text}{fg=MainText}
+\setbeamercolor{frametitle}{bg=PastelGreenFg, fg=BgCanvas}
+\setbeamercolor{title}{fg=MainText}
+\setbeamercolor{subtitle}{fg=PrimaryAccent}
+\setbeamercolor{structure}{fg=PrimaryAccent}
+
+% Remove a linha amarela padrão do Metropolis sob o título
+\setbeamertemplate{title separator}{}
+\setbeamertemplate{progress bar in section page}{}
+
+% ==============================================================================
+% PALETA DE CORES "GEOMETRIA AQUECIDA" (Inspirada na imagem)
+% ==============================================================================
+\definecolor{BgCream}{HTML}{FFFDFB}       % Fundo creme suave
+\definecolor{TextDark}{HTML}{2C1A14}      % Texto em castanho escuro elegante
+\definecolor{PrimaryOrange}{HTML}{E0531C}  % Laranja vibrante (Títulos e destaques)
+\definecolor{Terracotta}{HTML}{B8380D}     % Terracota queimado (Alertas)
+\definecolor{SoftOrange}{HTML}{FFE6D5}     % Laranja bem suave (Fundo de blocos)
+
+% =================================================
+% CONFIGURAÇÃO DO TEMA METROPOLIS
+% =================================================
+% Cores do texto e fundo geral
+\setbeamercolor{normal text}{fg=TextDark, bg=BgCream}
+\setbeamercolor{alerted text}{fg=Terracotta}
+\setbeamercolor{example text}{fg=PrimaryOrange}
+
+% Barra de título dos slides (Frametitle)
+\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryOrange}
+
+% Título principal da apresentação (Slide de Capa)
+\setbeamercolor{titlelike}{fg=PrimaryOrange}
+\setbeamercolor{subtitle}{fg=Terracotta}
+
+% Barra de progresso (Linha do Metropolis)
+\setbeamercolor{progress bar}{fg=PrimaryOrange, bg=PrimaryOrange!20}
+
+% Customização de Blocos (block, alertblock, exampleblock)
+\setbeamercolor{block title}{fg=BgCream, bg=PrimaryOrange}
+\setbeamercolor{block body}{fg=TextDark, bg=SoftOrange}
+
+\setbeamercolor{block title alerted}{fg=BgCream, bg=Terracotta}
+\setbeamercolor{block body alerted}{fg=TextDark, bg=Terracotta!15}
+
+
+% --- ESTILOS DE CARDS PASTEL COM TCOLORBOX ---
+\newtcolorbox{cardPrincipal}[1][]{
+  colback=SoftOrange,
+  colframe=Terracotta,
+  coltext=TextDark,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardcoral}[1][]{
+  colback=PastelCoralBg,
+  colframe=PastelCoralFg,
+  coltext=PastelCoralFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardpurple}[1][]{
+  colback=PastelPurpleBg,
+  colframe=PastelPurpleFg,
+  coltext=PastelPurpleFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardyellow}[1][]{
+  colback=PastelYellowBg,
+  colframe=PastelYellowFg,
+  coltext=PastelYellowFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\graphicspath{{../../src/img/semana07/}}
+
+%--------Dados do Documento
+\title{Geometria ESpacial: Prismas e Pirâmides}
+\subtitle{Capacidade, superfícies e a lógica do ENEM}
+\author{prof. Eduardo}
+\institute{Pré-Universitário Oficina do Saber / UFF}
+
+\date{\today}
+
+
+%-------- Pacotes Matemática -------------
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{thmtools}
+
+\begin{document}
+
+    \begin{frame} %capa
+        \vspace*{\fill}
+            
+            \begin{columns}[c]
+                \begin{column}{0.5\textwidth}
+                    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\vspace{0.2cm}
+                    
+                    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\vspace{0.5cm}
+
+                {\usebeamerfont{author}\insertauthor}\vspace{0.3cm}
+
+                {\usebeamerfont{institute}\insertinstitute}\vspace{0.3cm}
+
+                {\usebeamerfont{date}\insertdate}
+            \end{column}
+            
+            
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.4\textwidth]{../logo_ofSaber.png}
+
+                \vspace{.4cm}
+                \vspace*{\fill}
+        \begin{columns}[c]
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=.5\textwidth]{../Proex02c.png}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=0.4\textwidth]{../Logo_UFF.png}
+            \end{column}
+        \end{columns}
+        \vspace*{\fill}
+            \end{column}
+        \end{columns}
+    \vspace*{\fill}
+    \end{frame}
+    
+        % {
+        %     \usebackgroundtemplate{
+        %     \includegraphics[width=\paperwidth]{segunda_capa_pitagoras.png}}
+        %     \begin{frame}[plain]                
+        %     \end{frame}
+        % }
+
+    % \begin{frame}{Triângulo Retângulo: Quem é quem?}
+    %     \vspace{1.3em}
+    %     \begin{columns}[T, totalwidth=.9\textwidth]
+    %         \begin{column}{.35\textwidth}
+    %             \begin{figure}
+    %                 \centering
+    %                 \includegraphics[width=.92\textwidth]{slide_catetos_hipotenusa.png}
+    %             \end{figure}
+    %         \end{column}
+    %         \begin{column}{.5\textwidth}
+    %             Na aula anterior, vimos que as relações de semelhança entre triângulos permitem definir razões entre os lados de um triângulo retângulo, que só dependem dos seus ângulos agudos.
+
+    %             \vspace{0.7em}
+
+    %             Essas relações fundamentam a Trigonometria: uma ferramente muito útil para determinamos distâncias, inclinações, alturas, etc. Além disso, ela ainda nos permitirá estudar alguns fenômenos da natureza.
+
+    %             \vspace{0.7em}
+
+    %             O primeiro passo para compreendermos a trigonometria como uma importante ferramente de \textit{medida} é identificarmos com segurança cada elemento do triângulo retângulo.
+
+    %             \vspace{0.7em}
+
+    %             Em qualquer triângulo retângulo chamamos de \textbf{hipotenusa} ao lado oposto ao ângulo reto e aos outros dois lados, chamamos \textbf{catetos}.
+    %         \end{column}
+    %     \end{columns}    
+    % \end{frame}
+
+    % \begin{frame} {Posição dos Catetos}
+    %     \vspace{1em}
+    %     \begin{columns}
+    %         \begin{column}{.35\textwidth}
+    %             \begin{figure}
+    %                 \centering
+    %                 \includegraphics[width=\textwidth]{slide_catetos_opostosxadjacentes.png}
+    %             \end{figure}
+    %         \end{column}
+    %         \begin{column}{.5\textwidth}
+    %             Outra questão importante é a posição dos catetos, em relação ao ângulo que tomarmos como referência.
+
+    %             \vspace{1em}
+
+    %             Sabemos que o lado oposto ao um ângulo é o lado que o "encara". Os lados que formam o ângulo são chamados \textbf{adjacentes} a ele.
+
+    %             \vspace{1em}
+        
+    %             A figura ao lado representa o cateto adjacente a cada ângulo agudo do triângulo retângulo, com uma cor semelhante. As relações de razão entre esses lados definirão as relações de seno, cosseno, tangente e suas inversas.
+
+    %             \vspace{1em}
+
+    %             Obviamente cada cateto possui um cateto oposto a si. Esse \textit{cateto oposto} será representado por uma cor diferente da cor do ângulo de referência.
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Razões Trigonométricas Fundamentais}
+    %     \vspace{1em}
+    %     \begin{columns}[totalwidth=.6\textwidth]
+    %         \begin{tabular}{m{.3\textwidth} | m{.3\textwidth} | m{.3\textwidth}}
+                
+    %             \textbf{Razão Trigonométrica} & \textbf{Fórmula} & \textbf{\textit{Quando usar?}}\\[1.2em]
+    %             \hline
+    %             \textbf{Seno} & $\sen{\left( \theta \right)} = \frac{CO}{H}$ & Relaciona o cateto adjacente de um ângulo com a hipotenusa\\[1.4em]
+    %             \hline
+    %             \textbf{Cosseno} & $cos{\left( \theta \right)} = \frac{CA}{H}$ & Relaciona o cateto adjacente de um ângulo com a hipotenusa\\[1.4em]
+    %             \hline
+    %             \textbf{Tangente} & $ \tg{\left( \theta \right)} = \frac{O}{A} $ & Relaciona o cateto oposto ao cateto adjacente de um ângulo\\[1.4em]
+    %             \hline
+    %         \end{tabular}
+    %     \end{columns}
+
+    %     \begin{columns}[c]
+    %         \begin{column}{.6\textwidth}
+    %             \begin{cardPrincipal}[title=Dica para Memorizar]
+    %             \centering
+    %             \textbf{\large{SOH-CAH-TOA}}
+
+    %             \vspace{1em}
+                
+    %             \large{\textit{S} = $\displaystyle \frac {\text{O}} {\text{H}}$, \textit{C} = $\displaystyle \frac {\text{A}} {\text{H}}$, \textit{T} = $\displaystyle \frac {\text{O}} {\text{A}}$}
+    %         \end{cardPrincipal}
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Ângulos Notáveis}
+    %     \vspace{1em}
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             \begin{tabular}{m{.25\textwidth} | m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth}}
+
+    %                 \hline
+    %                 \begin{center}
+    %                     \textbf{Razão Trigonométrica}
+    %                 \end{center}    
+                    
+    %                  & 
+    %                  \begin{center}
+    %                     \textbf{$30^\circ$}
+    %                  \end{center}
+                     
+    %                  &
+    %                  \begin{center}
+    %                     \textbf{$45^\circ$}
+    %                  \end{center}
+                     
+    %                  &
+                     
+    %                  {
+    %                     \begin{center}
+    %                         \textbf{$60^\circ$}
+    %                     \end{center}
+    %                  }
+                     
+    %                  \\
+                    
+    %                 \hline
+
+    %                 \centering\textbf{Seno} &
+    %                 \begin{center}
+    %                     $\displaystyle\frac{1}{2}$    
+    %                 \end{center}
+    %                 &
+    %                 \begin{center}
+                        
+    %                     $\displaystyle\frac{\sqrt{2}}{2}$
+    %                 \end{center}
+                    
+    %                 & {
+    %                     \begin{center}
+    %                         $\displaystyle\frac{\sqrt{3}}{2}$
+    %                     \end{center}
+                        
+    %                     }\\[1.8em]
+                    
+    %                 \hline
+
+    %                 \begin{center}
+    %                     \textbf{Cosseno}    
+    %                 \end{center}
+    %                 &
+    %                 \begin{center}
+    %                     $\displaystyle \frac{\sqrt{3}}{2}$     
+    %                 \end{center}
+    %                 &
+    %                 \begin{center}
+    %                     $\displaystyle\frac{\sqrt{2}}{2}$
+    %                 \end{center} 
+    %                 & {
+    %                     \begin{center}
+    %                         $\displaystyle \frac{1}{2}$
+    %                     \end{center}
+    %                 }\\[1.8em]
+
+    %                 \hline
+
+    %                 \begin{center}
+    %                     \textbf{Tangente}
+    %                 \end{center}
+    %                 &
+    %                 \begin{center}
+    %                     $\displaystyle \frac{\sqrt{3}}{3}$
+    %                 \end{center}
+    %                 &
+    %                 \begin{center}
+    %                     $1$
+    %                 \end{center}
+    %                 &
+    %                 {
+    %                     \begin{center}
+    %                         $\displaystyle {\sqrt{3}}$
+    %                     \end{center}
+    %                 }\\[1.8em]
+
+    %                 \hline
+    %             \end{tabular}
+    %         \end{column}
+    %     \end{columns}
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             % \vspace{1em}
+    %             \begin{cardPrincipal}
+    %                 [title=Observação]
+    %                 As bancas de concurso consideram que os valores dos ângulos notáveis devem ser conhecidos pelos candidatos. Para outros ângulos, elas oferecerão valores aproximados.
+    %             \end{cardPrincipal}
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Calculando Ângulos Notáveis}
+    %     \begin{columns}[T,totalwidth=.9\textwidth]
+    %         \begin{column}{.45\textwidth}
+    %             \centering
+    %             \includegraphics[width=.9\textwidth]{slide_triangulo_equilatero.png}
+    %         \end{column}
+            
+    %         \begin{column}{.45\textwidth}
+    %             \begin{figure}
+    %                 \centering
+    %                 \includegraphics[width=.8\textwidth]{slide_triangulo_isosceles.png}
+    %             \end{figure}
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {A Identidade Trigonométrica Fundamental}
+    %     \vspace{1.2em}
+
+    %     A identidade trigonométrica fundamental se relaciona com a base da trigonometria, que é o Teorema de Pitágoras.
+
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             {\Huge
+    %                 \[
+    %                     \left( \sen{\theta} \right)^2 + \left(\cos{\theta} \right)^2 = 1
+    %                 \]
+    %             }
+    %         \end{column}
+    %     \end{columns}
+    %     \vspace{2em}
+    %             Esta identidade surge naturalmente a partir da famosa relação:
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             {\Huge
+    %                 \[
+    %                     \left( \text{CO} \right)^2 + \left( \text{CA} \right)^2 = \text{H}^2
+    %                 \]
+    %             }
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Problemas Clássicos}
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             O clichê em problemas envolvendo razões trigonométricas é a análise de situações-problemas que envolvam a medida de distâncias ou inclinações.
+    %             \vspace{1em}
+    %             A idéia é semapre a mesma: reduzir a situação a um trigulo retângulo, identificar os ângulos, os catetos e a hipotenusa deste triângulo e aplicar a razão trigonomêtrica mais conveniente. Vejamos um exemplo:
+    %         \end{column}
+    %     \end{columns}
+    %     \vspace{1.2em}
+    %     \begin{columns}[T, totalwidth=.9\textwidth]
+    %             \begin{column}{.5\textwidth}
+    %                 % \raggedleft
+    %                 \includegraphics[width=.9 \textwidth]{slide_exemplo_calculoDistancia.jpeg}
+    %             \end{column}
+    %             \begin{column}{.45\textwidth}
+    %                 Imagine que na situação representada ao lado, tenhamos que calcular a medida de um cabo que se estende, perfeitamente tensionado, de um prédio a outro.
+    %                 \vspace{1em}
+    %                 Que estratégia você poderia utilizar para calcular a medida deste cabo?
+    %             \end{column}
+    %         \end{columns}
+    % \end{frame}
+
+    % \begin{frame}{Razões Trigonométricas Recíprocas}
+    %     \begin{columns}[totalwidth=.9\textwidth]   
+    %         \begin{column}{\textwidth}
+    %             Para finalizarmos, considero importante mencionar a existência de outras razões trigonométricas, as chamadas \textbf{razões recíprocas}. Essas são as razões que invertem a ordem fracionária: isto é, o denominador vai ao numerador e vice versa.
+    %         \end{column}
+    %     \end{columns}
+
+    %     \vspace{1.4em}
+
+    %     \centering
+    %     \begin{columns}[c, totalwidth=.8\textwidth]
+    %         \begin{column}{\textwidth}
+    %             \begin{tabular}{m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth} | m{.2\textwidth}}
+    %                 \hline
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Razão Trigonométrica}
+    %                     \end{center}
+    %                 } & {
+    %                     \begin{center}
+    %                         \textbf{Definição}
+    %                     \end{center}
+    %                 } & {
+    %                     \begin{center}
+    %                         \textbf{Recíproca}
+    %                     \end{center}
+    %                 } & {
+    %                     \begin{center}
+    %                         \textbf{Definição}
+    %                     \end{center}
+    %                 }\\
+
+    %                 \hline
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Seno}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Cateto Oposto}
+    %                         }{
+    %                             \text{Hipotenusa}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 } &
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Cossecante}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Hipotenusa}
+    %                         }{
+    %                             \text{Cateto Oposto}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 }\\
+
+    %                 \hline
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Cosseno}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Cateto Adjacente}
+    %                         }{
+    %                             \text{Hipotenusa}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 } &
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Secante}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Hipotenusa}
+    %                         }{
+    %                             \text{Cateto Adjacente}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 }\\
+
+    %                 \hline
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Tangente}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Cateto Oposto}
+    %                         }{
+    %                             \text{Cateto Adjacente}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 } &
+
+    %                 {
+    %                     \begin{center}
+    %                         \textbf{Cotangente}
+    %                     \end{center}
+    %                 } &
+    %                 {
+    %                     \begin{center}
+    %                         $$
+    %                         \frac{
+    %                             \text{Cateto Adjacente}
+    %                         }{
+    %                             \text{Cateto Oposto}
+    %                         }
+    %                         $$
+    %                     \end{center}
+    %                 }\\
+    %                 \hline
+    %                 \end{tabular}    
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+%----------------------------------------------
+%              EXERCICIOS
+%----------------------------------------------
+
+    \begin{frame} {Exercícios} %Gabarito B
+        \begin{columns}
+            \centering
+            \begin{column}{.9\textwidth} %letra a
+                1.~\textbf{(ENEM-2016): } Um petroleiro possui reservatório em formato de um paralelepípedo retangular com as dimensões dadas por 60 m x 10 m de base e 10 m de altura. Com o objetivo de minimizar o impacto ambiental de um eventual vazamento, esse reservatório é subdividido em três compartimentos, A, B e C, de mesmo volume, por duas placas de aço retangulares com dimensões de 7 m de altura e 10 m de base, de modo que os compartimentos são interligados, conforme a figura. Assim, caso haja rompimento no casco do reservatório, apenas uma parte de sua carga vazará.
+            
+                Suponha que ocorra um desastre quando o petroleiro se encontra com sua carga máxima: ele sofre um acidente que ocasiona um furo no fundo do compartimento C. Para fins de cálculo, considere desprezíveis as espessuras das placas divisórias.
+            \vspace{1.2em}
+            \begin{columns}
+                \centering
+                \begin{column}{.55\textwidth}
+                    \begin{figure}
+                        \includegraphics[width=\textwidth]{questao01.png}
+                    \end{figure}
+                \end{column}
+                \begin{column}{.45\textwidth}
+                    Após o fim do vazamento, o volume de petróleo derramado terá sido de 
+                    \begin{enumerate}[a.]
+                        \item $1,4 \cdot 10^{3} m^{3}$
+                        \item $1,8 \cdot 10^{3} m^{3}$
+                        \item $2,0 \cdot 10^{3} m^{3}$
+                        \item $3,2 \cdot 10^{3} m^{3}$
+                        \item $6,0 \cdot 10^{3} m^{3}$
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+            \end{column}    
+        \end{columns}
+    \end{frame}
+
+    % \begin{frame} {Exercícios} %Gabarito C
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             2.\textbf{(ENEM-2023) }O mastro de uma bandeira foi instalado perpendicularmente ao solo em uma região plana. Devido aos fortes ventos, três cabos de aço, de mesmo comprimento, serão instalados para dar sustentação ao mastro. Cada cabo de aço ficará perfeitamente esticado, com uma extremidade num ponto $P$ do mastro, a uma altura $h$ do solo, e a outra extremidade, num ponto no chão, como mostra a figura.
+    %         \end{column}
+    %     \end{columns}
+    %     \vspace{1.6em}
+    %     \begin{columns}[T]
+    %         \begin{column}{.65\textwidth}
+    %             \begin{figure}
+    %                 \centering
+    %                 \includegraphics[width=.5\textwidth]{questao02.png}                    
+    %             \end{figure}
+
+    %             Os cabos de aço formam um ângulo $\alpha$ com o plano do chão.
+                
+    %             Por medida de segurança, há apenas três opções de instalação:
+
+    %             \begin{itemize}
+    %                 \item opção I: $h=11$ e $\alpha = 30^\circ$
+    %                 \item opção I: $h=12$ e $\alpha = 45^\circ$
+    %                 \item opção I: $h=18$ e $\alpha = 60^\circ$
+    %             \end{itemize}
+    %         \end{column}
+
+    %         \begin{column}{.28\textwidth}
+    %             A opção a ser escolhida é aquela em que a medida dos cabos seja a menor possível.
+
+    %             Qual será a medida, em metro, de cada um dos cabos a serem instalados?
+
+    %             \begin{enumerate}[a. ]
+    %                 \item $\frac{22\sqrt{3}}{3}$
+    %                 \item $11\sqrt{2}$
+    %                 \item $12\sqrt{2}$
+    %                 \item $12\sqrt{3}$
+    %                 \item 22
+    %             \end{enumerate}
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Exercícios} %Gabarito B
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             3 \textbf{(ENEM-2018) }Para decorar um cilindro circular reto será usada uma faixa retangular de papel transparente, na qual está desenhada em negrito uma diagonal que forma $30^\circ$ com a borda inferior. O raio da base do cilindro mede $\frac{6}{\pi}\text{ cm}$, e ao enrolar a faixa obtém-se uma linha em formato de hélice, como na figura.
+    %         \end{column}   
+    %     \end{columns}
+    %     \begin{columns}
+    %             \begin{column}{.5\textwidth}
+    %                 \begin{figure}
+    %                     \centering\includegraphics[width=\textwidth]{questao03.png}
+    %                 \end{figure}
+    %             \end{column}
+    %             \begin{column}{.45\textwidth}
+    %                 O valor da medida da altura do cilindro, em centímetros, é:
+
+    %                 \begin{enumerate}[a. ]
+    %                     \item $36\sqrt{3}$
+    %                     \item $24\sqrt{3}$
+    %                     \item $4\sqrt{3}$
+    %                     \item $36$
+    %                     \item $72$
+    %                 \end{enumerate}
+    %             \end{column}    
+    %         \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Exercícios} %Gabarito A
+    %     \begin{columns}[totalwidth=.9\textwidth]
+    %         \begin{column}{\textwidth}
+    %             4 \textbf{(ENEM-2018) }Um quebra-cabeça consiste em recobrir um quadrado com triângulos retângulos isósceles, como ilustra a figura.
+
+    %             Uma artesã confecciona um quebra-cabeça como o descrito, de tal modo que a menor das peças é um triângulo retângulo isósceles cujos catetos medem 2 cm.
+               
+    %         \end{column}
+    %     \end{columns}
+    %         \vspace{1em}
+    %         \begin{columns}
+    %             \begin{column}{.3\textwidth}
+    %                 \begin{figure}
+    %                     \centering
+    %                     \includegraphics[width=.8\textwidth]{questao04.png}
+    %                 \end{figure}
+    %             \end{column}
+    %             \begin{column}{.65\textwidth}
+    %                 O quebra-cabeça, quando montado, resultará em um quadrado cuja medida do lado, em centímetro, é
+
+    %                 \begin{enumerate}[a. ]
+    %                     \item $14$
+    %                     \item $12$
+    %                     \item $7\sqrt{2}$
+    %                     \item $6 + 4\sqrt{2}$
+    %                     \item $6 + 2\sqrt{2}$
+    %                 \end{enumerate}
+    %             \end{column}
+    %         \end{columns}
+    % \end{frame}
+
+    % \begin{frame} {Exercícios} %Gabarito: 25
+    %     5 \textbf{(IEZZI, FME3) } Calcule a hipotenusa de um triângulo retângulo de perímetro $56 \text{ cm}$ e altura $\frac{168}{25} \text{ cm}$.
+    % \end{frame}
+
+    % \begin{frame} {Exercícios} %Gabarito p=60/13, k=25/13, s=144/13, t=13
+    %     6 \textbf{(IEZZI, FM3) }Calcule os elemento $k, p, s, t$, na figura abaixo:
+    %     \begin{columns}[totalwidth=\textwidth]
+    %         \begin{column}{.65\textwidth}
+    %             \begin{figure}
+    %                 \raggedleft
+    %                 \includegraphics[width=\textwidth]{questao05.png}
+    %             \end{figure}
+    %         \end{column}
+    %         \begin{column}{.15\textwidth}
+    %             ~
+    %         \end{column}
+    %     \end{columns}
+    % \end{frame}
+\end{document}
