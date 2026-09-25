@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  24 SEP 2026 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  25 SEP 2026 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -907,38 +907,43 @@ File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
-)) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks56
+\minrowclearance=\skip69
+\rownum=\count370
+) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
 Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
  (/usr/share/texlive/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks56
-\pgfopts@list@add@b@toks=\toks57
+\pgfopts@list@add@a@toks=\toks57
+\pgfopts@list@add@b@toks=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerinnerthememetropolis.sty
 Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
  (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count370
-\calc@Bcount=\count371
+\calc@Acount=\count371
+\calc@Bcount=\count372
 \calc@Adimen=\dimen332
 \calc@Bdimen=\dimen333
-\calc@Askip=\skip69
-\calc@Bskip=\skip70
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count372
-\calc@Cskip=\skip71
+\calc@Ccount=\count373
+\calc@Cskip=\skip72
 )
-\metropolis@titleseparator@linewidth=\skip72
-\metropolis@progressonsectionpage=\skip73
-\metropolis@progressonsectionpage@linewidth=\skip74
-\metropolis@blocksep=\skip75
-\metropolis@blockadjust=\skip76
-\metropolis@parskip=\skip77
+\metropolis@titleseparator@linewidth=\skip73
+\metropolis@progressonsectionpage=\skip74
+\metropolis@progressonsectionpage@linewidth=\skip75
+\metropolis@blocksep=\skip76
+\metropolis@blockadjust=\skip77
+\metropolis@parskip=\skip78
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerouterthememetropolis.sty
 Package: beamerouterthememetropolis 2017/01/23 Metropolis outer theme
-\metropolis@frametitle@padding=\skip78
-\metropolis@progressinheadfoot=\skip79
-\metropolis@progressinheadfoot@linewidth=\skip80
+\metropolis@frametitle@padding=\skip79
+\metropolis@progressinheadfoot=\skip80
+\metropolis@progressinheadfoot@linewidth=\skip81
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamercolorthememetropolis.sty
 Package: beamercolorthememetropolis 2017/01/23 Metropolis color theme
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/beamerfontthememetropolis.sty
@@ -955,7 +960,7 @@ Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLa
 Package: expl3 2024-01-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count373
+\l__color_backend_stack_int=\count374
 \l__pdf_internal_box=\box98
 )) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
@@ -964,9 +969,9 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen334
-\l__xtemplate_tmp_int=\count374
+\l__xtemplate_tmp_int=\count375
 \l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip81
+\l__xtemplate_tmp_skip=\skip82
 )
 Package: xfrac 2023-10-10 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box99
@@ -984,13 +989,13 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
-\thmt@toks=\toks58
-\c@thmt@dummyctr=\count375
+\thmt@toks=\toks59
+\c@thmt@dummyctr=\count376
  (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
  (/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2023/05/04 v0.76
-\@parsespec=\toks59
+\@parsespec=\toks60
 )) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2023/05/04 v0.76
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
@@ -1005,45 +1010,45 @@ Package: thm-listof 2023/05/04 v0.76
 Package: thm-restate 2023/05/04 v0.76
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
-\thmt@style@headstyle=\toks60
+\thmt@style@headstyle=\toks61
 ) (/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-beamer.sty
 Package: thm-beamer 2023/05/04 v0.76
 ))
-LaTeX Font Info:    Trying to load font information for T1+Montserrat-LF on input line 161.
+LaTeX Font Info:    Trying to load font information for T1+Montserrat-LF on input line 163.
  (/usr/share/texlive/texmf-dist/tex/latex/montserrat/T1Montserrat-LF.fd
 File: T1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for T1/Montserrat-LF.
 )
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/m/n' aliased to
-(Font)              `T1/Montserrat-LF/regular/n' on input line 161.
+(Font)              `T1/Montserrat-LF/regular/n' on input line 163.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 161.
+(Font)              scaled to size 8.0pt on input line 163.
  (./aula_0925.aux)
 \openout1 = `aula_0925.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 161.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 163.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 163.
  (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    ... okay on input line 163.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1081,24 +1086,24 @@ LaTeX Font Info:    ... okay on input line 161.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
+\scratchcounter=\count377
 \scratchdimen=\dimen340
 \scratchbox=\box101
-\nofMPsegments=\count377
-\nofMParguments=\count378
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count379
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count380
 \MPscratchDim=\dimen341
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
-\everyMPtoPDFconversion=\toks62
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks63
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 161.
+Package hyperref Info: Link coloring OFF on input line 163.
  (./aula_0925.out) (./aula_0925.out)
 \@outlinefile=\write5
 \openout5 = `aula_0925.out'.
@@ -1116,213 +1121,258 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@mv@tabular=\count382
-\c@mv@boldtabular=\count383
-\c@lstlisting=\count384
+\c@mv@tabular=\count383
+\c@mv@boldtabular=\count384
+\c@lstlisting=\count385
  (./aula_0925.nav)
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 161.
+(Font)              scaled to size 5.0pt on input line 163.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 198.
+(Font)              scaled to size 10.95pt on input line 200.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 198.
+(Font)              scaled to size 10.95pt on input line 200.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 198.
+(Font)              scaled to size 10.0pt on input line 200.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 198.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 198.
+(Font)              scaled to size 7.0pt on input line 200.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 200.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 198.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 200.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <../../src/img/semana07/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
 File: ../../src/img/semana07/../logo_ofSaber.png Graphic file (type png)
 <use ../../src/img/semana07/../logo_ofSaber.png>
-Package pdftex.def Info: ../../src/img/semana07/../logo_ofSaber.png  used on input line 198.
+Package pdftex.def Info: ../../src/img/semana07/../logo_ofSaber.png  used on input line 200.
 (pdftex.def)             Requested size: 63.73222pt x 97.15811pt.
 <../../src/img/semana07/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
 File: ../../src/img/semana07/../Proex02c.png Graphic file (type png)
 <use ../../src/img/semana07/../Proex02c.png>
-Package pdftex.def Info: ../../src/img/semana07/../Proex02c.png  used on input line 198.
+Package pdftex.def Info: ../../src/img/semana07/../Proex02c.png  used on input line 200.
 (pdftex.def)             Requested size: 39.83324pt x 11.86923pt.
 <../../src/img/semana07/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
 File: ../../src/img/semana07/../Logo_UFF.png Graphic file (type png)
 <use ../../src/img/semana07/../Logo_UFF.png>
-Package pdftex.def Info: ../../src/img/semana07/../Logo_UFF.png  used on input line 198.
+Package pdftex.def Info: ../../src/img/semana07/../Logo_UFF.png  used on input line 200.
 (pdftex.def)             Requested size: 31.8661pt x 16.29843pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 4.0pt on input line 198.
+(Font)              scaled to size 4.0pt on input line 200.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana07/../logo_ofSaber.png> <../../src/img/semana07/../Proex02c.png> <../../src/img/semana07/../Logo_UFF.png>]
 <../../src/img/semana07/slide_01_prisma_reto.png, id=64, 980.66376pt x 562.1pt>
 File: ../../src/img/semana07/slide_01_prisma_reto.png Graphic file (type png)
 <use ../../src/img/semana07/slide_01_prisma_reto.png>
-Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_reto.png  used on input line 235.
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_reto.png  used on input line 237.
 (pdftex.def)             Requested size: 104.56569pt x 59.92711pt.
 <../../src/img/semana07/slide_01_prisma_oblíquo.png, id=65, 980.66376pt x 562.1pt>
 File: ../../src/img/semana07/slide_01_prisma_oblíquo.png Graphic file (type png)
 <use ../../src/img/semana07/slide_01_prisma_oblíquo.png>
-Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_oblíquo.png  used on input line 235.
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_oblíquo.png  used on input line 237.
 (pdftex.def)             Requested size: 104.56569pt x 59.92711pt.
 <../../src/img/semana07/slide_01_prisma_deitado.png, id=66, 986.68625pt x 562.1pt>
 File: ../../src/img/semana07/slide_01_prisma_deitado.png Graphic file (type png)
 <use ../../src/img/semana07/slide_01_prisma_deitado.png>
-Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_deitado.png  used on input line 235.
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_deitado.png  used on input line 237.
 (pdftex.def)             Requested size: 104.56569pt x 59.56688pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 235.
+(Font)              scaled to size 8.0pt on input line 237.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 7.0pt on input line 235.
+(Font)              scaled to size 7.0pt on input line 237.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 235.
+(Font)              scaled to size 10.0pt on input line 237.
  [2
 
  <../../src/img/semana07/slide_01_prisma_reto.png> <../../src/img/semana07/slide_01_prisma_oblíquo.png> <../../src/img/semana07/slide_01_prisma_deitado.png>]
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 258.
+(Font)              scaled to size 8.0pt on input line 267.
+<../../src/img/semana07/slide02.png, id=78, 413.545pt x 472.76625pt>
+File: ../../src/img/semana07/slide02.png Graphic file (type png)
+<use ../../src/img/semana07/slide02.png>
+Package pdftex.def Info: ../../src/img/semana07/slide02.png  used on input line 267.
+(pdftex.def)             Requested size: 83.65158pt x 95.62643pt.
+<../../src/img/semana07/slide02_altura.png, id=79, 927.465pt x 562.1pt>
+File: ../../src/img/semana07/slide02_altura.png Graphic file (type png)
+<use ../../src/img/semana07/slide02_altura.png>
+Package pdftex.def Info: ../../src/img/semana07/slide02_altura.png  used on input line 267.
+(pdftex.def)             Requested size: 107.55177pt x 65.1762pt.
+ [3
 
-Overfull \hbox (39.8363pt too wide) detected at line 258
-[][][][][][][][][][][] [][][][][][][]
- []
+ <../../src/img/semana07/slide02.png> <../../src/img/semana07/slide02_altura.png>]
+<../../src/img/semana07/slide03_paralelepipedo.png, id=88, 459.7175pt x 386.44376pt>
+File: ../../src/img/semana07/slide03_paralelepipedo.png Graphic file (type png)
+<use ../../src/img/semana07/slide03_paralelepipedo.png>
+Package pdftex.def Info: ../../src/img/semana07/slide03_paralelepipedo.png  used on input line 294.
+(pdftex.def)             Requested size: 103.56546pt x 87.05812pt.
+<../../src/img/semana07/slide03_cubo.png, id=89, 497.86pt x 519.9425pt>
+File: ../../src/img/semana07/slide03_cubo.png Graphic file (type png)
+<use ../../src/img/semana07/slide03_cubo.png>
+Package pdftex.def Info: ../../src/img/semana07/slide03_cubo.png  used on input line 294.
+(pdftex.def)             Requested size: 103.56546pt x 108.15976pt.
 
-
-Overfull \vbox (12.20605pt too high) detected at line 258
- []
-
-[3
-
-]
-Underfull \hbox (badness 10000) detected at line 274
-[][][][][][][][][]
+Overfull \vbox (14.83707pt too high) detected at line 294
  []
 
 [4
 
-]
+ <../../src/img/semana07/slide03_paralelepipedo.png> <../../src/img/semana07/slide03_cubo.png>]
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 294.
+(Font)              scaled to size 12.0pt on input line 321.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 294.
+(Font)              scaled to size 6.0pt on input line 321.
+<../../src/img/semana07/slide04_octogono.png, id=97, 767.86874pt x 538.01pt>
+File: ../../src/img/semana07/slide04_octogono.png Graphic file (type png)
+<use ../../src/img/semana07/slide04_octogono.png>
+Package pdftex.def Info: ../../src/img/semana07/slide04_octogono.png  used on input line 321.
+(pdftex.def)             Requested size: 143.39871pt x 100.46616pt.
+<../../src/img/semana07/slide04_planificacao.png, id=98, 715.67375pt x 478.78876pt>
+File: ../../src/img/semana07/slide04_planificacao.png Graphic file (type png)
+<use ../../src/img/semana07/slide04_planificacao.png>
+Package pdftex.def Info: ../../src/img/semana07/slide04_planificacao.png  used on input line 321.
+(pdftex.def)             Requested size: 143.39871pt x 95.93138pt.
 
-Underfull \hbox (badness 10000) detected at line 294
-[][][][][][][][][]
+Overfull \vbox (4.04422pt too high) detected at line 321
  []
 
 [5
 
-]
-Underfull \hbox (badness 10000) detected at line 316
-[][][][][][][][][]
- []
+ <../../src/img/semana07/slide04_octogono.png> <../../src/img/semana07/slide04_planificacao.png>]
+<../../src/img/semana07/slide05_Volumeprisma.jpeg, id=109, 49.1436pt x 89.8557pt>
+File: ../../src/img/semana07/slide05_Volumeprisma.jpeg Graphic file (type jpg)
+<use ../../src/img/semana07/slide05_Volumeprisma.jpeg>
+Package pdftex.def Info: ../../src/img/semana07/slide05_Volumeprisma.jpeg  used on input line 348.
+(pdftex.def)             Requested size: 119.50279pt x 218.51402pt.
 
-
-Overfull \vbox (27.05408pt too high) detected at line 316
+Overfull \vbox (19.1607pt too high) detected at line 348
  []
 
 [6
 
-]
-Overfull \hbox (39.8363pt too wide) detected at line 339
+ <../../src/img/semana07/slide05_Volumeprisma.jpeg>]
+<../../src/img/semana07/slide06_piramide01.png, id=115, 575.14874pt x 468.75125pt>
+File: ../../src/img/semana07/slide06_piramide01.png Graphic file (type png)
+<use ../../src/img/semana07/slide06_piramide01.png>
+Package pdftex.def Info: ../../src/img/semana07/slide06_piramide01.png  used on input line 377.
+(pdftex.def)             Requested size: 83.25429pt x 67.84917pt.
+<../../src/img/semana07/slide06_piramide02.png, id=116, 686.565pt x 498.86375pt>
+File: ../../src/img/semana07/slide06_piramide02.png Graphic file (type png)
+<use ../../src/img/semana07/slide06_piramide02.png>
+Package pdftex.def Info: ../../src/img/semana07/slide06_piramide02.png  used on input line 377.
+(pdftex.def)             Requested size: 83.25429pt x 60.49286pt.
+<../../src/img/semana07/slide06_tetraedro.png, id=117, 357.335pt x 354.32375pt>
+File: ../../src/img/semana07/slide06_tetraedro.png Graphic file (type png)
+<use ../../src/img/semana07/slide06_tetraedro.png>
+Package pdftex.def Info: ../../src/img/semana07/slide06_tetraedro.png  used on input line 377.
+(pdftex.def)             Requested size: 83.25429pt x 82.55241pt.
+
+Overfull \hbox (11.95575pt too wide) detected at line 377
 [][][][][][][][][][][] [][][][][][][]
  []
 
 
-Overfull \vbox (20.47023pt too high) detected at line 339
+Overfull \vbox (24.72162pt too high) detected at line 377
  []
 
 [7
 
-]
-Underfull \hbox (badness 10000) detected at line 358
-[][][][][][][][][]
+ <../../src/img/semana07/slide06_piramide01.png (PNG copy)> <../../src/img/semana07/slide06_piramide02.png (PNG copy)> <../../src/img/semana07/slide06_tetraedro.png (PNG copy)>]
+<../../src/img/semana07/slide07_area.png, id=124, 671.50874pt x 414.54875pt>
+File: ../../src/img/semana07/slide07_area.png Graphic file (type png)
+<use ../../src/img/semana07/slide07_area.png>
+Package pdftex.def Info: ../../src/img/semana07/slide07_area.png  used on input line 408.
+(pdftex.def)             Requested size: 140.4147pt x 86.67827pt.
+<../../src/img/semana07/slide07_planificacao.png, id=125, 737.75626pt x 547.04375pt>
+File: ../../src/img/semana07/slide07_planificacao.png Graphic file (type png)
+<use ../../src/img/semana07/slide07_planificacao.png>
+Package pdftex.def Info: ../../src/img/semana07/slide07_planificacao.png  used on input line 408.
+(pdftex.def)             Requested size: 140.4147pt x 104.11467pt.
+
+Overfull \hbox (27.88663pt too wide) detected at line 408
+[][][][][][][][][][][] [][][][][][][]
  []
 
 [8
 
-]
-Underfull \hbox (badness 10000) detected at line 378
-[][][][][][][][][]
+ <../../src/img/semana07/slide07_area.png (PNG copy)> <../../src/img/semana07/slide07_planificacao.png (PNG copy)>]
+<../../src/img/semana07/slide08_volume.png, id=131, 575.14874pt x 432.61626pt>
+File: ../../src/img/semana07/slide08_volume.png Graphic file (type png)
+<use ../../src/img/semana07/slide08_volume.png>
+Package pdftex.def Info: ../../src/img/semana07/slide08_volume.png  used on input line 440.
+(pdftex.def)             Requested size: 176.85954pt x 133.02705pt.
+
+Overfull \hbox (29.47621pt too wide) in paragraph at lines 440--440
+ [] 
  []
 
 [9
 
-]
-Overfull \hbox (39.8363pt too wide) detected at line 401
-[][][][][][][][][][][] [][][][][][][]
- []
-
-
-Overfull \vbox (8.95001pt too high) detected at line 401
- []
-
-[10
+ <../../src/img/semana07/slide08_volume.png (PNG copy)>] [10
 
 ]
-<../../src/img/semana07/questao01.png, id=124, 671.50874pt x 287.0725pt>
+<../../src/img/semana07/questao01.png, id=143, 671.50874pt x 287.0725pt>
 File: ../../src/img/semana07/questao01.png Graphic file (type png)
 <use ../../src/img/semana07/questao01.png>
-Package pdftex.def Info: ../../src/img/semana07/questao01.png  used on input line 434.
+Package pdftex.def Info: ../../src/img/semana07/questao01.png  used on input line 518.
 (pdftex.def)             Requested size: 197.17735pt x 84.29141pt.
 
-Overfull \vbox (19.7182pt too high) detected at line 434
+Overfull \vbox (19.7182pt too high) detected at line 518
  []
 
 [11
 
  <../../src/img/semana07/questao01.png>]
-Overfull \hbox (39.8363pt too wide) detected at line 461
+Overfull \hbox (39.8363pt too wide) detected at line 545
 [][][][][][][][][]
  []
 
-<../../src/img/semana07/questao02.png, id=131, 526.96875pt x 474.77374pt>
+<../../src/img/semana07/questao02.png, id=150, 526.96875pt x 474.77374pt>
 File: ../../src/img/semana07/questao02.png Graphic file (type png)
 <use ../../src/img/semana07/questao02.png>
-Package pdftex.def Info: ../../src/img/semana07/questao02.png  used on input line 461.
+Package pdftex.def Info: ../../src/img/semana07/questao02.png  used on input line 545.
 (pdftex.def)             Requested size: 129.45882pt x 116.63571pt.
 [12
 
  <../../src/img/semana07/questao02.png>]
-LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 499.
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 583.
  (/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
 File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
 )
 LaTeX Font Info:    Font shape `TS1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 499.
+(Font)              scaled to size 8.0pt on input line 583.
 
-Overfull \hbox (39.8363pt too wide) detected at line 499
+Overfull \hbox (39.8363pt too wide) detected at line 583
 [][][][][][][][][]
  []
 
 [13
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc}]
-Overfull \hbox (39.8363pt too wide) detected at line 541
+Overfull \hbox (39.8363pt too wide) detected at line 625
 [][][][][][][][][]
  []
 
 [14
 
 ]
-Overfull \hbox (39.8363pt too wide) detected at line 571
+Overfull \hbox (39.8363pt too wide) detected at line 655
 [][][][][][][][][]
  []
 
-<../../src/img/semana07/questao05.png, id=150, 365.365pt x 176.66pt>
+<../../src/img/semana07/questao05.png, id=169, 365.365pt x 176.66pt>
 File: ../../src/img/semana07/questao05.png Graphic file (type png)
 <use ../../src/img/semana07/questao05.png>
-Package pdftex.def Info: ../../src/img/semana07/questao05.png  used on input line 571.
+Package pdftex.def Info: ../../src/img/semana07/questao05.png  used on input line 655.
 (pdftex.def)             Requested size: 199.1693pt x 96.30069pt.
 [15
 
  <../../src/img/semana07/questao05.png>]
-<../../src/img/semana07/questao06.png, id=157, 217.81375pt x 177.66376pt>
+<../../src/img/semana07/questao06.png, id=176, 217.81375pt x 177.66376pt>
 File: ../../src/img/semana07/questao06.png Graphic file (type png)
 <use ../../src/img/semana07/questao06.png>
-Package pdftex.def Info: ../../src/img/semana07/questao06.png  used on input line 593.
+Package pdftex.def Info: ../../src/img/semana07/questao06.png  used on input line 677.
 (pdftex.def)             Requested size: 139.42093pt x 113.72067pt.
  [16
 
@@ -1345,11 +1395,18 @@ Package rerunfilecheck Info: File `aula_0925.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35198 strings out of 474222
- 747099 string characters out of 5748734
+ 35404 strings out of 474222
+ 753672 string characters out of 5748734
  1935975 words of memory out of 5000000
- 56689 multiletter control sequences out of 15000+600000
+ 56891 multiletter control sequences out of 15000+600000
  779874 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,1945b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fon
+ 128i,15n,123p,1945b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on aula_0925.pdf (16 pages, 1109398 bytes).
+PDF statistics:
+ 239 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -11,6 +11,8 @@
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
 % \usepackage[inline]{enumitem}
 
 \DeclareMathOperator{\sen}{sen}
@@ -235,8 +237,8 @@
     \end{frame}
 
     \begin{frame}{Natureza e Classificação dos Prismas}
-        \begin{columns}[totalwidth=.9\textwidth]
-            \begin{column}{.5\textwidth}
+        \begin{columns}[totalwidth=.9\textwidth,T]
+            \begin{column}{.6\textwidth}
                 A \textbf{natureza} de um prisma é determinada de acordo com o polígono que é sua base. Assim, dizemos que um prisma é triangular, retangular, hexagonal, etc.
 
                 Um prima pode ser classificado em:
@@ -251,14 +253,21 @@
 
                 A \textbf{altura }de um prisma é a distância ortogonal entre os planos de suas bases.
             \end{column}
-            \begin{column}{.5\textwidth}
-                
+            \begin{column}{.3\textwidth}
+                \begin{figure}
+                    \raggedleft
+                    \includegraphics[width=.7\textwidth]{slide02.png}
+                \end{figure}
+                \begin{figure}
+                    \raggedleft
+                    \includegraphics[width=.9\textwidth]{slide02_altura.png}
+                \end{figure}
             \end{column}
         \end{columns}
     \end{frame}
 
     \begin{frame} {Paralelepípedo e Cubo}
-        \begin{columns}[totalwidth=.9\textwidth]
+        \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.5\textwidth}
                 \textbf{Paralelepípedo }é um prisma cujas bases também são paralelogramos. Um paralelepípedo pode ser também oblíquo ou reto.
 
@@ -268,13 +277,24 @@
 
                 \vspace{1em}
 
-                Se todas as arestas de um paralelepípedo reto forem congruentes, então temos um \textbf{cubo}. As facees de um cubo também serão congruentes.
+                Se todas as arestas de um paralelepípedo reto forem congruentes, então temos um \textbf{cubo}. As faces de um cubo também serão congruentes.
+            \end{column}
+
+            \begin{column}{.4\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.65\textwidth]{slide03_paralelepipedo.png}
+                \end{figure}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.65\textwidth]{slide03_cubo.png}
+                \end{figure}
             \end{column}
         \end{columns}
     \end{frame}
 
     \begin{frame} {Área de um Prisma}       
-        \begin{columns}[totalwidth=.9\textwidth]
+        \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.5\textwidth}
                 A \textbf{área}, ou \textbf{superfície}, de um prisma é definida pela soma das áreas das faces laterais e das bases do prisma.
 
@@ -290,12 +310,19 @@
                     \]
                 }}
             \end{column}
+            \begin{column}{.4\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.9\textwidth]{slide04_octogono.png}
+                    \includegraphics[width=.9\textwidth]{slide04_planificacao.png}
+                \end{figure}
+            \end{column}
         \end{columns}
     \end{frame}
 
     \begin{frame} {Volume do Prisma}
-        \begin{columns}[totalwidth=.9\textwidth]
-            \begin{column}{.5\textwidth}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.6\textwidth}
                 Quando falamos de \textbf{volume}, estamos falando também de capacidade, de quanto cabe em uma caixa ou um outro recipiente qualquer.
                 \vspace{1em}
                 Vamos imaginar um pão de forma, no molde um prisma retangular perfeito. As fatias deste pão são de mesma forma e mesmo tamanho. Podemos considerar que cada fatia representa a área da base de nosso polígono.
@@ -312,14 +339,25 @@
                 }
             }
             \end{column}
+
+            \begin{column}{.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{slide05_Volumeprisma.jpeg}
+            \end{column}
         \end{columns}
     \end{frame}
     
     \begin{frame} {Pirâmides}
         \begin{columns}[totalwidth=.9\textwidth]
-            \begin{column}{.5\textwidth}
+            \begin{column}{.38\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.55\textwidth]{slide06_piramide01.png}
+                    \includegraphics[width=.55\textwidth]{slide06_piramide02.png}
+                    \includegraphics[width=.55\textwidth]{slide06_tetraedro.png}
+                \end{figure}
             \end{column}
-            \begin{column}{.5\textwidth}
+            \begin{column}{.55\textwidth}
                 \begin{cardPrincipal}[title=Definição]
                     Considere um polígono $P$ situado em um plano e um ponto externo $V$. Uma pirâmide é a reunião dos segmentos com uma extremidade nos pontos de $P$ e outra em $V$. $P$ é a \textit{base} da pirâmide e $V$, seu vértice.  O polígono da base determina a natureza de uma pirâmide.
                 \end{cardPrincipal}
@@ -339,11 +377,16 @@
     \end{frame}
 
     \begin{frame} {Área da Pirâmide}
-        \begin{columns}[totalwidth=.9\textwidth]
+        \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.5\textwidth}
+                \vspace{1.2em}
                 A área (ou superfície) de uma pirâmide será a soma das áreas das faces laterais com a área de sua base.
 
+                \vspace{1em}
+
                 Perceba que as faces laterais de uma pirâmide serão sempre triângulos. Muitas vezes será necessário calcular a altura, que não deve ser confundida com a altura da pirâmide.
+
+                \vspace{1em}
 
                 A altura da pirâmide, inclusive, pode ser utilizada para calcular as alturas das faces. O teorema de Pitágoras, como o de costume, será de grande ajuda.
 
@@ -354,15 +397,26 @@
                 }
                 }
             \end{column}
+            \begin{column}{.47\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.75\textwidth]{slide07_area.png}
+                    \includegraphics[width=.75\textwidth]{slide07_planificacao.png}
+                \end{figure}
+            \end{column}
         \end{columns}
     \end{frame}
 
     \begin{frame} {Volume da Pirâmide}
-        \begin{columns}[totalwidth=.9\textwidth]
+        \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.5\textwidth}
                 O volume de uma pirâmide obviamente será diferente do volume de uma prisma, de mesmas natureza e altura. É perceptível que o volume de uma pirâmide será menor.
 
+                \vspace{1em}
+
                 Dado um prisma qualquer, podemos a partir de uma diagonal interna de maio comprimento, cortá-lo em três pirâmides que embora sejam diferentes, possuem a mesma capacidade.
+
+                \vspace{1em}
 
                 Isso significa, portanto, que o volume de uma pirâmide representa um terço do volume de um prisma de mesma altura e natureza.
 
@@ -372,30 +426,60 @@
                     \]
                 }}
 
+                \vspace{1em}
+
                 Tem ponta? Divida por $3$!
+            \end{column}
+            \begin{column}{.37\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=1.2\textwidth]{slide08_volume.png}
+                \end{figure}
             \end{column}
         \end{columns}
     \end{frame}
 
     \begin{frame} {Ainda sobre volumes...}
+        \vspace{1.2em}
         \begin{columns}[totalwidth=.9\textwidth]
-            \begin{column}{.5\textwidth}
+            \begin{column}{.4\textwidth}
                 É comum que o ENEM \text{aproveite} questões de volume de sólidos para trabalhar em conjunto a conversão de medidas.
-
+                
+                \vspace{1em}
+                
                 Como vimos na aula sobre cálculo de áreas, a área tem dimensão 2 (é um produto entre base e altura). Ao calcularmos o volume, precisamos de mais uma dimensão: temos largura, altura e profundidade.
-
+                
+                \vspace{1em}
+                
                 Portanto se falávamos em $\text{m}^2$, quando tratávamos de área, agora teremos o $\text{m}^3$. (E, óbvio, seus múltiplos e submúltiplos: $\text{cm}^3$, $\text{dm}^3$, $\text{mm}^3$, etc).
-
-                No entanto, há uma medida de capacidade que é mais comum no uso diário: o litro e seus múltiplos e submúltiplos.
-
-                Algumas questões podem envolver conversões entre metros cúbicos e litros. Nestes casos, vale o seguinte:
+                
+                
             \end{column}
-            \begin{column}{.5\textwidth}
-                \begin{tabular}{c | c | c}
-                    $1 \text{m}^3$ & $1.000$ l & Caixa d'Água\\
-                    $1 \text{dm}^3$ & $1$ l & Caixa de Leite \\
-                    $1 \text{cm}^3$ & $1$ ml & Pipeta ou seringa
+
+            \begin{column}{.4\textwidth}
+                No entanto, há uma medida de capacidade que é mais comum no uso diário: o litro e seus múltiplos e submúltiplos.
+                
+                \vspace{1em}
+                
+                Algumas questões podem envolver conversões entre metros cúbicos e litros. Nestes casos, vale o seguinte:
+
+                \vspace{1em}
+
+                \begin{table}
+                    \centering
+                    \begin{tabular}{l l l}
+                        \toprule
+                        \rowcolor{SoftOrange}
+                        \multicolumn{3}{c}{\textbf{Conversão de Unidades}}\\
+                        \midrule
+                        $1 \text{ m}^3$ & $1.000$ L & Caixa d'Água\\
+                        
+                        $1 \text{ dm}^3$ & $1$ L & Caixa de Leite \\
+                        
+                        $1 \text{ cm}^3$ & $1$ mL & Pipeta ou seringa\\
+                        \bottomrule
                 \end{tabular}
+                \end{table}
             \end{column}
         \end{columns}
     \end{frame}
