@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  21 SEP 2026 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  24 SEP 2026 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1158,75 +1158,173 @@ LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana07/../logo_ofSaber.png> <../../src/img/semana07/../Proex02c.png> <../../src/img/semana07/../Logo_UFF.png>]
+<../../src/img/semana07/slide_01_prisma_reto.png, id=64, 980.66376pt x 562.1pt>
+File: ../../src/img/semana07/slide_01_prisma_reto.png Graphic file (type png)
+<use ../../src/img/semana07/slide_01_prisma_reto.png>
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_reto.png  used on input line 235.
+(pdftex.def)             Requested size: 104.56569pt x 59.92711pt.
+<../../src/img/semana07/slide_01_prisma_oblíquo.png, id=65, 980.66376pt x 562.1pt>
+File: ../../src/img/semana07/slide_01_prisma_oblíquo.png Graphic file (type png)
+<use ../../src/img/semana07/slide_01_prisma_oblíquo.png>
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_oblíquo.png  used on input line 235.
+(pdftex.def)             Requested size: 104.56569pt x 59.92711pt.
+<../../src/img/semana07/slide_01_prisma_deitado.png, id=66, 986.68625pt x 562.1pt>
+File: ../../src/img/semana07/slide_01_prisma_deitado.png Graphic file (type png)
+<use ../../src/img/semana07/slide_01_prisma_deitado.png>
+Package pdftex.def Info: ../../src/img/semana07/slide_01_prisma_deitado.png  used on input line 235.
+(pdftex.def)             Requested size: 104.56569pt x 59.56688pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 637.
-<../../src/img/semana07/questao01.png, id=64, 671.50874pt x 287.0725pt>
-File: ../../src/img/semana07/questao01.png Graphic file (type png)
-<use ../../src/img/semana07/questao01.png>
-Package pdftex.def Info: ../../src/img/semana07/questao01.png  used on input line 637.
-(pdftex.def)             Requested size: 197.17735pt x 84.29141pt.
+(Font)              scaled to size 8.0pt on input line 235.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 637.
+(Font)              scaled to size 7.0pt on input line 235.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 235.
+ [2
 
-Overfull \vbox (19.7182pt too high) detected at line 637
+ <../../src/img/semana07/slide_01_prisma_reto.png> <../../src/img/semana07/slide_01_prisma_oblíquo.png> <../../src/img/semana07/slide_01_prisma_deitado.png>]
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 258.
+
+Overfull \hbox (39.8363pt too wide) detected at line 258
+[][][][][][][][][][][] [][][][][][][]
  []
 
-[2
 
- <../../src/img/semana07/questao01.png>]
-Overfull \hbox (39.8363pt too wide) detected at line 664
-[][][][][][][][][]
+Overfull \vbox (12.20605pt too high) detected at line 258
  []
 
-<../../src/img/semana07/questao02.png, id=75, 526.96875pt x 474.77374pt>
-File: ../../src/img/semana07/questao02.png Graphic file (type png)
-<use ../../src/img/semana07/questao02.png>
-Package pdftex.def Info: ../../src/img/semana07/questao02.png  used on input line 664.
-(pdftex.def)             Requested size: 129.45882pt x 116.63571pt.
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 664.
 [3
 
- <../../src/img/semana07/questao02.png>]
-LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 702.
- (/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
-File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
-)
-LaTeX Font Info:    Font shape `TS1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 702.
-
-Overfull \hbox (39.8363pt too wide) detected at line 702
+]
+Underfull \hbox (badness 10000) detected at line 274
 [][][][][][][][][]
  []
 
 [4
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc}]
-Overfull \hbox (39.8363pt too wide) detected at line 744
+]
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 294.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 294.
+
+Underfull \hbox (badness 10000) detected at line 294
 [][][][][][][][][]
  []
 
 [5
 
 ]
-Overfull \hbox (39.8363pt too wide) detected at line 774
+Underfull \hbox (badness 10000) detected at line 316
 [][][][][][][][][]
  []
 
-<../../src/img/semana07/questao05.png, id=93, 365.365pt x 176.66pt>
-File: ../../src/img/semana07/questao05.png Graphic file (type png)
-<use ../../src/img/semana07/questao05.png>
-Package pdftex.def Info: ../../src/img/semana07/questao05.png  used on input line 774.
-(pdftex.def)             Requested size: 199.1693pt x 96.30069pt.
+
+Overfull \vbox (27.05408pt too high) detected at line 316
+ []
+
 [6
 
+]
+Overfull \hbox (39.8363pt too wide) detected at line 339
+[][][][][][][][][][][] [][][][][][][]
+ []
+
+
+Overfull \vbox (20.47023pt too high) detected at line 339
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) detected at line 358
+[][][][][][][][][]
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) detected at line 378
+[][][][][][][][][]
+ []
+
+[9
+
+]
+Overfull \hbox (39.8363pt too wide) detected at line 401
+[][][][][][][][][][][] [][][][][][][]
+ []
+
+
+Overfull \vbox (8.95001pt too high) detected at line 401
+ []
+
+[10
+
+]
+<../../src/img/semana07/questao01.png, id=124, 671.50874pt x 287.0725pt>
+File: ../../src/img/semana07/questao01.png Graphic file (type png)
+<use ../../src/img/semana07/questao01.png>
+Package pdftex.def Info: ../../src/img/semana07/questao01.png  used on input line 434.
+(pdftex.def)             Requested size: 197.17735pt x 84.29141pt.
+
+Overfull \vbox (19.7182pt too high) detected at line 434
+ []
+
+[11
+
+ <../../src/img/semana07/questao01.png>]
+Overfull \hbox (39.8363pt too wide) detected at line 461
+[][][][][][][][][]
+ []
+
+<../../src/img/semana07/questao02.png, id=131, 526.96875pt x 474.77374pt>
+File: ../../src/img/semana07/questao02.png Graphic file (type png)
+<use ../../src/img/semana07/questao02.png>
+Package pdftex.def Info: ../../src/img/semana07/questao02.png  used on input line 461.
+(pdftex.def)             Requested size: 129.45882pt x 116.63571pt.
+[12
+
+ <../../src/img/semana07/questao02.png>]
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-LF on input line 499.
+ (/usr/share/texlive/texmf-dist/tex/latex/montserrat/TS1Montserrat-LF.fd
+File: TS1Montserrat-LF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-LF.
+)
+LaTeX Font Info:    Font shape `TS1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 499.
+
+Overfull \hbox (39.8363pt too wide) detected at line 499
+[][][][][][][][][]
+ []
+
+[13
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_ro7vi7.enc}]
+Overfull \hbox (39.8363pt too wide) detected at line 541
+[][][][][][][][][]
+ []
+
+[14
+
+]
+Overfull \hbox (39.8363pt too wide) detected at line 571
+[][][][][][][][][]
+ []
+
+<../../src/img/semana07/questao05.png, id=150, 365.365pt x 176.66pt>
+File: ../../src/img/semana07/questao05.png Graphic file (type png)
+<use ../../src/img/semana07/questao05.png>
+Package pdftex.def Info: ../../src/img/semana07/questao05.png  used on input line 571.
+(pdftex.def)             Requested size: 199.1693pt x 96.30069pt.
+[15
+
  <../../src/img/semana07/questao05.png>]
-<../../src/img/semana07/questao06.png, id=100, 217.81375pt x 177.66376pt>
+<../../src/img/semana07/questao06.png, id=157, 217.81375pt x 177.66376pt>
 File: ../../src/img/semana07/questao06.png Graphic file (type png)
 <use ../../src/img/semana07/questao06.png>
-Package pdftex.def Info: ../../src/img/semana07/questao06.png  used on input line 796.
+Package pdftex.def Info: ../../src/img/semana07/questao06.png  used on input line 593.
 (pdftex.def)             Requested size: 139.42093pt x 113.72067pt.
- [7
+ [16
 
  <../../src/img/semana07/questao06.png>]
 \tf@nav=\write6
@@ -1247,18 +1345,11 @@ Package rerunfilecheck Info: File `aula_0925.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35063 strings out of 474222
- 743617 string characters out of 5748734
+ 35198 strings out of 474222
+ 747099 string characters out of 5748734
  1935975 words of memory out of 5000000
- 56577 multiletter control sequences out of 15000+600000
- 728306 words of font info for 72 fonts, out of 8000000 for 9000
+ 56689 multiletter control sequences out of 15000+600000
+ 779874 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,123p,1945b,1047s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on aula_0925.pdf (7 pages, 620477 bytes).
-PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 128i,14n,123p,1945b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fon
