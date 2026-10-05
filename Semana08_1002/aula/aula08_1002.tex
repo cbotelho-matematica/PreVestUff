@@ -1,0 +1,778 @@
+\documentclass[aspectratio=169, t, 8pt]{beamer}
+
+%------configurando acentos-----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{montserrat}
+\usefonttheme[onlymath]{serif}
+\usepackage{booktabs} % Tabelas elegantes sem linhas verticais
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{ulem}
+% \usepackage[inline]{enumitem}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\coss}{cos}
+\DeclareMathOperator{\tg}{tg}
+%-------Estilos Beamer---------------
+\usetheme{metropolis}
+%\usecolortheme{crane}
+%\usefonttheme{serif}
+\linespread{1.2}
+
+% Personalização de Cores (Exemplo: Minimal Teal)
+% Cores Base
+\definecolor{BgCanvas}{HTML}{F9F9FB}      % Off-white muito suave
+\definecolor{MainText}{HTML}{2B2D42}      % Grafite escuro para alta legibilidade
+\definecolor{PrimaryAccent}{HTML}{4A6FA5} % Azul poeira (Dusty Blue)
+
+% Tons Pastéis para Destaques e Cards
+\definecolor{PastelGreenBg}{HTML}{E8F0EC}  % Sálvia Claro (Sucesso / Destaque Positivo)
+\definecolor{PastelGreenFg}{HTML}{2D5A44}
+
+\definecolor{PastelCoralBg}{HTML}{FDEAE6}  % Coral Soft (Atenção / Problema / Alerta)
+\definecolor{PastelCoralFg}{HTML}{7A3025}
+
+\definecolor{PastelPurpleBg}{HTML}{F0EBF4} % Lavanda (Conceitos / Citações)
+\definecolor{PastelPurpleFg}{HTML}{4A3E56}
+
+\definecolor{PastelYellowBg}{HTML}{FFF4E6} % Areia / Manteiga (Notas / Dados Secundários)
+\definecolor{PastelYellowFg}{HTML}{7A522A}
+
+% --- CONFIGURAÇÕES DE TEMA BEAMER ---
+%\usetheme{metropolis}
+
+\setbeamertemplate{itemize item}{\textcolor{MainText}{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\textcolor{MainText}{\scriptsize$\circ$}}
+\setbeamertemplate{itemize 3rditem}{\textcolor{MainText}{\tiny$\blacksquare$}}
+
+\setbeamercolor{background canvas}{bg=BgCanvas}
+\setbeamercolor{normal text}{fg=MainText}
+\setbeamercolor{frametitle}{bg=PastelGreenFg, fg=BgCanvas}
+\setbeamercolor{title}{fg=MainText}
+\setbeamercolor{subtitle}{fg=PrimaryAccent}
+\setbeamercolor{structure}{fg=PrimaryAccent}
+
+% Remove a linha amarela padrão do Metropolis sob o título
+\setbeamertemplate{title separator}{}
+\setbeamertemplate{progress bar in section page}{}
+
+% ==============================================================================
+% PALETA DE CORES "GEOMETRIA AQUECIDA" (Inspirada na imagem)
+% ==============================================================================
+\definecolor{BgCream}{HTML}{FFFDFB}       % Fundo creme suave
+\definecolor{TextDark}{HTML}{2C1A14}      % Texto em castanho escuro elegante
+\definecolor{PrimaryOrange}{HTML}{E0531C}  % Laranja vibrante (Títulos e destaques)
+\definecolor{Terracotta}{HTML}{B8380D}     % Terracota queimado (Alertas)
+\definecolor{SoftOrange}{HTML}{FFE6D5}     % Laranja bem suave (Fundo de blocos)
+
+% =================================================
+% CONFIGURAÇÃO DO TEMA METROPOLIS
+% =================================================
+% Cores do texto e fundo geral
+\setbeamercolor{normal text}{fg=TextDark, bg=BgCream}
+\setbeamercolor{alerted text}{fg=Terracotta}
+\setbeamercolor{example text}{fg=PrimaryOrange}
+
+% Barra de título dos slides (Frametitle)
+\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryOrange}
+
+% Título principal da apresentação (Slide de Capa)
+\setbeamercolor{titlelike}{fg=PrimaryOrange}
+\setbeamercolor{subtitle}{fg=Terracotta}
+
+% Barra de progresso (Linha do Metropolis)
+\setbeamercolor{progress bar}{fg=PrimaryOrange, bg=PrimaryOrange!20}
+
+% Customização de Blocos (block, alertblock, exampleblock)
+\setbeamercolor{block title}{fg=BgCream, bg=PrimaryOrange}
+\setbeamercolor{block body}{fg=TextDark, bg=SoftOrange}
+
+\setbeamercolor{block title alerted}{fg=BgCream, bg=Terracotta}
+\setbeamercolor{block body alerted}{fg=TextDark, bg=Terracotta!15}
+
+
+% --- ESTILOS DE CARDS PASTEL COM TCOLORBOX ---
+\newtcolorbox{cardPrincipal}[1][]{
+  colback=SoftOrange,
+  colframe=Terracotta,
+  coltext=TextDark,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardcoral}[1][]{
+  colback=PastelCoralBg,
+  colframe=PastelCoralFg,
+  coltext=PastelCoralFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardpurple}[1][]{
+  colback=PastelPurpleBg,
+  colframe=PastelPurpleFg,
+  coltext=PastelPurpleFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\newtcolorbox{cardyellow}[1][]{
+  colback=PastelYellowBg,
+  colframe=PastelYellowFg,
+  coltext=PastelYellowFg,
+  arc=6pt,
+  boxrule=0pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fonttitle=\bfseries\small,
+  #1
+}
+
+\graphicspath{{../../src/img/semana08/}}
+
+%--------Dados do Documento
+\title{Geometria Espacial: Corpos Redondos}
+\subtitle{Cilindro, Cone \& \sout{Esfera}}
+\author{prof. Eduardo}
+\institute{Pré-Universitário Oficina do Saber / UFF}
+
+\date{\today}
+
+
+%-------- Pacotes Matemática -------------
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{thmtools}
+
+\begin{document}
+
+    \begin{frame} %capa
+        \vspace*{\fill}
+            
+            \begin{columns}[c]
+                \begin{column}{0.5\textwidth}
+                    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\vspace{0.2cm}
+                    
+                    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\vspace{0.5cm}
+
+                {\usebeamerfont{author}\insertauthor}\vspace{0.3cm}
+
+                {\usebeamerfont{institute}\insertinstitute}\vspace{0.3cm}
+
+                {\usebeamerfont{date}\insertdate}
+            \end{column}
+            
+            
+            \begin{column}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.4\textwidth]{../logo_ofSaber.png}
+
+                \vspace{.4cm}
+                \vspace*{\fill}
+        \begin{columns}[c]
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=.5\textwidth]{../Proex02c.png}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                \centering\includegraphics[width=0.4\textwidth]{../Logo_UFF.png}
+            \end{column}
+        \end{columns}
+        \vspace*{\fill}
+            \end{column}
+        \end{columns}
+    \vspace*{\fill}
+    \end{frame}
+    
+        % {
+        %     \usebackgroundtemplate{
+        %     \includegraphics[width=\paperwidth]{segunda_capa_pitagoras.png}}
+        %     \begin{frame}[plain]                
+        %     \end{frame}
+        % }
+
+    \begin{frame}{Visão Geral dos 3 Sólidos}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.28\textwidth}
+                \begin{cardPrincipal}[title=Cilindro]
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=\textwidth]{slide01_cilindro.png}
+                    \end{figure}
+
+                    Um cilindro pode ser interpretado como a rotação de um retângulo em torno de um eixo.
+
+                    É uma figura análoga ao prisma.
+
+                    \vfill~
+                \end{cardPrincipal}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.28\textwidth}
+                \begin{cardPrincipal}[title=Cone]
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=\textwidth]{slide01_cone.png}
+                    \end{figure}
+
+                    Um cone pode ser interpretado como a rotação de um triângulo retângulo em torno de um eixo.
+
+                    É uma figura análoga à pirâmide.
+
+                    \vfill~
+                \end{cardPrincipal}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.28\textwidth}
+                \begin{cardPrincipal}[title=Esfera]
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=\textwidth]{slide01_esfera.png}
+                    \end{figure}
+                    Uma esfera pode ser interpretado como a rotação de um semicírculo em torno de um eixo.
+
+                    É uma figura de máxima simetria no espaço.
+                \end{cardPrincipal}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cilindro: Definição \& Principais Elementos}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \begin{figure}
+                    \centering\includegraphics[width=\textwidth]{cilindro-elementos-ilustracao.jpg}
+                \end{figure}
+            \end{column}
+            
+            \hfill
+            
+            \begin{column}{.43\textwidth}
+                Um {\bf cilindro} é um sólido definido por duas bases {\it circulares e congruentes}, contidas em duas bases paralelas não coincidentes e pela reunião de todos os segmentos de reta delimitados por suas bases e paralelos ao segmento que une os centros das circunferências.
+
+                \vspace{1.2em}
+                
+                {\large{\bf Elementos}}
+
+                \begin{itemize}
+                    \item 2 bases circulares congruentes;
+                    \item 1 eixo de rotação, que é a reta determinada pelos centros das bases;
+                    \item altura $h$, a distância perpendicular entre os planos;
+                    \item geratrizes $g$, os segmentos paralelos ao eixo de rotação;
+                    \item $r$ o raio da base
+                \end{itemize}
+            \end{column}
+        \end{columns}
+
+    \end{frame}
+
+    \begin{frame}{Cilindro: Classificação}
+        \begin{columns}[totalwidth=.9\textwidth, c]
+            \centering
+            \begin{column}{.3\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.7\textwidth]{cilindro-reto.jpg}
+                    \end{figure}
+
+                    \vspace{1em}
+
+                    {\large{\bf Cilindro Reto}}
+
+                    O cilindro reto possui o eixo perpendicular às bases.
+
+                \end{center}
+            \end{column}
+
+            \hfill
+            
+            \begin{column}{.3\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \includegraphics[width=.85\textwidth]{cilindro-obliquo.jpg}
+                    \end{figure}
+
+                    \vspace{1em}
+
+                    {\large{\bf Cilindro Oblíquo}}
+
+                    O cilindro oblíquo possui o eixo inclinado em relação às bases.
+
+                \end{center}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.3\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \includegraphics[width=.8\textwidth]{cilindro-equilatero.png}
+                    \end{figure}
+
+                    \vspace{1em}
+
+                    {\large{\bf Cilindro Equilátero}}
+                    
+                    É um cilindro reto cuja seção meridiana é um quadrado. De modo que a altura do cilindro mede o diâmetro das circunferências de base.
+
+                    \[
+                        h = g = 2r
+                    \]
+                \end{center}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cilindro: Planificação e Área da Superfície}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \includegraphics[width=.8\textwidth]{planificacao-cilindro.jpg}
+                    \end{figure}
+                \end{center}
+            \end{column}
+
+            \begin{column}{.5\textwidth}
+                A planificação de um cilindro nos ajuda a entender o cálculo da área de sua superfície.
+
+                \vspace{1em}
+
+                Assim como um prima, a área da superfície de um cilindro é a soma das áreas de suas bases com a área da superfície lateral.
+
+                \vspace{1em}
+
+                A área lateral de um prima é representada na planificação pelo retângulo azul, de largura com medida do comprimento base do cilindro e altura comum à do cilindro:
+
+                \[
+                    A_{\text{lateral}} = 2\cdot \pi \cdot r \cdot h
+                \]
+
+                As áreas das bases, sabemos são áreas de cículos congruentes, então a área \textit{total} da superfície é:
+                
+                \vspace{-2em}
+
+                {\LARGE{
+                    \[
+                        A_{\text{total}} = 2 \cdot \pi \cdot r^{2} + 2 \cdot \pi \cdot r \cdot h = 2 \cdot \pi \cdot r \left(r + h \right)
+                    \]
+                }}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cilindro: Área}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.3\textwidth}
+                \begin{center}
+                    \includegraphics[width=.8\textwidth]{altura-raio-cilindro.png}
+                \end{center}
+            \end{column}
+
+            \begin{column}{.65\textwidth}
+                Podemos fazer uma boa analogia entre cilindros e prismas: os dois sólidos se constituem a partir de bases paralelas e congruentes.
+
+                \vspace{1.2em}
+
+                Já vimos que a ideia do volume do prisma é o ``acúmulo'' de sucessivas fatias de áreas iguais à de suas bases, compreendidas por suas altura.
+
+                \vspace{1.2em}
+
+                O mesmo raciocínio pode ser aplicado ao cilindro. Como a base do cilindro é, obrigatoriamente, circular, podemos definir o volume de um cilindro por:
+
+                {\LARGE{
+                    \[
+                        V = \pi \cdot r^{2} \cdot h
+                    \]
+                }}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cone: Definição \& Principais Elementos}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.45\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=\textwidth]{cone_elementos.png}
+                \end{figure}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.43\textwidth}
+                Um cone é um sólido que possui uma base circular e é determinado pelos segmentos de reta que possuem uma das extremidades no cículo base e outra em um ponto $V$, chamado vértice.
+
+                \vspace{1.2em}
+
+                {\large{\bf Elementos}}
+
+                \begin{itemize}
+                    \item base circular de centro $C$;
+                    \item raio $r$ da base;
+                    \item altura $h$, a distância ortongonal do plano da base ao plano paralelo que contém $V$;
+                    \item geratrizes $g$, os segmentos com uma das extremidades na base e outra no ponto $V$.
+                    \item vértice $V$, o ponto citado no item anterior.
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+
+    \begin{frame}{Cone: Classificação}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.27\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.7\textwidth]{cone-reto.png}
+                    \end{figure}
+
+                    \vspace{1.2em}
+
+                    {\large{
+                        \bf Cone Reto
+                    }}
+
+                    \vspace{1.2em}
+
+                    No cone reto, segmento perpendicular que une o centro da base ao vértice é sua altura.
+                \end{center}
+            \end{column}
+            
+            \hfill
+
+            \begin{column}{.27\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.8\textwidth]{cone-obliquo.png}
+                    \end{figure}
+
+                    \vspace{1.2em}
+
+                    {\large{
+                        \bf Cone Oblíquo
+                    }}
+
+                    \vspace{1.2em}
+
+                    Um cone oblíquo não possui o segmento que liga o centro de sua base ao vértice coincidente à sua altura.
+                \end{center}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.27\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.9\textwidth]{cone-regular.png}
+                    \end{figure}
+
+                    \vspace{1.2em}
+
+                    {\large{
+                        \bf Cone Equilátero
+                    }}
+
+                    \vspace{1.2em}
+
+                    O cone regular possui sua seção meridiana ($\triangle AVB$, na imagem) como um triângulo equilátero.
+
+                    Com isso, temos:
+                    \[
+                        \begin{aligned}
+                            &g = 2 \cdot r\\
+                            &h = r \cdot \sqrt{3}
+                        \end{aligned}
+                    \]
+                \end{center}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cone: Área da Superfície}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.3\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \includegraphics[width=\textwidth, angle=180]{planificacao-do-cone.jpg}
+                    \end{figure}
+                \end{center}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.55\textwidth}
+                A superfície total de um cone é a soma das superfícies de usa base e sua área lateral. É portanto a soma da área de uma circunferência de raio $r$ e um setor circular, de raio $g$.
+
+                \vspace{1.2 em}
+
+                A área do setor circular é definida por metade do produto comprimento do arco ($2\pi r$) pelo raio ($g$).
+
+                \vspace{1.2em}
+
+                Logo, podemos definir a área lateral do cone por:
+
+                {\LARGE{
+                    \[
+                        A = \frac{2\cdot \pi \cdot r \cdot g}{2} + \pi \cdot r^{2} = \pi \left(g + r \right) 
+                    \]
+                }}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cone: Volume}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.45\textwidth}
+                \begin{center}
+                    \begin{figure}
+                        \includegraphics[width=.9\textwidth]{cone_elementos.png}    
+                    \end{figure}
+                \end{center}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.65\textwidth}
+                Nossa estratégia é associarmos o cone à pirâmide, da mesma forma que associamos o cilindro ao prisma.
+
+                \vspace{1.2em}
+
+                Pensemos no cone como uma pirâmide de base circular, então seu volume será dado pela terça parte do produto de sua base pela altura.
+
+                \vspace{1.2em}
+
+                Sua fórmula é, portanto:
+
+                {\LARGE{
+                    \[
+                        V = \frac{\pi \cdot r^{2} \cdot h}{3}
+                    \]
+                }}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Mais um pouco sobre Volumes\ldots}
+        \begin{center}
+            {\LARGE{\bf Deslocamento de Volume}}
+
+            \vspace{1em}
+
+            \begin{columns}[totalwidth=.9\textwidth, T]
+                \begin{column}{.3\textwidth}
+                    \begin{figure}
+                        \centering
+                        \includegraphics[width=.85\textwidth]{eureka.jpg}
+                    \end{figure}    
+                \end{column}
+
+                \hfill
+
+                \begin{column}{.65\textwidth}
+                    O problema do deslocamento de volumes é também conhecido como {\bf princípio de Arquimedes} ou {\bf imersão de corpos}. Basicamente, significa calcular o volume deslocado de um líquido ou fluído, após inserir um objeto em um tanque, cilindro, aquário, vasilhame, etc.
+
+                    \vspace{1.2em}
+
+                    O que acontece nesses casos é que o volume deslocado (a altura do líquido) corresponde ao volume do objeto inserido. Considere que a variação da altura é dada por $\Delta h$. Sendo assim, o volume total, após o objeto ser mergulhado é:
+
+                    \[
+                        V_\text{final} = V_\text{original} + V_\text{objeto} = A_{\text{base}} \cdot (h + \Delta h)
+                    \]
+
+                    Logo, se quisermos calcular diretamente o volume do objeto ou a altura do volume deslocado:
+
+                    \centering
+                    \begin{tabular}{c c c}
+                        $V_\text{objeto} = A_\text{base} \cdot \Delta h$ & ou & $\Delta h = \frac{V_\text{objeto}}{A_\text{base}}$
+                    \end{tabular}
+                \end{column}
+            \end{columns}
+        \end{center}
+
+    \end{frame}
+%----------------------------------------------
+%              EXERCICIOS
+%----------------------------------------------
+
+    \begin{frame} {Exercícios} %Gabarito 1-D
+        \begin{columns}
+            \centering
+            \begin{column}{.9\textwidth} %letra a
+                1.~\textbf{(ENEM-1999): }Assim como na relação entre o perfil de um corte de um torno e a peça torneada, sólidos de revolução resultam da rotação de figuras planas em torno de um eixo. Girando-se as figuras a seguir em torno da haste indicada obtém-se os sólidos de revolução que estão na coluna da direita.
+            \vspace{1.2em}
+            \begin{columns}
+                \centering
+                \begin{column}{.55\textwidth}
+                    \begin{figure}
+                        \includegraphics[width=.5\textwidth]{questao_01.png}
+                    \end{figure}
+                \end{column}
+                \begin{column}{.45\textwidth}
+                    A correspondência correta entre as figuras planas e os sólidos de revolução obtidos é:
+                    \begin{enumerate}[a.]
+                        \item 1A, 2B, 3C, 4D, 5E.
+                        \item 1B, 2C, 3D, 4E, 5A.
+                        \item 1B, 2D, 3E, 4A, 5C.
+                        \item 1D, 2E, 3A, 4B, 5C.
+                        \item 1D, 2E, 3B, 4C, 5A.
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+            \end{column}    
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} {Exercícios} %Gabarito 2-B
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                2.\textbf{(UFPR-2010) }Um arquiteto está fazendo um projeto de iluminação de ambiente e necessita saber a altura que deverá instalar a luminária ilustrada na figura
+            \end{column}
+        \end{columns}
+        \vspace{1.6em}
+        \begin{columns}[T]
+            \begin{column}{.55\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.5\textwidth]{questao_02.png}                    
+                \end{figure}
+            \end{column}
+
+            \begin{column}{.5\textwidth}
+                Sabendo-se que a luminária deverá iluminar uma área circular de $28,26 \text{ m}^{2}$, considerando $\pi \cong 3,14$, a altura $h$ será igual a
+                \begin{enumerate}[a. ]
+                    \item $3 \text{ m}.$
+                    \item $4 \text{ m}.$
+                    \item $5 \text{ m}.$
+                    \item $9 \text{ m}.$
+                    \item $16 \text{ m}.$
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} {Exercícios} %Gabarito 3-D
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                3 \textbf{(ENEM-2010) }Uma fábrica de tubos acondiciona tubos cilíndricos menores dentro de outros tubos cilíndricos. A figura mostra uma situação em que quatro tubos cilíndricos estão acondicionados perfeitamente em um tubo com raio maior
+
+                \vspace{1em}
+                
+                Uma fábrica de tubos acondiciona tubos cilíndricos menores dentro de outros tubos cilíndricos. A figura mostra uma situação em que quatro tubos cilíndricos estão acondicionados perfeitamente em um tubo com raio maior
+            \end{column}   
+        \end{columns}
+            \vspace{1.8em}
+
+        \begin{center}
+            \begin{columns}
+                \begin{column}{.4\textwidth}
+                    \begin{figure}
+                        \includegraphics[width=.7\textwidth]{questao_03.png}
+                    \end{figure}
+                \end{column}
+                \hfill
+                \begin{column}{.5\textwidth}
+                    \begin{enumerate}[a. ]
+                        \item $12 \text{ cm}$
+                        \item $12 \sqrt{2}\text{ cm}$
+                        \item $24 \sqrt{2}\text{ cm}$
+                        \item $6 \left( 1 + \sqrt{2}\right) \text{ cm}$
+                        \item $12 \left( 1 + \sqrt{2}\right) \text{ cm}$
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+        \end{center}
+    \end{frame}
+
+    \begin{frame} {Exercícios} %Gabarito 4-A
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                4 \textbf{(UNICAMP-2011) }Depois de encher de areia um molde cilíndrico, uma criança virou-o sobre uma superfície horizontal. Após a retirada do molde, a areia escorreu, formando um cone cuja base tinha raio igual ao dobro do raio da base do cilindro.
+            \end{column}   
+        \end{columns}
+            \vspace{1.8em}
+
+        \begin{center}
+            \begin{columns}[totalwidth=.9\textwidth, T]
+                \begin{column}{.4\textwidth}
+                    \includegraphics[width=.9\textwidth]{questao_04.png}
+                \end{column}
+
+                \begin{column}{.45\textwidth}
+                    A altura do cone formado pela areia era igual a
+
+                    \vspace{1.2em}
+
+                    \begin{enumerate}[a. ]
+                        \item $\displaystyle\frac{3}{4}$ da altura do cilindro.\vspace{0.8em}
+                        \item $\displaystyle\frac{1}{2}$ da altura do cilindro.\vspace{0.8em}
+                        \item $\displaystyle\frac{2}{3}$ da altura do cilindro.\vspace{0.8em}
+                        \item $\displaystyle\frac{3}{1}$ da altura do cilindro.\vspace{0.8em}
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+        \end{center}
+    \end{frame}
+
+    \begin{frame} {Exercícios} %Gabarito 5-A
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                5 \textbf{(ENEM-2020) }Num recipiente com a forma de paralelepípedo reto-retângulo, colocou-se água até a altura de 8 cm e um objeto, que ficou flutuando na superfície da água.  
+                
+                Para retirar o objeto de dentro do recipiente, a altura da coluna de água deve ser de, pelo menos, 15 cm. Para a coluna de água chegar até essa altura, é necessário colocar dentro do recipiente bolinhas de volume igual a $6\text{ cm}^3$ cada, que ficarão totalmente submersas. 
+            \end{column}
+        \end{columns}
+
+        \vspace{1.3em}
+        
+        \begin{columns}[totalwidth=.95\textwidth, T]
+            \begin{column}{.3\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=\textwidth]{questao_05.png}
+                \end{figure}
+            \end{column}
+
+            \hfill
+
+            \begin{column}{.6\textwidth}
+                O número mínimo de bolinhas necessárias para que se possa retirar o objeto que flutua na água, seguindo as instruções dadas, é de
+
+                \vspace{1.2em}
+
+                \begin{enumerate}[a. ]
+                    \item 14.
+                    \item 16.
+                    \item 18.
+                    \item 30.
+                    \item 34.
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+\end{document}
