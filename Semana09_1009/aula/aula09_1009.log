@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.4)  8 OCT 2026 07:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.4)  8 OCT 2026 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1215,9 +1215,52 @@ Overfull \vbox (18.21298pt too high) detected at line 269
 
 [3
 
- <../../src/img/semana09/piramide_basequadrada.png> <../../src/img/semana09/cubo.png>] [4
+ <../../src/img/semana09/piramide_basequadrada.png> <../../src/img/semana09/cubo.png>]
+<../../src/img/semana09/octaedro_truncado_planificacao.png, id=86, 331.2375pt x 301.125pt>
+File: ../../src/img/semana09/octaedro_truncado_planificacao.png Graphic file (type png)
+<use ../../src/img/semana09/octaedro_truncado_planificacao.png>
+Package pdftex.def Info: ../../src/img/semana09/octaedro_truncado_planificacao.png  used on input line 296.
+(pdftex.def)             Requested size: 143.40146pt x 130.36342pt.
 
-]
+Overfull \hbox (33.64668pt too wide) detected at line 296
+\OML/cmm/m/it/10.95 A \OT1/cmr/m/n/10.95 = []
+ []
+
+[4
+
+ <../../src/img/semana09/octaedro_truncado_planificacao.png>]
+<../../src/img/semana09/tetraedro.png, id=94, 449.68pt x 438.63875pt>
+File: ../../src/img/semana09/tetraedro.png Graphic file (type png)
+<use ../../src/img/semana09/tetraedro.png>
+Package pdftex.def Info: ../../src/img/semana09/tetraedro.png  used on input line 348.
+(pdftex.def)             Requested size: 47.80037pt x 46.62398pt.
+File: ../../src/img/semana09/cubo.png Graphic file (type png)
+<use ../../src/img/semana09/cubo.png>
+Package pdftex.def Info: ../../src/img/semana09/cubo.png  used on input line 348.
+(pdftex.def)             Requested size: 47.80037pt x 47.58258pt.
+<../../src/img/semana09/octaedro.png, id=95, 461.725pt x 579.16376pt>
+File: ../../src/img/semana09/octaedro.png Graphic file (type png)
+<use ../../src/img/semana09/octaedro.png>
+Package pdftex.def Info: ../../src/img/semana09/octaedro.png  used on input line 348.
+(pdftex.def)             Requested size: 39.83324pt x 49.95734pt.
+
+Overfull \hbox (13.70096pt too wide) in paragraph at lines 348--348
+ [][] 
+ []
+
+<../../src/img/semana09/dodecaedro.png, id=96, 494.84875pt x 527.9725pt>
+File: ../../src/img/semana09/dodecaedro.png Graphic file (type png)
+<use ../../src/img/semana09/dodecaedro.png>
+Package pdftex.def Info: ../../src/img/semana09/dodecaedro.png  used on input line 348.
+(pdftex.def)             Requested size: 47.80037pt x 50.99574pt.
+<../../src/img/semana09/icosaedro.png, id=97, 565.11125pt x 513.92pt>
+File: ../../src/img/semana09/icosaedro.png Graphic file (type png)
+<use ../../src/img/semana09/icosaedro.png>
+Package pdftex.def Info: ../../src/img/semana09/icosaedro.png  used on input line 348.
+(pdftex.def)             Requested size: 47.80037pt x 43.46696pt.
+[5
+
+ <../../src/img/semana09/tetraedro.png> <../../src/img/semana09/octaedro.png> <../../src/img/semana09/dodecaedro.png> <../../src/img/semana09/icosaedro.png>]
 \tf@nav=\write6
 \openout6 = `aula09_1009.nav'.
 
@@ -1236,18 +1279,18 @@ Package rerunfilecheck Info: File `aula09_1009.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34872 strings out of 467533
- 736880 string characters out of 5422138
- 1150422 words of memory out of 5000000
- 63051 multiletter control sequences out of 15000+600000
+ 34923 strings out of 467533
+ 738850 string characters out of 5422138
+ 1154423 words of memory out of 5000000
+ 63100 multiletter control sequences out of 15000+600000
  799903 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,123p,1948b,981s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on aula09_1009.pdf (4 pages, 565326 bytes).
+ 128i,14n,123p,1948b,981s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on aula09_1009.pdf (5 pages, 755517 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

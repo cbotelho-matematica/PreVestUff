@@ -247,7 +247,7 @@
                 \end{figure}                
             \end{column}
             \begin{column}{.45\textwidth}
-                A {\bf relação de Euler} é uma fórmula que relaciona o número de vértices, arestas e faces de um poliedro convexo.
+                A {\bf relação de Euler} é uma fórmula que relaciona o número de vértices, arestas e faces de um poliedro convexo. Essa relação é muito útil para contar elementos de um poliedro: dado o número de vértices e faces, podemos determinar o número de arestas, por exemplo.
 
                 \vspace{1.2em}
 
@@ -271,421 +271,81 @@
     \begin{frame}{Contando Arestas}
         \begin{columns}[totalwidth=0.9\textwidth]
             \begin{column}{.45\textwidth}
-                
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.8\textwidth]{octaedro_truncado_planificacao.png}
+                \end{figure}
             \end{column}
             \begin{column}{.45\textwidth}
+                Questões que envolvem contagem de elementos de um poliedro nem sempre vão trazer de forma explícita o número de arestas. Nesses casos, podemos contar as arestas a partir do número de faces e do número de lados de cada face.
+
+                \vspace{1.2em}
+
+                Sabendo que cada aresta pertence a duas faces, podemos determinar o número de arestas de um poliedro convexo pela seguinte fórmula:
+
+                \vspace{1.2em}
+
+                {\large\bf Fórmula para contagem de arestas}
+                { \Large
+                    \[
+                        A = \frac{F_1 \cdot n_1 + F_2 \cdot n_2 + F_3 \cdot n_3 + \cdots + F_i \cdot n_i}{2}
+                    \]
+                }
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Sólidos de Platão}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                Os {\bf sólidos de Platão} são poliedros convexos que possuem faces congruentes e regulares, e o mesmo número de faces se encontram em cada vértice. Existem apenas cinco sólidos de Platão:
+
+                \vspace{1.3 em}
+
+                \setlength{\extrarowheight}{.4em}
+                \begin{tabular}{ c c c }
+                    \toprule
+                    \bf Sólido & \bf Faces & \bf Vértices \\
+                    \midrule
+                    Tetraedro & 4 & 4 \\
+                    \midrule
+                    Cubo & 6 & 8 \\
+                    \midrule
+                    Octaedro & 8 & 6 \\
+                    \midrule
+                    Dodecaedro & 12 & 20 \\
+                    \midrule
+                    Icosaedro & 20 & 12 \\
+                    \bottomrule
+                \end{tabular}
+            \end{column}
+
+            \begin{column}{.4\textwidth}
+                \centering
+                \begin{tabular}{| c | c | c |}
+                    \hline
+                    \includegraphics[width=.3\textwidth]{tetraedro.png} &
+                    \includegraphics[width=.3\textwidth]{cubo.png} &
+                    \includegraphics[width=.25\textwidth]{octaedro.png} \\
+                    \hline
+                    Tetraedro & Cubo & Octaedro \\
+                    \hline
+                \end{tabular}
+
+                \vspace{1.2em}
+
+                \begin{tabular}{|c|c|}
+                    \hline
+                    \includegraphics[width=.3\textwidth]{dodecaedro.png} &
+                    \includegraphics[width=.3\textwidth]{icosaedro.png} \\
+                    \hline
+                    Dodecaedro & Icosaedro \\
+                    \hline
+                \end{tabular}
                 
             \end{column}
         \end{columns}
     \end{frame}
-    % \begin{frame}{Visão Geral dos 3 Sólidos}
-    %     \begin{columns}[totalwidth=.9\textwidth, T]
-    %         \begin{column}{.28\textwidth}
-    %             \begin{cardPrincipal}[title=Cilindro]
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=\textwidth]{slide01_cilindro.png}
-    %                 \end{figure}
-
-    %                 Um cilindro pode ser interpretado como a rotação de um retângulo em torno de um eixo.
-
-    %                 É uma figura análoga ao prisma.
-
-    %                 \vfill
-    %             \end{cardPrincipal}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.28\textwidth}
-    %             \begin{cardPrincipal}[title=Cone]
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=\textwidth]{slide01_cone.png}
-    %                 \end{figure}
-
-    %                 Um cone pode ser interpretado como a rotação de um triângulo retângulo em torno de um eixo.
-
-    %                 É uma figura análoga à pirâmide.
-
-    %                 \vfill
-    %             \end{cardPrincipal}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.28\textwidth}
-    %             \begin{cardPrincipal}[title=Esfera]
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=\textwidth]{slide01_esfera.png}
-    %                 \end{figure}
-    %                 Uma esfera pode ser interpretado como a rotação de um semicírculo em torno de um eixo.
-
-    %                 É uma figura de máxima simetria no espaço.
-    %             \end{cardPrincipal}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cilindro: Definição \& Principais Elementos}
-    %     \begin{columns}[totalwidth=0.9\textwidth, T]
-    %         \begin{column}{.45\textwidth}
-    %             \begin{figure}
-    %                 \centering\includegraphics[width=\textwidth]{cilindro-elementos-ilustracao.jpg}
-    %             \end{figure}
-    %         \end{column}
-            
-    %         \hfill
-            
-    %         \begin{column}{.43\textwidth}
-    %             Um {\bf cilindro} é um sólido definido por duas bases {\it circulares e congruentes}, contidas em duas bases paralelas não coincidentes e pela reunião de todos os segmentos de reta delimitados por suas bases e paralelos ao segmento que une os centros das circunferências.
-
-    %             \vspace{1.2em}
-                
-    %             {\large{\bf Elementos}}
-
-    %             \begin{itemize}
-    %                 \item 2 bases circulares congruentes;
-    %                 \item 1 eixo de rotação, que é a reta determinada pelos centros das bases;
-    %                 \item altura $h$, a distância perpendicular entre os planos;
-    %                 \item geratrizes $g$, os segmentos paralelos ao eixo de rotação;
-    %                 \item $r$ o raio da base
-    %             \end{itemize}
-    %         \end{column}
-    %     \end{columns}
-
-    % \end{frame}
-
-    % \begin{frame}{Cilindro: Classificação}
-    %     \begin{columns}[totalwidth=.9\textwidth, c]
-    %         \centering
-    %         \begin{column}{.3\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=.7\textwidth]{cilindro-reto.jpg}
-    %                 \end{figure}
-
-    %                 \vspace{1em}
-
-    %                 {\large{\bf Cilindro Reto}}
-
-    %                 O cilindro reto possui o eixo perpendicular às bases.
-
-    %             \end{center}
-    %         \end{column}
-
-    %         \hfill
-            
-    %         \begin{column}{.3\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.85\textwidth]{cilindro-obliquo.jpg}
-    %                 \end{figure}
-
-    %                 \vspace{1em}
-
-    %                 {\large{\bf Cilindro Oblíquo}}
-
-    %                 O cilindro oblíquo possui o eixo inclinado em relação às bases.
-
-    %             \end{center}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.3\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.8\textwidth]{cilindro-equilatero.png}
-    %                 \end{figure}
-
-    %                 \vspace{1em}
-
-    %                 {\large{\bf Cilindro Equilátero}}
-                    
-    %                 É um cilindro reto cuja seção meridiana é um quadrado. De modo que a altura do cilindro mede o diâmetro das circunferências de base.
-
-    %                 \[
-    %                     h = g = 2r
-    %                 \]
-    %             \end{center}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cilindro: Planificação e Área da Superfície}
-    %     \begin{columns}[totalwidth=.9\textwidth, T]
-    %         \begin{column}{.45\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.8\textwidth]{planificacao-cilindro.jpg}
-    %                 \end{figure}
-    %             \end{center}
-    %         \end{column}
-
-    %         \begin{column}{.5\textwidth}
-    %             A planificação de um cilindro nos ajuda a entender o cálculo da área de sua superfície.
-
-    %             \vspace{1em}
-
-    %             Assim como um prima, a área da superfície de um cilindro é a soma das áreas de suas bases com a área da superfície lateral.
-
-    %             \vspace{1em}
-
-    %             A área lateral de um prima é representada na planificação pelo retângulo azul, de largura com medida do comprimento base do cilindro e altura comum à do cilindro:
-
-    %             \[
-    %                 A_{\text{lateral}} = 2\cdot \pi \cdot r \cdot h
-    %             \]
-
-    %             As áreas das bases, sabemos são áreas de círculos congruentes, então a área \textit{total} da superfície é:
-                
-    %             \vspace{-2em}
-
-    %             {\LARGE{
-    %                 \[
-    %                     A_{\text{total}} = 2 \cdot \pi \cdot r^{2} + 2 \cdot \pi \cdot r \cdot h = 2 \cdot \pi \cdot r \left(r + h \right)
-    %                 \]
-    %             }}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cilindro: Área}
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{.3\textwidth}
-    %             \begin{center}
-    %                 \includegraphics[width=.8\textwidth]{altura-raio-cilindro.png}
-    %             \end{center}
-    %         \end{column}
-
-    %         \begin{column}{.65\textwidth}
-    %             Podemos fazer uma boa analogia entre cilindros e prismas: os dois sólidos se constituem a partir de bases paralelas e congruentes.
-
-    %             \vspace{1.2em}
-
-    %             Já vimos que a ideia do volume do prisma é o ``acúmulo'' de sucessivas fatias de áreas iguais à de suas bases, compreendidas por suas altura.
-
-    %             \vspace{1.2em}
-
-    %             O mesmo raciocínio pode ser aplicado ao cilindro. Como a base do cilindro é, obrigatoriamente, circular, podemos definir o volume de um cilindro por:
-
-    %             {\LARGE{
-    %                 \[
-    %                     V = \pi \cdot r^{2} \cdot h
-    %                 \]
-    %             }}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cone: Definição \& Principais Elementos}
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{.45\textwidth}
-    %             \begin{figure}
-    %                 \centering
-    %                 \includegraphics[width=\textwidth]{cone_elementos.png}
-    %             \end{figure}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.43\textwidth}
-    %             Um cone é um sólido que possui uma base circular e é determinado pelos segmentos de reta que possuem uma das extremidades no círculo base e outra em um ponto $V$, chamado vértice.
-
-    %             \vspace{1.2em}
-
-    %             {\large{\bf Elementos}}
-
-    %             \begin{itemize}
-    %                 \item base circular de centro $C$;
-    %                 \item raio $r$ da base;
-    %                 \item altura $h$, a distância ortogonal do plano da base ao plano paralelo que contém $V$;
-    %                 \item geratrizes $g$, os segmentos com uma das extremidades na base e outra no ponto $V$.
-    %                 \item vértice $V$, o ponto citado no item anterior.
-    %             \end{itemize}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-
-    % \begin{frame}{Cone: Classificação}
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{.27\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=.7\textwidth]{cone-reto.png}
-    %                 \end{figure}
-
-    %                 \vspace{1.2em}
-
-    %                 {\large{
-    %                     \bf Cone Reto
-    %                 }}
-
-    %                 \vspace{1.2em}
-
-    %                 No cone reto, segmento perpendicular que une o centro da base ao vértice é sua altura.
-    %             \end{center}
-    %         \end{column}
-            
-    %         \hfill
-
-    %         \begin{column}{.27\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=.8\textwidth]{cone-obliquo.png}
-    %                 \end{figure}
-
-    %                 \vspace{1.2em}
-
-    %                 {\large{
-    %                     \bf Cone Oblíquo
-    %                 }}
-
-    %                 \vspace{1.2em}
-
-    %                 Um cone oblíquo não possui o segmento que liga o centro de sua base ao vértice coincidente à sua altura.
-    %             \end{center}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.27\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=.9\textwidth]{cone-regular.png}
-    %                 \end{figure}
-
-    %                 \vspace{1.2em}
-
-    %                 {\large{
-    %                     \bf Cone Equilátero
-    %                 }}
-
-    %                 \vspace{1.2em}
-
-    %                 O cone regular possui sua seção meridiana ($\triangle AVB$, na imagem) como um triângulo equilátero.
-
-    %                 Com isso, temos:
-    %                 \[
-    %                     \begin{aligned}
-    %                         &g = 2 \cdot r\\
-    %                         &h = r \cdot \sqrt{3}
-    %                     \end{aligned}
-    %                 \]
-    %             \end{center}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cone: Área da Superfície}
-    %     \begin{columns}[totalwidth=.9\textwidth, T]
-    %         \begin{column}{.3\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \includegraphics[width=\textwidth, angle=180]{planificacao-do-cone.jpg}
-    %                 \end{figure}
-    %             \end{center}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.55\textwidth}
-    %             A superfície total de um cone é a soma das superfícies de usa base e sua área lateral. É portanto a soma da área de uma circunferência de raio $r$ e um setor circular, de raio $g$.
-
-    %             \vspace{1.2 em}
-
-    %             A área do setor circular é definida por metade do produto comprimento do arco ($2\pi r$) pelo raio ($g$).
-
-    %             \vspace{1.2em}
-
-    %             Logo, podemos definir a área lateral do cone por:
-
-    %             {\LARGE{
-    %                 \[
-    %                     A = \frac{2\cdot \pi \cdot r \cdot g}{2} + \pi \cdot r^{2} = \pi \left(g + r \right) 
-    %                 \]
-    %             }}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Cone: Volume}
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{.45\textwidth}
-    %             \begin{center}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.9\textwidth]{cone_elementos.png}    
-    %                 \end{figure}
-    %             \end{center}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.65\textwidth}
-    %             Nossa estratégia é associarmos o cone à pirâmide, da mesma forma que associamos o cilindro ao prisma.
-
-    %             \vspace{1.2em}
-
-    %             Pensemos no cone como uma pirâmide de base circular, então seu volume será dado pela terça parte do produto de sua base pela altura.
-
-    %             \vspace{1.2em}
-
-    %             Sua fórmula é, portanto:
-
-    %             {\LARGE{
-    %                 \[
-    %                     V = \frac{\pi \cdot r^{2} \cdot h}{3}
-    %                 \]
-    %             }}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
-
-    % \begin{frame}{Mais um pouco sobre Volumes\ldots}
-    %     \begin{center}
-    %         {\LARGE{\bf Deslocamento de Volume}}
-
-    %         \vspace{1em}
-
-    %         \begin{columns}[totalwidth=.9\textwidth, T]
-    %             \begin{column}{.3\textwidth}
-    %                 \begin{figure}
-    %                     \centering
-    %                     \includegraphics[width=.85\textwidth]{eureka.jpg}
-    %                 \end{figure}    
-    %             \end{column}
-
-    %             \hfill
-
-    %             \begin{column}{.65\textwidth}
-    %                 O problema do deslocamento de volumes é também conhecido como {\bf princípio de Arquimedes} ou {\bf imersão de corpos}. Basicamente, significa calcular o volume deslocado de um líquido ou fluído, após inserir um objeto em um tanque, cilindro, aquário, vasilhame, etc.
-
-    %                 \vspace{1.2em}
-
-    %                 O que acontece nesses casos é que o volume deslocado (a altura do líquido) corresponde ao volume do objeto inserido. Considere que a variação da altura é dada por $\Delta h$. Sendo assim, o volume total, após o objeto ser mergulhado é:
-
-    %                 \[
-    %                     V_\text{final} = V_\text{original} + V_\text{objeto} = A_{\text{base}} \cdot (h + \Delta h)
-    %                 \]
-
-    %                 Logo, se quisermos calcular diretamente o volume do objeto ou a altura do volume deslocado:
-
-    %                 \centering
-    %                 \begin{tabular}{c c c}
-    %                     $V_\text{objeto} = A_\text{base} \cdot \Delta h$ & ou & $\Delta h = \frac{V_\text{objeto}}{A_\text{base}}$
-    %                 \end{tabular}
-    %             \end{column}
-    %         \end{columns}
-    %     \end{center}
-
-    % \end{frame}
 %----------------------------------------------
 %              EXERCÍCIOS
 %----------------------------------------------
