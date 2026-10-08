@@ -1,0 +1,13 @@
+{
+    "cSpell.words": [
+        "alertblock",
+        "Beamer",
+        "exampleblock",
+        "Frametitle",
+        "TCOLORBOX"
+    ],
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
+}
