@@ -14,7 +14,7 @@
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage{ulem}
-% \usepackage[inline]{enumitem}
+\usepackage{enumitem}
 
 \DeclareMathOperator{\sen}{sen}
 \DeclareMathOperator{\coss}{cos}
@@ -346,65 +346,240 @@
             \end{column}
         \end{columns}
     \end{frame}
+
+    \begin{frame}{Esferas}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=.8\textwidth]{esfera.png}
+            \end{column}
+            \begin{column}{.45\textwidth}
+                A {\bf esfera} é o conjunto de todos os pontos do espaço que estão a uma distância fixa de um ponto central. Essa distância fixa é chamada de {\bf raio} da esfera, e o ponto central é chamado de {\bf centro} da esfera. A esfera também pode ser definida pela rotação de um semicírculo em torno de um eixo que passa pelo seu centro.
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Esfera: Volume}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=\textwidth]{volume_esfera.png}
+            \end{column}
+            \begin{column}{.38\textwidth}
+                O volume de uma esfera de raio $r$ é dado pela fórmula:
+                
+                {\Large
+                \[
+                    V = \frac{4}{3} \pi r^3
+                \]
+                }
+
+                \vspace{1.2 em}
+
+                Essa fórmula foi descoberta e demonstrada por Arquimedes. Ele considerou um feito tão importante que pediu que fosse gravado em seu túmulo um cilindro circunscrito a uma esfera, com a inscrição: “De todos os sólidos, o cilindro e a esfera são os mais belos”.
+            \end{column}
+            
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Esfera: Superfície}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=.7\textwidth]{esfera_inscrita.png}
+                \includegraphics[width=.8\textwidth]{cilindro_planificacao_face.png}
+            \end{column}
+            \begin{column}{.38\textwidth}
+                A área da superfície de uma esfera de raio $r$ é dada pela fórmula:
+                
+                {\Large
+                \[
+                    A = 4 \pi r^2
+                \]
+                }
+
+                \vspace{1.2 em}
+
+                Essa fórmula também foi descoberta e demonstrada por Arquimedes, que mostrou que a área da superfície de uma esfera é igual à área lateral do cilindro circunscrito a ela.
+
+                \vspace{2em}
+
+                \includegraphics[width=\textwidth]{circulos.png}
+            \end{column}
+            
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Projeção Ortogonal}
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.3\textwidth}
+                \includegraphics[width=.88\textwidth]{projecao_ponto.png}
+                \vfill
+                \includegraphics[width=.88\textwidth]{projecao_reta.png}
+                \vfill
+                \includegraphics[width=.88\textwidth]{projecao_segmento.png}
+            \end{column}
+            \begin{column}{.6\textwidth}
+                Projeções ortogonais são representações bidimensionais de objetos tridimensionais, obtidas projetando os pontos do objeto em um plano de projeção.
+
+                \vspace{1.2em}
+
+                Podemos entender a projeção ortogonal como a sombra de um objeto, quando iluminado por uma fonte de luz que emite raios paralelos, em ângulo reto.
+
+                \vspace{1.2em}
+
+                \begin{itemize}
+                    \item A projeção ortogonal de um ponto é outro ponto;
+                    \item A projeção ortogonal de uma reta é outra reta ou um ponto;
+                    \item A projeção ortogonal de um segmento de reta é outro segmento de reta ou um ponto.
+                \end{itemize}
+
+                \vspace{1.2em}
+
+                Retas e segmentos de reta que são ortogonais ao plano de projeção serão projetados em um ponto.
+            \end{column}
+        \end{columns}    
+    \end{frame}
+
+    \begin{frame}{Projeção Ortogonal de Figuras}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.6\textwidth}
+                \includegraphics[width=.85\textwidth]{projecao_ortogonal.png}
+            \end{column}
+
+            \begin{column}{.38\textwidth}
+                A projeção ortogonal de uma figura plana é outra figura plana. É o resultado da projeção de todos os seus pontos no plano de projeção.
+
+                \vspace{1.2em}
+
+                É preciso uma boa dose de imaginação para visualizar o resultado. No caso em que a projeção envolve figuras, tente pensar na projeção da sombra da figura ao sol do meio dia, ou da visualização de seus pontos-chaves sobre o plano.
+            \end{column}
+        \end{columns}
+    \end{frame}
 %----------------------------------------------
 %              EXERCÍCIOS
 %----------------------------------------------
 
-    % \begin{frame} {Exercícios} %Gabarito 1-D
-    %     \begin{columns}
-    %         \centering
-    %         \begin{column}{.9\textwidth} %letra a
-    %             1.~\textbf{(ENEM-1999): }Assim como na relação entre o perfil de um corte de um torno e a peça torneada, sólidos de revolução resultam da rotação de figuras planas em torno de um eixo. Girando-se as figuras a seguir em torno da haste indicada obtém-se os sólidos de revolução que estão na coluna da direita.
-    %         \vspace{1.2em}
-    %         \begin{columns}
-    %             \centering
-    %             \begin{column}{.55\textwidth}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.5\textwidth]{questao_01.png}
-    %                 \end{figure}
-    %             \end{column}
-    %             \begin{column}{.45\textwidth}
-    %                 A correspondência correta entre as figuras planas e os sólidos de revolução obtidos é:
-    %                 \begin{enumerate}[a.]
-    %                     \item 1A, 2B, 3C, 4D, 5E.
-    %                     \item 1B, 2C, 3D, 4E, 5A.
-    %                     \item 1B, 2D, 3E, 4A, 5C.
-    %                     \item 1D, 2E, 3A, 4B, 5C.
-    %                     \item 1D, 2E, 3B, 4C, 5A.
-    %                 \end{enumerate}
-    %             \end{column}
-    %         \end{columns}
-    %         \end{column}    
-    %     \end{columns}
-    % \end{frame}
+    \begin{frame} {Exercícios} %Gabarito 1-C
+        \begin{columns}
+            \centering
+            \begin{column}{.9\textwidth} %letra a
+                1.~\textbf{(ENEM-2017): }Para decorar uma mesa de festa infantil, um chefe de cozinha usará um melão esférico com diâmetro medindo 10 cm, o qual servirá de suporte para espetar diversos doces. Ele irá retirar uma calota esférica do melão, conforme ilustra a figura, e, para garantir a estabilidade deste suporte, dificultando que o melão role sobre a mesa, o chefe fará o corte de modo que o raio r da seção circular de corte seja de pelo menos 3 cm. Por outro lado, o chefe desejará dispor da maior área possível da região em que serão afixados os doces.
+            \vspace{1em}
+            \begin{columns}[T]
+                \centering
+                \begin{column}{.55\textwidth}
+                    \begin{figure}
+                        \includegraphics[width=.85\textwidth]{questao01.png}
+                    \end{figure}
+                \end{column}
+                \begin{column}{.45\textwidth}
+                    Para atingir todos os seus objetivos, o chefe deverá cortar a calota do melão numa altura h, em centímetro, igual a
 
-    % \begin{frame} {Exercícios} %Gabarito 2-B
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{\textwidth}
-    %             2.\textbf{(UFPR-2010) }Um arquiteto está fazendo um projeto de iluminação de ambiente e necessita saber a altura que deverá instalar a luminária ilustrada na figura
-    %         \end{column}
-    %     \end{columns}
-    %     \vspace{1.6em}
-    %     \begin{columns}[T]
-    %         \begin{column}{.55\textwidth}
-    %             \begin{figure}
-    %                 \centering
-    %                 \includegraphics[width=.5\textwidth]{questao_02.png}                    
-    %             \end{figure}
-    %         \end{column}
 
-    %         \begin{column}{.5\textwidth}
-    %             Sabendo-se que a luminária deverá iluminar uma área circular de $28,26 \text{ m}^{2}$, considerando $\pi \cong 3,14$, a altura $h$ será igual a
-    %             \begin{enumerate}[a. ]
-    %                 \item $3 \text{ m}$.
-    %                 \item $4 \text{ m}$.
-    %                 \item $5 \text{ m}$.
-    %                 \item $9 \text{ m}$.
-    %                 \item $16 \text{ m}$.
-    %             \end{enumerate}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
+                    \begin{enumerate}[label=\alph*)]
+                        \item $\displaystyle 5 - \frac{\sqrt{91}}{2}$
+                        \item $\displaystyle 10 - \sqrt{91}$
+                        \item 1
+                        \item 4
+                        \item 5
+                    \end{enumerate}
+                \end{column}
+            \end{columns}
+            \end{column}    
+        \end{columns}
+    \end{frame}
+
+    \begin{frame} {Exercícios} %Gabarito 2-B
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                2.\textbf{(ENEM-2013) } Gangorra é um brinquedo que consiste de uma tábua longa e estreita equilibrada e fixada em seu ponto central (pivô). Nesse brinquedo, duas pessoas sentam-se nas extremidades e, alternadamente, impulsionam-se para cima, fazendo descer a extremidade oposta, realizando assim o movimento da gangorra. Considere a gangorra representada na figura, em que os pontos A e B são equidistantes do pivô:
+            \end{column}
+        \end{columns}
+        \vspace{1.8em}
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=\textwidth]{questao02.jpg}
+            \end{column}
+
+            \begin{column}{.45\textwidth}
+                \centering
+                \includegraphics[width=.4\textwidth]{questao02_alternativas.jpg}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Exercícios} %Gabartito 3-C
+        \begin{columns}[totalwidth=0.9\textwidth]
+            \begin{column}{\textwidth}
+                3. \textbf{(ENEM-2024) }Em um jogo virtual para celular, um personagem pode percorrer trajetórias retilíneas voando ou se deslocando ao longo de paredes. Considere que o personagem descreve a trajetória ABCDEF, em que os pontos A, D e E estão em um plano paralelo ao que contém os pontos B e C, sendo esses dois planos ortogonais ao plano da base que contém o ponto F, conforme a figura. A projeção ortogonal, sobre o plano da base, da trajetória ABCDEF descrita pelo personagem é
+            \end{column}
+        \end{columns}
+
+        \vspace{1.8em}
+
+        \begin{columns}[totalwidth=0.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=.7\textwidth]{questao03.png}
+            \end{column}
+
+            \begin{column}{.45\textwidth}
+                \centering
+                \begin{tabular}{c c c}
+                    {\bf a.} \includegraphics[width=.3\textwidth]{questao03-A.png} &
+                    {\bf b.} \includegraphics[width=.3\textwidth]{questao03-B.png} &
+                    {\bf c.} \includegraphics[width=.3\textwidth]{questao03-C.png}\\
+                    \\
+                    {\bf d.} \includegraphics[width=.3\textwidth]{questao03-D.png} &
+                    {\bf e.} \includegraphics[width=.3\textwidth]{questao03-E.png} &
+                \end{tabular}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Exercícios} %Gabarito 4-A
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                4. \textbf{(ENEM- 2010) }Se pudéssemos reunir em esferas toda a água do planeta, os diâmetros delas seriam:
+            \end{column}
+        \end{columns}
+
+        \vspace{1.2em}
+
+        \begin{columns}[totalwidth=.9\textwidth, T]
+            \begin{column}{.45\textwidth}
+                \includegraphics[width=.9\textwidth]{questao04.png}
+            \end{column}
+            \begin{column}{.45\textwidth}
+                A razão entre o volume da esfera que corresponde à água doce superficial e o volume da esfera que corresponde à água doce do planeta é
+
+                \vspace{0.8em}
+
+                \begin{enumerate}[label=\alph*)]
+                    \item $\displaystyle\frac{1}{343}$ \vspace{0.8em}
+                    \item $\displaystyle\frac{1}{49}$ \vspace{0.8em}
+                    \item $\displaystyle\frac{1}{7}$ \vspace{0.8em}
+                    \item $\displaystyle\frac{29}{136}$ \vspace{0.8em}
+                    \item $\displaystyle\frac{136}{203}$ \vspace{0.8em}
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Exercícios} %Gabarito 5-E
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                5. \textbf{(Espcex(AMAN)-2018) } A angioplastia é um procedimento médico caracterizado pela inserção de um cateter em uma veia ou artéria com o enchimento de um pequeno balão esférico localizado na ponta desse cateter. Considerando que, num procedimento de angioplastia, o raio inicial do balão seja desprezível e aumente a uma taxa constante de $0,5$ mm/s até que o volume seja igual a $500\text{ mm}^3$, então o tempo, em segundos, que o balão leva para atingir esse volume é
+                
+                \vspace{1.2em}
+
+                \begin{enumerate}[label=\alph*)]
+                    \item $10$ \vspace{.3em}
+                    \item $\displaystyle 10 \sqrt[3]{\frac{5}{\pi}}$ \vspace{.3em}
+                    \item $\displaystyle 10 \sqrt[3]{\frac{2}{\pi}}$ \vspace{.3em}
+                    \item $\displaystyle 10 \sqrt[3]{\pi}$ \vspace{.3em}
+                    \item $\displaystyle 10 \sqrt[3]{\frac{3}{\pi}}$
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
     % \begin{frame} {Exercícios} %Gabarito 3-D
     %     \begin{columns}[totalwidth=.9\textwidth]
