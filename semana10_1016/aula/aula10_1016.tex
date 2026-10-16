@@ -29,7 +29,7 @@
 % Cores Base
 \definecolor{BgCanvas}{HTML}{F9F9FB}      % Off-white muito suave
 \definecolor{MainText}{HTML}{2B2D42}      % Grafite escuro para alta legibilidade
-\definecolor{PrimaryAccent}{HTML}{4A6FA5} % Azul poeira (Dusty Blue)
+\definecolor{PrimaryAccent}{HTML}{15407f} % Azul poeira (Dusty Blue)
 
 % Tons Pastéis para Destaques e Cards
 \definecolor{PastelGreenBg}{HTML}{E8F0EC}  % Sálvia Claro (Sucesso / Destaque Positivo)
@@ -63,44 +63,44 @@
 \setbeamertemplate{progress bar in section page}{}
 
 % ==============================================================================
-% PALETA DE CORES "GEOMETRIA AQUECIDA" (Inspirada na imagem)
+% PALETA DE CORES "AZUL MATEMÁTICO" (Inspirada na imagem)
 % ==============================================================================
 \definecolor{BgCream}{HTML}{FFFDFB}       % Fundo creme suave
-\definecolor{TextDark}{HTML}{2C1A14}      % Texto em castanho escuro elegante
-\definecolor{PrimaryOrange}{HTML}{E0531C}  % Laranja vibrante (Títulos e destaques)
-\definecolor{Terracotta}{HTML}{B8380D}     % Terracota queimado (Alertas)
-\definecolor{SoftOrange}{HTML}{FFE6D5}     % Laranja bem suave (Fundo de blocos)
+\definecolor{TextDark}{HTML}{1A2530}      % Texto em castanho escuro elegante
+\definecolor{PrimaryBlue}{HTML}{0F52BA}  % Laranja vibrante (Títulos e destaques)
+\definecolor{DeepBlue}{HTML}{082846}     % Terracota queimado (Alertas)
+\definecolor{SoftBlue}{HTML}{E6F0FA}     % Laranja bem suave (Fundo de blocos)
 
 % =================================================
 % CONFIGURAÇÃO DO TEMA METROPOLIS
 % =================================================
 % Cores do texto e fundo geral
 \setbeamercolor{normal text}{fg=TextDark, bg=BgCream}
-\setbeamercolor{alerted text}{fg=Terracotta}
-\setbeamercolor{example text}{fg=PrimaryOrange}
+\setbeamercolor{alerted text}{fg=DeepBlue}
+\setbeamercolor{example text}{fg=PrimaryBlue}
 
 % Barra de título dos slides (Frametitle)
-\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryOrange}
+\setbeamercolor{frametitle}{fg=BgCream, bg=PrimaryBlue}
 
 % Título principal da apresentação (Slide de Capa)
-\setbeamercolor{titlelike}{fg=PrimaryOrange}
-\setbeamercolor{subtitle}{fg=Terracotta}
+\setbeamercolor{titlelike}{fg=PrimaryBlue}
+\setbeamercolor{subtitle}{fg=DeepBlue}
 
 % Barra de progresso (Linha do Metropolis)
-\setbeamercolor{progress bar}{fg=PrimaryOrange, bg=PrimaryOrange!20}
+\setbeamercolor{progress bar}{fg=PrimaryBlue, bg=PrimaryBlue!20}
 
 % Customização de Blocos (block, alertblock, exampleblock)
-\setbeamercolor{block title}{fg=BgCream, bg=PrimaryOrange}
-\setbeamercolor{block body}{fg=TextDark, bg=SoftOrange}
+\setbeamercolor{block title}{fg=BgCream, bg=PrimaryBlue}
+\setbeamercolor{block body}{fg=TextDark, bg=SoftBlue}
 
-\setbeamercolor{block title alerted}{fg=BgCream, bg=Terracotta}
-\setbeamercolor{block body alerted}{fg=TextDark, bg=Terracotta!15}
+\setbeamercolor{block title alerted}{fg=BgCream, bg=DeepBlue}
+\setbeamercolor{block body alerted}{fg=TextDark, bg=DeepBlue!15}
 
 
 % --- ESTILOS DE CARDS PASTEL COM TCOLORBOX ---
 \newtcolorbox{cardPrincipal}[1][]{
-  colback=SoftOrange,
-  colframe=Terracotta,
+  colback=SoftBlue,
+  colframe=DeepBlue,
   coltext=TextDark,
   arc=6pt,
   boxrule=0pt,
@@ -145,8 +145,8 @@
 \graphicspath{{../../src/img/semana09/}}
 
 %--------Dados do Documento
-\title{Geometria Espacial: Poliedros, Esferas \& Visão 3D}
-\subtitle{Relação de Euler, Secções Esféricas e Projeções Ortogonais}
+\title{O Conceito de Função}
+\subtitle{}
 \author{prof. Eduardo}
 \institute{Pré-Universitário Oficina do Saber / UFF}
 
@@ -208,31 +208,17 @@
         %     \end{frame}
         % }
 
-    \begin{frame}{Poliedros: Vértices, faces e arestas}
+    \begin{frame}{Relações}
         \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.45\textwidth}
                 \begin{figure}
-                    \centering
-                    \includegraphics[width=.8\textwidth]{octaedro_segmento_interno.png}
+                    % \centering
+                    % \includegraphics[width=.8\textwidth]{octaedro_segmento_interno.png}
                 \end{figure}
             \end{column}
 
             \begin{column}{.45\textwidth}
-                Um {\bf poliedro convexo} é um sólido limitado por polígonos planos, chamados de {\bf faces}. A união desses polígonos dá origem aos outros elementos que compõem o poliedro: {\bf arestas} e {\bf vértices}.
-
-                \vspace{1.2em}
-
-                Em um poliedro deste tipo, uma reta que una quaisquer dois pontos do poliedro estará contida no seu interior.
-
-                \vspace{1.2em}
-
-                {\large\bf Elementos de um poliedro convexo}
-
-                \begin{itemize}
-                    \item As \textit{faces} são os polígonos que delimitam o sólido (no exemplo, triângulos equiláteros);
-                    \item As \textit{arestas} são os lados dos polígonos;
-                    \item Os \textit{vértices} são os pontos em que as arestas se encontram
-                \end{itemize}
+                Dados dois conjuntos $A$ e $B$, definimos uma relação $R$ sobre $A$ e $B$ como uma associação ente elementos $x \in A$ e $y \in B$, mediante uma lei determinada.
             \end{column}
         \end{columns}
     \end{frame}
