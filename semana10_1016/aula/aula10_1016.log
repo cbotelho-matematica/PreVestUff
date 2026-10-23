@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.4)  14 OCT 2026 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.4)  23 OCT 2026 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1169,259 +1169,147 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 201.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../../src/img/semana09/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
-File: ../../src/img/semana09/../logo_ofSaber.png Graphic file (type png)
-<use ../../src/img/semana09/../logo_ofSaber.png>
-Package pdftex.def Info: ../../src/img/semana09/../logo_ofSaber.png  used on input line 201.
+<../../src/img/semana10/../logo_ofSaber.png, id=49, 143.53625pt x 218.8175pt>
+File: ../../src/img/semana10/../logo_ofSaber.png Graphic file (type png)
+<use ../../src/img/semana10/../logo_ofSaber.png>
+Package pdftex.def Info: ../../src/img/semana10/../logo_ofSaber.png  used on input line 201.
 (pdftex.def)             Requested size: 63.73222pt x 97.15811pt.
-<../../src/img/semana09/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
-File: ../../src/img/semana09/../Proex02c.png Graphic file (type png)
-<use ../../src/img/semana09/../Proex02c.png>
-Package pdftex.def Info: ../../src/img/semana09/../Proex02c.png  used on input line 201.
+<../../src/img/semana10/../Proex02c.png, id=51, 336.2964pt x 100.2144pt>
+File: ../../src/img/semana10/../Proex02c.png Graphic file (type png)
+<use ../../src/img/semana10/../Proex02c.png>
+Package pdftex.def Info: ../../src/img/semana10/../Proex02c.png  used on input line 201.
 (pdftex.def)             Requested size: 39.83324pt x 11.86923pt.
-<../../src/img/semana09/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
-File: ../../src/img/semana09/../Logo_UFF.png Graphic file (type png)
-<use ../../src/img/semana09/../Logo_UFF.png>
-Package pdftex.def Info: ../../src/img/semana09/../Logo_UFF.png  used on input line 201.
+<../../src/img/semana10/../Logo_UFF.png, id=52, 3854.4pt x 1974.37625pt>
+File: ../../src/img/semana10/../Logo_UFF.png Graphic file (type png)
+<use ../../src/img/semana10/../Logo_UFF.png>
+Package pdftex.def Info: ../../src/img/semana10/../Logo_UFF.png  used on input line 201.
 (pdftex.def)             Requested size: 31.8661pt x 16.29843pt.
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
 (Font)              scaled to size 4.0pt on input line 201.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana09/../logo_ofSaber.png> <../../src/img/semana09/../Proex02c.png> <../../src/img/semana09/../Logo_UFF.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/montserrat/zmo_umrhwx.enc} <../../src/img/semana10/../logo_ofSaber.png> <../../src/img/semana10/../Proex02c.png> <../../src/img/semana10/../Logo_UFF.png>]
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 237.
+
+Overfull \hbox (13.75609pt too wide) detected at line 237
+[][]
+ []
+
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 224.
- [2
+(Font)              scaled to size 10.0pt on input line 237.
+[2
 
 ]
-<../../src/img/semana09/piramide_basequadrada.png, id=71, 618.31pt x 565.11125pt>
-File: ../../src/img/semana09/piramide_basequadrada.png Graphic file (type png)
-<use ../../src/img/semana09/piramide_basequadrada.png>
-Package pdftex.def Info: ../../src/img/semana09/piramide_basequadrada.png  used on input line 255.
-(pdftex.def)             Requested size: 107.55177pt x 98.29234pt.
-<../../src/img/semana09/cubo.png, id=72, 676.5275pt x 673.51625pt>
-File: ../../src/img/semana09/cubo.png Graphic file (type png)
-<use ../../src/img/semana09/cubo.png>
-Package pdftex.def Info: ../../src/img/semana09/cubo.png  used on input line 255.
-(pdftex.def)             Requested size: 107.55177pt x 107.06596pt.
+<../../src/img/semana10/funcoes_definicao.png, id=75, 472.76625pt x 474.77374pt>
+File: ../../src/img/semana10/funcoes_definicao.png Graphic file (type png)
+<use ../../src/img/semana10/funcoes_definicao.png>
+Package pdftex.def Info: ../../src/img/semana10/funcoes_definicao.png  used on input line 257.
+(pdftex.def)             Requested size: 143.40146pt x 144.01251pt.
+LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 257.
+ [3
+
+ <../../src/img/semana10/funcoes_definicao.png>]
 LaTeX Font Info:    Font shape `T1/Montserrat-LF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 255.
+(Font)              scaled to size 8.0pt on input line 287.
+<../../src/img/semana10/diagrama_01.png, id=83, 645.41125pt x 341.275pt>
+File: ../../src/img/semana10/diagrama_01.png Graphic file (type png)
+<use ../../src/img/semana10/diagrama_01.png>
+Package pdftex.def Info: ../../src/img/semana10/diagrama_01.png  used on input line 287.
+(pdftex.def)             Requested size: 215.10356pt x 113.74069pt.
+ [4
 
-Overfull \vbox (18.21298pt too high) detected at line 255
- []
+ <../../src/img/semana10/diagrama_01.png>]
+<../../src/img/semana10/diagrama_02.png, id=90, 645.41125pt x 341.275pt>
+File: ../../src/img/semana10/diagrama_02.png Graphic file (type png)
+<use ../../src/img/semana10/diagrama_02.png>
+Package pdftex.def Info: ../../src/img/semana10/diagrama_02.png  used on input line 317.
+(pdftex.def)             Requested size: 215.10356pt x 113.74069pt.
+ [5
 
-[3
-
- <../../src/img/semana09/piramide_basequadrada.png> <../../src/img/semana09/cubo.png>]
-<../../src/img/semana09/octaedro_truncado_planificacao.png, id=83, 331.2375pt x 301.125pt>
-File: ../../src/img/semana09/octaedro_truncado_planificacao.png Graphic file (type png)
-<use ../../src/img/semana09/octaedro_truncado_planificacao.png>
-Package pdftex.def Info: ../../src/img/semana09/octaedro_truncado_planificacao.png  used on input line 282.
-(pdftex.def)             Requested size: 143.40146pt x 130.36342pt.
-
-Overfull \hbox (33.64668pt too wide) detected at line 282
-\OML/cmm/m/it/10.95 A \OT1/cmr/m/n/10.95 = []
- []
-
-[4
-
- <../../src/img/semana09/octaedro_truncado_planificacao.png>]
-<../../src/img/semana09/tetraedro.png, id=91, 449.68pt x 438.63875pt>
-File: ../../src/img/semana09/tetraedro.png Graphic file (type png)
-<use ../../src/img/semana09/tetraedro.png>
-Package pdftex.def Info: ../../src/img/semana09/tetraedro.png  used on input line 334.
-(pdftex.def)             Requested size: 47.80037pt x 46.62398pt.
-File: ../../src/img/semana09/cubo.png Graphic file (type png)
-<use ../../src/img/semana09/cubo.png>
-Package pdftex.def Info: ../../src/img/semana09/cubo.png  used on input line 334.
-(pdftex.def)             Requested size: 47.80037pt x 47.58258pt.
-<../../src/img/semana09/octaedro.png, id=92, 461.725pt x 579.16376pt>
-File: ../../src/img/semana09/octaedro.png Graphic file (type png)
-<use ../../src/img/semana09/octaedro.png>
-Package pdftex.def Info: ../../src/img/semana09/octaedro.png  used on input line 334.
-(pdftex.def)             Requested size: 39.83324pt x 49.95734pt.
-
-Overfull \hbox (13.70096pt too wide) in paragraph at lines 334--334
- [][] 
- []
-
-<../../src/img/semana09/dodecaedro.png, id=93, 494.84875pt x 527.9725pt>
-File: ../../src/img/semana09/dodecaedro.png Graphic file (type png)
-<use ../../src/img/semana09/dodecaedro.png>
-Package pdftex.def Info: ../../src/img/semana09/dodecaedro.png  used on input line 334.
-(pdftex.def)             Requested size: 47.80037pt x 50.99574pt.
-<../../src/img/semana09/icosaedro.png, id=94, 565.11125pt x 513.92pt>
-File: ../../src/img/semana09/icosaedro.png Graphic file (type png)
-<use ../../src/img/semana09/icosaedro.png>
-Package pdftex.def Info: ../../src/img/semana09/icosaedro.png  used on input line 334.
-(pdftex.def)             Requested size: 47.80037pt x 43.46696pt.
-[5
-
- <../../src/img/semana09/tetraedro.png> <../../src/img/semana09/octaedro.png> <../../src/img/semana09/dodecaedro.png> <../../src/img/semana09/icosaedro.png>]
-<../../src/img/semana09/esfera.png, id=104, 501.875pt x 470.75874pt>
-File: ../../src/img/semana09/esfera.png Graphic file (type png)
-<use ../../src/img/semana09/esfera.png>
-Package pdftex.def Info: ../../src/img/semana09/esfera.png  used on input line 345.
-(pdftex.def)             Requested size: 143.40146pt x 134.51242pt.
+ <../../src/img/semana10/diagrama_02.png>]
+<../../src/img/semana10/diagrama_03.png, id=97, 645.41125pt x 341.275pt>
+File: ../../src/img/semana10/diagrama_03.png Graphic file (type png)
+<use ../../src/img/semana10/diagrama_03.png>
+Package pdftex.def Info: ../../src/img/semana10/diagrama_03.png  used on input line 347.
+(pdftex.def)             Requested size: 215.10356pt x 113.74069pt.
  [6
 
- <../../src/img/semana09/esfera.png>]
-<../../src/img/semana09/volume_esfera.png, id=111, 752.8125pt x 412.54124pt>
-File: ../../src/img/semana09/volume_esfera.png Graphic file (type png)
-<use ../../src/img/semana09/volume_esfera.png>
-Package pdftex.def Info: ../../src/img/semana09/volume_esfera.png  used on input line 367.
-(pdftex.def)             Requested size: 179.25114pt x 98.23135pt.
- [7
+ <../../src/img/semana10/diagrama_03.png>] [7
 
- <../../src/img/semana09/volume_esfera.png>]
-<../../src/img/semana09/esfera_inscrita.png, id=119, 319.1925pt x 387.4475pt>
-File: ../../src/img/semana09/esfera_inscrita.png Graphic file (type png)
-<use ../../src/img/semana09/esfera_inscrita.png>
-Package pdftex.def Info: ../../src/img/semana09/esfera_inscrita.png  used on input line 394.
-(pdftex.def)             Requested size: 125.47525pt x 152.30403pt.
-<../../src/img/semana09/cilindro_planificacao_face.png, id=120, 905.3825pt x 388.45125pt>
-File: ../../src/img/semana09/cilindro_planificacao_face.png Graphic file (type png)
-<use ../../src/img/semana09/cilindro_planificacao_face.png>
-Package pdftex.def Info: ../../src/img/semana09/cilindro_planificacao_face.png  used on input line 394.
-(pdftex.def)             Requested size: 143.40146pt x 61.52516pt.
-<../../src/img/semana09/circulos.png, id=121, 569.12625pt x 136.51pt>
-File: ../../src/img/semana09/circulos.png Graphic file (type png)
-<use ../../src/img/semana09/circulos.png>
-Package pdftex.def Info: ../../src/img/semana09/circulos.png  used on input line 394.
-(pdftex.def)             Requested size: 151.3706pt x 36.30827pt.
+]
+<../../src/img/semana10/dominio-contradominio.png, id=111, 370.38374pt x 252.945pt>
+File: ../../src/img/semana10/dominio-contradominio.png Graphic file (type png)
+<use ../../src/img/semana10/dominio-contradominio.png>
+Package pdftex.def Info: ../../src/img/semana10/dominio-contradominio.png  used on input line 408.
+(pdftex.def)             Requested size: 143.40146pt x 97.93411pt.
+ [8
 
-Overfull \vbox (15.47588pt too high) detected at line 394
- []
+ <../../src/img/semana10/dominio-contradominio.png>] [9
 
-[8
+]
+<../../src/img/semana10/funcao-sobrejetora.jpg, id=123, 407.5225pt x 305.14pt>
+File: ../../src/img/semana10/funcao-sobrejetora.jpg Graphic file (type jpg)
+<use ../../src/img/semana10/funcao-sobrejetora.jpg>
+Package pdftex.def Info: ../../src/img/semana10/funcao-sobrejetora.jpg  used on input line 459.
+(pdftex.def)             Requested size: 107.55177pt x 80.53113pt.
+<../../src/img/semana10/funcao-injetora.jpg, id=124, 380.42125pt x 351.3125pt>
+File: ../../src/img/semana10/funcao-injetora.jpg Graphic file (type jpg)
+<use ../../src/img/semana10/funcao-injetora.jpg>
+Package pdftex.def Info: ../../src/img/semana10/funcao-injetora.jpg  used on input line 459.
+(pdftex.def)             Requested size: 107.55177pt x 99.321pt.
 
- <../../src/img/semana09/esfera_inscrita.png> <../../src/img/semana09/cilindro_planificacao_face.png> <../../src/img/semana09/circulos.png>]
-<../../src/img/semana09/projecao_ponto.png, id=130, 381.425pt x 239.89626pt>
-File: ../../src/img/semana09/projecao_ponto.png Graphic file (type png)
-<use ../../src/img/semana09/projecao_ponto.png>
-Package pdftex.def Info: ../../src/img/semana09/projecao_ponto.png  used on input line 425.
-(pdftex.def)             Requested size: 105.16304pt x 66.14188pt.
-<../../src/img/semana09/projecao_reta.png, id=131, 381.425pt x 235.88126pt>
-File: ../../src/img/semana09/projecao_reta.png Graphic file (type png)
-<use ../../src/img/semana09/projecao_reta.png>
-Package pdftex.def Info: ../../src/img/semana09/projecao_reta.png  used on input line 425.
-(pdftex.def)             Requested size: 105.16304pt x 65.0349pt.
-<../../src/img/semana09/projecao_segmento.png, id=132, 381.425pt x 217.81375pt>
-File: ../../src/img/semana09/projecao_segmento.png Graphic file (type png)
-<use ../../src/img/semana09/projecao_segmento.png>
-Package pdftex.def Info: ../../src/img/semana09/projecao_segmento.png  used on input line 425.
-(pdftex.def)             Requested size: 105.16304pt x 60.0535pt.
- [9
-
- <../../src/img/semana09/projecao_ponto.png> <../../src/img/semana09/projecao_reta.png> <../../src/img/semana09/projecao_segmento.png>]
-<../../src/img/semana09/projecao_ortogonal.png, id=141, 223.5552pt x 202.1151pt>
-File: ../../src/img/semana09/projecao_ortogonal.png Graphic file (type png)
-<use ../../src/img/semana09/projecao_ortogonal.png>
-Package pdftex.def Info: ../../src/img/semana09/projecao_ortogonal.png  used on input line 441.
-(pdftex.def)             Requested size: 203.1562pt x 183.67828pt.
-
-Overfull \hbox (31.8739pt too wide) detected at line 441
-[][][][][][][][][][][] [][][][][][][]
+Overfull \vbox (2.30678pt too high) detected at line 459
  []
 
 [10
 
- <../../src/img/semana09/projecao_ortogonal.png>]
-<../../src/img/semana09/questao01.png, id=148, 120.6909pt x 73.2336pt>
-File: ../../src/img/semana09/questao01.png Graphic file (type png)
-<use ../../src/img/semana09/questao01.png>
-Package pdftex.def Info: ../../src/img/semana09/questao01.png  used on input line 474.
-(pdftex.def)             Requested size: 167.60194pt x 101.7005pt.
- [11
+ <../../src/img/semana10/funcao-sobrejetora.jpg> <../../src/img/semana10/funcao-injetora.jpg>]
+<../../src/img/semana10/funcao-composta.png, id=130, 665.48625pt x 416.55624pt>
+File: ../../src/img/semana10/funcao-composta.png Graphic file (type png)
+<use ../../src/img/semana10/funcao-composta.png>
+Package pdftex.def Info: ../../src/img/semana10/funcao-composta.png  used on input line 472.
+(pdftex.def)             Requested size: 239.00558pt x 149.59782pt.
 
- <../../src/img/semana09/questao01.png>]
-Overfull \hbox (39.8363pt too wide) detected at line 493
+Overfull \hbox (39.8363pt too wide) detected at line 472
 [][][][][][][][][]
  []
 
-<../../src/img/semana09/questao02.jpg, id=155, 381.425pt x 194.7275pt>
-File: ../../src/img/semana09/questao02.jpg Graphic file (type jpg)
-<use ../../src/img/semana09/questao02.jpg>
-Package pdftex.def Info: ../../src/img/semana09/questao02.jpg  used on input line 493.
-(pdftex.def)             Requested size: 179.25114pt x 91.51004pt.
-<../../src/img/semana09/questao02_alternativas.jpg, id=156, 242.9075pt x 451.6875pt>
-File: ../../src/img/semana09/questao02_alternativas.jpg Graphic file (type jpg)
-<use ../../src/img/semana09/questao02_alternativas.jpg>
-Package pdftex.def Info: ../../src/img/semana09/questao02_alternativas.jpg  used on input line 493.
-(pdftex.def)             Requested size: 71.69936pt x 133.32246pt.
+
+Overfull \vbox (13.06885pt too high) detected at line 472
+ []
+
+[11
+
+ <../../src/img/semana10/funcao-composta.png>]
+Overfull \vbox (4.82657pt too high) detected at line 501
+ []
+
 [12
 
- <../../src/img/semana09/questao02.jpg> <../../src/img/semana09/questao02_alternativas.jpg>]
-Overfull \hbox (39.8363pt too wide) detected at line 521
+] [13
+
+]
+Overfull \hbox (39.8363pt too wide) detected at line 545
 [][][][][][][][][]
- []
-
-<../../src/img/semana09/questao03.png, id=162, 249.93375pt x 262.73157pt>
-File: ../../src/img/semana09/questao03.png Graphic file (type png)
-<use ../../src/img/semana09/questao03.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03.png  used on input line 521.
-(pdftex.def)             Requested size: 125.47525pt x 131.89864pt.
-<../../src/img/semana09/questao03-A.png, id=163, 94.10156pt x 92.59593pt>
-File: ../../src/img/semana09/questao03-A.png Graphic file (type png)
-<use ../../src/img/semana09/questao03-A.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03-A.png  used on input line 521.
-(pdftex.def)             Requested size: 53.77588pt x 52.91727pt.
-<../../src/img/semana09/questao03-B.png, id=164, 94.85437pt x 93.34875pt>
-File: ../../src/img/semana09/questao03-B.png Graphic file (type png)
-<use ../../src/img/semana09/questao03-B.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03-B.png  used on input line 521.
-(pdftex.def)             Requested size: 53.77588pt x 52.92302pt.
-<../../src/img/semana09/questao03-C.png, id=165, 91.84312pt x 93.34875pt>
-File: ../../src/img/semana09/questao03-C.png Graphic file (type png)
-<use ../../src/img/semana09/questao03-C.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03-C.png  used on input line 521.
-(pdftex.def)             Requested size: 53.77588pt x 54.65793pt.
-<../../src/img/semana09/questao03-D.png, id=166, 90.3375pt x 91.84312pt>
-File: ../../src/img/semana09/questao03-D.png Graphic file (type png)
-<use ../../src/img/semana09/questao03-D.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03-D.png  used on input line 521.
-(pdftex.def)             Requested size: 53.77588pt x 54.67184pt.
-<../../src/img/semana09/questao03-E.png, id=167, 91.09032pt x 91.84312pt>
-File: ../../src/img/semana09/questao03-E.png Graphic file (type png)
-<use ../../src/img/semana09/questao03-E.png>
-Package pdftex.def Info: ../../src/img/semana09/questao03-E.png  used on input line 521.
-(pdftex.def)             Requested size: 53.77588pt x 54.2192pt.
-
-Overfull \hbox (47.58922pt too wide) in paragraph at lines 521--521
- [][] 
- []
-
-
-Overfull \vbox (4.98915pt too high) detected at line 521
- []
-
-[13
-
- <../../src/img/semana09/questao03.png> <../../src/img/semana09/questao03-A.png> <../../src/img/semana09/questao03-B.png> <../../src/img/semana09/questao03-C.png> <../../src/img/semana09/questao03-D.png> <../../src/img/semana09/questao03-E.png>]
-Overfull \hbox (39.8363pt too wide) detected at line 550
-[][][][][][][][][]
- []
-
-<../../src/img/semana09/questao04.png, id=180, 589.20125pt x 609.27625pt>
-File: ../../src/img/semana09/questao04.png Graphic file (type png)
-<use ../../src/img/semana09/questao04.png>
-Package pdftex.def Info: ../../src/img/semana09/questao04.png  used on input line 550.
-(pdftex.def)             Requested size: 161.32492pt x 166.82169pt.
-
-Overfull \vbox (6.30258pt too high) detected at line 550
  []
 
 [14
 
- <../../src/img/semana09/questao04.png>]
-LaTeX Font Info:    Font shape `T1/Montserrat-LF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 568.
-
-Overfull \hbox (39.8363pt too wide) detected at line 568
+]
+Overfull \hbox (39.8363pt too wide) detected at line 567
 [][][][][][][][][]
  []
 
 [15
+
+]
+Overfull \hbox (39.8363pt too wide) detected at line 589
+[][][][][][][][][]
+ []
+
+[16
 
 ]
 \tf@nav=\write6
@@ -1442,18 +1330,18 @@ Package rerunfilecheck Info: File `aula10_1016.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35433 strings out of 467533
- 750813 string characters out of 5422138
- 1161652 words of memory out of 5000000
- 63589 multiletter control sequences out of 15000+600000
- 798586 words of font info for 80 fonts, out of 8000000 for 9000
+ 35286 strings out of 467533
+ 744516 string characters out of 5422138
+ 1158652 words of memory out of 5000000
+ 63437 multiletter control sequences out of 15000+600000
+ 816894 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,1948b,1040s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on aula10_1016.pdf (15 pages, 1352152 bytes).
+ 128i,13n,123p,1948b,981s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/montserrat/Montserrat-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on aula10_1016.pdf (16 pages, 792551 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

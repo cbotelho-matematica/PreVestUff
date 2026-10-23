@@ -142,7 +142,7 @@
   #1
 }
 
-\graphicspath{{../../src/img/semana09/}}
+\graphicspath{{../../src/img/semana10/}}
 
 %--------Dados do Documento
 \title{O Conceito de Função}
@@ -211,234 +211,295 @@
     \begin{frame}{Relações}
         \begin{columns}[totalwidth=.9\textwidth, T]
             \begin{column}{.45\textwidth}
-                \begin{figure}
-                    % \centering
-                    % \includegraphics[width=.8\textwidth]{octaedro_segmento_interno.png}
-                \end{figure}
+                {\Large                    
+                    \[
+                        \begin{aligned}
+                            &\text{Relação de ordem: } a \leq b\\
+                            \vspace{1.2em}
+                            &\text{Relação de pertencimento: } a \in A\\
+                            \vspace{1.2em}
+                            &\text{Relação de igualdade: } a = b\\
+                            \vspace{1.2em}
+                            &\text{Relação de função:} \; f(x): y=ax^2 +3 
+                        \end{aligned}
+                    \]
+                }
             \end{column}
 
-            \begin{column}{.45\textwidth}
+            \begin{column}{.35\textwidth}
                 Dados dois conjuntos $A$ e $B$, definimos uma relação $R$ sobre $A$ e $B$ como uma associação ente elementos $x \in A$ e $y \in B$, mediante uma lei determinada.
+
+                \vspace{1.em}
+
+                O tempo todo fazemos usos de algumas relações, em Matemática, sem que nos demos conta. Ao lado temos alguns exemplos.
             \end{column}
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Relação de Euler}
+    \begin{frame}{Funções}
         \begin{columns}[totalwidth=0.9\textwidth]
             \begin{column}{.45\textwidth}
                 \begin{figure}
                     \centering
-                    \includegraphics[width=.6\textwidth]{piramide_basequadrada.png}
-                    \includegraphics[width=.6\textwidth]{cubo.png}
+                    \includegraphics[width=.8\textwidth]{funcoes_definicao.png}
                 \end{figure}                
             \end{column}
             \begin{column}{.45\textwidth}
-                A {\bf relação de Euler} é uma fórmula que relaciona o número de vértices, arestas e faces de um poliedro convexo. Essa relação é muito útil para contar elementos de um poliedro: dado o número de vértices e faces, podemos determinar o número de arestas, por exemplo.
+                Uma função é um tipo especial de relação entre dois conjuntos não-vazios. Um deles, chamado Domínio e o outro, chamado Contradomínio.
+
+                Cada elemento do Domínio pode se relacionar com um, e somente um, elemento do Contradomínio. 
 
                 \vspace{1.2em}
 
-                {\large\bf Relação de Euler}
-                { \Large
-                    \[
-                        V - A + F = 2
-                    \]
-                }
-
-                Onde:
-                \begin{itemize}
-                    \item $V$ é o número de vértices;
-                    \item $A$ é o número de arestas;
-                    \item $F$ é o número de faces.
-                \end{itemize}
+               Funções são importantes ferramentas matemáticas para {\it modelarem} fenômenos da natureza, comportamentos da economia, visualização de dados estatísticos, etc.
             \end{column}
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Contando Arestas}
-        \begin{columns}[totalwidth=0.9\textwidth]
+    \begin{frame}{Visualizando Funções - 1}
+        \vspace{1.2em}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.9\textwidth}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    {\bf Nome} & {\bf Idade} & {\bf Time} & {\bf irmãos}\\
+                    \hline
+                    Andreia & 23 & Flamengo & Osvaldo\\
+                    \hline
+                    Reginaldo & 17 & Flamengo & Elaine, Aparecida\\
+                    \hline
+                    Osvaldo & 32 & Flamengo & Andreia\\
+                    \hline
+                    Joseane & 17 & Vasco & --- \\
+                    \hline
+                \end{tabular}
+
+                \vspace{1.2em}
+
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.6\textwidth]{diagrama_01.png}
+                \end{figure}
+            \end{column}
+
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Visualizando Funções - 2}
+        \vspace{1.2em}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.9\textwidth}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    {\bf Nome} & {\bf Idade} & {\bf Time} & {\bf irmãos}\\
+                    \hline
+                    Andreia & 23 & Flamengo & Osvaldo\\
+                    \hline
+                    Reginaldo & 17 & Flamengo & Elaine, Aparecida\\
+                    \hline
+                    Osvaldo & 32 & Flamengo & Andreia\\
+                    \hline
+                    Joseane & 17 & Vasco & --- \\
+                    \hline
+                \end{tabular}
+
+                \vspace{1.2em}
+
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.6\textwidth]{diagrama_02.png}
+                \end{figure}
+            \end{column}
+
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Visualizando Funções - 3}
+        \vspace{1.2em}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.9\textwidth}
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    {\bf Nome} & {\bf Idade} & {\bf Time} & {\bf irmãos}\\
+                    \hline
+                    Andreia & 23 & Flamengo & Osvaldo\\
+                    \hline
+                    Reginaldo & 17 & Flamengo & Elaine, Aparecida\\
+                    \hline
+                    Osvaldo & 32 & Flamengo & Andreia\\
+                    \hline
+                    Joseane & 17 & Vasco & --- \\
+                    \hline
+                \end{tabular}
+
+                \vspace{1.2em}
+
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.6\textwidth]{diagrama_03.png}
+                \end{figure}
+            \end{column}
+        \end{columns}
+
+    \end{frame}
+    
+    \begin{frame}{Funções: Expressão Algébrica}
+       \begin{columns}[totalwidth=.9\textwidth]
+         \begin{column}{.45\textwidth}
+            \large\[
+                \begin{aligned}
+                    &f(x) = x + 2\\
+                    &g(x) = \sen{(x+2)}\\
+                    &h(x) = (x+2)^3 \\
+                    &k(x) = k^2 + 2k + 4
+                \end{aligned}
+            \]
+        \end{column}
+        \begin{column}{.45 \textwidth}
+            Então, quando relacionamos os elementos de um conjunto A (domínio) aos elementos de um conjunto B (contradomínio), de modo que tenhamos uma função,podemos dizer que os elementos de B estão em função de A.
+
+            De modo geral escrevemos algebricamente uma função da seguinte forma:
+
+            \vspace{1.2em}
+
+                {\large
+                \[
+                    f: A \rightarrow B
+                \]}
+
+                {\large
+                \[
+                    y = f(x)
+                \]
+                }
+
+            Matematicamente $f(x)$ pode ser escrita como uma expressão com $x$ como incógnita.
+        \end{column}
+       \end{columns}
+    \end{frame}
+
+    \begin{frame}{Domínio, Contradomínio e Imagem}
+        \begin{columns}[totalwidth=.9\textwidth]
             \begin{column}{.45\textwidth}
                 \begin{figure}
                     \centering
-                    \includegraphics[width=.8\textwidth]{octaedro_truncado_planificacao.png}
+                    \includegraphics[width=.8\textwidth]{dominio-contradominio.png}
                 \end{figure}
             \end{column}
             \begin{column}{.45\textwidth}
-                Questões que envolvem contagem de elementos de um poliedro nem sempre vão trazer de forma explícita o número de arestas. Nesses casos, podemos contar as arestas a partir do número de faces e do número de lados de cada face.
+                Na relação entre conjuntos domínio e contradomínio, temos um subconjunto especial, chamado {\bf imagem}. Este é o subconjunto do domínio cujos elementos est~ao em função dos elementos do domínio.
 
                 \vspace{1.2em}
 
-                Sabendo que cada aresta pertence a duas faces, podemos determinar o número de arestas de um poliedro convexo pela seguinte fórmula:
+                Na imagem ao lado, temos:
 
-                \vspace{1.2em}
-
-                {\large\bf Fórmula para contagem de arestas}
-                { \Large
-                    \[
-                        A = \frac{F_1 \cdot n_1 + F_2 \cdot n_2 + F_3 \cdot n_3 + \cdots + F_i \cdot n_i}{2}
-                    \]
-                }
-            \end{column}
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Sólidos de Platão}
-        \begin{columns}[totalwidth=0.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                Os {\bf sólidos de Platão} são poliedros convexos que possuem faces congruentes e regulares, e o mesmo número de faces se encontram em cada vértice. Existem apenas cinco sólidos de Platão:
-
-                \vspace{1.3 em}
-
-                \setlength{\extrarowheight}{.4em}
-                \begin{tabular}{ c c c }
-                    \toprule
-                    \bf Sólido & \bf Faces & \bf Vértices \\
-                    \midrule
-                    Tetraedro & 4 & 4 \\
-                    \midrule
-                    Cubo & 6 & 8 \\
-                    \midrule
-                    Octaedro & 8 & 6 \\
-                    \midrule
-                    Dodecaedro & 12 & 20 \\
-                    \midrule
-                    Icosaedro & 20 & 12 \\
-                    \bottomrule
-                \end{tabular}
-            \end{column}
-
-            \begin{column}{.4\textwidth}
-                \centering
-                \begin{tabular}{| c | c | c |}
-                    \hline
-                    \includegraphics[width=.3\textwidth]{tetraedro.png} &
-                    \includegraphics[width=.3\textwidth]{cubo.png} &
-                    \includegraphics[width=.25\textwidth]{octaedro.png} \\
-                    \hline
-                    Tetraedro & Cubo & Octaedro \\
-                    \hline
-                \end{tabular}
-
-                \vspace{1.2em}
-
-                \begin{tabular}{|c|c|}
-                    \hline
-                    \includegraphics[width=.3\textwidth]{dodecaedro.png} &
-                    \includegraphics[width=.3\textwidth]{icosaedro.png} \\
-                    \hline
-                    Dodecaedro & Icosaedro \\
-                    \hline
-                \end{tabular}
-                
-            \end{column}
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Esferas}
-        \begin{columns}[totalwidth=0.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=.8\textwidth]{esfera.png}
-            \end{column}
-            \begin{column}{.45\textwidth}
-                A {\bf esfera} é o conjunto de todos os pontos do espaço que estão a uma distância fixa de um ponto central. Essa distância fixa é chamada de {\bf raio} da esfera, e o ponto central é chamado de {\bf centro} da esfera. A esfera também pode ser definida pela rotação de um semicírculo em torno de um eixo que passa pelo seu centro.
-            \end{column}
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Esfera: Volume}
-        \begin{columns}[totalwidth=0.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=\textwidth]{volume_esfera.png}
-            \end{column}
-            \begin{column}{.38\textwidth}
-                O volume de uma esfera de raio $r$ é dado pela fórmula:
-                
-                {\Large
                 \[
-                    V = \frac{4}{3} \pi r^3
+                    \begin{aligned}
+                        & D = A = \{1,2,3,4\} \\
+                        & CD = B = \{-1,0,2,3\}\\
+                        & Im = \{-1,0,2\}
+                    \end{aligned}
                 \]
-                }
-
-                \vspace{1.2 em}
-
-                Essa fórmula foi descoberta e demonstrada por Arquimedes. Ele considerou um feito tão importante que pediu que fosse gravado em seu túmulo um cilindro circunscrito a uma esfera, com a inscrição: “De todos os sólidos, o cilindro e a esfera são os mais belos”.
             \end{column}
-            
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Esfera: Superfície}
-        \begin{columns}[totalwidth=0.9\textwidth, T]
+    \begin{frame}{Domínio, Contradomínio e Imagem}
+        \begin{columns}[totalwidth=.9\textwidth]
             \begin{column}{.45\textwidth}
-                \includegraphics[width=.7\textwidth]{esfera_inscrita.png}
-                \includegraphics[width=.8\textwidth]{cilindro_planificacao_face.png}
-            \end{column}
-            \begin{column}{.38\textwidth}
-                A área da superfície de uma esfera de raio $r$ é dada pela fórmula:
-                
-                {\Large
+                \Large
                 \[
-                    A = 4 \pi r^2
+                    f(x) = x^2
                 \]
-                }
 
-                \vspace{1.2 em}
+                \vspace{3em}
 
-                Essa fórmula também foi descoberta e demonstrada por Arquimedes, que mostrou que a área da superfície de uma esfera é igual à área lateral do cilindro circunscrito a ela.
+                \[
+                    f(x) = \frac{1}{x-8}
+                \]
 
-                \vspace{2em}
+                \vspace{3em}
 
-                \includegraphics[width=\textwidth]{circulos.png}
+                \[
+                    f(x) = \sqrt{4-x}
+                \]
             \end{column}
-            
-        \end{columns}
+            \begin{column}{.45\textwidth}
+                No caso de funções definidas por expressões, o domínio será dado pelos valores de $x$ que tornam a expressão verdadeira e o conjunto Imagem é o conjunto dos valores definidos para cada valor dado de $x$.
+            \end{column}
+        \end{columns}        
     \end{frame}
 
-    \begin{frame}{Projeção Ortogonal}
-        \begin{columns}[totalwidth=0.9\textwidth, T]
-            \begin{column}{.3\textwidth}
-                \includegraphics[width=.88\textwidth]{projecao_ponto.png}
-                \vfill
-                \includegraphics[width=.88\textwidth]{projecao_reta.png}
-                \vfill
-                \includegraphics[width=.88\textwidth]{projecao_segmento.png}
+    \begin{frame}{Tipos de Funções}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.45\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.6\textwidth]{funcao-sobrejetora.jpg}
+
+                    \vspace{1.2em}
+                    
+                    \includegraphics[width=.6\textwidth]{funcao-injetora.jpg}
+                \end{figure}
             \end{column}
-            \begin{column}{.6\textwidth}
-                Projeções ortogonais são representações bidimensionais de objetos tridimensionais, obtidas projetando os pontos do objeto em um plano de projeção.
 
-                \vspace{1.2em}
-
-                Podemos entender a projeção ortogonal como a sombra de um objeto, quando iluminado por uma fonte de luz que emite raios paralelos, em ângulo reto.
-
-                \vspace{1.2em}
+            \begin{column}{.45\textwidth}
+                Podemos classificar as funções em três tipos, de acordo com as relações entre domínio e contradomínio:
 
                 \begin{itemize}
-                    \item A projeção ortogonal de um ponto é outro ponto;
-                    \item A projeção ortogonal de uma reta é outra reta ou um ponto;
-                    \item A projeção ortogonal de um segmento de reta é outro segmento de reta ou um ponto.
+                    \item {\bf Função Sobrejetiva}. É a função em que todo elemento elemento do contradomínio é também elemento da imagem ($CD = Im$).
+                    \item {\bf Função Injetiva}. É aquela em que cada elemento da imagem se relaciona a um elemento do domínio. Perceba que não há a necessidade de todo elemento do contradomínio estar relacionado a um elemento do domínio.
+                    \item {\bf Função Sobrejetiva} É a função que é sobrejetiva e injetiva ao mesmo tempo.
                 \end{itemize}
-
-                \vspace{1.2em}
-
-                Retas e segmentos de reta que são ortogonais ao plano de projeção serão projetados em um ponto.
-            \end{column}
-        \end{columns}    
-    \end{frame}
-
-    \begin{frame}{Projeção Ortogonal de Figuras}
-        \begin{columns}[totalwidth=.9\textwidth, T]
-            \begin{column}{.6\textwidth}
-                \includegraphics[width=.85\textwidth]{projecao_ortogonal.png}
-            \end{column}
-
-            \begin{column}{.38\textwidth}
-                A projeção ortogonal de uma figura plana é outra figura plana. É o resultado da projeção de todos os seus pontos no plano de projeção.
-
-                \vspace{1.2em}
-
-                É preciso uma boa dose de imaginação para visualizar o resultado. No caso em que a projeção envolve figuras, tente pensar na projeção da sombra da figura ao sol do meio dia, ou da visualização de seus pontos-chaves sobre o plano.
             \end{column}
         \end{columns}
     \end{frame}
+
+    \begin{frame}{Funções Compostas}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{\textwidth}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=.6\textwidth]{funcao-composta.png}
+                \end{figure}
+
+                A composição de funções pode ser entendida como um atalho entre três conjuntos $A,B,C$.Perceba no diagrama acima que o conjunto $B$ é contradomínio de $A$ e domínio do conjunto $B$. A composição de conjuntos escreve o conjunto $C$ como função da função $f(x)$. Isso é como se os elementos de $A$ fossem diretamente relacionados aos elementos de $C$.
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Exemplo de Função Composta}
+        \begin{columns}[totalwidth=.9\textwidth]
+            \begin{column}{.45\textwidth}
+                
+            \end{column}
+            \begin{column}{.45\textwidth}
+                Imagine que você está comprando um produto em uma loja on-line. Para esta compra, você dispões de um cupom de desconto de 10\% no preço da mercadoria e pagará um custo fixo no frete, de $R\$ \, 15,00$.
+
+                \vspace{1.2em}
+
+                Podemos representar as situações com duas funções:
+
+                \vspace{1.2em}
+
+                1. Preço com desconto: $p(x) = 0,9x$;
+
+                2. Taxa de entrega: $t(y)=y+15$
+
+                \vspace{1.2em}
+
+                Podemos pensar que o valor final com a taxa dependerá do preço da mercadoria com desconto. Portanto ao invés de calcularmos passo a passo, podemos calcular diretamente:
+
+                \vspace{1.2em}
+
+                $t(p(x)) = p(x) + 15 \quad \therefore \quad t(x) = 0,9x + 15$
+            \end{column}
+        \end{columns}
+    \end{frame}
+
 %----------------------------------------------
 %              EXERCÍCIOS
 %----------------------------------------------
@@ -446,29 +507,19 @@
     \begin{frame} {Exercícios} %Gabarito 1-C
         \begin{columns}
             \centering
-            \begin{column}{.9\textwidth} %letra a
-                1.~\textbf{(ENEM-2017): }Para decorar uma mesa de festa infantil, um chefe de cozinha usará um melão esférico com diâmetro medindo 10 cm, o qual servirá de suporte para espetar diversos doces. Ele irá retirar uma calota esférica do melão, conforme ilustra a figura, e, para garantir a estabilidade deste suporte, dificultando que o melão role sobre a mesa, o chefe fará o corte de modo que o raio r da seção circular de corte seja de pelo menos 3 cm. Por outro lado, o chefe desejará dispor da maior área possível da região em que serão afixados os doces.
-            \vspace{1em}
-            \begin{columns}[T]
-                \centering
-                \begin{column}{.55\textwidth}
-                    \begin{figure}
-                        \includegraphics[width=.85\textwidth]{questao01.png}
-                    \end{figure}
-                \end{column}
-                \begin{column}{.45\textwidth}
-                    Para atingir todos os seus objetivos, o chefe deverá cortar a calota do melão numa altura h, em centímetro, igual a
+            \begin{column}{.9\textwidth}
+                1. Em uma indústria metalúrgica o custo de produção de uma peça automotiva corresponde a um custo fixo mensal de R\$ 5 000,00 acrescido de um custo variável de R\$ 55,00 por unidade produzida mais 25\% de impostos sobre o custo variável.
+                
+                Considerando que o preço de venda dessa peça pela indústria aos comerciantes é de R\$ 102,00, determine:
 
+                \vspace{1.2em}
 
-                    \begin{enumerate}[label=\alph*)]
-                        \item $\displaystyle 5 - \frac{\sqrt{91}}{2}$
-                        \item $\displaystyle 10 - \sqrt{91}$
-                        \item 1
-                        \item 4
-                        \item 5
-                    \end{enumerate}
-                \end{column}
-            \end{columns}
+                \begin{itemize}
+                    \item {\bf a.)} A função custo da produção de x peças.
+                    \item {\bf b.)} A função receita referente a venda de x peças.
+                    \item {\bf c.)} A função lucro na venda de x peças.
+                    \item {\bf d.)} O lucro obtido com a venda de 500 unidades. 
+                \end{itemize}
             \end{column}    
         \end{columns}
     \end{frame}
@@ -476,195 +527,65 @@
     \begin{frame} {Exercícios} %Gabarito 2-B
         \begin{columns}[totalwidth=.9\textwidth]
             \begin{column}{\textwidth}
-                2.\textbf{(ENEM-2013) } Gangorra é um brinquedo que consiste de uma tábua longa e estreita equilibrada e fixada em seu ponto central (pivô). Nesse brinquedo, duas pessoas sentam-se nas extremidades e, alternadamente, impulsionam-se para cima, fazendo descer a extremidade oposta, realizando assim o movimento da gangorra. Considere a gangorra representada na figura, em que os pontos A e B são equidistantes do pivô:
-            \end{column}
-        \end{columns}
-        \vspace{1.8em}
-        \begin{columns}[totalwidth=.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=\textwidth]{questao02.jpg}
-            \end{column}
+                2. Em uma indústria, o processo de fabricação de um componente eletrônico passa por duas máquinas consecutivas. O tempo de operação (em minutos) da primeira máquina depende da quantidade $x$ de matéria-prima inserida e é modelado pela função $g(x) = x^2 - 2x$. Imediatamente após, a peça passa para a segunda máquina, cujo custo de operação (em reais) em função do tempo $t$ (em minutos) que a peça ficou na primeira máquina é dado por $f(t) = 3t + 15$.
+                
+                \vspace{1em}
 
-            \begin{column}{.45\textwidth}
-                \centering
-                \includegraphics[width=.4\textwidth]{questao02_alternativas.jpg}
-            \end{column}
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Exercícios} %Gabartito 3-C
-        \begin{columns}[totalwidth=0.9\textwidth]
-            \begin{column}{\textwidth}
-                3. \textbf{(ENEM-2024) }Em um jogo virtual para celular, um personagem pode percorrer trajetórias retilíneas voando ou se deslocando ao longo de paredes. Considere que o personagem descreve a trajetória ABCDEF, em que os pontos A, D e E estão em um plano paralelo ao que contém os pontos B e C, sendo esses dois planos ortogonais ao plano da base que contém o ponto F, conforme a figura. A projeção ortogonal, sobre o plano da base, da trajetória ABCDEF descrita pelo personagem é
-            \end{column}
-        \end{columns}
-
-        \vspace{1.8em}
-
-        \begin{columns}[totalwidth=0.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=.7\textwidth]{questao03.png}
-            \end{column}
-
-            \begin{column}{.45\textwidth}
-                \centering
-                \begin{tabular}{c c c}
-                    {\bf a.} \includegraphics[width=.3\textwidth]{questao03-A.png} &
-                    {\bf b.} \includegraphics[width=.3\textwidth]{questao03-B.png} &
-                    {\bf c.} \includegraphics[width=.3\textwidth]{questao03-C.png}\\
-                    \\
-                    {\bf d.} \includegraphics[width=.3\textwidth]{questao03-D.png} &
-                    {\bf e.} \includegraphics[width=.3\textwidth]{questao03-E.png} &
-                \end{tabular}
-            \end{column}
-        \end{columns}
-    \end{frame}
-
-    \begin{frame}{Exercícios} %Gabarito 4-A
-        \begin{columns}[totalwidth=.9\textwidth]
-            \begin{column}{\textwidth}
-                4. \textbf{(ENEM- 2010) }Se pudéssemos reunir em esferas toda a água do planeta, os diâmetros delas seriam:
-            \end{column}
-        \end{columns}
-
-        \vspace{1.2em}
-
-        \begin{columns}[totalwidth=.9\textwidth, T]
-            \begin{column}{.45\textwidth}
-                \includegraphics[width=.9\textwidth]{questao04.png}
-            \end{column}
-            \begin{column}{.45\textwidth}
-                A razão entre o volume da esfera que corresponde à água doce superficial e o volume da esfera que corresponde à água doce do planeta é
-
-                \vspace{0.8em}
+                Se um lote utilizar $4\text{ kg}$ de matéria-prima ($x = 4$), qual será o custo de operação na segunda máquina?
 
                 \begin{enumerate}[label=\alph*)]
-                    \item $\displaystyle\frac{1}{343}$ \vspace{0.8em}
-                    \item $\displaystyle\frac{1}{49}$ \vspace{0.8em}
-                    \item $\displaystyle\frac{1}{7}$ \vspace{0.8em}
-                    \item $\displaystyle\frac{29}{136}$ \vspace{0.8em}
-                    \item $\displaystyle\frac{136}{203}$ \vspace{0.8em}
+                    \item $R\$ \, 15,00$
+                    \item $R\$ \, 24,00$
+                    \item $R\$ \, 39,00$
+                    \item $R\$ \, 45,00$
+                    \item $R\$ \, 51,00$
                 \end{enumerate}
             \end{column}
         \end{columns}
     \end{frame}
 
-    \begin{frame}{Exercícios} %Gabarito 5-E
+    \begin{frame}{Exercícios}
+        \begin{columns}[totalwidth=.9\textwidth]
+           \begin{column}{\textwidth}
+            3. Uma escola organiza uma gincana de matemática e define uma função $f: A \rightarrow B$, onde o conjunto $A$ (Domínio) é formado pelos 40 alunos de uma turma, e o conjunto $B$ (Contradomínio) é formado pelas 4 equipes da gincana: {Alfa, Beta, Gama, Delta}. A regra de associação dessa função determina que cada aluno (elemento de $A$) seja mapeado para a equipe (elemento de $B$) na qual foi sorteado para competir.
+            
+            \vspace{1em}
+
+            Para que a função construída por esse sorteio seja rigorosamente classificada como sobrejetora, qual das situações abaixo deve obrigatoriamente ocorrer?
+
+            \vspace{1.2em}
+
+                \begin{enumerate}[label=\alph*)]
+                    \item Cada equipe deve receber exatamente 10 alunos, garantindo uma divisão igualitária.
+                    \item Nenhum aluno da turma pode ficar sem ser sorteado para uma equipe.
+                    \item Nenhuma das quatro equipes pode terminar o sorteio sem receber pelo menos um aluno.
+                    \item Cada aluno deve poder escolher em qual equipe deseja participar.
+                    \item Dois alunos não podem ser sorteados para a mesma equipe.
+                \end{enumerate}
+           \end{column}
+        \end{columns}        
+    \end{frame}
+
+    \begin{frame}{Exercícios}
         \begin{columns}[totalwidth=.9\textwidth]
             \begin{column}{\textwidth}
-                5. \textbf{(Espcex(AMAN)-2018) } A angioplastia é um procedimento médico caracterizado pela inserção de um cateter em uma veia ou artéria com o enchimento de um pequeno balão esférico localizado na ponta desse cateter. Considerando que, num procedimento de angioplastia, o raio inicial do balão seja desprezível e aumente a uma taxa constante de $0,5$ mm/s até que o volume seja igual a $500\text{ mm}^3$, então o tempo, em segundos, que o balão leva para atingir esse volume é
+                Uma empresa de aluguel de patinetes elétricos cobra de seus usuários uma taxa fixa de desbloqueio do equipamento no valor de R\$ 3,00, acrescida de R\$ 0,50 por minuto de uso. Para incentivar o uso prolongado, a empresa lançou uma promoção: em viagens que ultrapassem 30 minutos, o usuário recebe um desconto de 20\% sobre o valor total final da corrida.
                 
                 \vspace{1.2em}
 
+                A expressão algébrica que modela o custo final $C(x)$, em reais, para um usuário que aluga o patinete por $x$ minutos, sabendo que ele andou por mais de meia hora ($x > 30$), é dada por:
+
+                \vspace{1.2em}
+
                 \begin{enumerate}[label=\alph*)]
-                    \item $10$ \vspace{.3em}
-                    \item $\displaystyle 10 \sqrt[3]{\frac{5}{\pi}}$ \vspace{.3em}
-                    \item $\displaystyle 10 \sqrt[3]{\frac{2}{\pi}}$ \vspace{.3em}
-                    \item $\displaystyle 10 \sqrt[3]{\pi}$ \vspace{.3em}
-                    \item $\displaystyle 10 \sqrt[3]{\frac{3}{\pi}}$
+                    \item $C(x)=2,40+0,40x$
+                    \item $C(x) = 3,00 + 0,40x$
+                    \item $C(x) = 2,40 + 0,50x$
+                    \item $C(x) = 3,00 + 0,50x - 0,20$
+                    \item $C(x) = 0,80 \cdot (0,50x)$
                 \end{enumerate}
             \end{column}
         \end{columns}
     \end{frame}
-
-    % \begin{frame} {Exercícios} %Gabarito 3-D
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{\textwidth}
-    %             3 \textbf{(ENEM-2010) }Uma fábrica de tubos acondiciona tubos cilíndricos menores dentro de outros tubos cilíndricos. A figura mostra uma situação em que quatro tubos cilíndricos estão acondicionados perfeitamente em um tubo com raio maior
-
-    %             \vspace{1em}
-                
-    %             Uma fábrica de tubos acondiciona tubos cilíndricos menores dentro de outros tubos cilíndricos. A figura mostra uma situação em que quatro tubos cilíndricos estão acondicionados perfeitamente em um tubo com raio maior
-    %         \end{column}   
-    %     \end{columns}
-    %         \vspace{1.8em}
-
-    %     \begin{center}
-    %         \begin{columns}
-    %             \begin{column}{.4\textwidth}
-    %                 \begin{figure}
-    %                     \includegraphics[width=.7\textwidth]{questao_03.png}
-    %                 \end{figure}
-    %             \end{column}
-    %             \hfill
-    %             \begin{column}{.5\textwidth}
-    %                 \begin{enumerate}[a. ]
-    %                     \item $12 \text{ cm}$
-    %                     \item $12 \sqrt{2}\text{ cm}$
-    %                     \item $24 \sqrt{2}\text{ cm}$
-    %                     \item $6 \left( 1 + \sqrt{2}\right) \text{ cm}$
-    %                     \item $12 \left( 1 + \sqrt{2}\right) \text{ cm}$
-    %                 \end{enumerate}
-    %             \end{column}
-    %         \end{columns}
-    %     \end{center}
-    % \end{frame}
-
-    % \begin{frame} {Exercícios} %Gabarito 4-A
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{\textwidth}
-    %             4 \textbf{(UNICAMP-2011) }Depois de encher de areia um molde cilíndrico, uma criança virou-o sobre uma superfície horizontal. Após a retirada do molde, a areia escorreu, formando um cone cuja base tinha raio igual ao dobro do raio da base do cilindro.
-    %         \end{column}   
-    %     \end{columns}
-    %         \vspace{1.8em}
-
-    %     \begin{center}
-    %         \begin{columns}[totalwidth=.9\textwidth, T]
-    %             \begin{column}{.4\textwidth}
-    %                 \includegraphics[width=.9\textwidth]{questao_04.png}
-    %             \end{column}
-
-    %             \begin{column}{.45\textwidth}
-    %                 A altura do cone formado pela areia era igual a
-
-    %                 \vspace{1.2em}
-
-    %                 \begin{enumerate}[a. ]
-    %                     \item $\displaystyle\frac{3}{4}$ da altura do cilindro.\vspace{0.8em}
-    %                     \item $\displaystyle\frac{1}{2}$ da altura do cilindro.\vspace{0.8em}
-    %                     \item $\displaystyle\frac{2}{3}$ da altura do cilindro.\vspace{0.8em}
-    %                     \item $\displaystyle\frac{3}{1}$ da altura do cilindro.\vspace{0.8em}
-    %                 \end{enumerate}
-    %             \end{column}
-    %         \end{columns}
-    %     \end{center}
-    % \end{frame}
-
-    % \begin{frame} {Exercícios} %Gabarito 5-A
-    %     \begin{columns}[totalwidth=.9\textwidth]
-    %         \begin{column}{\textwidth}
-    %             5 \textbf{(ENEM-2020) }Num recipiente com a forma de paralelepípedo reto-retângulo, colocou-se água até a altura de 8 cm e um objeto, que ficou flutuando na superfície da água.  
-                
-    %             Para retirar o objeto de dentro do recipiente, a altura da coluna de água deve ser de, pelo menos, 15 cm. Para a coluna de água chegar até essa altura, é necessário colocar dentro do recipiente bolinhas de volume igual a $6\text{ cm}^3$ cada, que ficarão totalmente submersas. 
-    %         \end{column}
-    %     \end{columns}
-
-    %     \vspace{1.3em}
-        
-    %     \begin{columns}[totalwidth=.95\textwidth, T]
-    %         \begin{column}{.3\textwidth}
-    %             \begin{figure}
-    %                 \centering
-    %                 \includegraphics[width=\textwidth]{questao_05.png}
-    %             \end{figure}
-    %         \end{column}
-
-    %         \hfill
-
-    %         \begin{column}{.6\textwidth}
-    %             O número mínimo de bolinhas necessárias para que se possa retirar o objeto que flutua na água, seguindo as instruções dadas, é de
-
-    %             \vspace{1.2em}
-
-    %             \begin{enumerate}[a. ]
-    %                 \item 14.
-    %                 \item 16.
-    %                 \item 18.
-    %                 \item 30.
-    %                 \item 34.
-    %             \end{enumerate}
-    %         \end{column}
-    %     \end{columns}
-    % \end{frame}
 
 \end{document}
